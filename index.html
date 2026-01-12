@@ -1868,13 +1868,6 @@
             }
         });
 
-        cityFilter.addEventListener('change', filterSessions);
-        facilityFilter.addEventListener('change', () => {
-            const selectedFacility = facilityFilter.value;
-            facilityMapBtn.disabled = selectedFacility === 'all';
-            filterSessions();
-        });
-
         facilityMapBtn.addEventListener('click', () => {
             const selectedFacility = facilityFilter.value;
             if (selectedFacility !== 'all') {
@@ -1886,8 +1879,6 @@
                 }
             }
         });
-
-        distanceFilter.addEventListener('change', filterSessions);
 
         // Update activity checkboxes when sport changes
         function updateActivityFilters() {
@@ -1957,7 +1948,144 @@
         window.showSessionDetails = showSessionDetails;
         window.addToGoogleCalendar = addToGoogleCalendar;
 
+        // localStorage settings persistence
+        const STORAGE_KEY = 'skatingScheduleSettings';
+
+        function saveSettings() {
+            const settings = {
+                postalCode: postalCodeInput.value,
+                userLocation: userLocation,
+                city: cityFilter.value,
+                facility: facilityFilter.value,
+                distance: distanceFilter.value,
+                viewMode: viewMode,
+                activityTypes: getSelectedActivityTypes()
+            };
+            try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+            } catch (e) {
+                console.warn('Could not save settings:', e);
+            }
+        }
+
+        function loadSettings() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (!saved) return null;
+                return JSON.parse(saved);
+            } catch (e) {
+                console.warn('Could not load settings:', e);
+                return null;
+            }
+        }
+
+        function applySettings(settings) {
+            if (!settings) return;
+
+            // Apply location
+            if (settings.postalCode) {
+                postalCodeInput.value = settings.postalCode;
+            }
+            if (settings.userLocation) {
+                userLocation = settings.userLocation;
+            }
+
+            // Apply filters
+            if (settings.city) {
+                cityFilter.value = settings.city;
+            }
+            if (settings.distance) {
+                distanceFilter.value = settings.distance;
+            }
+            if (settings.viewMode) {
+                viewMode = settings.viewMode;
+                updateViewButtons();
+            }
+
+            // Activity types will be applied after data loads
+            if (settings.activityTypes) {
+                window._savedActivityTypes = settings.activityTypes;
+            }
+        }
+
+        function applySavedActivityTypes() {
+            const saved = window._savedActivityTypes;
+            if (!saved) return;
+
+            const checkboxes = activityFiltersContainer.querySelectorAll('input[type="checkbox"]:not([data-all="true"])');
+            checkboxes.forEach(cb => {
+                cb.checked = saved.includes(cb.value);
+            });
+
+            // Update "All" checkbox
+            const allCheckbox = activityFiltersContainer.querySelector('input[data-all="true"]');
+            if (allCheckbox) {
+                const otherCheckboxes = activityFiltersContainer.querySelectorAll('input:not([data-all="true"])');
+                allCheckbox.checked = Array.from(otherCheckboxes).every(c => c.checked);
+            }
+        }
+
+        // Save settings when filters change
+        cityFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
+        distanceFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
+
+        // Override facility filter listener to also save
+        facilityFilter.removeEventListener('change', filterSessions);
+        facilityFilter.addEventListener('change', () => {
+            const selectedFacility = facilityFilter.value;
+            facilityMapBtn.disabled = selectedFacility === 'all';
+            filterSessions();
+            saveSettings();
+        });
+
+        // Save on view mode change
+        const originalDayClick = dayViewBtn.onclick;
+        dayViewBtn.addEventListener('click', saveSettings);
+        weekViewBtn.addEventListener('click', saveSettings);
+        monthViewBtn.addEventListener('click', saveSettings);
+
+        // Save after postal code change
+        const originalHandlePostalCode = handlePostalCodeChange;
+        handlePostalCodeChange = async function() {
+            await originalHandlePostalCode.call(this);
+            saveSettings();
+        };
+
+        // Save after geolocation
+        const originalUseCurrentLocation = useCurrentLocation;
+        useCurrentLocation = async function() {
+            await originalUseCurrentLocation.call(this);
+            saveSettings();
+        };
+
+        // Wrap updateActivityFilters to apply saved types and add save listeners
+        const originalUpdateActivityFilters = updateActivityFilters;
+        updateActivityFilters = function() {
+            originalUpdateActivityFilters();
+            applySavedActivityTypes();
+
+            // Add save listeners to new checkboxes
+            const checkboxes = activityFiltersContainer.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(cb => {
+                cb.addEventListener('change', saveSettings);
+            });
+        };
+
+        // Apply facility filter after data loads (needs facility list populated)
+        const originalFetchRealData = fetchRealData;
+        fetchRealData = async function() {
+            await originalFetchRealData();
+            const saved = loadSettings();
+            if (saved?.facility) {
+                facilityFilter.value = saved.facility;
+                facilityMapBtn.disabled = saved.facility === 'all';
+                filterSessions();
+            }
+        };
+
         // Initialize app
+        const savedSettings = loadSettings();
+        applySettings(savedSettings);
         updateSportTheme();      // Set sport-themed background
         updateActivityFilters(); // Set up activity filters for current sport
         renderCalendar();        // Render empty calendar immediately
