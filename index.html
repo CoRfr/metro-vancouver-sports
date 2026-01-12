@@ -1090,7 +1090,9 @@
                 isLoading = true;
                 renderLoading();
 
-                const response = await fetch(getDataUrl());
+                // Add cache-busting param (changes hourly to bypass Cloudflare cache)
+                const cacheBuster = Math.floor(Date.now() / 3600000); // Changes every hour
+                const response = await fetch(`${getDataUrl()}?v=${cacheBuster}`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
