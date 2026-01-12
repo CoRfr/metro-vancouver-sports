@@ -257,29 +257,112 @@
 
         .day-picker {
             display: flex;
-            gap: 8px;
+            gap: 6px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .day-picker-nav {
+            display: flex;
+            gap: 4px;
             align-items: center;
         }
 
         .day-picker button {
-            padding: 8px 12px;
-            background: #f0f0f0;
-            border: none;
-            border-radius: 6px;
+            padding: 10px 14px;
+            background: #f5f5f5;
+            border: 2px solid transparent;
+            border-radius: 8px;
             cursor: pointer;
             font-weight: 600;
             transition: all 0.2s;
+            font-size: 0.9rem;
         }
 
         .day-picker button:hover {
-            background: #e0e0e0;
+            background: #e8e8e8;
+            transform: translateY(-1px);
+        }
+
+        .day-picker button.nav-btn {
+            padding: 10px 12px;
+            background: white;
+            border: 2px solid #e0e0e0;
+        }
+
+        .day-picker button.nav-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .day-picker-days {
+            display: flex;
+            gap: 4px;
+            background: #f0f0f0;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .day-picker-days button {
+            min-width: 70px;
+            padding: 8px 12px;
+            background: transparent;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .day-picker-days button .day-name {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #888;
+            font-weight: 500;
+        }
+
+        .day-picker-days button .day-num {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .day-picker-days button:hover {
+            background: rgba(255,255,255,0.8);
+        }
+
+        .day-picker-days button.selected {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .day-picker-days button.is-today {
+            border: 2px solid #667eea;
+        }
+
+        .day-picker-days button.is-today .day-name {
+            color: #667eea;
+        }
+
+        .day-picker-days button.selected.is-today {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .day-picker-days button.selected.is-today .day-name,
+        .day-picker-days button.selected.is-today .day-num {
+            color: white;
         }
 
         .day-picker input[type="date"] {
             padding: 8px 12px;
             border: 2px solid #e0e0e0;
-            border-radius: 6px;
-            font-size: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .day-picker input[type="date"]:hover {
+            border-color: #667eea;
         }
 
         .timeline-container {
@@ -1291,13 +1374,44 @@
                 .sort((a, b) => a.startTime.localeCompare(b.startTime));
 
             // Build day view with date picker and timeline
+            const today = new Date();
+            const todayDateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+            const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+            // Generate 7 days centered around current date (3 before, current, 3 after)
+            let dayButtonsHtml = '';
+            for (let offset = -3; offset <= 3; offset++) {
+                const btnDate = new Date(currentDate);
+                btnDate.setDate(currentDate.getDate() + offset);
+                const btnDateStr = `${btnDate.getFullYear()}-${String(btnDate.getMonth() + 1).padStart(2, '0')}-${String(btnDate.getDate()).padStart(2, '0')}`;
+                const btnTodayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+                const isSelected = offset === 0;
+                const isTodayBtn = btnDateStr === btnTodayStr;
+                const classes = [isSelected ? 'selected' : '', isTodayBtn ? 'is-today' : ''].filter(Boolean).join(' ');
+
+                dayButtonsHtml += `
+                    <button class="${classes}" onclick="goToDate('${btnDateStr}')">
+                        <span class="day-name">${shortDayNames[btnDate.getDay()]}</span>
+                        <span class="day-num">${btnDate.getDate()}</span>
+                    </button>
+                `;
+            }
+
             let html = `
                 <div class="day-view-header">
                     <div class="day-picker">
-                        <button onclick="changeDay(-1)">← Prev</button>
-                        <input type="date" id="datePicker" value="${dateStr}" onchange="goToDate(this.value)">
-                        <button onclick="changeDay(1)">Next →</button>
-                        <button onclick="goToToday()">Today</button>
+                        <div class="day-picker-nav">
+                            <button class="nav-btn" onclick="changeDay(-7)" title="Previous week">««</button>
+                            <button class="nav-btn" onclick="changeDay(-1)" title="Previous day">‹</button>
+                        </div>
+                        <div class="day-picker-days">
+                            ${dayButtonsHtml}
+                        </div>
+                        <div class="day-picker-nav">
+                            <button class="nav-btn" onclick="changeDay(1)" title="Next day">›</button>
+                            <button class="nav-btn" onclick="changeDay(7)" title="Next week">»»</button>
+                        </div>
+                        <input type="date" id="datePicker" value="${dateStr}" onchange="goToDate(this.value)" title="Pick a date">
                     </div>
                 </div>
             `;
