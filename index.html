@@ -353,6 +353,18 @@
             color: white;
         }
 
+        .day-picker-days button.is-weekend {
+            background: rgba(102, 126, 234, 0.08);
+        }
+
+        .day-picker-days button.is-weekend .day-name {
+            color: #667eea;
+        }
+
+        .day-picker-days button.is-weekend.selected {
+            background: rgba(102, 126, 234, 0.15);
+        }
+
         .day-picker input[type="date"] {
             padding: 8px 12px;
             border: 2px solid #e0e0e0;
@@ -1441,7 +1453,8 @@
                 const btnTodayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
                 const isSelected = offset === 0;
                 const isTodayBtn = btnDateStr === btnTodayStr;
-                const classes = [isSelected ? 'selected' : '', isTodayBtn ? 'is-today' : ''].filter(Boolean).join(' ');
+                const isWeekend = btnDate.getDay() === 0 || btnDate.getDay() === 6;
+                const classes = [isSelected ? 'selected' : '', isTodayBtn ? 'is-today' : '', isWeekend ? 'is-weekend' : ''].filter(Boolean).join(' ');
 
                 dayButtonsHtml += `
                     <button class="${classes}" onclick="goToDate('${btnDateStr}')">
