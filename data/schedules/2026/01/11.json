@@ -94,20 +94,6 @@
       "eventItemId": 591627
     },
     {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-11",
-      "startTime": "13:45",
-      "endTime": "17:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
-    },
-    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver",
@@ -252,5 +238,5 @@
       "eventItemId": 590773
     }
   ],
-  "count": 16
+  "count": 15
 }
