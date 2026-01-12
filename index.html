@@ -14,9 +14,20 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--sport-gradient, linear-gradient(135deg, #667eea 0%, #764ba2 100%));
             min-height: 100vh;
             padding: 20px;
+            transition: background 0.5s ease;
+        }
+
+        body.sport-skating {
+            --sport-gradient: linear-gradient(135deg, #74b9ff 0%, #a29bfe 50%, #dfe6e9 100%);
+            --sport-accent: #74b9ff;
+        }
+
+        body.sport-swimming {
+            --sport-gradient: linear-gradient(135deg, #00cec9 0%, #0984e3 50%, #6c5ce7 100%);
+            --sport-accent: #00cec9;
         }
 
         .container {
@@ -1221,8 +1232,16 @@
         }
 
         // Handle sport change
+        function updateSportTheme() {
+            // Remove all sport classes
+            document.body.classList.remove('sport-skating', 'sport-swimming');
+            // Add current sport class
+            document.body.classList.add(`sport-${currentSport}`);
+        }
+
         sportFilter.addEventListener('change', () => {
             currentSport = sportFilter.value;
+            updateSportTheme();
             updateActivityFilters();
             fetchRealData();
         });
@@ -1239,6 +1258,7 @@
         window.addToGoogleCalendar = addToGoogleCalendar;
 
         // Initialize app
+        updateSportTheme();      // Set sport-themed background
         updateActivityFilters(); // Set up activity filters for current sport
         renderCalendar();        // Render empty calendar immediately
         fetchRealData();         // Then fetch data
