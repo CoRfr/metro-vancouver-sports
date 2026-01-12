@@ -397,15 +397,21 @@
             <h3>📋 About This Schedule</h3>
             <p>
                 This app shows sample skating sessions from Vancouver and Burnaby community centers. 
-                In a production version, this would connect to the city's official scheduling systems to show real-time availability.
-                For actual schedules, please visit:
-                <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars" target="_blank">Vancouver Recreation</a> or
-                <a href="https://anc.ca.apm.activecommunities.com/burnaby" target="_blank">Burnaby Recreation</a>
+                Schedule data is updated daily from official city recreation systems.
+                For official drop-in calendars, visit:
+                <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&defaultCalendarId=3&displayType=0&view=2" target="_blank">Vancouver Drop-in</a> |
+                <a href="https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities" target="_blank">Burnaby Drop-in</a>
             </p>
         </div>
 
         <div class="controls">
             <div class="filter-group">
+                <label for="sportFilter">Sport:</label>
+                <select id="sportFilter">
+                    <option value="skating">Ice Skating</option>
+                    <option value="swimming" disabled>Swimming (coming soon)</option>
+                </select>
+
                 <label for="cityFilter">City:</label>
                 <select id="cityFilter">
                     <option value="all">All Cities</option>
@@ -431,8 +437,8 @@
                     <option value="15">15 km</option>
                 </select>
             </div>
-            
-            <div class="activity-filters">
+
+            <div class="activity-filters" id="activityFilters">
                 <strong>Activity Types:</strong>
                 <label class="activity-checkbox">
                     <input type="checkbox" id="activityPublic" value="Public Skating" checked>
@@ -447,7 +453,7 @@
                     <span>Family Hockey</span>
                 </label>
                 <label class="activity-checkbox">
-                    <input type="checkbox" id="activityFigure" value="Figure Skating">
+                    <input type="checkbox" id="activityFigure" value="Figure Skating" checked>
                     <span>Figure Skating</span>
                 </label>
             </div>
@@ -483,9 +489,36 @@
     </div>
 
     <script>
-        // URL for schedule data - uses static JSON file from GitHub Pages
-        const DATA_URL = './data/schedules.json';
+        // Sport configuration
+        const SPORTS_CONFIG = {
+            skating: {
+                name: 'Ice Skating',
+                dataUrl: './data/schedules.json',
+                activityTypes: [
+                    { id: 'activityPublic', value: 'Public Skating', label: 'Public Skating', checked: true },
+                    { id: 'activityFamily', value: 'Family Skate', label: 'Family Skating', checked: true },
+                    { id: 'activityHockey', value: 'Family Hockey', label: 'Family Hockey', checked: false },
+                    { id: 'activityFigure', value: 'Figure Skating', label: 'Figure Skating', checked: true },
+                ]
+            },
+            swimming: {
+                name: 'Swimming',
+                dataUrl: './data/swimming.json',
+                activityTypes: [
+                    { id: 'activityLap', value: 'Lap Swim', label: 'Lap Swim', checked: true },
+                    { id: 'activityPublicSwim', value: 'Public Swim', label: 'Public Swim', checked: true },
+                    { id: 'activityLessons', value: 'Lessons', label: 'Lessons', checked: false },
+                    { id: 'activityAquafit', value: 'Aquafit', label: 'Aquafit', checked: false },
+                ]
+            }
+        };
+
+        let currentSport = 'skating';
         const USE_SAMPLE_DATA = false; // Set to true to use sample data for testing
+
+        function getDataUrl() {
+            return SPORTS_CONFIG[currentSport]?.dataUrl || './data/schedules.json';
+        }
         
         const sampleSessions = [
             {
@@ -629,8 +662,10 @@
         let viewMode = 'day';
         let isLoading = false; // 'day', 'week', or 'month'
 
+        const sportFilter = document.getElementById('sportFilter');
         const cityFilter = document.getElementById('cityFilter');
         const facilityFilter = document.getElementById('facilityFilter');
+        const activityFiltersContainer = document.getElementById('activityFilters');
         const postalCodeInput = document.getElementById('postalCode');
         const distanceFilter = document.getElementById('distanceFilter');
         const calendar = document.getElementById('calendar');
@@ -660,7 +695,7 @@
                 isLoading = true;
                 renderLoading();
 
-                const response = await fetch(DATA_URL);
+                const response = await fetch(getDataUrl());
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -1040,11 +1075,41 @@
         cityFilter.addEventListener('change', filterSessions);
         facilityFilter.addEventListener('change', filterSessions);
         distanceFilter.addEventListener('change', filterSessions);
-        
-        activityCheckboxes.forEach(cb => {
+
+        // Update activity checkboxes when sport changes
+        function updateActivityFilters() {
+            const config = SPORTS_CONFIG[currentSport];
+            if (!config) return;
+
+            let html = '<strong>Activity Types:</strong>';
+            config.activityTypes.forEach(type => {
+                html += `
+                    <label class="activity-checkbox">
+                        <input type="checkbox" id="${type.id}" value="${type.value}" ${type.checked ? 'checked' : ''}>
+                        <span>${type.label}</span>
+                    </label>
+                `;
+            });
+            activityFiltersContainer.innerHTML = html;
+
+            // Re-attach event listeners
+            document.querySelectorAll('.activity-checkbox input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', filterSessions);
+            });
+        }
+
+        // Handle sport change
+        sportFilter.addEventListener('change', () => {
+            currentSport = sportFilter.value;
+            updateActivityFilters();
+            fetchRealData();
+        });
+
+        // Initial activity checkbox listeners
+        document.querySelectorAll('.activity-checkbox input[type="checkbox"]').forEach(cb => {
             cb.addEventListener('change', filterSessions);
         });
-        
+
         let postalCodeTimeout;
         postalCodeInput.addEventListener('input', () => {
             clearTimeout(postalCodeTimeout);
