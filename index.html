@@ -1072,7 +1072,7 @@
     <div class="map-modal" id="mapModal">
         <div class="map-modal-content">
             <div class="map-modal-header">
-                <h3>Facilities with Upcoming Sessions</h3>
+                <h3 id="mapTitle">Facilities with Upcoming Sessions</h3>
                 <button class="map-modal-close" id="mapModalClose">×</button>
             </div>
             <div id="facilityMap"></div>
@@ -1674,6 +1674,30 @@
             return `${displayHour}:${minutes} ${ampm}`;
         }
 
+        function shortFacilityName(facility) {
+            // Map long facility names to shorter versions for compact display
+            const shortNames = {
+                'Hillcrest Centre': 'Hillcrest',
+                'Kerrisdale Cyclone Taylor Arena': 'Kerrisdale',
+                'Killarney Rink': 'Killarney',
+                'Kitsilano Rink': 'Kitsilano',
+                'Sunset Rink': 'Sunset',
+                'Trout Lake Rink': 'Trout Lake',
+                'West End Community Centre': 'West End',
+                'Kensington Arena': 'Kensington',
+                'Rosemary Brown Recreation Centre': 'Rosemary Brown',
+                'Bill Copeland Sports Centre': 'Bill Copeland',
+                'Burnaby Lake Arena': 'Burnaby Lake',
+                'Karen Magnussen Community Centre': 'Karen Magnussen',
+                'Harry Jerome Community Recreation Centre': 'Harry Jerome',
+                'Canlan Ice Sports North Shore': 'Canlan',
+                'West Vancouver Community Centre': 'West Van CC',
+                'Robson Square Ice Rink': 'Robson Square',
+                'Shipyards Skate Plaza': 'Shipyards',
+            };
+            return shortNames[facility] || facility.split(' ').slice(0, 2).join(' ');
+        }
+
         function formatDuration(minutes) {
             const hours = Math.floor(minutes / 60);
             const mins = minutes % 60;
@@ -1983,7 +2007,7 @@
                     sessionsHTML = '<div class="day-sessions">';
                     daySessions.slice(0, 4).forEach(session => {
                         const activityName = session.activityName || session.type;
-                        sessionsHTML += `<div class="session-pill ${getSessionClass(session)}" onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
+                        sessionsHTML += `<div class="session-pill ${getSessionClass(session)}" onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${shortFacilityName(session.facility)}</div>`;
                     });
                     if (daySessions.length > 4) {
                         sessionsHTML += `<div class="session-pill" style="background: #f5f5f5; color: #666; cursor: default;">+${daySessions.length - 4} more</div>`;
@@ -2457,27 +2481,25 @@
                 attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(facilityMap);
 
-            // Get current date for filtering future/current sessions
-            const now = new Date();
-            const todayStr = formatDateStr(now);
+            // Update map title with session count
+            const mapTitle = document.getElementById('mapTitle');
+            mapTitle.textContent = `${filteredSessions.length} Sessions at ${new Set(filteredSessions.map(s => s.facility)).size} Facilities`;
 
-            // Group sessions by facility (only future/current sessions)
+            // Group filtered sessions by facility (respects current filters)
             const facilitySessions = {};
-            allSessions.forEach(session => {
-                if (session.date >= todayStr) {
-                    const key = `${session.facility}-${session.lat}-${session.lng}`;
-                    if (!facilitySessions[key]) {
-                        facilitySessions[key] = {
-                            facility: session.facility,
-                            city: session.city,
-                            address: session.address,
-                            lat: session.lat,
-                            lng: session.lng,
-                            sessions: []
-                        };
-                    }
-                    facilitySessions[key].sessions.push(session);
+            filteredSessions.forEach(session => {
+                const key = `${session.facility}-${session.lat}-${session.lng}`;
+                if (!facilitySessions[key]) {
+                    facilitySessions[key] = {
+                        facility: session.facility,
+                        city: session.city,
+                        address: session.address,
+                        lat: session.lat,
+                        lng: session.lng,
+                        sessions: []
+                    };
                 }
+                facilitySessions[key].sessions.push(session);
             });
 
             // Color markers by city

@@ -815,7 +815,7 @@ function getOutdoorRinks() {
       note: 'Free outdoor rink',
     },
     {
-      name: 'The Shipyards Skate Plaza',
+      name: 'Shipyards Skate Plaza',
       city: 'North Vancouver',
       address: '125 Victory Ship Way, North Vancouver',
       lat: 49.3103,
