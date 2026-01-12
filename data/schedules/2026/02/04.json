@@ -45,7 +45,7 @@
       "type": "Hockey",
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -59,7 +59,7 @@
       "type": "Skating",
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
       "facility": "Hillcrest Centre",
@@ -110,6 +110,19 @@
       "eventItemId": 602897
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-04",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey Skills and Drills Drop-in (Wed)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
       "address": "800 Robson St, Vancouver",
@@ -149,7 +162,20 @@
       "type": "Figure Skating",
       "activityName": "Figure Skating",
       "ageRange": "16 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-04",
+      "startTime": "18:15",
+      "endTime": "19:45",
+      "type": "Discount Skate",
+      "activityName": "Toonie Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "West End Community Centre",
@@ -168,5 +194,5 @@
       "eventItemId": 592194
     }
   ],
-  "count": 11
+  "count": 13
 }

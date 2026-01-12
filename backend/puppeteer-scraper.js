@@ -61,21 +61,21 @@ const CONFIG = {
         lat: 49.2569,
         lng: -123.0340,
         address: '6159 Curtis St, Burnaby',
-        locationRef: '2986', // location_ref parameter
+        locationRef: '3046',
       },
       'rosemary-brown': {
         name: 'Rosemary Brown Recreation Centre',
         lat: 49.2258,
         lng: -122.9892,
         address: '5930 Humphries Ave, Burnaby',
-        locationRef: '2991',
+        locationRef: '6916',
       },
       'bill-copeland': {
         name: 'Bill Copeland Sports Centre',
         lat: 49.2389,
         lng: -123.0042,
         address: '3676 Kensington Ave, Burnaby',
-        locationRef: '2981',
+        locationRef: '2991',
       },
       'burnaby-lake': {
         name: 'Burnaby Lake Arena',
@@ -347,13 +347,13 @@ function getBurnabySchedules() {
       name: 'Kensington Complex',
       address: '6159 Curtis St, Burnaby',
       lat: 49.2569, lng: -123.0340,
-      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986',
+      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046',
     },
     'rosemary-brown': {
       name: 'Rosemary Brown Recreation Centre',
       address: '5930 Humphries Ave, Burnaby',
       lat: 49.2258, lng: -122.9892,
-      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991',
+      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916',
     },
   };
 
