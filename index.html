@@ -187,106 +187,99 @@
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
-        .filter-item-wide {
-            grid-column: span 2;
+        .dropdown-multi {
+            position: relative;
+            width: 100%;
         }
 
-        .multi-select {
+        .dropdown-multi-trigger {
             display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-
-        .multi-select-item {
-            display: inline-flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 4px;
-            padding: 8px 12px;
-            background: #f0f0f0;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 500;
-            transition: all 0.2s;
-            user-select: none;
-        }
-
-        .multi-select-item:hover {
-            background: #e0e0e0;
-        }
-
-        .multi-select-item:has(input:checked) {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .multi-select-item input {
-            width: 14px;
-            height: 14px;
-            accent-color: white;
-        }
-
-        .filter-item-facility {
-            grid-column: span 2;
-        }
-
-        .facility-filter-container {
-            max-height: 150px;
-            overflow-y: auto;
+            padding: 12px 15px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             background: #fafafa;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
         }
 
-        .facility-multi-select {
-            display: flex;
-            flex-direction: column;
+        .dropdown-multi-trigger:hover {
+            border-color: #667eea;
+            background: white;
         }
 
-        .facility-item {
+        .dropdown-multi.open .dropdown-multi-trigger {
+            border-color: #667eea;
+            background: white;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .dropdown-multi-trigger::after {
+            content: '▼';
+            font-size: 0.7rem;
+            color: #888;
+            transition: transform 0.2s;
+        }
+
+        .dropdown-multi.open .dropdown-multi-trigger::after {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-multi-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #667eea;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .dropdown-multi.open .dropdown-multi-menu {
+            display: block;
+        }
+
+        .dropdown-multi-item {
             display: flex;
             align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
+            gap: 10px;
+            padding: 10px 15px;
             cursor: pointer;
-            border-bottom: 1px solid #eee;
             transition: background 0.2s;
         }
 
-        .facility-item:last-child {
-            border-bottom: none;
+        .dropdown-multi-item:hover {
+            background: #f5f5f5;
         }
 
-        .facility-item:hover {
-            background: #f0f0f0;
-        }
-
-        .facility-item:has(input:checked) {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
-        }
-
-        .facility-item input {
+        .dropdown-multi-item input {
             width: 16px;
             height: 16px;
             accent-color: #667eea;
         }
 
-        .facility-item-name {
+        .dropdown-multi-item span {
             flex: 1;
-            font-size: 0.9rem;
         }
 
-        .facility-item-distance {
-            font-size: 0.75rem;
+        .dropdown-multi-item .item-distance {
+            font-size: 0.8rem;
             color: #888;
-            font-weight: 500;
         }
 
-        .facility-item-city {
-            font-size: 0.7rem;
+        .dropdown-multi-item .item-city {
+            font-size: 0.75rem;
             color: #aaa;
-            padding: 2px 6px;
             background: #f0f0f0;
+            padding: 2px 6px;
             border-radius: 4px;
         }
 
@@ -1160,21 +1153,25 @@
                     </div>
                 </div>
 
-                <div class="filter-item filter-item-wide">
+                <div class="filter-item">
                     <label>City</label>
-                    <div class="multi-select" id="cityFilter">
-                        <label class="multi-select-item"><input type="checkbox" value="Vancouver" checked><span>Vancouver</span></label>
-                        <label class="multi-select-item"><input type="checkbox" value="Burnaby" checked><span>Burnaby</span></label>
-                        <label class="multi-select-item"><input type="checkbox" value="North Vancouver" checked><span>North Vancouver</span></label>
-                        <label class="multi-select-item"><input type="checkbox" value="West Vancouver" checked><span>West Vancouver</span></label>
-                        <label class="multi-select-item"><input type="checkbox" value="New Westminster" checked><span>New Westminster</span></label>
+                    <div class="dropdown-multi" id="cityFilter">
+                        <div class="dropdown-multi-trigger"><span>All Cities</span></div>
+                        <div class="dropdown-multi-menu">
+                            <label class="dropdown-multi-item"><input type="checkbox" value="Vancouver"><span>Vancouver</span></label>
+                            <label class="dropdown-multi-item"><input type="checkbox" value="Burnaby"><span>Burnaby</span></label>
+                            <label class="dropdown-multi-item"><input type="checkbox" value="North Vancouver"><span>North Vancouver</span></label>
+                            <label class="dropdown-multi-item"><input type="checkbox" value="West Vancouver"><span>West Vancouver</span></label>
+                            <label class="dropdown-multi-item"><input type="checkbox" value="New Westminster"><span>New Westminster</span></label>
+                        </div>
                     </div>
                 </div>
 
-                <div class="filter-item filter-item-facility">
+                <div class="filter-item">
                     <label>Facility</label>
-                    <div class="facility-filter-container">
-                        <div class="facility-multi-select" id="facilityFilter">
+                    <div class="dropdown-multi" id="facilityFilter">
+                        <div class="dropdown-multi-trigger"><span>All Facilities</span></div>
+                        <div class="dropdown-multi-menu">
                             <!-- Populated dynamically -->
                         </div>
                     </div>
@@ -1711,9 +1708,66 @@
 
         function initializeFilters() {
             updateFacilityFilter();
+            initDropdownMulti();
+        }
+
+        function initDropdownMulti() {
+            // Setup dropdown toggle behavior
+            document.querySelectorAll('.dropdown-multi').forEach(dropdown => {
+                const trigger = dropdown.querySelector('.dropdown-multi-trigger');
+                trigger.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    // Close other dropdowns
+                    document.querySelectorAll('.dropdown-multi.open').forEach(d => {
+                        if (d !== dropdown) d.classList.remove('open');
+                    });
+                    dropdown.classList.toggle('open');
+                });
+
+                // Update trigger text and filter when checkboxes change
+                dropdown.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.addEventListener('change', () => {
+                        updateDropdownTrigger(dropdown);
+                        filterSessions();
+                        saveSettings();
+                    });
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', () => {
+                document.querySelectorAll('.dropdown-multi.open').forEach(d => d.classList.remove('open'));
+            });
+
+            // Prevent closing when clicking inside menu
+            document.querySelectorAll('.dropdown-multi-menu').forEach(menu => {
+                menu.addEventListener('click', e => e.stopPropagation());
+            });
+
+            // Initialize trigger text
+            document.querySelectorAll('.dropdown-multi').forEach(updateDropdownTrigger);
+        }
+
+        function updateDropdownTrigger(dropdown) {
+            const trigger = dropdown.querySelector('.dropdown-multi-trigger span');
+            const checked = dropdown.querySelectorAll('input:checked');
+            const total = dropdown.querySelectorAll('input[type="checkbox"]').length;
+
+            if (checked.length === 0 || checked.length === total) {
+                // Default to "All" when nothing selected or all selected
+                const isCity = dropdown.id === 'cityFilter';
+                trigger.textContent = isCity ? 'All Cities' : 'All Facilities';
+            } else if (checked.length === 1) {
+                trigger.textContent = checked[0].nextElementSibling.textContent;
+            } else {
+                trigger.textContent = `${checked.length} selected`;
+            }
         }
 
         function updateFacilityFilter() {
+            const menu = facilityFilter.querySelector('.dropdown-multi-menu');
+            if (!menu) return;
+
             // Get unique facilities with their coordinates
             const facilitiesMap = new Map();
             allSessions.forEach(s => {
@@ -1736,30 +1790,33 @@
 
             // Get currently selected facilities
             const currentSelected = new Set(
-                Array.from(facilityFilter.querySelectorAll('input:checked')).map(cb => cb.value)
+                Array.from(menu.querySelectorAll('input:checked')).map(cb => cb.value)
             );
-            const isFirstLoad = facilityFilter.children.length === 0;
+            const isFirstLoad = menu.children.length === 0;
 
-            facilityFilter.innerHTML = '';
+            menu.innerHTML = '';
             facilities.forEach(f => {
-                const isChecked = isFirstLoad || currentSelected.has(f.name);
+                const isChecked = !isFirstLoad && currentSelected.has(f.name);
                 const distanceStr = f.distance !== undefined ? `${f.distance.toFixed(1)} km` : '';
                 const cityAbbr = getCityAbbr(f.city);
 
                 const label = document.createElement('label');
-                label.className = 'facility-item';
+                label.className = 'dropdown-multi-item';
                 label.innerHTML = `
                     <input type="checkbox" value="${f.name}" ${isChecked ? 'checked' : ''}>
-                    <span class="facility-item-name">${shortFacilityName(f.name)}</span>
-                    <span class="facility-item-city">${cityAbbr}</span>
-                    ${distanceStr ? `<span class="facility-item-distance">${distanceStr}</span>` : ''}
+                    <span>${shortFacilityName(f.name)}</span>
+                    <span class="item-city">${cityAbbr}</span>
+                    ${distanceStr ? `<span class="item-distance">${distanceStr}</span>` : ''}
                 `;
                 label.querySelector('input').addEventListener('change', () => {
+                    updateDropdownTrigger(facilityFilter);
                     filterSessions();
                     saveSettings();
                 });
-                facilityFilter.appendChild(label);
+                menu.appendChild(label);
             });
+
+            updateDropdownTrigger(facilityFilter);
         }
 
         function calculateDistance(lat1, lon1, lat2, lon2) {
@@ -2680,10 +2737,7 @@
             }
         }
 
-        // Save settings when filters change
-        cityFilter.querySelectorAll('input').forEach(cb => {
-            cb.addEventListener('change', () => { filterSessions(); saveSettings(); });
-        });
+        // Save settings when distance filter changes
         distanceFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
 
         // Save on view mode change
@@ -2728,8 +2782,15 @@
                 facilityFilter.querySelectorAll('input').forEach(cb => {
                     cb.checked = saved.facilities.includes(cb.value);
                 });
-                filterSessions();
+                updateDropdownTrigger(facilityFilter);
             }
+            if (saved?.cities && Array.isArray(saved.cities)) {
+                cityFilter.querySelectorAll('input').forEach(cb => {
+                    cb.checked = saved.cities.includes(cb.value);
+                });
+                updateDropdownTrigger(cityFilter);
+            }
+            filterSessions();
         };
 
         // Map functionality
