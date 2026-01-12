@@ -34,6 +34,7 @@ const CONFIG = {
       { name: 'Sunset Community Centre', aliases: ['Sunset', 'Sunset Arena'], lat: 49.2267, lng: -123.1003, address: '6810 Main St, Vancouver' },
       { name: 'Trout Lake Community Centre', aliases: ['Trout Lake', 'Trout Lake Rink'], lat: 49.2544, lng: -123.0636, address: '3360 Victoria Dr, Vancouver' },
       { name: 'West End Community Centre', aliases: ['West End', 'West End Rink'], lat: 49.2863, lng: -123.1353, address: '870 Denman St, Vancouver' },
+      { name: 'Thunderbird Community Centre', aliases: ['Thunderbird', 'Thunderbird Cmty Centre'], lat: 49.2614, lng: -123.2456, address: '2311 Cassiar St, Vancouver' },
     ],
     burnaby: [
       { name: 'Bill Copeland Sports Centre', aliases: ['Bill Copeland', 'Copeland'], lat: 49.2389, lng: -123.0042, address: '3676 Kensington Ave, Burnaby' },
@@ -42,14 +43,12 @@ const CONFIG = {
     ],
   },
 
-  // Search URLs - using keyword search for public skating activities
+  // Search URLs - multiple searches to capture all skating activities
   searches: [
-    { city: 'vancouver', keyword: 'public skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=public+skating&viewMode=list' },
-    { city: 'vancouver', keyword: 'public figure skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=public+figure+skating&viewMode=list' },
-    { city: 'vancouver', keyword: 'family skate', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=family+skate&viewMode=list' },
-    { city: 'vancouver', keyword: 'drop-in skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=drop-in+skating&viewMode=list' },
-    { city: 'burnaby', keyword: 'public skating', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=public+skating&viewMode=list' },
-    { city: 'burnaby', keyword: 'drop-in skating', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=drop-in+skating&viewMode=list' },
+    { city: 'vancouver', keyword: 'skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skating&viewMode=list' },
+    { city: 'vancouver', keyword: 'skate', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skate&viewMode=list' },
+    { city: 'burnaby', keyword: 'skating', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=skating&viewMode=list' },
+    { city: 'burnaby', keyword: 'skate', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=skate&viewMode=list' },
   ],
 };
 
@@ -242,23 +241,52 @@ function matchFacility(locationText, city) {
 function determineActivityType(activityName) {
   const name = (activityName || '').toLowerCase();
 
+  // Hockey types
   if (name.includes('family') && name.includes('hockey')) {
     return 'Family Hockey';
   }
-  if (name.includes('family') && (name.includes('skate') || name.includes('skating'))) {
+  if (name.includes('shinny') || (name.includes('drop') && name.includes('hockey'))) {
+    return 'Drop-in Hockey';
+  }
+  if (name.includes('hockey') && !name.includes('figure')) {
+    return 'Hockey';
+  }
+
+  // Family skating (including parent & tot, parent & preschooler)
+  if (name.includes('parent') && (name.includes('tot') || name.includes('preschool'))) {
     return 'Family Skate';
   }
+  if ((name.includes('family') || name.includes('parent') || name.includes('tot')) &&
+      (name.includes('skate') || name.includes('skating'))) {
+    return 'Family Skate';
+  }
+
+  // Figure skating
   if (name.includes('figure')) {
     return 'Figure Skating';
   }
-  if (name.includes('shinny') || name.includes('hockey')) {
-    return 'Drop-in Hockey';
-  }
-  if (name.includes('public') || name.includes('drop-in') || name.includes('drop in')) {
+
+  // Public/drop-in skating (including toonie/discount sessions)
+  if (name.includes('public') || name.includes('drop-in') || name.includes('drop in') ||
+      name.includes('toonie') || name.includes('discount') || name.includes('loonie')) {
     return 'Public Skating';
   }
 
-  return 'Public Skating';
+  // Lessons/classes
+  if (name.includes('lesson') || name.includes('learn') || name.includes('class') ||
+      name.includes('level') || name.includes('beginner') || name.includes('intermediate') ||
+      name.includes('canskate') || name.includes('can skate') ||
+      name.includes('pre-') || name.includes('intro')) {
+    return 'Skating Lessons';
+  }
+
+  // Practice/freestyle
+  if (name.includes('practice') || name.includes('freestyle') || name.includes('free skate')) {
+    return 'Practice';
+  }
+
+  // Default - general skating
+  return 'Skating';
 }
 
 /**
