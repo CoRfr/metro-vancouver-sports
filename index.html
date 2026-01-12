@@ -50,28 +50,73 @@
         }
 
         .filter-group {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 15px;
-            flex-wrap: wrap;
-            align-items: center;
+            align-items: end;
         }
 
-        .filter-group label {
+        .filter-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .filter-group label, .filter-item > label {
             font-weight: 600;
-            color: #333;
+            color: #555;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        select, input {
-            padding: 10px 15px;
+        select, input[type="text"] {
+            padding: 12px 15px;
             border: 2px solid #e0e0e0;
             border-radius: 8px;
             font-size: 1rem;
-            transition: border-color 0.3s;
+            transition: all 0.3s;
+            background: #fafafa;
+            width: 100%;
         }
 
-        select:focus, input:focus {
+        select:hover, input[type="text"]:hover {
+            border-color: #667eea;
+            background: white;
+        }
+
+        select:focus, input[type="text"]:focus {
             outline: none;
             border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .location-row {
+            display: flex;
+            gap: 10px;
+            align-items: end;
+        }
+
+        .location-row input {
+            flex: 1;
+        }
+
+        #useLocationBtn {
+            padding: 12px 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        #useLocationBtn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
         .calendar-container {
@@ -369,20 +414,58 @@
 
         .activity-filters {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
-            margin-top: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            align-items: center;
+        }
+
+        .activity-label {
+            font-weight: 600;
+            color: #555;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 10px;
         }
 
         .activity-checkbox {
-            display: flex;
+            display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            padding: 8px 12px;
+            background: #f5f5f5;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .activity-checkbox:hover {
+            background: #e8e8e8;
+        }
+
+        .activity-checkbox:has(input:checked) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .activity-checkbox.all-toggle {
+            background: #333;
+            color: white;
+            font-weight: 600;
+        }
+
+        .activity-checkbox.all-toggle:has(input:checked) {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
         }
 
         .activity-checkbox input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
+            accent-color: white;
         }
     </style>
 </head>
@@ -406,36 +489,48 @@
 
         <div class="controls">
             <div class="filter-group">
-                <label for="sportFilter">Sport:</label>
-                <select id="sportFilter">
-                    <option value="skating">Ice Skating</option>
-                    <option value="swimming" disabled>Swimming (coming soon)</option>
-                </select>
+                <div class="filter-item">
+                    <label for="sportFilter">Sport</label>
+                    <select id="sportFilter">
+                        <option value="skating">Ice Skating</option>
+                        <option value="swimming" disabled>Swimming (coming soon)</option>
+                    </select>
+                </div>
 
-                <label for="cityFilter">City:</label>
-                <select id="cityFilter">
-                    <option value="all">All Cities</option>
-                    <option value="Vancouver">Vancouver</option>
-                    <option value="Burnaby">Burnaby</option>
-                </select>
+                <div class="filter-item">
+                    <label for="cityFilter">City</label>
+                    <select id="cityFilter">
+                        <option value="all">All Cities</option>
+                        <option value="Vancouver">Vancouver</option>
+                        <option value="Burnaby">Burnaby</option>
+                    </select>
+                </div>
 
-                <label for="facilityFilter">Facility:</label>
-                <select id="facilityFilter">
-                    <option value="all">All Facilities</option>
-                </select>
+                <div class="filter-item">
+                    <label for="facilityFilter">Facility</label>
+                    <select id="facilityFilter">
+                        <option value="all">All Facilities</option>
+                    </select>
+                </div>
 
-                <label for="postalCode">Postal Code:</label>
-                <input type="text" id="postalCode" placeholder="e.g. V6B 1A1" maxlength="7">
-                <button id="useLocationBtn" style="padding: 10px 15px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">📍 Use My Location</button>
+                <div class="filter-item">
+                    <label for="postalCode">Location</label>
+                    <div class="location-row">
+                        <input type="text" id="postalCode" placeholder="Postal code">
+                        <button id="useLocationBtn">📍 Locate</button>
+                    </div>
+                </div>
 
-                <label for="distanceFilter">Within:</label>
-                <select id="distanceFilter">
-                    <option value="999">Any Distance</option>
-                    <option value="2">2 km</option>
-                    <option value="5">5 km</option>
-                    <option value="10" selected>10 km</option>
-                    <option value="15">15 km</option>
-                </select>
+                <div class="filter-item">
+                    <label for="distanceFilter">Distance</label>
+                    <select id="distanceFilter">
+                        <option value="999">Any Distance</option>
+                        <option value="2">2 km</option>
+                        <option value="5">5 km</option>
+                        <option value="10" selected>10 km</option>
+                        <option value="15">15 km</option>
+                    </select>
+                </div>
             </div>
 
             <div class="activity-filters" id="activityFilters">
@@ -495,6 +590,7 @@
                 name: 'Ice Skating',
                 dataUrl: './data/schedules.json',
                 activityTypes: [
+                    { id: 'activityAll', value: '__all__', label: 'All', checked: false, isAll: true },
                     { id: 'activityPublic', value: 'Public Skating', label: 'Public Skating', checked: true },
                     { id: 'activityFamily', value: 'Family Skate', label: 'Family Skating', checked: true },
                     { id: 'activityFigure', value: 'Figure Skating', label: 'Figure Skating', checked: true },
@@ -1086,20 +1182,40 @@
             const config = SPORTS_CONFIG[currentSport];
             if (!config) return;
 
-            let html = '<strong>Activity Types:</strong>';
+            let html = '<span class="activity-label">Activity Types:</span>';
             config.activityTypes.forEach(type => {
+                const extraClass = type.isAll ? ' all-toggle' : '';
                 html += `
-                    <label class="activity-checkbox">
-                        <input type="checkbox" id="${type.id}" value="${type.value}" ${type.checked ? 'checked' : ''}>
+                    <label class="activity-checkbox${extraClass}">
+                        <input type="checkbox" id="${type.id}" value="${type.value}" ${type.checked ? 'checked' : ''} ${type.isAll ? 'data-all="true"' : ''}>
                         <span>${type.label}</span>
                     </label>
                 `;
             });
             activityFiltersContainer.innerHTML = html;
 
-            // Re-attach event listeners
-            document.querySelectorAll('.activity-checkbox input[type="checkbox"]').forEach(cb => {
-                cb.addEventListener('change', filterSessions);
+            // Re-attach event listeners with "All" toggle logic
+            const allCheckbox = activityFiltersContainer.querySelector('input[data-all="true"]');
+            const otherCheckboxes = activityFiltersContainer.querySelectorAll('input:not([data-all="true"])');
+
+            if (allCheckbox) {
+                allCheckbox.addEventListener('change', () => {
+                    otherCheckboxes.forEach(cb => {
+                        cb.checked = allCheckbox.checked;
+                    });
+                    filterSessions();
+                });
+            }
+
+            otherCheckboxes.forEach(cb => {
+                cb.addEventListener('change', () => {
+                    // Update "All" checkbox state
+                    if (allCheckbox) {
+                        const allChecked = Array.from(otherCheckboxes).every(c => c.checked);
+                        allCheckbox.checked = allChecked;
+                    }
+                    filterSessions();
+                });
             });
         }
 
