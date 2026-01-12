@@ -2,20 +2,6 @@
   "date": "2026-01-16",
   "sessions": [
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-16",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -124,6 +110,20 @@
       "eventItemId": 599729
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-16",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
       "facility": "The Shipyards Skate Plaza",
       "city": "North Vancouver",
       "address": "125 Victory Ship Way, North Vancouver",
@@ -218,6 +218,19 @@
       "eventItemId": 592170
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver",
+      "lat": 49.3156,
+      "lng": -123.0689,
+      "date": "2026-01-16",
+      "startTime": "15:45",
+      "endTime": "17:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-friday-345-545pm"
+    },
+    {
       "facility": "Killarney Rink",
       "city": "Vancouver",
       "address": "6260 Killarney St, Vancouver",
@@ -278,6 +291,19 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/592171",
       "eventItemId": 592171
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver",
+      "lat": 49.3156,
+      "lng": -123.0689,
+      "date": "2026-01-16",
+      "startTime": "18:15",
+      "endTime": "20:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-harry-jerome-friday-615-815pm"
     },
     {
       "facility": "Killarney Rink",
@@ -374,5 +400,5 @@
       "eventItemId": 590860
     }
   ],
-  "count": 24
+  "count": 26
 }

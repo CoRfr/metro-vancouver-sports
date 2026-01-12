@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metro Vancouver Sports Schedules</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
         * {
             margin: 0;
@@ -685,19 +687,43 @@
         .info-box {
             background: white;
             border-radius: 12px;
-            padding: 20px;
             margin-bottom: 20px;
             border-left: 4px solid #667eea;
         }
 
-        .info-box h3 {
+        .info-box summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
             color: #667eea;
-            margin-bottom: 10px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-box summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .info-box summary::before {
+            content: '▶';
+            font-size: 0.7rem;
+            transition: transform 0.2s;
+        }
+
+        .info-box[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .info-box-content {
+            padding: 0 20px 20px;
         }
 
         .info-box p {
             color: #666;
             line-height: 1.6;
+            margin-bottom: 10px;
         }
 
         .info-box a {
@@ -708,6 +734,138 @@
 
         .info-box a:hover {
             text-decoration: underline;
+        }
+
+        .data-sources {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .data-sources h4 {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .data-source-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .data-source-city {
+            font-weight: 600;
+            color: #333;
+            min-width: 120px;
+        }
+
+        .data-source-info {
+            color: #666;
+        }
+
+        /* Map modal styles */
+        .map-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .map-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .map-modal-content {
+            background: white;
+            border-radius: 12px;
+            width: 95%;
+            max-width: 1200px;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .map-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .map-modal-header h3 {
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .map-modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        #facilityMap {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .map-legend {
+            padding: 10px 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend-dot.vancouver { background: #1976d2; }
+        .legend-dot.burnaby { background: #7b1fa2; }
+        .legend-dot.northvan { background: #388e3c; }
+        .legend-dot.outdoor { background: #ef6c00; }
+
+        .view-map-btn {
+            padding: 12px 15px;
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .view-map-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(17, 153, 142, 0.4);
         }
 
         .activity-filters {
@@ -771,19 +929,34 @@
     <div class="container">
         <header>
             <h1>Metro Vancouver Public Skating</h1>
-            <p class="subtitle">Vancouver & Burnaby Community Centers</p>
+            <p class="subtitle">Vancouver, Burnaby & North Vancouver Community Centers</p>
         </header>
 
-        <div class="info-box">
-            <h3>📋 About This Schedule</h3>
-            <p>
-                This app shows sample skating sessions from Vancouver and Burnaby community centers. 
-                Schedule data is updated daily from official city recreation systems.
-                For official drop-in calendars, visit:
-                <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&defaultCalendarId=3&displayType=0&view=2" target="_blank">Vancouver Drop-in</a> |
-                <a href="https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities" target="_blank">Burnaby Drop-in</a>
-            </p>
-        </div>
+        <details class="info-box">
+            <summary>About this schedule</summary>
+            <div class="info-box-content">
+                <p id="scheduleStatus">Loading schedule data...</p>
+                <div class="data-sources">
+                    <h4>Data Sources</h4>
+                    <div class="data-source-item">
+                        <span class="data-source-city">Vancouver</span>
+                        <span class="data-source-info"><a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&defaultCalendarId=3&displayType=0&view=2" target="_blank">ActiveNet Calendar API</a></span>
+                    </div>
+                    <div class="data-source-item">
+                        <span class="data-source-city">Burnaby</span>
+                        <span class="data-source-info"><a href="https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities" target="_blank">burnaby.ca</a> (weekly schedules)</span>
+                    </div>
+                    <div class="data-source-item">
+                        <span class="data-source-city">North Vancouver</span>
+                        <span class="data-source-info"><a href="https://www.nvrc.ca/drop-in-schedules?activity=551" target="_blank">NVRC Drop-in Schedules</a></span>
+                    </div>
+                    <div class="data-source-item">
+                        <span class="data-source-city">Outdoor Rinks</span>
+                        <span class="data-source-info"><a href="https://www.robsonsquare.com/" target="_blank">Robson Square</a>, <a href="https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza" target="_blank">The Shipyards</a></span>
+                    </div>
+                </div>
+            </div>
+        </details>
 
         <div class="controls">
             <div class="filter-group">
@@ -801,6 +974,7 @@
                         <option value="all">All Cities</option>
                         <option value="Vancouver">Vancouver</option>
                         <option value="Burnaby">Burnaby</option>
+                        <option value="North Vancouver">North Vancouver</option>
                     </select>
                 </div>
 
@@ -831,6 +1005,11 @@
                         <option value="10" selected>10 km</option>
                         <option value="15">15 km</option>
                     </select>
+                </div>
+
+                <div class="filter-item">
+                    <label>&nbsp;</label>
+                    <button class="view-map-btn" id="viewMapBtn">View Map</button>
                 </div>
             </div>
 
@@ -881,6 +1060,22 @@
                 <button class="modal-close" id="modalClose">×</button>
             </div>
             <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <div class="map-modal" id="mapModal">
+        <div class="map-modal-content">
+            <div class="map-modal-header">
+                <h3>Facilities with Upcoming Sessions</h3>
+                <button class="map-modal-close" id="mapModalClose">×</button>
+            </div>
+            <div id="facilityMap"></div>
+            <div class="map-legend">
+                <div class="legend-item"><div class="legend-dot vancouver"></div> Vancouver</div>
+                <div class="legend-item"><div class="legend-dot burnaby"></div> Burnaby</div>
+                <div class="legend-item"><div class="legend-dot northvan"></div> North Vancouver</div>
+                <div class="legend-item"><div class="legend-dot outdoor"></div> Outdoor Rinks</div>
+            </div>
         </div>
     </div>
 
@@ -1086,6 +1281,11 @@
         const modalClose = document.getElementById('modalClose');
         const useLocationBtn = document.getElementById('useLocationBtn');
         const facilityMapBtn = document.getElementById('facilityMapBtn');
+        const viewMapBtn = document.getElementById('viewMapBtn');
+        const mapModal = document.getElementById('mapModal');
+        const mapModalClose = document.getElementById('mapModalClose');
+        let facilityMap = null;
+        let distanceCircle = null;
 
         // Dynamic daily schedule loading
         const loadedDays = new Map(); // Cache: dateStr -> sessions array
@@ -1182,6 +1382,21 @@
             return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
         }
 
+        function getRelativeTimeString(date) {
+            const now = new Date();
+            const diffMs = now - date;
+            const diffMins = Math.floor(diffMs / 60000);
+            const diffHours = Math.floor(diffMs / 3600000);
+            const diffDays = Math.floor(diffMs / 86400000);
+
+            if (diffMins < 1) return 'just now';
+            if (diffMins < 60) return `${diffMins} minute${diffMins !== 1 ? 's' : ''} ago`;
+            if (diffHours < 24) return `${diffHours} hour${diffHours !== 1 ? 's' : ''} ago`;
+            if (diffDays === 1) return 'yesterday';
+            if (diffDays < 7) return `${diffDays} days ago`;
+            return date.toLocaleDateString();
+        }
+
         // Rebuild allSessions from loaded days
         function rebuildAllSessions() {
             allSessions = [];
@@ -1207,14 +1422,14 @@
                 // Load index first
                 scheduleIndex = await loadScheduleIndex();
 
-                // Update info box
-                const infoBox = document.querySelector('.info-box p');
-                if (infoBox && scheduleIndex.lastUpdated) {
-                    const updateTime = new Date(scheduleIndex.lastUpdated).toLocaleString();
-                    infoBox.innerHTML = `
-                        <strong>Schedule Data</strong><br>
-                        ${scheduleIndex.totalSessions} sessions available.<br>
-                        Last updated: ${updateTime}
+                // Update status in info box
+                const statusEl = document.getElementById('scheduleStatus');
+                if (statusEl && scheduleIndex.lastUpdated) {
+                    const updateDate = new Date(scheduleIndex.lastUpdated);
+                    const relativeTime = getRelativeTimeString(updateDate);
+                    statusEl.innerHTML = `
+                        <strong>${scheduleIndex.totalSessions} sessions</strong> from ${scheduleIndex.dateRange.start} to ${scheduleIndex.dateRange.end}.<br>
+                        Last updated: ${relativeTime}
                     `;
                 }
 
@@ -1235,15 +1450,11 @@
                 allSessions = [...sampleSessions];
                 filteredSessions = [...sampleSessions];
 
-                const infoBox = document.querySelector('.info-box p');
-                if (infoBox) {
-                    infoBox.innerHTML = `
-                        <strong>⚠️ Using Sample Data</strong><br>
-                        Could not load live data. Showing sample sessions instead.<br>
-                        Error: ${error.message}<br>
-                        For actual schedules, visit:
-                        <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars" target="_blank">Vancouver Recreation</a> or
-                        <a href="https://anc.ca.apm.activecommunities.com/burnaby" target="_blank">Burnaby Recreation</a>
+                const statusEl = document.getElementById('scheduleStatus');
+                if (statusEl) {
+                    statusEl.innerHTML = `
+                        <strong style="color: #e74c3c;">Could not load live data</strong><br>
+                        Showing sample sessions instead. Error: ${error.message}
                     `;
                 }
 
@@ -1414,7 +1625,8 @@
                 const isDiscount = actName.includes('toonie') ||
                                   actName.includes('discount') ||
                                   actName.includes('free') ||
-                                  actName.includes('loonie');
+                                  actName.includes('loonie') ||
+                                  actName.includes('$2');
 
                 // Activity type matching
                 let activityMatch = false;
@@ -1502,7 +1714,8 @@
             return actName.includes('toonie') ||
                    actName.includes('discount') ||
                    actName.includes('free') ||
-                   actName.includes('loonie');
+                   actName.includes('loonie') ||
+                   actName.includes('$2');
         }
 
         function getSessionClass(session) {
@@ -2223,6 +2436,174 @@
                 filterSessions();
             }
         };
+
+        // Map functionality
+        function initMap() {
+            if (facilityMap) {
+                facilityMap.remove();
+            }
+
+            // Center on Metro Vancouver
+            facilityMap = L.map('facilityMap').setView([49.25, -123.1], 11);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(facilityMap);
+
+            // Get current date for filtering future/current sessions
+            const now = new Date();
+            const todayStr = formatDateStr(now);
+
+            // Group sessions by facility (only future/current sessions)
+            const facilitySessions = {};
+            allSessions.forEach(session => {
+                if (session.date >= todayStr) {
+                    const key = `${session.facility}-${session.lat}-${session.lng}`;
+                    if (!facilitySessions[key]) {
+                        facilitySessions[key] = {
+                            facility: session.facility,
+                            city: session.city,
+                            address: session.address,
+                            lat: session.lat,
+                            lng: session.lng,
+                            sessions: []
+                        };
+                    }
+                    facilitySessions[key].sessions.push(session);
+                }
+            });
+
+            // Color markers by city
+            const cityColors = {
+                'Vancouver': '#1976d2',
+                'Burnaby': '#7b1fa2',
+                'North Vancouver': '#388e3c'
+            };
+
+            // Add markers for each facility
+            const markers = [];
+            Object.values(facilitySessions).forEach(facility => {
+                // Check if it's an outdoor rink
+                const isOutdoor = facility.facility.includes('Robson Square') ||
+                                  facility.facility.includes('Shipyards');
+                const color = isOutdoor ? '#ef6c00' : (cityColors[facility.city] || '#666');
+
+                const markerIcon = L.divIcon({
+                    className: 'custom-marker',
+                    html: `<div style="
+                        background: ${color};
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 3px solid white;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 12px;
+                    ">${facility.sessions.length}</div>`,
+                    iconSize: [30, 30],
+                    iconAnchor: [15, 15]
+                });
+
+                const marker = L.marker([facility.lat, facility.lng], { icon: markerIcon });
+
+                // Create popup content
+                const upcomingSessions = facility.sessions
+                    .sort((a, b) => a.date.localeCompare(b.date) || a.startTime.localeCompare(b.startTime))
+                    .slice(0, 5);
+
+                let popupContent = `
+                    <div style="min-width: 200px;">
+                        <strong style="font-size: 14px;">${facility.facility}</strong><br>
+                        <span style="color: #666; font-size: 12px;">${facility.address}</span><br>
+                        <span style="color: ${color}; font-weight: 600;">${facility.sessions.length} upcoming sessions</span>
+                        <hr style="margin: 8px 0; border: none; border-top: 1px solid #eee;">
+                `;
+
+                upcomingSessions.forEach(session => {
+                    const dateObj = new Date(session.date + 'T00:00:00');
+                    const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+                    popupContent += `
+                        <div style="margin-bottom: 6px; font-size: 12px;">
+                            <strong>${dateStr}</strong> ${formatTime(session.startTime)}<br>
+                            <span style="color: #555;">${session.activityName || session.type}</span>
+                        </div>
+                    `;
+                });
+
+                if (facility.sessions.length > 5) {
+                    popupContent += `<div style="color: #667eea; font-size: 11px;">+${facility.sessions.length - 5} more sessions</div>`;
+                }
+
+                popupContent += '</div>';
+                marker.bindPopup(popupContent);
+                marker.addTo(facilityMap);
+                markers.push(marker);
+            });
+
+            // Add distance circle if user location is set
+            if (userLocation && distanceFilter.value !== '999') {
+                const radiusKm = parseFloat(distanceFilter.value);
+                distanceCircle = L.circle([userLocation.lat, userLocation.lng], {
+                    radius: radiusKm * 1000,
+                    color: '#667eea',
+                    fillColor: '#667eea',
+                    fillOpacity: 0.1,
+                    weight: 2,
+                    dashArray: '5, 5'
+                }).addTo(facilityMap);
+
+                // Add user location marker
+                const userIcon = L.divIcon({
+                    className: 'user-marker',
+                    html: `<div style="
+                        background: #e74c3c;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 3px solid white;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                    "></div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
+                });
+                L.marker([userLocation.lat, userLocation.lng], { icon: userIcon })
+                    .bindPopup('Your location')
+                    .addTo(facilityMap);
+
+                // Fit map to show all markers and the circle
+                const group = L.featureGroup([...markers, distanceCircle]);
+                facilityMap.fitBounds(group.getBounds().pad(0.1));
+            } else if (markers.length > 0) {
+                // Fit map to show all markers
+                const group = L.featureGroup(markers);
+                facilityMap.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        function showMap() {
+            mapModal.classList.add('active');
+            // Small delay to ensure modal is visible before initializing map
+            setTimeout(() => {
+                initMap();
+                facilityMap.invalidateSize();
+            }, 100);
+        }
+
+        function hideMap() {
+            mapModal.classList.remove('active');
+        }
+
+        viewMapBtn.addEventListener('click', showMap);
+        mapModalClose.addEventListener('click', hideMap);
+        mapModal.addEventListener('click', (e) => {
+            if (e.target === mapModal) {
+                hideMap();
+            }
+        });
 
         // Initialize app
         const savedSettings = loadSettings();

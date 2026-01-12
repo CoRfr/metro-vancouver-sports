@@ -2,20 +2,6 @@
   "date": "2026-01-19",
   "sessions": [
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-19",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
       "facility": "Kensington Arena",
       "city": "Burnaby",
       "address": "6050 McMurray Ave, Burnaby",
@@ -58,6 +44,19 @@
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-19",
+      "startTime": "11:00",
+      "endTime": "12:15",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-monday-1100-1215pm"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -136,6 +135,20 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-19",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
       "facility": "The Shipyards Skate Plaza",
       "city": "North Vancouver",
       "address": "125 Victory Ship Way, North Vancouver",
@@ -194,6 +207,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver",
+      "lat": 49.3156,
+      "lng": -123.0689,
+      "date": "2026-01-19",
+      "startTime": "18:45",
+      "endTime": "20:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-monday-645-845pm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -208,5 +234,5 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     }
   ],
-  "count": 14
+  "count": 16
 }

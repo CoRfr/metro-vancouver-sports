@@ -16,18 +16,17 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
     },
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
       "date": "2026-01-15",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "type": "Family Skate",
+      "activityName": "Early Years/ Family Skate 0-6yrs Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/early-years-family-skate-0-6yrs-skate-karen-magnussen-thursdays"
     },
     {
       "facility": "Killarney Rink",
@@ -90,6 +89,19 @@
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-15",
+      "startTime": "10:45",
+      "endTime": "12:15",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Social Skate: Gilmore Skate Club",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-social-skate-gilmore-skate-club-karen-magnussen"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -214,6 +226,20 @@
       "eventItemId": 592167
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-15",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
       "facility": "The Shipyards Skate Plaza",
       "city": "North Vancouver",
       "address": "125 Victory Ship Way, North Vancouver",
@@ -304,6 +330,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver",
+      "lat": 49.3189,
+      "lng": -123.0231,
+      "date": "2026-01-15",
+      "startTime": "16:00",
+      "endTime": "18:05",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-605pm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -348,6 +387,19 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593584",
       "eventItemId": 593584
+    },
+    {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver",
+      "lat": 49.3189,
+      "lng": -123.0231,
+      "date": "2026-01-15",
+      "startTime": "18:15",
+      "endTime": "19:35",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -428,5 +480,5 @@
       "eventItemId": 593898
     }
   ],
-  "count": 28
+  "count": 32
 }

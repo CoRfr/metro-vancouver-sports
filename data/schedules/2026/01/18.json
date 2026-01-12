@@ -8,7 +8,7 @@
       "lat": 49.2827,
       "lng": -123.1207,
       "date": "2026-01-18",
-      "startTime": "09:00",
+      "startTime": "12:00",
       "endTime": "21:00",
       "type": "Public Skating",
       "activityName": "Free Public Skating",
@@ -30,6 +30,19 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-18",
+      "startTime": "13:15",
+      "endTime": "14:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-sunday-115-245pm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -42,7 +55,20 @@
       "activityName": "Public Skate",
       "ageRange": "All ages, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-18",
+      "startTime": "15:15",
+      "endTime": "16:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-karen-magnussen-sunday-315pm-445pm"
     }
   ],
-  "count": 3
+  "count": 5
 }

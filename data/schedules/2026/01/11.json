@@ -2,20 +2,6 @@
   "date": "2026-01-11",
   "sessions": [
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-11",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver",
@@ -46,6 +32,20 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/590797",
       "eventItemId": 590797
+    },
+    {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-11",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
     },
     {
       "facility": "The Shipyards Skate Plaza",

@@ -2,20 +2,6 @@
   "date": "2026-01-21",
   "sessions": [
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-21",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -124,6 +110,20 @@
       "eventItemId": 602895
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-21",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
       "facility": "The Shipyards Skate Plaza",
       "city": "North Vancouver",
       "address": "125 Victory Ship Way, North Vancouver",
@@ -152,6 +152,45 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-21",
+      "startTime": "15:45",
+      "endTime": "17:15",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-karen-magnussen-wednesday-345-515pm"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-21",
+      "startTime": "17:30",
+      "endTime": "18:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver",
+      "lat": 49.3217,
+      "lng": -123.0745,
+      "date": "2026-01-21",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-wednesday-700-800pm"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver",
@@ -168,5 +207,5 @@
       "eventItemId": 592192
     }
   ],
-  "count": 11
+  "count": 14
 }

@@ -12,9 +12,9 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 │   ├── package.json          # Node.js dependencies
 │   └── check-other-facilities.js  # Utility to check for new facilities
 ├── data/
-│   ├── schedules.json      # Scraped data in JSON format
-│   ├── schedules.ics       # iCal format for calendar apps
-│   └── README.md           # Auto-generated summary
+│   └── schedules/          # Daily JSON files organized by date
+│       ├── index.json      # Index with metadata and date list
+│       └── YYYY/MM/DD.json # Daily schedule files
 └── .github/workflows/
     └── scrape-schedules.yml  # Automated daily scraping
 ```
@@ -63,20 +63,48 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 
 ---
 
+### North Vancouver (drupalSettings Parsing)
+
+**Method:** Extract events from Drupal FullCalendar settings
+
+**URL:** `https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All`
+
+**How it works:**
+1. Load the drop-in schedules page
+2. Access `window.drupalSettings.fullCalendarView[0].calendar_options` (JSON string)
+3. Parse the JSON and extract the `events` array
+4. Parse HTML in event titles to extract activity name and location
+
+**North Vancouver Facilities:**
+- Karen Magnussen Community Centre
+- Harry Jerome Community Recreation Centre
+- Canlan Ice Sports North Shore
+
+**Event Title Format (HTML):**
+```html
+<div class="event-title"><strong>Adult 19yr+ Skate</strong></div>
+<div class="event-location">Karen Magnussen Community Recreation Centre</div>
+<div class="event-facility">Arena</div>
+```
+
+**Note:** The calendar_options is a JSON STRING that must be parsed, not a direct object.
+
+---
+
 ### Outdoor Rinks (Seasonal)
 
 **Method:** Hardcoded seasonal hours
 
 **Facilities:**
 - **Robson Square Ice Rink** (Vancouver)
-  - Season: December 1 - February 28
-  - Hours: Daily 9am-9pm
+  - Season: November 28 - February 28
+  - Hours: Daily 12pm-9pm
   - Free admission
   - URL: https://www.robsonsquare.com/
 
 - **The Shipyards Skate Plaza** (North Vancouver)
-  - Season: November 15 - February 28
-  - Hours: Weekdays 12pm-9pm, Weekends 10am-9pm
+  - Season: November 15 - March 29
+  - Hours: Daily 12pm-8pm
   - Free admission
   - Ice cleaning: 1:30pm, 3:30pm, 5:30pm (~30min)
   - URL: https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza
@@ -89,17 +117,18 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 cd backend
 npm install
 
-# Scrape all cities
+# Scrape all cities and output daily files (default for GitHub Actions)
+node puppeteer-scraper.js --daily --output ../data/schedules
+
+# Scrape all cities to single JSON file
 node puppeteer-scraper.js --output ../data/schedules.json
 
 # Scrape specific cities
 node puppeteer-scraper.js --city vancouver --output ../data/schedules.json
 node puppeteer-scraper.js --city burnaby --output ../data/schedules.json
+node puppeteer-scraper.js --city northvan --output ../data/schedules.json
 node puppeteer-scraper.js --city outdoor --output ../data/schedules.json
 node puppeteer-scraper.js --city vancouver,outdoor --output ../data/schedules.json
-
-# Generate iCal format
-node puppeteer-scraper.js --ical --output ../data/schedules.ics
 
 # Debug mode (show browser)
 node puppeteer-scraper.js --debug --output ../data/schedules.json
