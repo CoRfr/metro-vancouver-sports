@@ -778,7 +778,6 @@
         const monthViewBtn = document.getElementById('monthViewBtn');
         const modal = document.getElementById('sessionModal');
         const modalClose = document.getElementById('modalClose');
-        const activityCheckboxes = document.querySelectorAll('.activity-checkbox input[type="checkbox"]');
         const useLocationBtn = document.getElementById('useLocationBtn');
 
         // Fetch schedule data from static JSON file
@@ -978,7 +977,9 @@
         }
 
         function getSelectedActivityTypes() {
-            return Array.from(activityCheckboxes)
+            // Get fresh checkbox elements from DOM
+            const checkboxes = activityFiltersContainer.querySelectorAll('input[type="checkbox"]:not([data-all="true"])');
+            return Array.from(checkboxes)
                 .filter(cb => cb.checked)
                 .map(cb => cb.value);
         }
@@ -1153,12 +1154,12 @@
             window.open(url, '_blank');
         }
 
-        prevMonthBtn.addEventListener('click', () => {
+        prevBtn.addEventListener('click', () => {
             currentDate.setMonth(currentDate.getMonth() - 1);
             renderCalendar();
         });
 
-        nextMonthBtn.addEventListener('click', () => {
+        nextBtn.addEventListener('click', () => {
             currentDate.setMonth(currentDate.getMonth() + 1);
             renderCalendar();
         });
@@ -1226,11 +1227,6 @@
             fetchRealData();
         });
 
-        // Initial activity checkbox listeners
-        document.querySelectorAll('.activity-checkbox input[type="checkbox"]').forEach(cb => {
-            cb.addEventListener('change', filterSessions);
-        });
-
         let postalCodeTimeout;
         postalCodeInput.addEventListener('input', () => {
             clearTimeout(postalCodeTimeout);
@@ -1242,8 +1238,10 @@
         window.showSessionDetails = showSessionDetails;
         window.addToGoogleCalendar = addToGoogleCalendar;
 
-        // Initialize app - fetch data on load
-        fetchRealData();
+        // Initialize app
+        updateActivityFilters(); // Set up activity filters for current sport
+        renderCalendar();        // Render empty calendar immediately
+        fetchRealData();         // Then fetch data
     </script>
 </body>
 </html>
