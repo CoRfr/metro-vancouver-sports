@@ -1,35 +1,7 @@
 {
   "success": true,
-  "lastUpdated": "2026-01-12T03:47:59.762Z",
+  "lastUpdated": "2026-01-12T03:49:47.392Z",
   "sessions": [
-    {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-10",
-      "startTime": "09:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "The Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver",
-      "lat": 49.3103,
-      "lng": -123.0826,
-      "date": "2026-01-10",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
     {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
@@ -121,20 +93,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/591627",
       "eventItemId": 591627
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-11",
-      "startTime": "13:45",
-      "endTime": "17:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
       "facility": "Sunset Rink",
@@ -5679,6 +5637,20 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-02-10",
+      "startTime": "09:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -5785,6 +5757,20 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
+      "facility": "The Shipyards Skate Plaza",
+      "city": "North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver",
+      "lat": 49.3103,
+      "lng": -123.0826,
+      "date": "2026-02-10",
+      "startTime": "12:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -5845,6 +5831,34 @@
       "eventItemId": 602918
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "5930 Humphries Ave, Burnaby",
+      "lat": 49.2258,
+      "lng": -122.9892,
+      "date": "2026-02-11",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Hockey",
+      "activityName": "Recreational Hockey",
+      "ageRange": "50 yrs+, Rink B",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "5930 Humphries Ave, Burnaby",
+      "lat": 49.2258,
+      "lng": -122.9892,
+      "date": "2026-02-11",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Skating",
+      "activityName": "Shoot & Score",
+      "ageRange": "18 yrs+, Rink B",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -5891,6 +5905,20 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---40-hockey---wednesday-11-45am/602898",
       "eventItemId": 602898
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "5930 Humphries Ave, Burnaby",
+      "lat": 49.2258,
+      "lng": -122.9892,
+      "date": "2026-02-11",
+      "startTime": "12:15",
+      "endTime": "13:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "ageRange": "16 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
       "facility": "West End Community Centre",
@@ -7461,5 +7489,5 @@
       "eventItemId": 592374
     }
   ],
-  "count": 491
+  "count": 493
 }
