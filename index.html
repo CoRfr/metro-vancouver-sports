@@ -1270,24 +1270,33 @@
 
         function filterSessions() {
             const selectedTypes = getSelectedActivityTypes();
-            const discountOnly = selectedTypes.includes('__discount__');
+            const showDiscount = selectedTypes.includes('__discount__');
+            const showPublic = selectedTypes.includes('Public Skating');
             const regularTypes = selectedTypes.filter(t => t !== '__discount__');
 
             filteredSessions = allSessions.filter(session => {
                 const cityMatch = cityFilter.value === 'all' || session.city === cityFilter.value;
                 const facilityMatch = facilityFilter.value === 'all' || session.facility === facilityFilter.value;
 
-                // Activity type matching
-                let activityMatch = regularTypes.includes(session.type);
+                // Check if this is a discount/free session
+                const actName = (session.activityName || '').toLowerCase();
+                const isDiscount = actName.includes('toonie') ||
+                                  actName.includes('discount') ||
+                                  actName.includes('free') ||
+                                  actName.includes('loonie');
 
-                // Discount filter - matches toonie, discount, free, loonie in activity name
-                if (discountOnly) {
-                    const actName = (session.activityName || '').toLowerCase();
-                    const isDiscount = actName.includes('toonie') ||
-                                      actName.includes('discount') ||
-                                      actName.includes('free') ||
-                                      actName.includes('loonie');
-                    activityMatch = activityMatch || isDiscount;
+                // Activity type matching
+                let activityMatch = false;
+
+                // Discount sessions only shown if Discount filter is checked
+                if (isDiscount && session.type === 'Public Skating') {
+                    activityMatch = showDiscount;
+                } else if (session.type === 'Public Skating') {
+                    // Regular public skating (non-discount)
+                    activityMatch = showPublic;
+                } else {
+                    // Other types
+                    activityMatch = regularTypes.includes(session.type);
                 }
 
                 let distanceMatch = true;
