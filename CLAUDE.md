@@ -91,6 +91,34 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 
 ---
 
+### West Vancouver (DOM Scraping)
+
+**Method:** Scrape drop-in activities from westvancouver.ca
+
+**URL:** `https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35`
+
+**How it works:**
+1. Load the daily activities page with skating activity filters
+2. Find all `.dropins-activity` elements which have `data-startdate` attributes
+3. Extract activity name from parent `.dropins-category-title` or `.dropins-activity-group-title`
+4. Extract time from `.activity-days-time-range` element
+
+**West Vancouver Facility:**
+- West Vancouver Community Centre (Ice Arena)
+  - Address: 2121 Marine Dr, West Vancouver
+
+**DOM Structure:**
+```html
+<div class="dropins-activity" data-startdate="2026-01-15" data-day="Thu">
+  <div class="activity-location-time">
+    <div class="activity-location">Ice Arena</div>
+    <div class="activity-days-time-range">Thu, 6:15 PM-7:45 PM</div>
+  </div>
+</div>
+```
+
+---
+
 ### Outdoor Rinks (Seasonal)
 
 **Method:** Hardcoded seasonal hours
@@ -127,6 +155,7 @@ node puppeteer-scraper.js --output ../data/schedules.json
 node puppeteer-scraper.js --city vancouver --output ../data/schedules.json
 node puppeteer-scraper.js --city burnaby --output ../data/schedules.json
 node puppeteer-scraper.js --city northvan --output ../data/schedules.json
+node puppeteer-scraper.js --city westvan --output ../data/schedules.json
 node puppeteer-scraper.js --city outdoor --output ../data/schedules.json
 node puppeteer-scraper.js --city vancouver,outdoor --output ../data/schedules.json
 
@@ -141,7 +170,7 @@ node puppeteer-scraper.js --debug --output ../data/schedules.json
 ```typescript
 interface Session {
   facility: string;      // "Hillcrest Centre"
-  city: string;          // "Vancouver" | "Burnaby" | "North Vancouver"
+  city: string;          // "Vancouver" | "Burnaby" | "North Vancouver" | "West Vancouver"
   address: string;       // Full street address
   lat: number;           // Latitude
   lng: number;           // Longitude

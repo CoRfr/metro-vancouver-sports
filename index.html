@@ -849,6 +849,7 @@
         .legend-dot.vancouver { background: #1976d2; }
         .legend-dot.burnaby { background: #7b1fa2; }
         .legend-dot.northvan { background: #388e3c; }
+        .legend-dot.westvan { background: #00796b; }
         .legend-dot.outdoor { background: #ef6c00; }
 
         .view-map-btn {
@@ -929,7 +930,7 @@
     <div class="container">
         <header>
             <h1>Metro Vancouver Public Skating</h1>
-            <p class="subtitle">Vancouver, Burnaby & North Vancouver Community Centers</p>
+            <p class="subtitle">Vancouver, Burnaby, North & West Vancouver Community Centers</p>
         </header>
 
         <details class="info-box">
@@ -949,6 +950,10 @@
                     <div class="data-source-item">
                         <span class="data-source-city">North Vancouver</span>
                         <span class="data-source-info"><a href="https://www.nvrc.ca/drop-in-schedules?activity=551" target="_blank">NVRC Drop-in Schedules</a></span>
+                    </div>
+                    <div class="data-source-item">
+                        <span class="data-source-city">West Vancouver</span>
+                        <span class="data-source-info"><a href="https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results" target="_blank">westvancouver.ca</a></span>
                     </div>
                     <div class="data-source-item">
                         <span class="data-source-city">Outdoor Rinks</span>
@@ -975,6 +980,7 @@
                         <option value="Vancouver">Vancouver</option>
                         <option value="Burnaby">Burnaby</option>
                         <option value="North Vancouver">North Vancouver</option>
+                        <option value="West Vancouver">West Vancouver</option>
                     </select>
                 </div>
 
@@ -1074,6 +1080,7 @@
                 <div class="legend-item"><div class="legend-dot vancouver"></div> Vancouver</div>
                 <div class="legend-item"><div class="legend-dot burnaby"></div> Burnaby</div>
                 <div class="legend-item"><div class="legend-dot northvan"></div> North Vancouver</div>
+                <div class="legend-item"><div class="legend-dot westvan"></div> West Vancouver</div>
                 <div class="legend-item"><div class="legend-dot outdoor"></div> Outdoor Rinks</div>
             </div>
         </div>
@@ -1774,9 +1781,9 @@
             const todayDateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
             const shortDayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-            // Generate 7 days centered around current date (3 before, current, 3 after)
+            // Generate 8 days: yesterday + today + next 6 days
             let dayButtonsHtml = '';
-            for (let offset = -3; offset <= 3; offset++) {
+            for (let offset = -1; offset <= 6; offset++) {
                 const btnDate = new Date(currentDate);
                 btnDate.setDate(currentDate.getDate() + offset);
                 const btnDateStr = `${btnDate.getFullYear()}-${String(btnDate.getMonth() + 1).padStart(2, '0')}-${String(btnDate.getDate()).padStart(2, '0')}`;
@@ -2477,7 +2484,8 @@
             const cityColors = {
                 'Vancouver': '#1976d2',
                 'Burnaby': '#7b1fa2',
-                'North Vancouver': '#388e3c'
+                'North Vancouver': '#388e3c',
+                'West Vancouver': '#00796b'
             };
 
             // Add markers for each facility

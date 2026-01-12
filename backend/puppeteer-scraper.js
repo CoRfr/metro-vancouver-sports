@@ -120,6 +120,17 @@ const CONFIG = {
       },
     },
   },
+
+  // West Vancouver config - uses westvancouver.ca daily activities
+  westvan: {
+    dropInUrl: 'https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35',
+    facility: {
+      name: 'West Vancouver Community Centre',
+      lat: 49.3270,
+      lng: -123.1660,
+      address: '2121 Marine Dr, West Vancouver',
+    },
+  },
 };
 
 /**
@@ -635,6 +646,142 @@ function parseNorthVanEventFromDOM(event) {
 }
 
 /**
+ * Scrape West Vancouver drop-in skating schedules from westvancouver.ca
+ */
+async function scrapeWestVan(browser) {
+  console.error('Scraping West Vancouver...');
+  const allSessions = [];
+  const seenKeys = new Set();
+
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 800 });
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+  try {
+    await page.goto(CONFIG.westvan.dropInUrl, { waitUntil: 'networkidle0', timeout: 60000 });
+    await new Promise(r => setTimeout(r, 3000));
+
+    const pageTitle = await page.title();
+    console.error(`    Page loaded: ${pageTitle}`);
+
+    // Extract all activities from .dropins-activity elements
+    const activities = await page.evaluate(() => {
+      const events = [];
+
+      // Find all activity elements
+      const activityEls = document.querySelectorAll('.dropins-activity');
+
+      activityEls.forEach(actEl => {
+        const dateStr = actEl.getAttribute('data-startdate');
+        if (!dateStr) return;
+
+        // Get activity name from parent category
+        const categoryEl = actEl.closest('.dropins-category');
+        const categoryTitle = categoryEl?.querySelector('.dropins-category-title')?.innerText.trim();
+
+        // Get activity group name
+        const groupEl = actEl.closest('.dropins-activity-group');
+        const groupTitle = groupEl?.querySelector('.dropins-activity-group-title')?.innerText.trim();
+
+        const activityName = groupTitle || categoryTitle || 'Skating';
+
+        // Get time from activity-location-time
+        const locationTimeEl = actEl.querySelector('.activity-location-time');
+        const timeRangeEl = actEl.querySelector('.activity-days-time-range');
+
+        let location = 'Ice Arena';
+        let startTime = '';
+        let endTime = '';
+
+        if (locationTimeEl) {
+          const locationEl = locationTimeEl.querySelector('.activity-location');
+          if (locationEl) {
+            location = locationEl.innerText.trim();
+          }
+        }
+
+        if (timeRangeEl) {
+          const timeText = timeRangeEl.innerText.trim();
+          // Parse "Sun, 12:45 PM-2:00 PM"
+          const timeMatch = timeText.match(/(\d{1,2}:\d{2})\s*(AM|PM)\s*-\s*(\d{1,2}:\d{2})\s*(AM|PM)/i);
+          if (timeMatch) {
+            const [, startH, startP, endH, endP] = timeMatch;
+            // Convert to 24-hour format
+            const to24 = (time, period) => {
+              let [h, m] = time.split(':').map(Number);
+              if (period.toUpperCase() === 'PM' && h < 12) h += 12;
+              if (period.toUpperCase() === 'AM' && h === 12) h = 0;
+              return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+            };
+            startTime = to24(startH, startP);
+            endTime = to24(endH, endP);
+          }
+        }
+
+        // Get registration URL
+        const registerLink = actEl.querySelector('a.activity-register');
+        const activityUrl = registerLink ? registerLink.href : '';
+
+        if (startTime && endTime) {
+          events.push({
+            date: dateStr,
+            activityName,
+            location,
+            startTime,
+            endTime,
+            activityUrl
+          });
+        }
+      });
+
+      return events;
+    });
+
+    console.error(`    Found ${activities.length} activities`);
+
+    // Convert to session format
+    const facility = CONFIG.westvan.facility;
+    for (const activity of activities) {
+      const eventKey = `${activity.date}-${activity.startTime}-${activity.activityName}`;
+      if (seenKeys.has(eventKey)) continue;
+      seenKeys.add(eventKey);
+
+      // Determine activity type
+      const actName = activity.activityName.toLowerCase();
+      let type = 'Public Skating';
+      if (actName.includes('family')) type = 'Family Skate';
+      else if (actName.includes('hockey') || actName.includes('stick') || actName.includes('puck')) type = 'Drop-in Hockey';
+      else if (actName.includes('adult') && actName.includes('skate')) type = 'Public Skating';
+      else if (actName.includes('figure') || actName.includes('dance')) type = 'Public Skating';
+      else if (actName.includes('toonie')) type = 'Discount Skate';
+
+      allSessions.push({
+        facility: facility.name,
+        city: 'West Vancouver',
+        address: facility.address,
+        lat: facility.lat,
+        lng: facility.lng,
+        date: activity.date,
+        startTime: activity.startTime,
+        endTime: activity.endTime,
+        type,
+        activityName: activity.activityName,
+        activityUrl: activity.activityUrl || CONFIG.westvan.dropInUrl,
+      });
+    }
+
+    console.error(`  West Vancouver: ${allSessions.length} sessions`);
+
+  } catch (e) {
+    console.error(`  Error scraping West Vancouver: ${e.message}`);
+  } finally {
+    await page.close();
+  }
+
+  return allSessions;
+}
+
+/**
  * Get outdoor rink schedules (Robson Square, Shipyards)
  * These have fixed seasonal hours
  */
@@ -924,10 +1071,10 @@ function generateICal(sessions) {
 
 /**
  * Main scraping function
- * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'northvan', 'outdoor'] }
+ * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, cities = ['vancouver', 'burnaby', 'northvan', 'outdoor'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'] } = options;
 
   let browser;
   const allSessions = [];
@@ -965,6 +1112,18 @@ async function scrapeAll(options = {}) {
     if (cities.includes('northvan')) {
       const northvanSessions = await scrapeNorthVan(browser);
       for (const session of northvanSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
+    // Scrape West Vancouver
+    if (cities.includes('westvan')) {
+      const westvanSessions = await scrapeWestVan(browser);
+      for (const session of westvanSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
         if (!seenKeys.has(key)) {
           seenKeys.add(key);
@@ -1082,7 +1241,7 @@ async function main() {
       i++;
     }
   }
-  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'northvan', 'outdoor'];
+  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'];
 
   console.error('Metro Vancouver Skating Schedule Scraper');
   console.error('========================================');
