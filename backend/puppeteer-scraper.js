@@ -408,7 +408,9 @@ function getOutdoorRinks() {
   const allSessions = [];
 
   // Outdoor rink configs with seasonal dates and hours
+  // Start from yesterday to account for timezone differences (scraper runs in UTC)
   const today = new Date();
+  today.setDate(today.getDate() - 1); // Go back 1 day for Pacific timezone coverage
   const currentMonth = today.getMonth(); // 0-11
   // If we're in Jan-Feb, season started last year; if Nov-Dec, season starts this year
   const seasonYear = currentMonth <= 2 ? today.getFullYear() - 1 : today.getFullYear();
