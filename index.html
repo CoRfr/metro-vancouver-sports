@@ -115,7 +115,7 @@
             flex: 1;
         }
 
-        #useLocationBtn, #facilityMapBtn {
+        #useLocationBtn {
             padding: 12px 15px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -127,14 +127,112 @@
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        #useLocationBtn:hover, #facilityMapBtn:hover:not(:disabled) {
+        #useLocationBtn:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
         }
 
-        #facilityMapBtn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .filter-item-wide {
+            grid-column: span 2;
+        }
+
+        .multi-select {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .multi-select-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 12px;
+            background: #f0f0f0;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .multi-select-item:hover {
+            background: #e0e0e0;
+        }
+
+        .multi-select-item:has(input:checked) {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .multi-select-item input {
+            width: 14px;
+            height: 14px;
+            accent-color: white;
+        }
+
+        .filter-item-facility {
+            grid-column: span 2;
+        }
+
+        .facility-filter-container {
+            max-height: 150px;
+            overflow-y: auto;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .facility-multi-select {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facility-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .facility-item:last-child {
+            border-bottom: none;
+        }
+
+        .facility-item:hover {
+            background: #f0f0f0;
+        }
+
+        .facility-item:has(input:checked) {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+        }
+
+        .facility-item input {
+            width: 16px;
+            height: 16px;
+            accent-color: #667eea;
+        }
+
+        .facility-item-name {
+            flex: 1;
+            font-size: 0.9rem;
+        }
+
+        .facility-item-distance {
+            font-size: 0.75rem;
+            color: #888;
+            font-weight: 500;
+        }
+
+        .facility-item-city {
+            font-size: 0.7rem;
+            color: #aaa;
+            padding: 2px 6px;
+            background: #f0f0f0;
+            border-radius: 4px;
         }
 
         .calendar-container {
@@ -482,6 +580,24 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+
+        .timeline-event-city {
+            position: absolute;
+            top: 2px;
+            right: 3px;
+            font-size: 0.55rem;
+            font-weight: 600;
+            color: rgba(0,0,0,0.4);
+            letter-spacing: 0.5px;
+        }
+
+        .timeline-event-icon {
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+            font-size: 0.85rem;
+            opacity: 0.7;
         }
 
         .no-sessions-message {
@@ -991,25 +1107,23 @@
                     </select>
                 </div>
 
-                <div class="filter-item">
-                    <label for="cityFilter">City</label>
-                    <select id="cityFilter">
-                        <option value="all">All Cities</option>
-                        <option value="Vancouver">Vancouver</option>
-                        <option value="Burnaby">Burnaby</option>
-                        <option value="North Vancouver">North Vancouver</option>
-                        <option value="West Vancouver">West Vancouver</option>
-                        <option value="New Westminster">New Westminster</option>
-                    </select>
+                <div class="filter-item filter-item-wide">
+                    <label>City</label>
+                    <div class="multi-select" id="cityFilter">
+                        <label class="multi-select-item"><input type="checkbox" value="Vancouver" checked><span>VAN</span></label>
+                        <label class="multi-select-item"><input type="checkbox" value="Burnaby" checked><span>BBY</span></label>
+                        <label class="multi-select-item"><input type="checkbox" value="North Vancouver" checked><span>NV</span></label>
+                        <label class="multi-select-item"><input type="checkbox" value="West Vancouver" checked><span>WV</span></label>
+                        <label class="multi-select-item"><input type="checkbox" value="New Westminster" checked><span>NW</span></label>
+                    </div>
                 </div>
 
-                <div class="filter-item">
-                    <label for="facilityFilter">Facility</label>
-                    <div class="location-row">
-                        <select id="facilityFilter">
-                            <option value="all">All Facilities</option>
-                        </select>
-                        <button id="facilityMapBtn" title="View on map" disabled>📍</button>
+                <div class="filter-item filter-item-facility">
+                    <label>Facility</label>
+                    <div class="facility-filter-container">
+                        <div class="facility-multi-select" id="facilityFilter">
+                            <!-- Populated dynamically -->
+                        </div>
                     </div>
                 </div>
 
@@ -1307,7 +1421,6 @@
         const modal = document.getElementById('sessionModal');
         const modalClose = document.getElementById('modalClose');
         const useLocationBtn = document.getElementById('useLocationBtn');
-        const facilityMapBtn = document.getElementById('facilityMapBtn');
         const viewMapBtn = document.getElementById('viewMapBtn');
         const mapModal = document.getElementById('mapModal');
         const mapModalClose = document.getElementById('mapModalClose');
@@ -1544,13 +1657,55 @@
         }
 
         function initializeFilters() {
-            const facilities = [...new Set(allSessions.map(s => s.facility))].sort();
-            facilityFilter.innerHTML = '<option value="all">All Facilities</option>';
+            updateFacilityFilter();
+        }
+
+        function updateFacilityFilter() {
+            // Get unique facilities with their coordinates
+            const facilitiesMap = new Map();
+            allSessions.forEach(s => {
+                if (!facilitiesMap.has(s.facility)) {
+                    facilitiesMap.set(s.facility, { name: s.facility, lat: s.lat, lng: s.lng, city: s.city });
+                }
+            });
+
+            let facilities = Array.from(facilitiesMap.values());
+
+            // Sort by distance if user location is available
+            if (userLocation) {
+                facilities = facilities.map(f => ({
+                    ...f,
+                    distance: calculateDistance(userLocation.lat, userLocation.lng, f.lat, f.lng)
+                })).sort((a, b) => a.distance - b.distance);
+            } else {
+                facilities.sort((a, b) => a.name.localeCompare(b.name));
+            }
+
+            // Get currently selected facilities
+            const currentSelected = new Set(
+                Array.from(facilityFilter.querySelectorAll('input:checked')).map(cb => cb.value)
+            );
+            const isFirstLoad = facilityFilter.children.length === 0;
+
+            facilityFilter.innerHTML = '';
             facilities.forEach(f => {
-                const option = document.createElement('option');
-                option.value = f;
-                option.textContent = f;
-                facilityFilter.appendChild(option);
+                const isChecked = isFirstLoad || currentSelected.has(f.name);
+                const distanceStr = f.distance !== undefined ? `${f.distance.toFixed(1)} km` : '';
+                const cityAbbr = getCityAbbr(f.city);
+
+                const label = document.createElement('label');
+                label.className = 'facility-item';
+                label.innerHTML = `
+                    <input type="checkbox" value="${f.name}" ${isChecked ? 'checked' : ''}>
+                    <span class="facility-item-name">${shortFacilityName(f.name)}</span>
+                    <span class="facility-item-city">${cityAbbr}</span>
+                    ${distanceStr ? `<span class="facility-item-distance">${distanceStr}</span>` : ''}
+                `;
+                label.querySelector('input').addEventListener('change', () => {
+                    filterSessions();
+                    saveSettings();
+                });
+                facilityFilter.appendChild(label);
             });
         }
 
@@ -1590,6 +1745,7 @@
             const postalCode = postalCodeInput.value.trim();
             if (!postalCode) {
                 userLocation = null;
+                updateFacilityFilter();
                 filterSessions();
                 return;
             }
@@ -1597,11 +1753,11 @@
             const coords = await geocodePostalCode(postalCode);
             if (coords) {
                 userLocation = coords;
-                filterSessions();
             } else {
                 userLocation = null;
-                filterSessions();
             }
+            updateFacilityFilter(); // Re-sort facilities by distance
+            filterSessions();
         }
 
         async function reverseGeocode(lat, lng) {
@@ -1634,12 +1790,13 @@
                     const lng = position.coords.longitude;
                     
                     userLocation = { lat, lng };
-                    
+
                     const postalCode = await reverseGeocode(lat, lng);
                     if (postalCode) {
                         postalCodeInput.value = postalCode;
                     }
-                    
+
+                    updateFacilityFilter(); // Re-sort facilities by distance
                     filterSessions();
                     useLocationBtn.textContent = '📍 Use My Location';
                     useLocationBtn.disabled = false;
@@ -1667,9 +1824,14 @@
             const showPublic = selectedTypes.includes('Public Skating');
             const regularTypes = selectedTypes.filter(t => t !== '__discount__');
 
+            // Get selected cities from multi-select
+            const selectedCities = Array.from(cityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
+            // Get selected facilities from multi-select
+            const selectedFacilities = Array.from(facilityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
+
             filteredSessions = allSessions.filter(session => {
-                const cityMatch = cityFilter.value === 'all' || session.city === cityFilter.value;
-                const facilityMatch = facilityFilter.value === 'all' || session.facility === facilityFilter.value;
+                const cityMatch = selectedCities.length === 0 || selectedCities.includes(session.city);
+                const facilityMatch = selectedFacilities.length === 0 || selectedFacilities.includes(session.facility);
 
                 // Check if this is a discount/free session
                 const actName = (session.activityName || '').toLowerCase();
@@ -1716,6 +1878,17 @@
             const ampm = h >= 12 ? 'PM' : 'AM';
             const displayHour = h % 12 || 12;
             return `${displayHour}:${minutes} ${ampm}`;
+        }
+
+        function getCityAbbr(city) {
+            const abbrs = {
+                'Vancouver': 'VAN',
+                'Burnaby': 'BBY',
+                'North Vancouver': 'NV',
+                'West Vancouver': 'WV',
+                'New Westminster': 'NW',
+            };
+            return abbrs[city] || city.substring(0, 3).toUpperCase();
         }
 
         function shortFacilityName(facility) {
@@ -1805,6 +1978,35 @@
             if (type === 'Family Hockey') return 'hockey';
             if (type === 'Figure Skating') return 'figure';
             return 'public';
+        }
+
+        function getSessionIcon(session) {
+            const type = session.type;
+            const actName = (session.activityName || '').toLowerCase();
+
+            // Check for outdoor rinks
+            if (session.facility.includes('Robson Square') || session.facility.includes('Shipyards')) {
+                return '🌲'; // Outdoor
+            }
+
+            // Check activity type
+            if (type === 'Family Hockey' || actName.includes('hockey') || actName.includes('shinny')) {
+                return '🏒';
+            }
+            if (type === 'Figure Skating' || actName.includes('figure') || actName.includes('dance')) {
+                return '💃';
+            }
+            if (type === 'Family Skate' || actName.includes('family') || actName.includes('parent')) {
+                return '👨‍👩‍👧';
+            }
+            if (actName.includes('adult') || actName.includes('19+') || actName.includes('19yr')) {
+                return '🧑';
+            }
+            if (actName.includes('toonie') || actName.includes('discount') || actName.includes('free') || actName.includes('loonie')) {
+                return '💰';
+            }
+            // Default skating icon
+            return '⛸️';
         }
 
         function renderCalendar() {
@@ -1987,6 +2189,8 @@
                         <div class="timeline-event ${sessionClass}${pastClass}"
                              style="top: ${top}px; height: ${height}px; left: ${left}%; width: ${width}%;"
                              onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
+                            <div class="timeline-event-city">${getCityAbbr(session.city)}</div>
+                            <div class="timeline-event-icon">${getSessionIcon(session)}</div>
                             <div class="timeline-event-time">${formatTime(session.startTime)} - ${formatTime(session.endTime)}</div>
                             <div class="timeline-event-name">${activityName}</div>
                             <div class="timeline-event-location">${session.facility}</div>
@@ -2299,18 +2503,6 @@
             }
         });
 
-        facilityMapBtn.addEventListener('click', () => {
-            const selectedFacility = facilityFilter.value;
-            if (selectedFacility !== 'all') {
-                // Find the facility's address from allSessions
-                const facilitySession = allSessions.find(s => s.facility === selectedFacility);
-                if (facilitySession) {
-                    const query = encodeURIComponent(facilitySession.address || selectedFacility + ', ' + facilitySession.city);
-                    window.open(`https://www.google.com/maps/search/?api=1&query=${query}`, '_blank');
-                }
-            }
-        });
-
         // Update activity checkboxes when sport changes
         function updateActivityFilters() {
             const config = SPORTS_CONFIG[currentSport];
@@ -2383,11 +2575,13 @@
         const STORAGE_KEY = 'skatingScheduleSettings';
 
         function saveSettings() {
+            const selectedCities = Array.from(cityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
+            const selectedFacilities = Array.from(facilityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
             const settings = {
                 postalCode: postalCodeInput.value,
                 userLocation: userLocation,
-                city: cityFilter.value,
-                facility: facilityFilter.value,
+                cities: selectedCities,
+                facilities: selectedFacilities,
                 distance: distanceFilter.value,
                 viewMode: viewMode,
                 activityTypes: getSelectedActivityTypes()
@@ -2422,8 +2616,10 @@
             }
 
             // Apply filters
-            if (settings.city) {
-                cityFilter.value = settings.city;
+            if (settings.cities && Array.isArray(settings.cities)) {
+                cityFilter.querySelectorAll('input').forEach(cb => {
+                    cb.checked = settings.cities.includes(cb.value);
+                });
             }
             if (settings.distance) {
                 distanceFilter.value = settings.distance;
@@ -2457,17 +2653,10 @@
         }
 
         // Save settings when filters change
-        cityFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
-        distanceFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
-
-        // Override facility filter listener to also save
-        facilityFilter.removeEventListener('change', filterSessions);
-        facilityFilter.addEventListener('change', () => {
-            const selectedFacility = facilityFilter.value;
-            facilityMapBtn.disabled = selectedFacility === 'all';
-            filterSessions();
-            saveSettings();
+        cityFilter.querySelectorAll('input').forEach(cb => {
+            cb.addEventListener('change', () => { filterSessions(); saveSettings(); });
         });
+        distanceFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
 
         // Save on view mode change
         const originalDayClick = dayViewBtn.onclick;
@@ -2507,9 +2696,10 @@
         fetchRealData = async function() {
             await originalFetchRealData();
             const saved = loadSettings();
-            if (saved?.facility) {
-                facilityFilter.value = saved.facility;
-                facilityMapBtn.disabled = saved.facility === 'all';
+            if (saved?.facilities && Array.isArray(saved.facilities)) {
+                facilityFilter.querySelectorAll('input').forEach(cb => {
+                    cb.checked = saved.facilities.includes(cb.value);
+                });
                 filterSessions();
             }
         };
