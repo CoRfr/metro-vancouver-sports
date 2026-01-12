@@ -58,8 +58,8 @@ const CONFIG = {
     facilities: {
       'kensington': {
         name: 'Kensington Complex',
-        lat: 49.2569,
-        lng: -123.0340,
+        lat: 49.2778,
+        lng: -122.9755,
         address: '6159 Curtis St, Burnaby',
         locationRef: '3046',
       },
@@ -346,7 +346,7 @@ function getBurnabySchedules() {
     'kensington': {
       name: 'Kensington Complex',
       address: '6159 Curtis St, Burnaby',
-      lat: 49.2569, lng: -123.0340,
+      lat: 49.2778, lng: -122.9755,
       url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046',
     },
     'rosemary-brown': {
