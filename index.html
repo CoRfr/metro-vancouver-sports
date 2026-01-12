@@ -442,6 +442,11 @@
             border-left: 4px solid #c2185b;
         }
 
+        .timeline-event.discount {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 4px solid #388e3c;
+        }
+
         .timeline-event-time {
             font-weight: 700;
             font-size: 0.75rem;
@@ -578,6 +583,12 @@
             background: #fce4ec;
             color: #c2185b;
             border: 1px solid #f48fb1;
+        }
+
+        .session-pill.discount {
+            background: #e8f5e9;
+            color: #388e3c;
+            border: 1px solid #81c784;
         }
 
         .modal {
@@ -1366,7 +1377,19 @@
             }
         }
 
-        function getSessionClass(type) {
+        function isDiscountSession(session) {
+            const actName = (session.activityName || '').toLowerCase();
+            return actName.includes('toonie') ||
+                   actName.includes('discount') ||
+                   actName.includes('free') ||
+                   actName.includes('loonie');
+        }
+
+        function getSessionClass(session) {
+            // Check for discount/free sessions first
+            if (isDiscountSession(session)) return 'discount';
+
+            const type = typeof session === 'string' ? session : session.type;
             if (type === 'Public Skating') return 'public';
             if (type === 'Family Skate') return 'family';
             if (type === 'Family Hockey') return 'hockey';
@@ -1530,7 +1553,7 @@
                     const width = (100 / totalColumns) - 1;
                     const left = column * (100 / totalColumns);
 
-                    const sessionClass = getSessionClass(session.type);
+                    const sessionClass = getSessionClass(session);
                     const activityName = session.activityName || session.type;
 
                     // Check if session has ended (for past styling)
@@ -1599,7 +1622,7 @@
                     sessionsHTML = '<div class="day-sessions">';
                     daySessions.slice(0, 4).forEach(session => {
                         const activityName = session.activityName || session.type;
-                        sessionsHTML += `<div class="session-pill ${getSessionClass(session.type)}" onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
+                        sessionsHTML += `<div class="session-pill ${getSessionClass(session)}" onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
                     });
                     if (daySessions.length > 4) {
                         sessionsHTML += `<div class="session-pill" style="background: #f5f5f5; color: #666; cursor: default;">+${daySessions.length - 4} more</div>`;
@@ -1657,7 +1680,7 @@
                 if (daySessions.length > 0) {
                     sessionsHTML = '<div class="day-sessions">';
                     daySessions.slice(0, 3).forEach(session => {
-                        sessionsHTML += `<div class="session-pill ${getSessionClass(session.type)}" onclick='event.stopPropagation(); showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
+                        sessionsHTML += `<div class="session-pill ${getSessionClass(session)}" onclick='event.stopPropagation(); showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
                     });
                     if (daySessions.length > 3) {
                         sessionsHTML += `<div class="session-pill" style="background: #f5f5f5; color: #666; cursor: default;">+${daySessions.length - 3} more</div>`;
