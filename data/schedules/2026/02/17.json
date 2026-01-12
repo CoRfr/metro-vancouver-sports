@@ -1,0 +1,70 @@
+{
+  "date": "2026-02-17",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver",
+      "lat": 49.2438,
+      "lng": -123.109,
+      "date": "2026-02-17",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Hillcrest Arena - Stick, Puck & Ring - Tuesday 10:00am",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---tuesday-10-00am/594482",
+      "eventItemId": 594482
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver",
+      "lat": 49.2713,
+      "lng": -123.157,
+      "date": "2026-02-17",
+      "startTime": "10:15",
+      "endTime": "11:30",
+      "type": "Hockey",
+      "activityName": "Kitsilano Arena - Public Hockey - Tuesday 10:15am",
+      "description": "Recreational hockey game for those 19 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---public-hockey---tuesday-10-15am/590821",
+      "eventItemId": 590821
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver",
+      "lat": 49.2438,
+      "lng": -123.109,
+      "date": "2026-02-17",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Figure Skating",
+      "activityName": "Hillcrest Arena - Public Figure Skating - Tuesday 11:45am",
+      "description": "This session is for those looking to practice their jumps, spins and field moves.  No partners or pairs skating allowed. No skate rentals, and no lessons are provided.   *Monthly Flexipass and 10-Vis",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-figure-skating---tuesday-11-45am/594494",
+      "eventItemId": 594494
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver",
+      "lat": 49.2713,
+      "lng": -123.157,
+      "date": "2026-02-17",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Kitsilano Arena - Stick, Puck & Ring - Tuesday 11:45am",
+      "description": "For those 19 years and older. Helmets and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants must sign",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---stick-puck-ring---tuesday-11-45am/590809",
+      "eventItemId": 590809
+    }
+  ],
+  "count": 4
+}

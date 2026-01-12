@@ -14,6 +14,7 @@
 
 const puppeteer = require('puppeteer-core');
 const fs = require('fs');
+const path = require('path');
 
 // Configuration
 const CONFIG = {
@@ -758,14 +759,74 @@ async function scrapeAll(options = {}) {
 }
 
 /**
+ * Write sessions to daily JSON files organized as schedules/YYYY/MM/DD.json
+ */
+function writeDailyFiles(result, outputDir) {
+  // Group sessions by date
+  const sessionsByDate = {};
+  for (const session of result.sessions) {
+    if (!sessionsByDate[session.date]) {
+      sessionsByDate[session.date] = [];
+    }
+    sessionsByDate[session.date].push(session);
+  }
+
+  // Write each day's file
+  const dates = Object.keys(sessionsByDate).sort();
+  for (const dateStr of dates) {
+    const [year, month, day] = dateStr.split('-');
+    const dirPath = path.join(outputDir, year, month);
+    fs.mkdirSync(dirPath, { recursive: true });
+
+    const filePath = path.join(dirPath, `${day}.json`);
+    const dayData = {
+      date: dateStr,
+      sessions: sessionsByDate[dateStr],
+      count: sessionsByDate[dateStr].length,
+    };
+    fs.writeFileSync(filePath, JSON.stringify(dayData, null, 2));
+  }
+
+  // Write index file with metadata
+  const indexData = {
+    success: true,
+    lastUpdated: result.lastUpdated,
+    totalSessions: result.count,
+    dateRange: {
+      start: dates[0],
+      end: dates[dates.length - 1],
+    },
+    dates: dates,
+  };
+  fs.writeFileSync(path.join(outputDir, 'index.json'), JSON.stringify(indexData, null, 2));
+
+  // Print summary
+  console.error(`\n  Schedule Summary:`);
+  console.error(`  ─────────────────────────────────────────`);
+  console.error(`  Total files: ${dates.length}`);
+  console.error(`  Date range: ${dates[0]} to ${dates[dates.length - 1]}`);
+  console.error(`  Total sessions: ${result.count}`);
+  console.error(`\n  Sessions per day:`);
+  for (const dateStr of dates) {
+    const count = sessionsByDate[dateStr].length;
+    const bar = '█'.repeat(Math.min(count, 30));
+    console.error(`    ${dateStr}: ${String(count).padStart(3)} ${bar}`);
+  }
+  console.error(`  ─────────────────────────────────────────`);
+
+  return dates.length;
+}
+
+/**
  * CLI entry point
  */
 async function main() {
   const args = process.argv.slice(2);
   const debug = args.includes('--debug');
   const ical = args.includes('--ical');
+  const daily = args.includes('--daily');
   const outputIndex = args.indexOf('--output');
-  const outputFile = outputIndex !== -1 ? args[outputIndex + 1] : null;
+  const outputPath = outputIndex !== -1 ? args[outputIndex + 1] : null;
 
   // Parse city filters: --city vancouver --city burnaby OR --city vancouver,burnaby
   const cityArgs = [];
@@ -782,18 +843,24 @@ async function main() {
   console.error(`Date: ${new Date().toISOString()}`);
   console.error(`Mode: ${debug ? 'Debug' : 'Headless'}`);
   console.error(`Cities: ${cities.join(', ')}`);
+  console.error(`Output: ${daily ? 'Daily files' : 'Single file'}`);
   console.error('');
 
   try {
     const result = await scrapeAll({ debug, cities });
 
-    const output = ical ? generateICal(result.sessions) : JSON.stringify(result, null, 2);
-
-    if (outputFile) {
-      fs.writeFileSync(outputFile, output);
-      console.error(`Output written to: ${outputFile}`);
+    if (daily && outputPath) {
+      // Write daily files to directory structure
+      fs.mkdirSync(outputPath, { recursive: true });
+      writeDailyFiles(result, outputPath);
     } else {
-      console.log(output);
+      const output = ical ? generateICal(result.sessions) : JSON.stringify(result, null, 2);
+      if (outputPath) {
+        fs.writeFileSync(outputPath, output);
+        console.error(`Output written to: ${outputPath}`);
+      } else {
+        console.log(output);
+      }
     }
 
     console.error(`\nScraping complete. Found ${result.count} sessions.`);

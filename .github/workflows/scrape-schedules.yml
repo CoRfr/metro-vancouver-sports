@@ -41,35 +41,29 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Run scraper (JSON)
+      - name: Run scraper (daily files)
         working-directory: backend
         env:
           CHROMIUM_PATH: /usr/bin/chromium-browser
         run: |
-          mkdir -p ../data
-          node puppeteer-scraper.js --output ../data/schedules.json 2>&1 | tee scrape.log
+          node puppeteer-scraper.js --daily --output ../data/schedules 2>&1 | tee scrape.log
 
-      - name: Run scraper (iCal)
-        working-directory: backend
-        env:
-          CHROMIUM_PATH: /usr/bin/chromium-browser
+      - name: Generate GitHub Summary
         run: |
-          node puppeteer-scraper.js --ical --output ../data/schedules.ics 2>&1 | tee -a scrape.log
-
-      - name: Generate schedule summary
-        run: |
-          echo "# Skating Schedule Update" > data/README.md
-          echo "" >> data/README.md
-          echo "Last updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> data/README.md
-          echo "" >> data/README.md
-          if [ -f data/schedules.json ]; then
-            COUNT=$(jq '.count' data/schedules.json)
-            echo "Total sessions: $COUNT" >> data/README.md
-            echo "" >> data/README.md
-            echo "## Available Formats" >> data/README.md
-            echo "" >> data/README.md
-            echo "- [schedules.json](schedules.json) - JSON format for web applications" >> data/README.md
-            echo "- [schedules.ics](schedules.ics) - iCal format for calendar apps" >> data/README.md
+          echo "# 🛼 Skating Schedule Update" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Updated:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/schedules/index.json ]; then
+            TOTAL=$(jq '.totalSessions' data/schedules/index.json)
+            START=$(jq -r '.dateRange.start' data/schedules/index.json)
+            END=$(jq -r '.dateRange.end' data/schedules/index.json)
+            FILES=$(jq '.dates | length' data/schedules/index.json)
+            echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Total Sessions | $TOTAL |" >> $GITHUB_STEP_SUMMARY
+            echo "| Daily Files | $FILES |" >> $GITHUB_STEP_SUMMARY
+            echo "| Date Range | $START to $END |" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Check for changes

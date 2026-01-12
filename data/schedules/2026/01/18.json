@@ -1,0 +1,48 @@
+{
+  "date": "2026-01-18",
+  "sessions": [
+    {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver",
+      "lat": 49.2827,
+      "lng": -123.1207,
+      "date": "2026-01-18",
+      "startTime": "09:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/"
+    },
+    {
+      "facility": "The Shipyards Skate Plaza",
+      "city": "North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver",
+      "lat": 49.3103,
+      "lng": -123.0826,
+      "date": "2026-01-18",
+      "startTime": "12:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "5930 Humphries Ave, Burnaby",
+      "lat": 49.2258,
+      "lng": -122.9892,
+      "date": "2026-01-18",
+      "startTime": "13:45",
+      "endTime": "17:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "ageRange": "All ages, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    }
+  ],
+  "count": 3
+}
