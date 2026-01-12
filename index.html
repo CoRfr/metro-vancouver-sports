@@ -1036,7 +1036,11 @@
         let allSessions = [];
         let filteredSessions = [];
         let userLocation = null;
+        // Default to tomorrow if it's past 9pm
         let currentDate = new Date();
+        if (currentDate.getHours() >= 21) {
+            currentDate.setDate(currentDate.getDate() + 1);
+        }
         let viewMode = 'day';
         let isLoading = false; // 'day', 'week', or 'month'
 
@@ -1671,6 +1675,10 @@
 
             const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(session.address || session.facility + ', ' + session.city)}`;
 
+            const ageRangeHTML = session.ageRange ? `<div class="session-detail"><strong>Age Range:</strong>${session.ageRange}</div>` : '';
+            const descriptionHTML = session.description ? `<div class="session-detail"><strong>Description:</strong>${session.description}</div>` : '';
+            const reserveButtonHTML = session.activityUrl ? `<a href="${session.activityUrl}" target="_blank" class="add-to-calendar" style="display: block; text-align: center; text-decoration: none; margin-top: 10px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">Reserve / Register</a>` : '';
+
             modalBody.innerHTML = `
                 <div class="session-detail">
                     <strong>Activity:</strong>
@@ -1680,6 +1688,7 @@
                     <strong>Type:</strong>
                     ${session.type}
                 </div>
+                ${ageRangeHTML}
                 <div class="session-detail">
                     <strong>Date:</strong>
                     ${new Date(session.date + 'T00:00:00').toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}${relativeStr}
@@ -1697,6 +1706,8 @@
                     ${session.address}, ${session.city}
                 </div>
                 ${distanceHTML}
+                ${descriptionHTML}
+                ${reserveButtonHTML}
                 <button class="add-to-calendar" onclick='addToGoogleCalendar(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
                     📅 Add to Google Calendar
                 </button>

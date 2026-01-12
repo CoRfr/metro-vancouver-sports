@@ -2,8 +2,8 @@
 /**
  * Puppeteer-based scraper for Metro Vancouver skating schedules
  *
- * This scraper uses the Calendar view to get all drop-in skating sessions,
- * which shows individual occurrences rather than activity series.
+ * Intercepts the ActiveNet calendar API to get all scheduled events.
+ * The API returns individual event occurrences (not series), which is what we need.
  *
  * Usage:
  *   node puppeteer-scraper.js                    # Scrape all and output JSON
@@ -14,59 +14,90 @@
 
 const puppeteer = require('puppeteer-core');
 const fs = require('fs');
-const path = require('path');
 
 // Configuration
 const CONFIG = {
-  // Browser settings
   chromiumPath: process.env.CHROMIUM_PATH || '/snap/bin/chromium',
   headless: true,
   timeout: 60000,
 
-  // Facilities with their coordinates
-  facilities: {
-    vancouver: [
-      { name: 'Britannia Community Centre', aliases: ['Britannia'], lat: 49.2754, lng: -123.0719, address: '1661 Napier St, Vancouver' },
-      { name: 'Hillcrest Centre', aliases: ['Hillcrest', 'Hillcrest Arena', 'Hillcrest Rink'], lat: 49.2438, lng: -123.1090, address: '4575 Clancy Loranger Way, Vancouver' },
-      { name: 'Kerrisdale Arena', aliases: ['Kerrisdale', 'Kerrisdale Rink'], lat: 49.2337, lng: -123.1607, address: '5851 West Boulevard, Vancouver' },
-      { name: 'Killarney Rink', aliases: ['Killarney', 'Killarney Arena'], lat: 49.2275, lng: -123.0456, address: '6260 Killarney St, Vancouver' },
-      { name: 'Kitsilano Rink', aliases: ['Kitsilano', 'Kits'], lat: 49.2713, lng: -123.1570, address: '2690 Larch St, Vancouver' },
-      { name: 'Sunset Community Centre', aliases: ['Sunset', 'Sunset Arena', 'Sunset Rink'], lat: 49.2267, lng: -123.1003, address: '6810 Main St, Vancouver' },
-      { name: 'Trout Lake Community Centre', aliases: ['Trout Lake', 'Trout Lake Rink'], lat: 49.2544, lng: -123.0636, address: '3360 Victoria Dr, Vancouver' },
-      { name: 'West End Community Centre', aliases: ['West End', 'West End Rink'], lat: 49.2863, lng: -123.1353, address: '870 Denman St, Vancouver' },
-      { name: 'Thunderbird Community Centre', aliases: ['Thunderbird', 'Thunderbird Cmty Centre'], lat: 49.2614, lng: -123.2456, address: '2311 Cassiar St, Vancouver' },
-    ],
-    burnaby: [
-      { name: 'Bill Copeland Sports Centre', aliases: ['Bill Copeland', 'Copeland'], lat: 49.2389, lng: -123.0042, address: '3676 Kensington Ave, Burnaby' },
-      { name: 'Kensington Arena', aliases: ['Kensington'], lat: 49.2267, lng: -123.0036, address: '6050 McMurray Ave, Burnaby' },
-      { name: 'Burnaby Lake Arena', aliases: ['Burnaby Lake'], lat: 49.2492, lng: -122.9567, address: '3676 Kensington Ave, Burnaby' },
-      { name: 'C.G. Brown Memorial Pool Arena', aliases: ['C.G. Brown', 'CG Brown'], lat: 49.2758, lng: -122.9833, address: '5858 Rumble St, Burnaby' },
-      { name: 'Rosemary Brown Recreation Centre', aliases: ['Rosemary Brown', 'RBR', 'Rosemary Brown Recreation Centre (RBR)'], lat: 49.2258, lng: -122.9892, address: '5930 Humphries Ave, Burnaby' },
-    ],
+  // Vancouver calendar config - uses ActiveNet API
+  vancouver: {
+    // Use view=1 and multiple locationIds to get all facilities
+    calendarUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22,23,25,26,27,28,9&displayType=0&view=1',
+    apiPattern: '/rest/onlinecalendar/multicenter/events',
+    facilities: {
+      // Map center_id to facility info (IDs from ActiveNet)
+      9: { name: 'West End Community Centre', lat: 49.2863, lng: -123.1353, address: '870 Denman St, Vancouver' },
+      22: { name: 'Hillcrest Centre', lat: 49.2438, lng: -123.1090, address: '4575 Clancy Loranger Way, Vancouver' },
+      23: { name: 'Kerrisdale Cyclone Taylor Arena', lat: 49.2337, lng: -123.1607, address: '5851 West Boulevard, Vancouver' },
+      25: { name: 'Killarney Rink', lat: 49.2275, lng: -123.0456, address: '6260 Killarney St, Vancouver' },
+      26: { name: 'Kitsilano Rink', lat: 49.2713, lng: -123.1570, address: '2690 Larch St, Vancouver' },
+      27: { name: 'Sunset Rink', lat: 49.2267, lng: -123.1003, address: '6810 Main St, Vancouver' },
+      28: { name: 'Trout Lake Rink', lat: 49.2544, lng: -123.0636, address: '3360 Victoria Dr, Vancouver' },
+    },
+    // Fallback facility matching by name
+    facilityAliases: {
+      'hillcrest': 22,
+      'kerrisdale': 23,
+      'cyclone taylor': 23,
+      'killarney': 25,
+      'kitsilano': 26,
+      'kits': 26,
+      'sunset': 27,
+      'trout lake': 28,
+      'west end': 9,
+    },
   },
 
-  // Calendar URLs - these show individual drop-in sessions
-  calendars: [
-    {
-      city: 'vancouver',
-      name: 'Vancouver Drop-in Skating',
-      // Calendar ID 3 is Drop-in Skating for Vancouver
-      baseUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars',
-      calendarId: 3,
+  // Burnaby config - uses burnaby.ca daily activities
+  burnaby: {
+    // Daily activities pages by facility
+    dailyActivitiesUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities',
+    facilities: {
+      'kensington': {
+        name: 'Kensington Arena',
+        lat: 49.2267,
+        lng: -123.0036,
+        address: '6050 McMurray Ave, Burnaby',
+        locationRef: '2986', // location_ref parameter
+      },
+      'rosemary-brown': {
+        name: 'Rosemary Brown Recreation Centre',
+        lat: 49.2258,
+        lng: -122.9892,
+        address: '5930 Humphries Ave, Burnaby',
+        locationRef: '2991',
+      },
+      'bill-copeland': {
+        name: 'Bill Copeland Sports Centre',
+        lat: 49.2389,
+        lng: -123.0042,
+        address: '3676 Kensington Ave, Burnaby',
+        locationRef: '2981',
+      },
+      'burnaby-lake': {
+        name: 'Burnaby Lake Arena',
+        lat: 49.2492,
+        lng: -122.9567,
+        address: '3676 Kensington Ave, Burnaby',
+        locationRef: '2982',
+      },
     },
-  ],
-
-  // Activity search URLs (fallback / supplementary)
-  searches: [
-    { city: 'vancouver', keyword: 'skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skating&viewMode=list' },
-    { city: 'vancouver', keyword: 'skate', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skate&viewMode=list' },
-    { city: 'burnaby', keyword: 'skating', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=skating&viewMode=list' },
-    { city: 'burnaby', keyword: 'skate', url: 'https://anc.ca.apm.activecommunities.com/burnaby/activity/search?activity_keyword=skate&viewMode=list' },
-  ],
+    // Activity type IDs on burnaby.ca
+    activityTypes: {
+      656: 'Public Skating',
+      657: 'Family Skate',
+      658: 'Toonie Skate',
+      660: 'Lap Skate',
+      661: 'Parent & Tot Skate',
+      // Add more as discovered
+    },
+  },
 };
 
 /**
- * Launch browser and create a new page
+ * Launch browser
  */
 async function createBrowser(debug = false) {
   const browser = await puppeteer.launch({
@@ -84,269 +115,430 @@ async function createBrowser(debug = false) {
   });
 
   const page = await browser.newPage();
-  await page.setViewport({ width: 1280, height: 800 });
+  // Wide viewport to show all facility columns at once
+  await page.setViewport({ width: 2560, height: 1200 });
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
   return { browser, page };
 }
 
 /**
- * Scrape calendar view for a specific month
+ * Scrape Vancouver by intercepting the calendar API
+ * The API returns ~1 week of data per request
  */
-async function scrapeCalendarMonth(page, calendar, year, month) {
-  const { city, baseUrl, calendarId } = calendar;
+async function scrapeVancouver(page) {
+  console.error('Scraping Vancouver (API intercept)...');
 
-  // Build calendar URL with specific month
-  // Format: view=2 is month view, displayType=0 shows all
-  const url = `${baseUrl}?onlineSiteId=0&defaultCalendarId=${calendarId}&displayType=0&view=2&month=${month}&year=${year}`;
+  const allSessions = [];
+  const seenEventIds = new Set();
 
-  console.error(`  Scraping ${city} calendar for ${year}-${String(month).padStart(2, '0')}...`);
+  // Use view=1 with all facility IDs - API returns ~1 week of data
+  const calendarUrl = CONFIG.vancouver.calendarUrl;
+
+  let apiData = null;
+
+  const responseHandler = async (response) => {
+    const url = response.url();
+    if (url.includes(CONFIG.vancouver.apiPattern)) {
+      try {
+        const text = await response.text();
+        apiData = JSON.parse(text);
+      } catch (e) {
+        // Ignore parse errors
+      }
+    }
+  };
+
+  page.on('response', responseHandler);
+  console.error(`  Loading calendar...`);
 
   try {
-    await page.goto(url, {
+    await page.goto(calendarUrl, {
       waitUntil: 'networkidle0',
       timeout: CONFIG.timeout,
     });
 
-    // Wait for calendar to load
-    await page.waitForSelector('.calendar-container, .fc-event, .calendar-event, [class*="calendar"]', { timeout: 15000 }).catch(() => {});
+    await new Promise(r => setTimeout(r, 3000));
 
-    // Give extra time for events to render
-    await new Promise(r => setTimeout(r, 2000));
+    if (apiData && apiData.body?.center_events) {
+      for (const center of apiData.body.center_events) {
+        const facilityInfo = CONFIG.vancouver.facilities[center.center_id] || findFacilityByName(center.center_name);
 
-    // Extract events from the calendar
-    const events = await page.evaluate(() => {
-      const results = [];
-
-      // Try multiple selectors for calendar events
-      const eventSelectors = [
-        '.fc-event',
-        '.calendar-event',
-        '[class*="event-item"]',
-        '.activity-item',
-        '[data-activity]',
-      ];
-
-      for (const selector of eventSelectors) {
-        const elements = document.querySelectorAll(selector);
-        elements.forEach(el => {
-          const text = el.textContent || '';
-          const title = el.getAttribute('title') || el.querySelector('[class*="title"]')?.textContent || '';
-          const time = el.querySelector('[class*="time"]')?.textContent || '';
-          const location = el.querySelector('[class*="location"]')?.textContent || '';
-
-          // Try to get date from parent day cell or data attribute
-          let date = el.getAttribute('data-date') || '';
-          if (!date) {
-            const dayCell = el.closest('[data-date], .fc-day, .calendar-day');
-            if (dayCell) {
-              date = dayCell.getAttribute('data-date') || '';
-            }
-          }
-
-          if (text.toLowerCase().includes('skat')) {
-            results.push({
-              text: text.trim().substring(0, 500),
-              title: title.trim(),
-              time: time.trim(),
-              location: location.trim(),
-              date: date,
-              html: el.innerHTML.substring(0, 200),
-            });
-          }
-        });
-      }
-
-      // Also check for list view items
-      const listItems = document.querySelectorAll('.list-item, .activity-row, tr[class*="activity"]');
-      listItems.forEach(el => {
-        const text = el.textContent || '';
-        if (text.toLowerCase().includes('skat')) {
-          results.push({
-            text: text.trim().substring(0, 500),
-            title: '',
-            time: '',
-            location: '',
-            date: '',
-            html: el.innerHTML.substring(0, 200),
-          });
-        }
-      });
-
-      return results;
-    });
-
-    console.error(`    Found ${events.length} potential skating events`);
-    return events;
-
-  } catch (e) {
-    console.error(`    Error scraping calendar: ${e.message}`);
-    return [];
-  }
-}
-
-/**
- * Extract structured data from activity cards (search results)
- */
-async function extractActivityCards(page) {
-  return await page.evaluate(() => {
-    const cards = document.querySelectorAll('.activity-card');
-    const results = [];
-
-    cards.forEach(card => {
-      try {
-        // Check if cancelled
-        const isCancelled = card.textContent.toLowerCase().includes('cancelled');
-        if (isCancelled) return;
-
-        // Get activity name from the link
-        const nameLink = card.querySelector('.activity-card-info__name a, .activity-card-info__name span');
-        const name = nameLink ? nameLink.textContent.trim() : '';
-
-        // Get location
-        const locationEl = card.querySelector('.activity-card-info__location');
-        const location = locationEl ? locationEl.textContent.trim().replace(/^\*/, '') : '';
-
-        // Get ALL date occurrences from the activity details
-        const cardText = card.textContent;
-
-        // Look for date range pattern first
-        const dateRangeMatch = cardText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}\s*(?:to|-)\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/i);
-
-        // Get individual date mentions
-        const dateMatches = cardText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/gi) || [];
-
-        // Get time - look for time patterns
-        let timeText = '';
-        const timeMatch = cardText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))\s*-\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
-        if (timeMatch) {
-          timeText = timeMatch[0];
+        if (!facilityInfo) {
+          console.error(`    Unknown: ${center.center_name} (ID: ${center.center_id})`);
+          continue;
         }
 
-        // Get day of week pattern (indicates recurring)
-        const dayPattern = cardText.match(/(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)s?/gi);
+        let addedCount = 0;
+        for (const event of center.events || []) {
+          if (event.event_item_id && seenEventIds.has(event.event_item_id)) {
+            continue;
+          }
+          if (event.event_item_id) {
+            seenEventIds.add(event.event_item_id);
+          }
 
-        // Get reference number
-        const refMatch = cardText.match(/#(\d+)/);
-        const refNumber = refMatch ? refMatch[1] : '';
+          const session = parseVancouverEvent(event, facilityInfo);
+          if (session) {
+            allSessions.push(session);
+            addedCount++;
+          }
+        }
 
-        // Get openings count
-        const openingsMatch = cardText.match(/Openings\s*(\d+)/i);
-        const openings = openingsMatch ? parseInt(openingsMatch[1], 10) : null;
-
-        results.push({
-          name,
-          location,
-          dateTexts: dateMatches,
-          dateRangeText: dateRangeMatch ? dateRangeMatch[0] : '',
-          timeText,
-          dayPattern: dayPattern ? [...new Set(dayPattern.map(d => d.toLowerCase()))] : [],
-          refNumber,
-          openings,
-          rawText: cardText.substring(0, 1000),
-        });
-      } catch (e) {
-        // Skip malformed cards
+        console.error(`    ${facilityInfo.name}: ${addedCount} sessions`);
       }
-    });
-
-    return results;
-  });
-}
-
-/**
- * Parse date string to ISO format
- */
-function parseDate(dateText) {
-  if (!dateText) return null;
-
-  // Handle "Month DD, YYYY" format
-  const match = dateText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s*(\d{4})?/i);
-  if (match) {
-    const months = {
-      'january': '01', 'february': '02', 'march': '03', 'april': '04',
-      'may': '05', 'june': '06', 'july': '07', 'august': '08',
-      'september': '09', 'october': '10', 'november': '11', 'december': '12'
-    };
-    const month = months[match[1].toLowerCase()];
-    const day = match[2].padStart(2, '0');
-    const year = match[3] || new Date().getFullYear();
-    return `${year}-${month}-${day}`;
-  }
-
-  return null;
-}
-
-/**
- * Parse time string to 24h format
- */
-function parseTime(timeStr) {
-  if (!timeStr) return null;
-
-  const match = timeStr.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
-  if (match) {
-    let hours = parseInt(match[1], 10);
-    const minutes = match[2];
-    const period = match[3].toUpperCase();
-
-    if (period === 'PM' && hours !== 12) {
-      hours += 12;
-    } else if (period === 'AM' && hours === 12) {
-      hours = 0;
     }
-
-    return `${hours.toString().padStart(2, '0')}:${minutes}`;
+  } catch (e) {
+    console.error(`  Error: ${e.message}`);
   }
 
+  page.off('response', responseHandler);
+
+  console.error(`  Vancouver total: ${allSessions.length} sessions`);
+  return allSessions;
+}
+
+/**
+ * Find facility by name matching
+ */
+function findFacilityByName(name) {
+  if (!name) return null;
+  const nameLower = name.toLowerCase().replace(/[*]/g, '').trim();
+
+  for (const [alias, centerId] of Object.entries(CONFIG.vancouver.facilityAliases)) {
+    if (nameLower.includes(alias)) {
+      return CONFIG.vancouver.facilities[centerId];
+    }
+  }
   return null;
 }
 
 /**
- * Parse time range to start and end times
+ * Parse a Vancouver API event into a session
  */
-function parseTimeRange(timeText) {
-  if (!timeText) return { startTime: null, endTime: null };
+function parseVancouverEvent(event, facilityInfo) {
+  if (!event.start_time || !event.end_time) return null;
 
-  const match = timeText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))\s*-\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
-  if (match) {
-    return {
-      startTime: parseTime(match[1]),
-      endTime: parseTime(match[2]),
-    };
+  // Parse datetime (format: "2026-01-12 11:15:00")
+  const [startDate, startTime] = event.start_time.split(' ');
+  const [endDate, endTime] = event.end_time.split(' ');
+
+  // Clean up title (remove | characters)
+  const title = (event.title || '').replace(/\|/g, '').trim();
+
+  // Extract age info from description
+  let ageRange = '';
+  const descText = (event.description || '').replace(/<[^>]+>/g, ' ');
+  const ageMatch = descText.match(/(\d+[-–]\d+\s*(?:yrs?|years?))/i);
+  if (ageMatch) {
+    ageRange = ageMatch[1];
   }
 
-  return { startTime: null, endTime: null };
+  return {
+    facility: facilityInfo.name,
+    city: 'Vancouver',
+    address: facilityInfo.address,
+    lat: facilityInfo.lat,
+    lng: facilityInfo.lng,
+    date: startDate,
+    startTime: startTime.substring(0, 5), // "HH:MM"
+    endTime: endTime.substring(0, 5),
+    type: determineActivityType(title),
+    activityName: title,
+    description: descText.substring(0, 200).trim(),
+    ageRange,
+    activityUrl: event.activity_detail_url || '',
+    eventItemId: event.event_item_id,
+  };
 }
 
 /**
- * Expand date range to individual dates based on day pattern
+ * Determine activity type from name
  */
-function expandDateRange(startDateStr, endDateStr, dayPatterns, timeText) {
-  const dates = [];
-  const dayMap = {
-    'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,
-    'thursday': 4, 'friday': 5, 'saturday': 6
+function determineActivityType(name) {
+  const n = (name || '').toLowerCase();
+
+  if (n.includes('family') && n.includes('hockey')) return 'Family Hockey';
+  if (n.includes('shinny') || (n.includes('drop') && n.includes('hockey'))) return 'Drop-in Hockey';
+  if (n.includes('stick') && n.includes('puck')) return 'Drop-in Hockey';
+  if (n.includes('para') && n.includes('hockey')) return 'Para Hockey';
+  if (n.includes('hockey')) return 'Hockey';
+  if (n.includes('parent') && (n.includes('tot') || n.includes('preschool'))) return 'Family Skate';
+  if ((n.includes('family') || n.includes('tot')) && n.includes('skat')) return 'Family Skate';
+  if (n.includes('figure')) return 'Figure Skating';
+  if (n.includes('public') || n.includes('drop-in') || n.includes('drop in') ||
+      n.includes('toonie') || n.includes('discount') || n.includes('loonie')) return 'Public Skating';
+  if (n.includes('adult') && n.includes('skat')) return 'Public Skating';
+  if (n.includes('lesson') || n.includes('learn') || n.includes('class') ||
+      n.includes('canskate') || n.includes('intro')) return 'Skating Lessons';
+  if (n.includes('practice') || n.includes('freestyle')) return 'Practice';
+
+  return 'Skating';
+}
+
+/**
+ * Get Burnaby schedules from hardcoded weekly patterns
+ * Based on "Effective January 5-March 12/13" schedules from burnaby.ca
+ */
+function getBurnabySchedules() {
+  console.error('Adding Burnaby schedules...');
+  const allSessions = [];
+
+  // Burnaby facilities
+  const facilities = {
+    'kensington': {
+      name: 'Kensington Arena',
+      address: '6050 McMurray Ave, Burnaby',
+      lat: 49.2267, lng: -123.0036,
+      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986',
+    },
+    'rosemary-brown': {
+      name: 'Rosemary Brown Recreation Centre',
+      address: '5930 Humphries Ave, Burnaby',
+      lat: 49.2258, lng: -122.9892,
+      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991',
+    },
   };
 
-  const targetDays = dayPatterns.map(d => dayMap[d.toLowerCase()]).filter(d => d !== undefined);
+  // Weekly schedules from burnaby.ca screenshots
+  // Format: { day: [{ name, start, end, age }] }
+  const kensingtonSchedule = {
+    1: [ // Monday
+      { name: 'Lap Skate', start: '09:30', end: '11:30', age: '8 yrs+' },
+      { name: 'Toonie Skate', start: '11:45', end: '13:15', age: 'All ages' },
+      { name: 'Family Skate', start: '18:00', end: '20:15', age: 'Children with adult 16 yrs+' },
+    ],
+    4: [ // Thursday
+      { name: 'Lap Skate', start: '09:00', end: '10:00', age: '8 yrs+' },
+      { name: 'Shoot & Score', start: '10:15', end: '11:30', age: '18 yrs+' },
+      { name: 'Toonie Skate', start: '11:45', end: '13:15', age: 'All ages' },
+      { name: 'Parent & Tot Skate', start: '13:30', end: '15:15', age: '2-5 yrs with adult' },
+    ],
+    5: [ // Friday
+      { name: 'Public Skate', start: '17:15', end: '19:30', age: 'All ages' },
+      { name: 'Family Hockey & Ringette', start: '19:45', end: '20:45', age: '6-12 yrs with adult' },
+    ],
+  };
 
-  if (targetDays.length === 0) {
-    // If no day pattern, just return the start date
-    return [startDateStr];
+  const rosemaryBrownSchedule = {
+    1: [ // Monday
+      { name: 'Recreational Hockey', start: '10:00', end: '11:15', age: '50 yrs+, Rink B' },
+      { name: 'Shoot & Score', start: '11:30', end: '12:45', age: '18 yrs+, Rink B' },
+      { name: 'Parent & Tot Skate', start: '13:15', end: '15:15', age: '2-5 yrs with adult, Rink A' },
+      { name: 'Lap Skate', start: '19:30', end: '20:45', age: '8 yrs+, Rink A' },
+    ],
+    2: [ // Tuesday
+      { name: 'Lap Skate', start: '10:15', end: '11:30', age: '8 yrs+, Rink A' },
+      { name: 'Shoot & Score', start: '11:30', end: '12:45', age: '18 yrs+, Rink B' },
+      { name: 'Toonie Skate', start: '11:45', end: '13:00', age: 'All ages, Rink A' },
+      { name: 'Parent & Tot Skate', start: '13:15', end: '15:15', age: '2-5 yrs with adult, Rink A' },
+      { name: 'Public Skate', start: '18:00', end: '20:15', age: 'All ages, Rink A' },
+    ],
+    3: [ // Wednesday
+      { name: 'Recreational Hockey', start: '10:00', end: '11:15', age: '50 yrs+, Rink B' },
+      { name: 'Shoot & Score', start: '11:30', end: '12:45', age: '18 yrs+, Rink B' },
+      { name: 'Figure Skating', start: '12:15', end: '13:30', age: '16 yrs+, Rink A' },
+    ],
+    4: [ // Thursday
+      { name: 'Shoot & Score', start: '11:30', end: '12:45', age: '18 yrs+, Rink B' },
+      { name: 'Toonie Skate', start: '11:45', end: '13:00', age: 'All ages, Rink A' },
+      { name: 'Toonie Skate & Activities', start: '15:15', end: '16:45', age: '8-17 yrs, Rink A' },
+      { name: 'Family Skate', start: '17:00', end: '19:15', age: 'Children with adults, 16 yrs+, Rink A' },
+      { name: 'Lap Skate', start: '19:30', end: '20:45', age: '8 yrs+, Rink A' },
+    ],
+    5: [ // Friday
+      { name: 'Recreational Ringette', start: '10:00', end: '11:15', age: '18 yrs+, Rink A' },
+      { name: 'Recreational Hockey', start: '11:30', end: '12:45', age: '18 yrs+, Rink A' },
+    ],
+    6: [ // Saturday
+      { name: 'Public Skate', start: '17:00', end: '19:15', age: 'All ages, Rink A' },
+      { name: 'Toonie Skate & Activities', start: '19:30', end: '21:00', age: '13-17 yrs, Rink A' },
+    ],
+    0: [ // Sunday
+      { name: 'Public Skate', start: '13:45', end: '17:00', age: 'All ages, Rink A' },
+    ],
+  };
+
+  const schedules = [
+    { facility: facilities['kensington'], schedule: kensingtonSchedule },
+    { facility: facilities['rosemary-brown'], schedule: rosemaryBrownSchedule },
+  ];
+
+  const today = new Date();
+  const endDate = new Date(today);
+  endDate.setDate(today.getDate() + 30);
+
+  for (const { facility, schedule } of schedules) {
+    let count = 0;
+    for (let d = new Date(today); d <= endDate; d.setDate(d.getDate() + 1)) {
+      const dayActivities = schedule[d.getDay()];
+      if (!dayActivities) continue;
+
+      for (const activity of dayActivities) {
+        allSessions.push({
+          facility: facility.name,
+          city: 'Burnaby',
+          address: facility.address,
+          lat: facility.lat,
+          lng: facility.lng,
+          date: formatDate(d),
+          startTime: activity.start,
+          endTime: activity.end,
+          type: determineActivityType(activity.name),
+          activityName: activity.name,
+          ageRange: activity.age,
+          activityUrl: facility.url,
+        });
+        count++;
+      }
+    }
+    console.error(`  ${facility.name}: ${count} sessions`);
   }
 
-  const start = new Date(startDateStr + 'T00:00:00');
-  const end = new Date(endDateStr + 'T00:00:00');
+  console.error(`  Burnaby total: ${allSessions.length} sessions`);
+  return allSessions;
+}
 
-  // Limit to 90 days to prevent runaway loops
-  const maxDate = new Date(start);
-  maxDate.setDate(maxDate.getDate() + 90);
-  const actualEnd = end < maxDate ? end : maxDate;
+/**
+ * Get outdoor rink schedules (Robson Square, Shipyards)
+ * These have fixed seasonal hours
+ */
+function getOutdoorRinks() {
+  console.error('Adding outdoor rinks...');
+  const allSessions = [];
 
-  for (let d = new Date(start); d <= actualEnd; d.setDate(d.getDate() + 1)) {
-    if (targetDays.includes(d.getDay())) {
-      const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-      dates.push(dateStr);
+  // Outdoor rink configs with seasonal dates and hours
+  const today = new Date();
+  const currentMonth = today.getMonth(); // 0-11
+  // If we're in Jan-Feb, season started last year; if Nov-Dec, season starts this year
+  const seasonYear = currentMonth <= 2 ? today.getFullYear() - 1 : today.getFullYear();
+
+  const outdoorRinks = [
+    {
+      name: 'Robson Square Ice Rink',
+      city: 'Vancouver',
+      address: '800 Robson St, Vancouver',
+      lat: 49.2827,
+      lng: -123.1207,
+      url: 'https://www.robsonsquare.com/',
+      // Season: Dec 1 - Feb 28 (approx)
+      seasonStart: new Date(seasonYear, 11, 1), // Dec 1
+      seasonEnd: new Date(seasonYear + 1, 1, 28), // Feb 28
+      // Hours: Daily 9am-9pm
+      hours: { start: '09:00', end: '21:00' },
+      days: [0, 1, 2, 3, 4, 5, 6],
+      type: 'Public Skating',
+      note: 'Free outdoor rink',
+    },
+    {
+      name: 'The Shipyards Skate Plaza',
+      city: 'North Vancouver',
+      address: '125 Victory Ship Way, North Vancouver',
+      lat: 49.3103,
+      lng: -123.0826,
+      url: 'https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza',
+      // Season: Nov 15 - Feb 28 (approx)
+      seasonStart: new Date(seasonYear, 10, 15), // Nov 15
+      seasonEnd: new Date(seasonYear + 1, 1, 28), // Feb 28
+      // Hours: Weekdays 12-9pm, Weekends/Holidays 10am-9pm
+      weekdayHours: { start: '12:00', end: '21:00' },
+      weekendHours: { start: '10:00', end: '21:00' },
+      days: [0, 1, 2, 3, 4, 5, 6],
+      type: 'Public Skating',
+      note: 'Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)',
+    },
+  ];
+
+  const maxDate = new Date(today);
+  maxDate.setDate(today.getDate() + 30);
+
+  for (const rink of outdoorRinks) {
+    // Determine effective date range (within season and within 30 days)
+    const startDate = rink.seasonStart > today ? rink.seasonStart : today;
+    const endDate = rink.seasonEnd < maxDate ? rink.seasonEnd : maxDate;
+
+    // Skip if outside season
+    if (startDate > endDate) {
+      console.error(`    ${rink.name}: outside season`);
+      continue;
+    }
+
+    for (let d = new Date(startDate); d <= endDate; d.setDate(d.getDate() + 1)) {
+      if (!rink.days.includes(d.getDay())) continue;
+
+      const isWeekend = d.getDay() === 0 || d.getDay() === 6;
+      const hours = rink.weekendHours && isWeekend ? rink.weekendHours : (rink.weekdayHours || rink.hours);
+
+      allSessions.push({
+        facility: rink.name,
+        city: rink.city,
+        address: rink.address,
+        lat: rink.lat,
+        lng: rink.lng,
+        date: formatDate(d),
+        startTime: hours.start,
+        endTime: hours.end,
+        type: rink.type,
+        activityName: `Free Public Skating`,
+        description: rink.note,
+        activityUrl: rink.url,
+      });
+    }
+  }
+
+  console.error(`  Outdoor rinks: ${allSessions.length} sessions`);
+  return allSessions;
+}
+
+/**
+ * Expand dates from card info (handles recurring patterns)
+ */
+function expandDates(card) {
+  const dates = [];
+
+  // If we have a date range and day patterns, expand
+  if (card.dateRangeText && card.dayPatterns.length > 0) {
+    // Try full date format first (with year)
+    let rangeDates = card.dateRangeText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/gi);
+
+    // If no year in dates, try "Effective January 5-March 14" format
+    if (!rangeDates || rangeDates.length < 2) {
+      const effectiveMatch = card.dateRangeText.match(/Effective\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*[-–]\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})/i);
+      if (effectiveMatch) {
+        const currentYear = new Date().getFullYear();
+        const startDateText = `${effectiveMatch[1]} ${effectiveMatch[2]}, ${currentYear}`;
+        const endDateText = `${effectiveMatch[3]} ${effectiveMatch[4]}, ${currentYear}`;
+        rangeDates = [startDateText, endDateText];
+      }
+    }
+
+    // Also try simpler format without "Effective"
+    if (!rangeDates || rangeDates.length < 2) {
+      const simpleRangeMatch = card.dateRangeText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})\s*[-–to]+\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2})/i);
+      if (simpleRangeMatch) {
+        const currentYear = new Date().getFullYear();
+        const startDateText = `${simpleRangeMatch[1]} ${simpleRangeMatch[2]}, ${currentYear}`;
+        const endDateText = `${simpleRangeMatch[3]} ${simpleRangeMatch[4]}, ${currentYear}`;
+        rangeDates = [startDateText, endDateText];
+      }
+    }
+
+    if (rangeDates && rangeDates.length >= 2) {
+      const startDate = parseDate(rangeDates[0]);
+      const endDate = parseDate(rangeDates[1]);
+      if (startDate && endDate) {
+        const expanded = expandDateRange(startDate, endDate, card.dayPatterns);
+        dates.push(...expanded);
+        console.error(`    Expanded "${card.name}": ${rangeDates[0]} to ${rangeDates[1]} (${card.dayPatterns.join(', ')}) -> ${expanded.length} dates`);
+      }
+    }
+  }
+
+  // Fall back to individual dates
+  if (dates.length === 0) {
+    for (const dateText of card.dateTexts) {
+      const date = parseDate(dateText);
+      if (date) dates.push(date);
     }
   }
 
@@ -354,238 +546,114 @@ function expandDateRange(startDateStr, endDateStr, dayPatterns, timeText) {
 }
 
 /**
- * Match location text to a facility
+ * Expand date range based on day patterns
  */
-function matchFacility(locationText, city) {
-  if (!locationText) return null;
+function expandDateRange(startDateStr, endDateStr, dayPatterns) {
+  const dates = [];
+  const dayMap = {
+    'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,
+    'thursday': 4, 'friday': 5, 'saturday': 6,
+    'sundays': 0, 'mondays': 1, 'tuesdays': 2, 'wednesdays': 3,
+    'thursdays': 4, 'fridays': 5, 'saturdays': 6,
+  };
 
-  const facilities = CONFIG.facilities[city.toLowerCase()] || [];
-  const locationLower = locationText.toLowerCase();
+  const targetDays = dayPatterns.map(d => dayMap[d.toLowerCase()]).filter(d => d !== undefined);
+  if (targetDays.length === 0) return [startDateStr];
 
-  for (const facility of facilities) {
-    // Check main name
-    if (locationLower.includes(facility.name.toLowerCase())) {
-      return facility;
-    }
-    // Check aliases
-    for (const alias of facility.aliases || []) {
-      if (locationLower.includes(alias.toLowerCase())) {
-        return facility;
-      }
+  const start = new Date(startDateStr + 'T00:00:00');
+  const end = new Date(endDateStr + 'T00:00:00');
+
+  // Limit to 30 days from today
+  const today = new Date();
+  const maxDate = new Date(today);
+  maxDate.setDate(today.getDate() + 30);
+  const actualEnd = end < maxDate ? end : maxDate;
+  const actualStart = start > today ? start : today;
+
+  for (let d = new Date(start); d <= actualEnd; d.setDate(d.getDate() + 1)) {
+    if (targetDays.includes(d.getDay())) {
+      dates.push(formatDate(d));
     }
   }
 
+  return dates;
+}
+
+/**
+ * Match Burnaby facility
+ */
+function matchBurnabyFacility(text) {
+  if (!text) return null;
+  const t = text.toLowerCase();
+  for (const facility of CONFIG.burnaby.facilities) {
+    if (t.includes(facility.name.toLowerCase())) return facility;
+    for (const alias of (facility.aliases || [])) {
+      if (t.includes(alias.toLowerCase())) return facility;
+    }
+  }
   return null;
 }
 
 /**
- * Determine activity type from name
+ * Parse date string to YYYY-MM-DD
  */
-function determineActivityType(activityName) {
-  const name = (activityName || '').toLowerCase();
+function parseDate(dateText) {
+  if (!dateText) return null;
+  const match = dateText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),?\s*(\d{4})?/i);
+  if (!match) return null;
 
-  // Hockey types
-  if (name.includes('family') && name.includes('hockey')) {
-    return 'Family Hockey';
-  }
-  if (name.includes('shinny') || (name.includes('drop') && name.includes('hockey'))) {
-    return 'Drop-in Hockey';
-  }
-  if (name.includes('hockey') && !name.includes('figure')) {
-    return 'Hockey';
-  }
+  const months = {
+    'january': '01', 'february': '02', 'march': '03', 'april': '04',
+    'may': '05', 'june': '06', 'july': '07', 'august': '08',
+    'september': '09', 'october': '10', 'november': '11', 'december': '12'
+  };
 
-  // Family skating (including parent & tot, parent & preschooler)
-  if (name.includes('parent') && (name.includes('tot') || name.includes('preschool'))) {
-    return 'Family Skate';
-  }
-  if ((name.includes('family') || name.includes('parent') || name.includes('tot')) &&
-      (name.includes('skate') || name.includes('skating'))) {
-    return 'Family Skate';
-  }
-
-  // Figure skating
-  if (name.includes('figure')) {
-    return 'Figure Skating';
-  }
-
-  // Public/drop-in skating (including toonie/discount sessions)
-  if (name.includes('public') || name.includes('drop-in') || name.includes('drop in') ||
-      name.includes('toonie') || name.includes('discount') || name.includes('loonie')) {
-    return 'Public Skating';
-  }
-
-  // Lessons/classes
-  if (name.includes('lesson') || name.includes('learn') || name.includes('class') ||
-      name.includes('level') || name.includes('beginner') || name.includes('intermediate') ||
-      name.includes('canskate') || name.includes('can skate') ||
-      name.includes('pre-') || name.includes('intro')) {
-    return 'Skating Lessons';
-  }
-
-  // Practice/freestyle
-  if (name.includes('practice') || name.includes('freestyle') || name.includes('free skate')) {
-    return 'Practice';
-  }
-
-  // Adult skating
-  if (name.includes('adult')) {
-    return 'Public Skating';
-  }
-
-  // Default - general skating
-  return 'Skating';
+  const month = months[match[1].toLowerCase()];
+  const day = match[2].padStart(2, '0');
+  const year = match[3] || new Date().getFullYear();
+  return `${year}-${month}-${day}`;
 }
 
 /**
- * Scrape a single search URL with date expansion
+ * Format date as YYYY-MM-DD
  */
-async function scrapeSearch(page, search) {
-  const { city, keyword, url } = search;
-  console.error(`Scraping ${city} - "${keyword}"...`);
-
-  try {
-    await page.goto(url, {
-      waitUntil: 'networkidle0',
-      timeout: CONFIG.timeout,
-    });
-
-    // Wait for cards to load
-    try {
-      await page.waitForSelector('.activity-card', { timeout: 15000 });
-    } catch (e) {
-      console.error(`  No results found for "${keyword}" in ${city}`);
-      return [];
-    }
-
-    // Scroll to load more results if available
-    await autoScroll(page);
-
-    // Click "Load More" if available
-    await clickLoadMore(page);
-
-    // Extract card data
-    const rawCards = await extractActivityCards(page);
-    console.error(`  Found ${rawCards.length} activities`);
-
-    // Parse into structured sessions with date expansion
-    const sessions = [];
-    for (const card of rawCards) {
-      const facility = matchFacility(card.location, city) || matchFacility(card.name, city);
-      if (!facility) {
-        console.error(`  Could not match facility: ${card.location || card.name}`);
-        continue;
-      }
-
-      const { startTime, endTime } = parseTimeRange(card.timeText);
-
-      // Try to expand date range
-      let dates = [];
-      if (card.dateRangeText && card.dayPattern.length > 0) {
-        // Parse start and end dates from range
-        const rangeDates = card.dateRangeText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/gi);
-        if (rangeDates && rangeDates.length >= 2) {
-          const startDate = parseDate(rangeDates[0]);
-          const endDate = parseDate(rangeDates[1]);
-          if (startDate && endDate) {
-            dates = expandDateRange(startDate, endDate, card.dayPattern, card.timeText);
-            console.error(`    Expanded "${card.name}" to ${dates.length} dates`);
-          }
-        }
-      }
-
-      // Fall back to individual dates
-      if (dates.length === 0 && card.dateTexts.length > 0) {
-        dates = card.dateTexts.map(d => parseDate(d)).filter(Boolean);
-      }
-
-      // Create session for each date
-      for (const date of dates) {
-        if (!date) continue;
-
-        sessions.push({
-          facility: facility.name,
-          city: city.charAt(0).toUpperCase() + city.slice(1),
-          address: facility.address,
-          lat: facility.lat,
-          lng: facility.lng,
-          date,
-          startTime: startTime || '00:00',
-          endTime: endTime || '00:00',
-          type: determineActivityType(card.name),
-          activityName: card.name,
-          openings: card.openings,
-          refNumber: card.refNumber,
-        });
-      }
-    }
-
-    return sessions;
-
-  } catch (e) {
-    console.error(`  Error scraping ${city} - "${keyword}":`, e.message);
-    return [];
-  }
+function formatDate(date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
 /**
- * Click "Load More" button repeatedly to get all results
+ * Parse time range
  */
-async function clickLoadMore(page) {
-  let clicked = 0;
-  const maxClicks = 10;
-
-  while (clicked < maxClicks) {
-    try {
-      const loadMoreBtn = await page.$('button:has-text("Load More"), .load-more-btn, [class*="load-more"]');
-      if (!loadMoreBtn) break;
-
-      const isVisible = await loadMoreBtn.isIntersectingViewport();
-      if (!isVisible) break;
-
-      await loadMoreBtn.click();
-      clicked++;
-      console.error(`    Clicked "Load More" (${clicked})`);
-      await new Promise(r => setTimeout(r, 2000));
-    } catch (e) {
-      break;
-    }
-  }
+function parseTimeRange(timeText) {
+  if (!timeText) return { startTime: null, endTime: null };
+  const match = timeText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM)?)\s*[-–]\s*(\d{1,2}:\d{2}\s*(?:AM|PM)?)/i);
+  if (!match) return { startTime: null, endTime: null };
+  return {
+    startTime: parseTime(match[1]),
+    endTime: parseTime(match[2]),
+  };
 }
 
 /**
- * Auto scroll to load all results
+ * Parse time to 24h format
  */
-async function autoScroll(page) {
-  await page.evaluate(async () => {
-    await new Promise((resolve) => {
-      let totalHeight = 0;
-      const distance = 500;
-      const timer = setInterval(() => {
-        const scrollHeight = document.body.scrollHeight;
-        window.scrollBy(0, distance);
-        totalHeight += distance;
+function parseTime(timeStr) {
+  if (!timeStr) return null;
+  const match = timeStr.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+  if (!match) return null;
 
-        if (totalHeight >= scrollHeight - window.innerHeight) {
-          clearInterval(timer);
-          resolve();
-        }
-      }, 100);
+  let hours = parseInt(match[1], 10);
+  const minutes = match[2];
+  const period = (match[3] || '').toUpperCase();
 
-      // Timeout after 5 seconds
-      setTimeout(() => {
-        clearInterval(timer);
-        resolve();
-      }, 5000);
-    });
-  });
+  if (period === 'PM' && hours !== 12) hours += 12;
+  else if (period === 'AM' && hours === 12) hours = 0;
 
-  // Wait for any lazy-loaded content
-  await new Promise(r => setTimeout(r, 1000));
+  return `${hours.toString().padStart(2, '0')}:${minutes}`;
 }
 
 /**
- * Generate iCal format from sessions
+ * Generate iCal format
  */
 function generateICal(sessions) {
   const lines = [
@@ -598,10 +666,7 @@ function generateICal(sessions) {
   ];
 
   for (const session of sessions) {
-    // Create UID
-    const uid = `${session.refNumber || session.facility.replace(/\s/g, '')}-${session.date}-${session.startTime}`.replace(/[^a-z0-9-]/gi, '-');
-
-    // Format date and time for iCal (YYYYMMDDTHHMMSS)
+    const uid = `${session.facility.replace(/\s/g, '')}-${session.date}-${session.startTime}`.replace(/[^a-z0-9-]/gi, '-');
     const dtStart = session.date.replace(/-/g, '') + 'T' + session.startTime.replace(/:/g, '') + '00';
     const dtEnd = session.date.replace(/-/g, '') + 'T' + session.endTime.replace(/:/g, '') + '00';
 
@@ -612,7 +677,7 @@ function generateICal(sessions) {
     lines.push(`DTEND;TZID=America/Vancouver:${dtEnd}`);
     lines.push(`SUMMARY:${session.type} - ${session.facility}`);
     lines.push(`LOCATION:${session.address}`);
-    lines.push(`DESCRIPTION:${session.type} at ${session.facility}\\n${session.city}\\nOpenings: ${session.openings ?? 'Unknown'}`);
+    lines.push(`DESCRIPTION:${session.activityName}\\n${session.facility}\\n${session.city}`);
     lines.push(`GEO:${session.lat};${session.lng}`);
     lines.push('END:VEVENT');
   }
@@ -623,9 +688,10 @@ function generateICal(sessions) {
 
 /**
  * Main scraping function
+ * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, searches = CONFIG.searches } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'outdoor'] } = options;
 
   let browser;
   const allSessions = [];
@@ -635,27 +701,44 @@ async function scrapeAll(options = {}) {
     const { browser: b, page } = await createBrowser(debug);
     browser = b;
 
-    // Scrape activity searches with date expansion
-    for (const search of searches) {
-      const sessions = await scrapeSearch(page, search);
-
-      // Deduplicate by facility + date + time
-      for (const session of sessions) {
+    // Scrape Vancouver via API
+    if (cities.includes('vancouver')) {
+      const vancouverSessions = await scrapeVancouver(page);
+      for (const session of vancouverSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
         if (!seenKeys.has(key)) {
           seenKeys.add(key);
           allSessions.push(session);
         }
       }
+    }
 
-      // Be polite between requests
-      await new Promise(r => setTimeout(r, 2000));
+    // Add Burnaby schedules (hardcoded weekly pattern)
+    if (cities.includes('burnaby')) {
+      const burnabySessions = getBurnabySchedules();
+      for (const session of burnabySessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
+    // Add outdoor rinks (Robson Square, Shipyards)
+    if (cities.includes('outdoor')) {
+      const outdoorSessions = getOutdoorRinks();
+      for (const session of outdoorSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
     }
 
   } finally {
-    if (browser) {
-      await browser.close();
-    }
+    if (browser) await browser.close();
   }
 
   // Sort by date and time
@@ -683,22 +766,27 @@ async function main() {
   const outputIndex = args.indexOf('--output');
   const outputFile = outputIndex !== -1 ? args[outputIndex + 1] : null;
 
+  // Parse city filters: --city vancouver --city burnaby OR --city vancouver,burnaby
+  const cityArgs = [];
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--city' && args[i + 1]) {
+      cityArgs.push(...args[i + 1].split(','));
+      i++;
+    }
+  }
+  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'outdoor'];
+
   console.error('Metro Vancouver Skating Schedule Scraper');
   console.error('========================================');
   console.error(`Date: ${new Date().toISOString()}`);
   console.error(`Mode: ${debug ? 'Debug' : 'Headless'}`);
-  console.error(`Output: ${ical ? 'iCal' : 'JSON'}`);
+  console.error(`Cities: ${cities.join(', ')}`);
   console.error('');
 
   try {
-    const result = await scrapeAll({ debug });
+    const result = await scrapeAll({ debug, cities });
 
-    let output;
-    if (ical) {
-      output = generateICal(result.sessions);
-    } else {
-      output = JSON.stringify(result, null, 2);
-    }
+    const output = ical ? generateICal(result.sessions) : JSON.stringify(result, null, 2);
 
     if (outputFile) {
       fs.writeFileSync(outputFile, output);
@@ -716,10 +804,8 @@ async function main() {
   }
 }
 
-// Export for use as module
 module.exports = { scrapeAll, generateICal, CONFIG };
 
-// Run if called directly
 if (require.main === module) {
   main();
 }
