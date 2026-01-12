@@ -2,6 +2,19 @@
   "date": "2026-02-03",
   "sessions": [
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-03",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "type": "Public Skating",
+      "activityName": "Adult and Senior Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -46,6 +59,19 @@
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-03",
+      "startTime": "10:15",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Ice Dance Session",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -108,6 +134,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-03",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey Skills and Drills Drop-in (Tue)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
       "address": "800 Robson St, Vancouver",
@@ -164,5 +203,5 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     }
   ],
-  "count": 11
+  "count": 14
 }
