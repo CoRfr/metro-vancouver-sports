@@ -678,8 +678,14 @@ async function scrapeWestVan(browser) {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
   try {
-    await page.goto(CONFIG.westvan.dropInUrl, { waitUntil: 'networkidle0', timeout: 60000 });
-    await new Promise(r => setTimeout(r, 3000));
+    // Add date range parameters to get full schedule
+    const today = new Date();
+    const startDate = formatDate(today);
+    const endDate = formatDate(new Date(today.getTime() + 60 * 24 * 60 * 60 * 1000)); // 60 days ahead
+    const url = `${CONFIG.westvan.dropInUrl}&start_date=${startDate}&end_date=${endDate}`;
+
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
+    await new Promise(r => setTimeout(r, 5000)); // Wait longer for content to load
 
     const pageTitle = await page.title();
     console.error(`    Page loaded: ${pageTitle}`);
@@ -697,11 +703,11 @@ async function scrapeWestVan(browser) {
 
         // Get activity name from parent category
         const categoryEl = actEl.closest('.dropins-category');
-        const categoryTitle = categoryEl?.querySelector('.dropins-category-title')?.innerText.trim();
+        const categoryTitle = categoryEl?.querySelector('.dropins-category-title')?.textContent.trim();
 
         // Get activity group name
         const groupEl = actEl.closest('.dropins-activity-group');
-        const groupTitle = groupEl?.querySelector('.dropins-activity-group-title')?.innerText.trim();
+        const groupTitle = groupEl?.querySelector('.dropins-activity-group-title')?.textContent.trim();
 
         const activityName = groupTitle || categoryTitle || 'Skating';
 
@@ -716,12 +722,12 @@ async function scrapeWestVan(browser) {
         if (locationTimeEl) {
           const locationEl = locationTimeEl.querySelector('.activity-location');
           if (locationEl) {
-            location = locationEl.innerText.trim();
+            location = locationEl.textContent.trim();
           }
         }
 
         if (timeRangeEl) {
-          const timeText = timeRangeEl.innerText.trim();
+          const timeText = timeRangeEl.textContent.trim();
           // Parse "Sun, 12:45 PM-2:00 PM"
           const timeMatch = timeText.match(/(\d{1,2}:\d{2})\s*(AM|PM)\s*-\s*(\d{1,2}:\d{2})\s*(AM|PM)/i);
           if (timeMatch) {
