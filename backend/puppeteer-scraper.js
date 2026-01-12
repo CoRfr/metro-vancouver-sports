@@ -439,12 +439,11 @@ function getOutdoorRinks() {
       lat: 49.3103,
       lng: -123.0826,
       url: 'https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza',
-      // Season: Nov 15 - Feb 28 (approx)
+      // Season: Nov 15 - March 29
       seasonStart: new Date(seasonYear, 10, 15), // Nov 15
-      seasonEnd: new Date(seasonYear + 1, 1, 28), // Feb 28
-      // Hours: Weekdays 12-9pm, Weekends/Holidays 10am-9pm
-      weekdayHours: { start: '12:00', end: '21:00' },
-      weekendHours: { start: '10:00', end: '21:00' },
+      seasonEnd: new Date(seasonYear + 1, 2, 29), // March 29
+      // Hours: Daily 12pm-8pm
+      hours: { start: '12:00', end: '20:00' },
       days: [0, 1, 2, 3, 4, 5, 6],
       type: 'Public Skating',
       note: 'Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)',

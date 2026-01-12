@@ -1437,7 +1437,18 @@
             calendar.className = 'calendar-grid day-view';
 
             const daySessions = filteredSessions.filter(s => s.date === dateStr)
-                .sort((a, b) => a.startTime.localeCompare(b.startTime));
+                .sort((a, b) => {
+                    // Primary sort by time
+                    const timeCompare = a.startTime.localeCompare(b.startTime);
+                    if (timeCompare !== 0) return timeCompare;
+                    // Secondary sort by distance (closer first) when location available
+                    if (userLocation) {
+                        const distA = calculateDistance(userLocation.lat, userLocation.lng, a.lat, a.lng);
+                        const distB = calculateDistance(userLocation.lat, userLocation.lng, b.lat, b.lng);
+                        return distA - distB;
+                    }
+                    return 0;
+                });
 
             // Build day view with date picker and timeline
             const today = new Date();
@@ -1627,7 +1638,16 @@
                 dayDate.setDate(startOfWeek.getDate() + i);
                 const dateStr = `${dayDate.getFullYear()}-${String(dayDate.getMonth() + 1).padStart(2, '0')}-${String(dayDate.getDate()).padStart(2, '0')}`;
                 const daySessions = filteredSessions.filter(s => s.date === dateStr)
-                    .sort((a, b) => a.startTime.localeCompare(b.startTime));
+                    .sort((a, b) => {
+                        const timeCompare = a.startTime.localeCompare(b.startTime);
+                        if (timeCompare !== 0) return timeCompare;
+                        if (userLocation) {
+                            const distA = calculateDistance(userLocation.lat, userLocation.lng, a.lat, a.lng);
+                            const distB = calculateDistance(userLocation.lat, userLocation.lng, b.lat, b.lng);
+                            return distA - distB;
+                        }
+                        return 0;
+                    });
 
                 const isToday = dateStr === todayStr;
                 const isOtherMonth = dayDate.getMonth() !== month;
