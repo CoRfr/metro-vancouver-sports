@@ -393,7 +393,8 @@
         }
 
         .timeline-grid {
-            margin-left: 60px;
+            margin-left: 70px;
+            margin-right: 10px;
             position: relative;
             min-height: 720px;
         }
@@ -405,15 +406,15 @@
 
         .timeline-event {
             position: absolute;
-            left: 10px;
-            right: 10px;
             border-radius: 6px;
-            padding: 8px 10px;
+            padding: 6px 8px;
             cursor: pointer;
             overflow: hidden;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             transition: transform 0.2s, box-shadow 0.2s;
             z-index: 2;
+            box-sizing: border-box;
+            font-size: 0.85rem;
         }
 
         .timeline-event:hover {
@@ -443,13 +444,13 @@
 
         .timeline-event-time {
             font-weight: 700;
-            font-size: 0.85rem;
-            margin-bottom: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 2px;
         }
 
         .timeline-event-name {
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             margin-bottom: 2px;
             white-space: nowrap;
             overflow: hidden;
@@ -457,7 +458,7 @@
         }
 
         .timeline-event-location {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             color: #555;
             white-space: nowrap;
             overflow: hidden;
@@ -869,8 +870,9 @@
                 activityTypes: [
                     { id: 'activityAll', value: '__all__', label: 'All', checked: false, isAll: true },
                     { id: 'activityPublic', value: 'Public Skating', label: 'Public Skating', checked: true },
+                    { id: 'activityDiscount', value: '__discount__', label: 'Discount/Free Only', checked: false },
                     { id: 'activityFamily', value: 'Family Skate', label: 'Family Skating', checked: true },
-                    { id: 'activityFigure', value: 'Figure Skating', label: 'Figure Skating', checked: true },
+                    { id: 'activityFigure', value: 'Figure Skating', label: 'Figure Skating', checked: false },
                     { id: 'activityLessons', value: 'Skating Lessons', label: 'Lessons', checked: false },
                     { id: 'activityPractice', value: 'Practice', label: 'Practice', checked: false },
                     { id: 'activityHockey', value: 'Hockey', label: 'Hockey', checked: false },
@@ -1268,12 +1270,26 @@
 
         function filterSessions() {
             const selectedTypes = getSelectedActivityTypes();
-            
+            const discountOnly = selectedTypes.includes('__discount__');
+            const regularTypes = selectedTypes.filter(t => t !== '__discount__');
+
             filteredSessions = allSessions.filter(session => {
                 const cityMatch = cityFilter.value === 'all' || session.city === cityFilter.value;
                 const facilityMatch = facilityFilter.value === 'all' || session.facility === facilityFilter.value;
-                const activityMatch = selectedTypes.includes(session.type);
-                
+
+                // Activity type matching
+                let activityMatch = regularTypes.includes(session.type);
+
+                // Discount filter - matches toonie, discount, free, loonie in activity name
+                if (discountOnly) {
+                    const actName = (session.activityName || '').toLowerCase();
+                    const isDiscount = actName.includes('toonie') ||
+                                      actName.includes('discount') ||
+                                      actName.includes('free') ||
+                                      actName.includes('loonie');
+                    activityMatch = activityMatch || isDiscount;
+                }
+
                 let distanceMatch = true;
                 if (userLocation && distanceFilter.value !== '999') {
                     const distance = calculateDistance(
@@ -1284,7 +1300,7 @@
                     );
                     distanceMatch = distance <= parseFloat(distanceFilter.value);
                 }
-                
+
                 return cityMatch && facilityMatch && distanceMatch && activityMatch;
             });
 
@@ -1453,14 +1469,47 @@
                 const isToday = dateStr === todayStr;
                 const currentMinutes = isToday ? (now.getHours() - startHour) * 60 + now.getMinutes() : -1;
 
-                // Render sessions as positioned blocks
-                daySessions.forEach(session => {
+                // Calculate columns for overlapping events
+                const events = daySessions.map(session => {
                     const [startH, startM] = session.startTime.split(':').map(Number);
                     const [endH, endM] = session.endTime.split(':').map(Number);
+                    return {
+                        session,
+                        start: startH * 60 + startM,
+                        end: endH * 60 + endM,
+                        column: 0,
+                        totalColumns: 1
+                    };
+                });
 
-                    const startMinutes = (startH - startHour) * 60 + startM;
-                    const endMinutes = (endH - startHour) * 60 + endM;
-                    const durationMins = endMinutes - startMinutes;
+                // Assign columns to overlapping events
+                for (let i = 0; i < events.length; i++) {
+                    const event = events[i];
+                    // Find overlapping events that come before this one
+                    const overlapping = events.slice(0, i).filter(e =>
+                        e.end > event.start && e.start < event.end
+                    );
+                    // Find first available column
+                    const usedColumns = overlapping.map(e => e.column);
+                    let col = 0;
+                    while (usedColumns.includes(col)) col++;
+                    event.column = col;
+                }
+
+                // Calculate total columns for each event group
+                for (let i = 0; i < events.length; i++) {
+                    const event = events[i];
+                    const overlapping = events.filter(e =>
+                        e.end > event.start && e.start < event.end
+                    );
+                    const maxCol = Math.max(...overlapping.map(e => e.column)) + 1;
+                    overlapping.forEach(e => e.totalColumns = Math.max(e.totalColumns, maxCol));
+                }
+
+                // Render sessions as positioned blocks
+                events.forEach(({ session, start, end, column, totalColumns }) => {
+                    const startMinutes = start - startHour * 60;
+                    const durationMins = end - start;
                     const durationStr = formatDuration(durationMins);
                     const relativeTime = getRelativeTime(dateStr, session.startTime);
                     const relativeStr = relativeTime ? ` - ${relativeTime}` : '';
@@ -1468,20 +1517,25 @@
                     const top = startMinutes; // 1px per minute
                     const height = Math.max(durationMins, 30); // minimum 30px height
 
+                    // Calculate horizontal position based on column
+                    const width = (100 / totalColumns) - 1;
+                    const left = column * (100 / totalColumns);
+
                     const sessionClass = getSessionClass(session.type);
                     const activityName = session.activityName || session.type;
 
                     // Check if session has ended (for past styling)
+                    const [endH, endM] = session.endTime.split(':').map(Number);
                     const isPast = isToday && (endH * 60 + endM) < (now.getHours() * 60 + now.getMinutes());
                     const pastClass = isPast ? ' past' : '';
 
                     html += `
                         <div class="timeline-event ${sessionClass}${pastClass}"
-                             style="top: ${top}px; height: ${height}px;"
+                             style="top: ${top}px; height: ${height}px; left: ${left}%; width: ${width}%;"
                              onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
-                            <div class="timeline-event-time">${formatTime(session.startTime)} - ${formatTime(session.endTime)} (${durationStr})${relativeStr}</div>
+                            <div class="timeline-event-time">${formatTime(session.startTime)} - ${formatTime(session.endTime)}</div>
                             <div class="timeline-event-name">${activityName}</div>
-                            <div class="timeline-event-location">${session.facility} - ${session.address || session.city}</div>
+                            <div class="timeline-event-location">${session.facility}</div>
                         </div>
                     `;
                 });
