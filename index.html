@@ -392,6 +392,44 @@
             margin-bottom: 15px;
         }
 
+        .timeline-now-line {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #e74c3c;
+            z-index: 10;
+        }
+
+        .timeline-now-line::before {
+            content: 'NOW';
+            position: absolute;
+            left: -45px;
+            top: -8px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #e74c3c;
+            background: white;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .timeline-event.past {
+            opacity: 0.5;
+            filter: grayscale(30%);
+        }
+
+        .timeline-event.past::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.3);
+            pointer-events: none;
+        }
+
         .calendar-day:hover {
             border-color: #667eea;
             background: white;
@@ -1291,6 +1329,12 @@
                     html += `<div class="timeline-hour-line"></div>`;
                 }
 
+                // Check if this is today
+                const now = new Date();
+                const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+                const isToday = dateStr === todayStr;
+                const currentMinutes = isToday ? (now.getHours() - startHour) * 60 + now.getMinutes() : -1;
+
                 // Render sessions as positioned blocks
                 daySessions.forEach(session => {
                     const [startH, startM] = session.startTime.split(':').map(Number);
@@ -1309,8 +1353,12 @@
                     const sessionClass = getSessionClass(session.type);
                     const activityName = session.activityName || session.type;
 
+                    // Check if session has ended (for past styling)
+                    const isPast = isToday && (endH * 60 + endM) < (now.getHours() * 60 + now.getMinutes());
+                    const pastClass = isPast ? ' past' : '';
+
                     html += `
-                        <div class="timeline-event ${sessionClass}"
+                        <div class="timeline-event ${sessionClass}${pastClass}"
                              style="top: ${top}px; height: ${height}px;"
                              onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
                             <div class="timeline-event-time">${formatTime(session.startTime)} - ${formatTime(session.endTime)} (${durationStr})${relativeStr}</div>
@@ -1319,6 +1367,11 @@
                         </div>
                     `;
                 });
+
+                // Add "now" line if it's today and current time is within the displayed range
+                if (isToday && currentMinutes >= 0 && currentMinutes <= (endHour - startHour + 1) * 60) {
+                    html += `<div class="timeline-now-line" style="top: ${currentMinutes}px;"></div>`;
+                }
 
                 html += `</div></div>`;
             }
