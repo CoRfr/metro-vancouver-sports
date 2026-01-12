@@ -105,6 +105,61 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
 
+        .sport-selector {
+            display: flex;
+            gap: 8px;
+        }
+
+        .sport-option {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafafa;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sport-option:hover:not(.disabled) {
+            border-color: #667eea;
+            background: white;
+        }
+
+        .sport-option.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .sport-option.selected .sport-icon {
+            opacity: 1;
+            filter: none;
+        }
+
+        .sport-option.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .sport-icon {
+            font-size: 1.1rem;
+            filter: grayscale(100%);
+            opacity: 0.5;
+            transition: all 0.2s;
+        }
+
+        .sport-option:hover:not(.disabled) .sport-icon {
+            filter: grayscale(50%);
+            opacity: 0.7;
+        }
+
+        .sport-name {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
         .location-row {
             display: flex;
             gap: 10px;
@@ -590,14 +645,6 @@
             font-weight: 600;
             color: rgba(0,0,0,0.4);
             letter-spacing: 0.5px;
-        }
-
-        .timeline-event-icon {
-            position: absolute;
-            bottom: 3px;
-            right: 3px;
-            font-size: 0.85rem;
-            opacity: 0.7;
         }
 
         .no-sessions-message {
@@ -1100,11 +1147,17 @@
         <div class="controls">
             <div class="filter-group">
                 <div class="filter-item">
-                    <label for="sportFilter">Sport</label>
-                    <select id="sportFilter">
-                        <option value="skating">Ice Skating</option>
-                        <option value="swimming" disabled>Swimming (coming soon)</option>
-                    </select>
+                    <label>Sport</label>
+                    <div class="sport-selector" id="sportFilter">
+                        <div class="sport-option selected" data-value="skating">
+                            <span class="sport-icon">⛸️</span>
+                            <span class="sport-name">Ice Skating</span>
+                        </div>
+                        <div class="sport-option disabled" data-value="swimming" title="Coming soon">
+                            <span class="sport-icon">🏊</span>
+                            <span class="sport-name">Swimming</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="filter-item filter-item-wide">
@@ -1980,35 +2033,6 @@
             return 'public';
         }
 
-        function getSessionIcon(session) {
-            const type = session.type;
-            const actName = (session.activityName || '').toLowerCase();
-
-            // Check for outdoor rinks
-            if (session.facility.includes('Robson Square') || session.facility.includes('Shipyards')) {
-                return '🌲'; // Outdoor
-            }
-
-            // Check activity type
-            if (type === 'Family Hockey' || actName.includes('hockey') || actName.includes('shinny')) {
-                return '🏒';
-            }
-            if (type === 'Figure Skating' || actName.includes('figure') || actName.includes('dance')) {
-                return '💃';
-            }
-            if (type === 'Family Skate' || actName.includes('family') || actName.includes('parent')) {
-                return '👨‍👩‍👧';
-            }
-            if (actName.includes('adult') || actName.includes('19+') || actName.includes('19yr')) {
-                return '🧑';
-            }
-            if (actName.includes('toonie') || actName.includes('discount') || actName.includes('free') || actName.includes('loonie')) {
-                return '💰';
-            }
-            // Default skating icon
-            return '⛸️';
-        }
-
         function renderCalendar() {
             if (viewMode === 'day') {
                 renderDayView();
@@ -2190,7 +2214,6 @@
                              style="top: ${top}px; height: ${height}px; left: ${left}%; width: ${width}%;"
                              onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
                             <div class="timeline-event-city">${getCityAbbr(session.city)}</div>
-                            <div class="timeline-event-icon">${getSessionIcon(session)}</div>
                             <div class="timeline-event-time">${formatTime(session.startTime)} - ${formatTime(session.endTime)}</div>
                             <div class="timeline-event-name">${activityName}</div>
                             <div class="timeline-event-location">${session.facility}</div>
@@ -2553,11 +2576,16 @@
             document.body.classList.add(`sport-${currentSport}`);
         }
 
-        sportFilter.addEventListener('change', () => {
-            currentSport = sportFilter.value;
-            updateSportTheme();
-            updateActivityFilters();
-            fetchRealData();
+        // Sport selector click handler
+        sportFilter.querySelectorAll('.sport-option:not(.disabled)').forEach(option => {
+            option.addEventListener('click', () => {
+                sportFilter.querySelectorAll('.sport-option').forEach(o => o.classList.remove('selected'));
+                option.classList.add('selected');
+                currentSport = option.dataset.value;
+                updateSportTheme();
+                updateActivityFilters();
+                fetchRealData();
+            });
         });
 
         let postalCodeTimeout;
