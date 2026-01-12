@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   # Also run on push to main for testing
   push:
-    branches: [main, master]
+    branches: [main]
     paths:
       - 'backend/**'
       - '.github/workflows/scrape-schedules.yml'

@@ -1,7 +1,7 @@
 {
-  "name": "metro-vancouver-skating-scraper",
+  "name": "metro-vancouver-sports-scraper",
   "version": "1.0.0",
-  "description": "Scraper for Metro Vancouver public skating schedules from ActiveNet",
+  "description": "Scraper for Metro Vancouver recreation schedules (skating, pools) from ActiveNet",
   "main": "puppeteer-scraper.js",
   "scripts": {
     "scrape": "node puppeteer-scraper.js",
@@ -14,11 +14,14 @@
   },
   "keywords": [
     "skating",
+    "pool",
+    "swimming",
     "vancouver",
     "burnaby",
     "metro-vancouver",
     "scraper",
-    "activenet"
+    "activenet",
+    "recreation"
   ],
   "author": "",
   "license": "MIT",
