@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+
+# Test artifacts
+coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Screenshots from debugging
+/tmp/
+*.png
+
+# Lock files (optional - uncomment if you want to track them)
+# package-lock.json

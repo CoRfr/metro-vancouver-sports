@@ -1,0 +1,32 @@
+{
+  "name": "metro-vancouver-skating-scraper",
+  "version": "1.0.0",
+  "description": "Scraper for Metro Vancouver public skating schedules from ActiveNet",
+  "main": "puppeteer-scraper.js",
+  "scripts": {
+    "scrape": "node puppeteer-scraper.js",
+    "scrape:json": "node puppeteer-scraper.js --output ../data/schedules.json",
+    "scrape:ical": "node puppeteer-scraper.js --ical --output ../data/schedules.ics",
+    "scrape:all": "npm run scrape:json && npm run scrape:ical",
+    "test": "node test-scraper.js",
+    "docker:build": "docker build -t skating-scraper .",
+    "docker:run": "docker run --rm skating-scraper"
+  },
+  "keywords": [
+    "skating",
+    "vancouver",
+    "burnaby",
+    "metro-vancouver",
+    "scraper",
+    "activenet"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.34.0"
+  }
+}

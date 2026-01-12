@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Skating Schedule</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .controls {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        select, input {
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .calendar-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .calendar-header h2 {
+            color: #333;
+            font-size: 1.8rem;
+        }
+
+        .calendar-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .view-toggle {
+            display: flex;
+            gap: 5px;
+            background: #f0f0f0;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .view-toggle button {
+            padding: 8px 16px;
+            background: transparent;
+            color: #666;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .view-toggle button.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .calendar-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .calendar-nav button {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .calendar-nav button:hover {
+            opacity: 0.9;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+        .calendar-grid.day-view {
+            grid-template-columns: 1fr;
+        }
+
+        .calendar-grid.week-view {
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        .calendar-day-header {
+            text-align: center;
+            font-weight: 700;
+            color: #667eea;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        .calendar-day {
+            min-height: 120px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 8px;
+            background: #fafafa;
+            transition: all 0.3s;
+        }
+
+        .calendar-grid.day-view .calendar-day {
+            min-height: auto;
+            padding: 20px;
+        }
+
+        .calendar-grid.day-view .day-number {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .calendar-grid.day-view .session-pill {
+            font-size: 1rem;
+            padding: 12px;
+            margin-bottom: 8px;
+        }
+
+        .calendar-day:hover {
+            border-color: #667eea;
+            background: white;
+        }
+
+        .calendar-day.other-month {
+            opacity: 0.3;
+        }
+
+        .calendar-day.today {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .day-number {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .day-sessions {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .session-pill {
+            padding: 4px 6px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .session-pill:hover {
+            transform: scale(1.05);
+        }
+
+        .session-pill.public {
+            background: #e3f2fd;
+            color: #1976d2;
+            border: 1px solid #90caf9;
+        }
+
+        .session-pill.family {
+            background: #f3e5f5;
+            color: #7b1fa2;
+            border: 1px solid #ce93d8;
+        }
+
+        .session-pill.hockey {
+            background: #fff3e0;
+            color: #ef6c00;
+            border: 1px solid #ffb74d;
+        }
+
+        .session-pill.figure {
+            background: #fce4ec;
+            color: #c2185b;
+            border: 1px solid #f48fb1;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        .session-detail {
+            margin-bottom: 15px;
+        }
+
+        .session-detail strong {
+            display: block;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .add-to-calendar {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.3s;
+            margin-top: 10px;
+        }
+
+        .add-to-calendar:hover {
+            opacity: 0.9;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .info-box a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .activity-filters {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .activity-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .activity-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⛸️ Public Skating Schedule</h1>
+            <p class="subtitle">Vancouver & Burnaby Community Centers</p>
+        </header>
+
+        <div class="info-box">
+            <h3>📋 About This Schedule</h3>
+            <p>
+                This app shows sample skating sessions from Vancouver and Burnaby community centers. 
+                In a production version, this would connect to the city's official scheduling systems to show real-time availability.
+                For actual schedules, please visit:
+                <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars" target="_blank">Vancouver Recreation</a> or
+                <a href="https://anc.ca.apm.activecommunities.com/burnaby" target="_blank">Burnaby Recreation</a>
+            </p>
+        </div>
+
+        <div class="controls">
+            <div class="filter-group">
+                <label for="cityFilter">City:</label>
+                <select id="cityFilter">
+                    <option value="all">All Cities</option>
+                    <option value="Vancouver">Vancouver</option>
+                    <option value="Burnaby">Burnaby</option>
+                </select>
+
+                <label for="facilityFilter">Facility:</label>
+                <select id="facilityFilter">
+                    <option value="all">All Facilities</option>
+                </select>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" placeholder="e.g. V6B 1A1" maxlength="7">
+                <button id="useLocationBtn" style="padding: 10px 15px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">📍 Use My Location</button>
+
+                <label for="distanceFilter">Within:</label>
+                <select id="distanceFilter">
+                    <option value="999">Any Distance</option>
+                    <option value="2">2 km</option>
+                    <option value="5">5 km</option>
+                    <option value="10">10 km</option>
+                    <option value="15">15 km</option>
+                </select>
+            </div>
+            
+            <div class="activity-filters">
+                <strong>Activity Types:</strong>
+                <label class="activity-checkbox">
+                    <input type="checkbox" id="activityPublic" value="Public Skating" checked>
+                    <span>Public Skating</span>
+                </label>
+                <label class="activity-checkbox">
+                    <input type="checkbox" id="activityFamily" value="Family Skate" checked>
+                    <span>Family Skating</span>
+                </label>
+                <label class="activity-checkbox">
+                    <input type="checkbox" id="activityHockey" value="Family Hockey">
+                    <span>Family Hockey</span>
+                </label>
+                <label class="activity-checkbox">
+                    <input type="checkbox" id="activityFigure" value="Figure Skating">
+                    <span>Figure Skating</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar-header">
+                <h2 id="currentMonth"></h2>
+                <div class="calendar-controls">
+                    <div class="view-toggle">
+                        <button id="dayViewBtn" class="active">Day</button>
+                        <button id="weekViewBtn">Week</button>
+                        <button id="monthViewBtn">Month</button>
+                    </div>
+                    <div class="calendar-nav">
+                        <button id="prevBtn">← Previous</button>
+                        <button id="nextBtn">Next →</button>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar-grid day-view" id="calendar"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="sessionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle"></div>
+                <button class="modal-close" id="modalClose">×</button>
+            </div>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // URL for schedule data - uses static JSON file from GitHub Pages
+        const DATA_URL = './data/schedules.json';
+        const USE_SAMPLE_DATA = false; // Set to true to use sample data for testing
+        
+        const sampleSessions = [
+            {
+                facility: "Britannia Community Centre",
+                city: "Vancouver",
+                address: "1661 Napier St, Vancouver",
+                lat: 49.2754,
+                lng: -123.0719,
+                date: "2026-01-15",
+                startTime: "12:00",
+                endTime: "13:30",
+                type: "Public Skating"
+            },
+            {
+                facility: "Hillcrest Centre",
+                city: "Vancouver",
+                address: "4575 Clancy Loranger Way, Vancouver",
+                lat: 49.2438,
+                lng: -123.1090,
+                date: "2026-01-15",
+                startTime: "15:00",
+                endTime: "16:30",
+                type: "Public Skating"
+            },
+            {
+                facility: "Kerrisdale Arena",
+                city: "Vancouver",
+                address: "5851 West Boulevard, Vancouver",
+                lat: 49.2337,
+                lng: -123.1607,
+                date: "2026-01-16",
+                startTime: "14:00",
+                endTime: "15:30",
+                type: "Figure Skating"
+            },
+            {
+                facility: "Bill Copeland Sports Centre",
+                city: "Burnaby",
+                address: "3676 Kensington Ave, Burnaby",
+                lat: 49.2389,
+                lng: -123.0042,
+                date: "2026-01-16",
+                startTime: "13:00",
+                endTime: "14:30",
+                type: "Public Skating"
+            },
+            {
+                facility: "Kensington Arena",
+                city: "Burnaby",
+                address: "6050 McMurray Ave, Burnaby",
+                lat: 49.2267,
+                lng: -123.0036,
+                date: "2026-01-17",
+                startTime: "11:00",
+                endTime: "12:30",
+                type: "Family Skate"
+            },
+            {
+                facility: "Sunset Community Centre",
+                city: "Vancouver",
+                address: "6810 Main St, Vancouver",
+                lat: 49.2267,
+                lng: -123.1003,
+                date: "2026-01-17",
+                startTime: "16:00",
+                endTime: "17:30",
+                type: "Family Hockey"
+            },
+            {
+                facility: "Trout Lake Community Centre",
+                city: "Vancouver",
+                address: "3360 Victoria Dr, Vancouver",
+                lat: 49.2544,
+                lng: -123.0636,
+                date: "2026-01-18",
+                startTime: "10:00",
+                endTime: "11:30",
+                type: "Public Skating"
+            },
+            {
+                facility: "Rosemary Brown Arena",
+                city: "Burnaby",
+                address: "5930 Humphries Ave, Burnaby",
+                lat: 49.2258,
+                lng: -122.9892,
+                date: "2026-01-18",
+                startTime: "14:30",
+                endTime: "16:00",
+                type: "Family Skate"
+            },
+            {
+                facility: "Britannia Community Centre",
+                city: "Vancouver",
+                address: "1661 Napier St, Vancouver",
+                lat: 49.2754,
+                lng: -123.0719,
+                date: "2026-01-20",
+                startTime: "18:00",
+                endTime: "19:30",
+                type: "Figure Skating"
+            },
+            {
+                facility: "Hillcrest Centre",
+                city: "Vancouver",
+                address: "4575 Clancy Loranger Way, Vancouver",
+                lat: 49.2438,
+                lng: -123.1090,
+                date: "2026-01-22",
+                startTime: "15:00",
+                endTime: "16:30",
+                type: "Public Skating"
+            },
+            {
+                facility: "Bill Copeland Sports Centre",
+                city: "Burnaby",
+                address: "3676 Kensington Ave, Burnaby",
+                lat: 49.2389,
+                lng: -123.0042,
+                date: "2026-01-23",
+                startTime: "19:00",
+                endTime: "20:30",
+                type: "Family Hockey"
+            },
+            {
+                facility: "Kensington Arena",
+                city: "Burnaby",
+                address: "6050 McMurray Ave, Burnaby",
+                lat: 49.2267,
+                lng: -123.0036,
+                date: "2026-01-24",
+                startTime: "11:00",
+                endTime: "12:30",
+                type: "Family Skate"
+            }
+        ];
+
+        let allSessions = [];
+        let filteredSessions = [];
+        let userLocation = null;
+        let currentDate = new Date();
+        let viewMode = 'day';
+        let isLoading = false; // 'day', 'week', or 'month'
+
+        const cityFilter = document.getElementById('cityFilter');
+        const facilityFilter = document.getElementById('facilityFilter');
+        const postalCodeInput = document.getElementById('postalCode');
+        const distanceFilter = document.getElementById('distanceFilter');
+        const calendar = document.getElementById('calendar');
+        const currentMonthEl = document.getElementById('currentMonth');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dayViewBtn = document.getElementById('dayViewBtn');
+        const weekViewBtn = document.getElementById('weekViewBtn');
+        const monthViewBtn = document.getElementById('monthViewBtn');
+        const modal = document.getElementById('sessionModal');
+        const modalClose = document.getElementById('modalClose');
+        const activityCheckboxes = document.querySelectorAll('.activity-checkbox input[type="checkbox"]');
+        const useLocationBtn = document.getElementById('useLocationBtn');
+
+        // Fetch schedule data from static JSON file
+        async function fetchRealData() {
+            if (USE_SAMPLE_DATA) {
+                // Use sample data for testing
+                allSessions = [...sampleSessions];
+                filteredSessions = [...sampleSessions];
+                initializeFilters();
+                renderCalendar();
+                return;
+            }
+
+            try {
+                isLoading = true;
+                renderLoading();
+
+                const response = await fetch(DATA_URL);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.success && data.sessions && data.sessions.length > 0) {
+                    allSessions = data.sessions;
+                    filteredSessions = [...allSessions];
+                    isLoading = false;
+                    
+                    // Update info box with data timestamp
+                    const infoBox = document.querySelector('.info-box p');
+                    if (infoBox && data.lastUpdated) {
+                        const updateTime = new Date(data.lastUpdated).toLocaleString();
+                        infoBox.innerHTML = `
+                            <strong>Schedule Data</strong><br>
+                            Showing ${data.count} skating sessions.<br>
+                            Last updated: ${updateTime}<br>
+                            <a href="./data/schedules.ics" download>Download iCal</a>
+                        `;
+                    }
+                    
+                    initializeFilters();
+                    filterSessions();
+                } else {
+                    throw new Error('No sessions returned from worker');
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                isLoading = false;
+                
+                // Fall back to sample data
+                allSessions = [...sampleSessions];
+                filteredSessions = [...sampleSessions];
+                
+                const infoBox = document.querySelector('.info-box p');
+                if (infoBox) {
+                    infoBox.innerHTML = `
+                        <strong>⚠️ Using Sample Data</strong><br>
+                        Could not load live data. Showing sample sessions instead.<br>
+                        Error: ${error.message}<br>
+                        For actual schedules, visit:
+                        <a href="https://anc.ca.apm.activecommunities.com/vancouver/calendars" target="_blank">Vancouver Recreation</a> or
+                        <a href="https://anc.ca.apm.activecommunities.com/burnaby" target="_blank">Burnaby Recreation</a>
+                    `;
+                }
+                
+                initializeFilters();
+                renderCalendar();
+            }
+        }
+
+        function renderLoading() {
+            const calendar = document.getElementById('calendar');
+            calendar.className = 'calendar-grid day-view';
+            calendar.innerHTML = `
+                <div style="text-align: center; padding: 60px 20px;">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">⛸️</div>
+                    <div style="font-size: 1.2rem; color: #667eea; font-weight: 600; margin-bottom: 10px;">
+                        Loading skating sessions...
+                    </div>
+                    <div style="color: #666;">
+                        Fetching data from Vancouver and Burnaby recreation centers
+                    </div>
+                </div>
+            `;
+        }
+
+        function initializeFilters() {
+            const facilities = [...new Set(allSessions.map(s => s.facility))].sort();
+            facilityFilter.innerHTML = '<option value="all">All Facilities</option>';
+            facilities.forEach(f => {
+                const option = document.createElement('option');
+                option.value = f;
+                option.textContent = f;
+                facilityFilter.appendChild(option);
+            });
+        }
+
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                     Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                     Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        async function geocodePostalCode(postalCode) {
+            const cleanedCode = postalCode.replace(/\s/g, '').toUpperCase();
+            if (cleanedCode.length < 6) return null;
+
+            try {
+                const response = await fetch(
+                    `https://nominatim.openstreetmap.org/search?postalcode=${cleanedCode}&country=Canada&format=json&limit=1`
+                );
+                const data = await response.json();
+                if (data && data.length > 0) {
+                    return {
+                        lat: parseFloat(data[0].lat),
+                        lng: parseFloat(data[0].lon)
+                    };
+                }
+            } catch (error) {
+                console.error('Geocoding error:', error);
+            }
+            return null;
+        }
+
+        async function handlePostalCodeChange() {
+            const postalCode = postalCodeInput.value.trim();
+            if (!postalCode) {
+                userLocation = null;
+                filterSessions();
+                return;
+            }
+
+            const coords = await geocodePostalCode(postalCode);
+            if (coords) {
+                userLocation = coords;
+                filterSessions();
+            } else {
+                userLocation = null;
+                filterSessions();
+            }
+        }
+
+        async function reverseGeocode(lat, lng) {
+            try {
+                const response = await fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&addressdetails=1`
+                );
+                const data = await response.json();
+                if (data && data.address && data.address.postcode) {
+                    return data.address.postcode;
+                }
+            } catch (error) {
+                console.error('Reverse geocoding error:', error);
+            }
+            return null;
+        }
+
+        async function useCurrentLocation() {
+            if (!navigator.geolocation) {
+                alert('Geolocation is not supported by your browser');
+                return;
+            }
+
+            useLocationBtn.textContent = '📍 Getting location...';
+            useLocationBtn.disabled = true;
+
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    
+                    userLocation = { lat, lng };
+                    
+                    const postalCode = await reverseGeocode(lat, lng);
+                    if (postalCode) {
+                        postalCodeInput.value = postalCode;
+                    }
+                    
+                    filterSessions();
+                    useLocationBtn.textContent = '📍 Use My Location';
+                    useLocationBtn.disabled = false;
+                },
+                (error) => {
+                    console.error('Geolocation error:', error);
+                    alert('Unable to get your location. Please enter your postal code manually.');
+                    useLocationBtn.textContent = '📍 Use My Location';
+                    useLocationBtn.disabled = false;
+                }
+            );
+        }
+
+        function getSelectedActivityTypes() {
+            return Array.from(activityCheckboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+        }
+
+        function filterSessions() {
+            const selectedTypes = getSelectedActivityTypes();
+            
+            filteredSessions = allSessions.filter(session => {
+                const cityMatch = cityFilter.value === 'all' || session.city === cityFilter.value;
+                const facilityMatch = facilityFilter.value === 'all' || session.facility === facilityFilter.value;
+                const activityMatch = selectedTypes.includes(session.type);
+                
+                let distanceMatch = true;
+                if (userLocation && distanceFilter.value !== '999') {
+                    const distance = calculateDistance(
+                        userLocation.lat,
+                        userLocation.lng,
+                        session.lat,
+                        session.lng
+                    );
+                    distanceMatch = distance <= parseFloat(distanceFilter.value);
+                }
+                
+                return cityMatch && facilityMatch && distanceMatch && activityMatch;
+            });
+
+            renderCalendar();
+        }
+
+        function formatTime(time) {
+            const [hours, minutes] = time.split(':');
+            const h = parseInt(hours);
+            const ampm = h >= 12 ? 'PM' : 'AM';
+            const displayHour = h % 12 || 12;
+            return `${displayHour}:${minutes} ${ampm}`;
+        }
+
+        function getSessionClass(type) {
+            if (type === 'Public Skating') return 'public';
+            if (type === 'Family Skate') return 'family';
+            if (type === 'Family Hockey') return 'hockey';
+            if (type === 'Figure Skating') return 'figure';
+            return 'public';
+        }
+
+        function renderCalendar() {
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                              'July', 'August', 'September', 'October', 'November', 'December'];
+            currentMonthEl.textContent = `${monthNames[month]} ${year}`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const daysInPrevMonth = new Date(year, month, 0).getDate();
+
+            calendar.innerHTML = `
+                <div class="calendar-day-header">Sun</div>
+                <div class="calendar-day-header">Mon</div>
+                <div class="calendar-day-header">Tue</div>
+                <div class="calendar-day-header">Wed</div>
+                <div class="calendar-day-header">Thu</div>
+                <div class="calendar-day-header">Fri</div>
+                <div class="calendar-day-header">Sat</div>
+            `;
+
+            const today = new Date();
+            const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+
+            for (let i = firstDay - 1; i >= 0; i--) {
+                const day = daysInPrevMonth - i;
+                const dayEl = document.createElement('div');
+                dayEl.className = 'calendar-day other-month';
+                dayEl.innerHTML = `<div class="day-number">${day}</div>`;
+                calendar.appendChild(dayEl);
+            }
+
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+                const daySessions = filteredSessions.filter(s => s.date === dateStr);
+                
+                const dayEl = document.createElement('div');
+                dayEl.className = 'calendar-day';
+                if (dateStr === todayStr) {
+                    dayEl.classList.add('today');
+                }
+                
+                let sessionsHTML = '';
+                if (daySessions.length > 0) {
+                    sessionsHTML = '<div class="day-sessions">';
+                    daySessions.slice(0, 3).forEach(session => {
+                        sessionsHTML += `<div class="session-pill ${getSessionClass(session.type)}" onclick='showSessionDetails(${JSON.stringify(session).replace(/'/g, "&apos;")})'>${formatTime(session.startTime)} ${session.facility.split(' ')[0]}</div>`;
+                    });
+                    if (daySessions.length > 3) {
+                        sessionsHTML += `<div class="session-pill" style="background: #f5f5f5; color: #666; cursor: default;">+${daySessions.length - 3} more</div>`;
+                    }
+                    sessionsHTML += '</div>';
+                }
+                
+                dayEl.innerHTML = `<div class="day-number">${day}</div>${sessionsHTML}`;
+                calendar.appendChild(dayEl);
+            }
+
+            const remainingDays = 42 - (firstDay + daysInMonth);
+            for (let day = 1; day <= remainingDays; day++) {
+                const dayEl = document.createElement('div');
+                dayEl.className = 'calendar-day other-month';
+                dayEl.innerHTML = `<div class="day-number">${day}</div>`;
+                calendar.appendChild(dayEl);
+            }
+        }
+
+        function showSessionDetails(session) {
+            const modalTitle = document.getElementById('modalTitle');
+            const modalBody = document.getElementById('modalBody');
+            
+            modalTitle.textContent = session.facility;
+            
+            let distanceHTML = '';
+            if (userLocation) {
+                const distance = calculateDistance(
+                    userLocation.lat,
+                    userLocation.lng,
+                    session.lat,
+                    session.lng
+                );
+                distanceHTML = `<div class="session-detail"><strong>Distance:</strong>${distance.toFixed(1)} km away</div>`;
+            }
+            
+            modalBody.innerHTML = `
+                <div class="session-detail">
+                    <strong>Activity Type:</strong>
+                    ${session.type}
+                </div>
+                <div class="session-detail">
+                    <strong>Date:</strong>
+                    ${new Date(session.date + 'T00:00:00').toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+                </div>
+                <div class="session-detail">
+                    <strong>Time:</strong>
+                    ${formatTime(session.startTime)} - ${formatTime(session.endTime)}
+                </div>
+                <div class="session-detail">
+                    <strong>Location:</strong>
+                    ${session.address}
+                </div>
+                <div class="session-detail">
+                    <strong>City:</strong>
+                    ${session.city}
+                </div>
+                ${distanceHTML}
+                <button class="add-to-calendar" onclick='addToGoogleCalendar(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
+                    📅 Add to Google Calendar
+                </button>
+            `;
+            
+            modal.classList.add('active');
+        }
+
+        function addToGoogleCalendar(session) {
+            const startDateTime = `${session.date}T${session.startTime}:00`;
+            const endDateTime = `${session.date}T${session.endTime}:00`;
+            
+            const title = encodeURIComponent(`${session.type} - ${session.facility}`);
+            const details = encodeURIComponent(`${session.type} at ${session.facility}`);
+            const location = encodeURIComponent(session.address);
+            const start = startDateTime.replace(/[-:]/g, '');
+            const end = endDateTime.replace(/[-:]/g, '');
+
+            const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}&dates=${start}/${end}`;
+            window.open(url, '_blank');
+        }
+
+        prevMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            renderCalendar();
+        });
+
+        nextMonthBtn.addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            renderCalendar();
+        });
+
+        modalClose.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        cityFilter.addEventListener('change', filterSessions);
+        facilityFilter.addEventListener('change', filterSessions);
+        distanceFilter.addEventListener('change', filterSessions);
+        
+        activityCheckboxes.forEach(cb => {
+            cb.addEventListener('change', filterSessions);
+        });
+        
+        let postalCodeTimeout;
+        postalCodeInput.addEventListener('input', () => {
+            clearTimeout(postalCodeTimeout);
+            postalCodeTimeout = setTimeout(handlePostalCodeChange, 1000);
+        });
+
+        useLocationBtn.addEventListener('click', useCurrentLocation);
+
+        window.showSessionDetails = showSessionDetails;
+        window.addToGoogleCalendar = addToGoogleCalendar;
+
+        // Initialize app - fetch data on load
+        fetchRealData();
+    </script>
+</body>
+</html>

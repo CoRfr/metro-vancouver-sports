@@ -1,0 +1,91 @@
+name: Scrape Skating Schedules
+
+on:
+  # Run daily at 6 AM UTC (10 PM Pacific)
+  schedule:
+    - cron: '0 6 * * *'
+  # Allow manual trigger
+  workflow_dispatch:
+  # Also run on push to main for testing
+  push:
+    branches: [main, master]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/scrape-schedules.yml'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
+      - name: Install dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Run scraper (JSON)
+        working-directory: backend
+        env:
+          CHROMIUM_PATH: /usr/bin/chromium-browser
+        run: |
+          mkdir -p ../data
+          node puppeteer-scraper.js --output ../data/schedules.json 2>&1 | tee scrape.log
+
+      - name: Run scraper (iCal)
+        working-directory: backend
+        env:
+          CHROMIUM_PATH: /usr/bin/chromium-browser
+        run: |
+          node puppeteer-scraper.js --ical --output ../data/schedules.ics 2>&1 | tee -a scrape.log
+
+      - name: Generate schedule summary
+        run: |
+          echo "# Skating Schedule Update" > data/README.md
+          echo "" >> data/README.md
+          echo "Last updated: $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> data/README.md
+          echo "" >> data/README.md
+          if [ -f data/schedules.json ]; then
+            COUNT=$(jq '.count' data/schedules.json)
+            echo "Total sessions: $COUNT" >> data/README.md
+            echo "" >> data/README.md
+            echo "## Available Formats" >> data/README.md
+            echo "" >> data/README.md
+            echo "- [schedules.json](schedules.json) - JSON format for web applications" >> data/README.md
+            echo "- [schedules.ics](schedules.ics) - iCal format for calendar apps" >> data/README.md
+          fi
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet data/ || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git commit -m "Update skating schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Upload scrape log
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scrape-log
+          path: backend/scrape.log
+          retention-days: 7

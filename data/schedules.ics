@@ -1,0 +1,397 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Metro Vancouver Skating Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Metro Vancouver Public Skating
+BEGIN:VEVENT
+UID:597411-2026-01-13-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260113T114500
+DTEND;TZID=America/Vancouver:20260113T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 14
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597508-2026-01-14-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260114T100000
+DTEND;TZID=America/Vancouver:20260114T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 10
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:602978-2026-01-15-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260115T114500
+DTEND;TZID=America/Vancouver:20260115T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598089-2026-01-16-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260116T100000
+DTEND;TZID=America/Vancouver:20260116T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597412-2026-01-20-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260120T114500
+DTEND;TZID=America/Vancouver:20260120T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597509-2026-01-21-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260121T100000
+DTEND;TZID=America/Vancouver:20260121T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604274-2026-01-22-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260122T114500
+DTEND;TZID=America/Vancouver:20260122T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598090-2026-01-23-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260123T100000
+DTEND;TZID=America/Vancouver:20260123T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597413-2026-01-27-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260127T114500
+DTEND;TZID=America/Vancouver:20260127T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597510-2026-01-28-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260128T100000
+DTEND;TZID=America/Vancouver:20260128T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604275-2026-01-29-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260129T114500
+DTEND;TZID=America/Vancouver:20260129T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:597414-2026-02-03-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260203T114500
+DTEND;TZID=America/Vancouver:20260203T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597511-2026-02-04-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260204T100000
+DTEND;TZID=America/Vancouver:20260204T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604276-2026-02-05-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260205T114500
+DTEND;TZID=America/Vancouver:20260205T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598092-2026-02-06-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260206T100000
+DTEND;TZID=America/Vancouver:20260206T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597415-2026-02-10-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260210T114500
+DTEND;TZID=America/Vancouver:20260210T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597512-2026-02-11-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260211T100000
+DTEND;TZID=America/Vancouver:20260211T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604277-2026-02-12-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260212T114500
+DTEND;TZID=America/Vancouver:20260212T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598093-2026-02-13-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260213T100000
+DTEND;TZID=America/Vancouver:20260213T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597416-2026-02-17-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260217T114500
+DTEND;TZID=America/Vancouver:20260217T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597513-2026-02-18-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260218T100000
+DTEND;TZID=America/Vancouver:20260218T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604278-2026-02-19-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260219T114500
+DTEND;TZID=America/Vancouver:20260219T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598094-2026-02-20-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260220T100000
+DTEND;TZID=America/Vancouver:20260220T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597417-2026-02-24-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260224T114500
+DTEND;TZID=America/Vancouver:20260224T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597514-2026-02-25-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260225T100000
+DTEND;TZID=America/Vancouver:20260225T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:604279-2026-02-26-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260226T114500
+DTEND;TZID=America/Vancouver:20260226T133000
+SUMMARY:Figure Skating - Killarney Rink
+LOCATION:6260 Killarney St, Vancouver
+DESCRIPTION:Figure Skating at Killarney Rink\nVancouver\nOpenings: 22
+GEO:49.2275;-123.0456
+END:VEVENT
+BEGIN:VEVENT
+UID:598095-2026-02-27-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260227T100000
+DTEND;TZID=America/Vancouver:20260227T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597418-2026-03-03-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260303T114500
+DTEND;TZID=America/Vancouver:20260303T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597515-2026-03-04-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260304T100000
+DTEND;TZID=America/Vancouver:20260304T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:598096-2026-03-06-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260306T100000
+DTEND;TZID=America/Vancouver:20260306T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597419-2026-03-10-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260310T114500
+DTEND;TZID=America/Vancouver:20260310T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597516-2026-03-11-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260311T100000
+DTEND;TZID=America/Vancouver:20260311T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:598097-2026-03-13-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260313T100000
+DTEND;TZID=America/Vancouver:20260313T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597420-2026-03-17-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260317T114500
+DTEND;TZID=America/Vancouver:20260317T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597517-2026-03-18-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260318T100000
+DTEND;TZID=America/Vancouver:20260318T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:598098-2026-03-20-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260320T100000
+DTEND;TZID=America/Vancouver:20260320T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597421-2026-03-24-11-45@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260324T114500
+DTEND;TZID=America/Vancouver:20260324T131500
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:597518-2026-03-25-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260325T100000
+DTEND;TZID=America/Vancouver:20260325T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+BEGIN:VEVENT
+UID:598099-2026-03-27-10-00@metro-vancouver-skating
+DTSTAMP:20260112T014909Z
+DTSTART;TZID=America/Vancouver:20260327T100000
+DTEND;TZID=America/Vancouver:20260327T113000
+SUMMARY:Figure Skating - Hillcrest Centre
+LOCATION:4575 Clancy Loranger Way, Vancouver
+DESCRIPTION:Figure Skating at Hillcrest Centre\nVancouver\nOpenings: 22
+GEO:49.2438;-123.109
+END:VEVENT
+END:VCALENDAR
