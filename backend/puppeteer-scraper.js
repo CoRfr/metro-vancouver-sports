@@ -2,8 +2,8 @@
 /**
  * Puppeteer-based scraper for Metro Vancouver skating schedules
  *
- * This scraper handles client-rendered ActiveNet sites by using a real browser
- * to execute JavaScript and extract the schedule data.
+ * This scraper uses the Calendar view to get all drop-in skating sessions,
+ * which shows individual occurrences rather than activity series.
  *
  * Usage:
  *   node puppeteer-scraper.js                    # Scrape all and output JSON
@@ -31,7 +31,7 @@ const CONFIG = {
       { name: 'Kerrisdale Arena', aliases: ['Kerrisdale', 'Kerrisdale Rink'], lat: 49.2337, lng: -123.1607, address: '5851 West Boulevard, Vancouver' },
       { name: 'Killarney Rink', aliases: ['Killarney', 'Killarney Arena'], lat: 49.2275, lng: -123.0456, address: '6260 Killarney St, Vancouver' },
       { name: 'Kitsilano Rink', aliases: ['Kitsilano', 'Kits'], lat: 49.2713, lng: -123.1570, address: '2690 Larch St, Vancouver' },
-      { name: 'Sunset Community Centre', aliases: ['Sunset', 'Sunset Arena'], lat: 49.2267, lng: -123.1003, address: '6810 Main St, Vancouver' },
+      { name: 'Sunset Community Centre', aliases: ['Sunset', 'Sunset Arena', 'Sunset Rink'], lat: 49.2267, lng: -123.1003, address: '6810 Main St, Vancouver' },
       { name: 'Trout Lake Community Centre', aliases: ['Trout Lake', 'Trout Lake Rink'], lat: 49.2544, lng: -123.0636, address: '3360 Victoria Dr, Vancouver' },
       { name: 'West End Community Centre', aliases: ['West End', 'West End Rink'], lat: 49.2863, lng: -123.1353, address: '870 Denman St, Vancouver' },
       { name: 'Thunderbird Community Centre', aliases: ['Thunderbird', 'Thunderbird Cmty Centre'], lat: 49.2614, lng: -123.2456, address: '2311 Cassiar St, Vancouver' },
@@ -39,11 +39,24 @@ const CONFIG = {
     burnaby: [
       { name: 'Bill Copeland Sports Centre', aliases: ['Bill Copeland', 'Copeland'], lat: 49.2389, lng: -123.0042, address: '3676 Kensington Ave, Burnaby' },
       { name: 'Kensington Arena', aliases: ['Kensington'], lat: 49.2267, lng: -123.0036, address: '6050 McMurray Ave, Burnaby' },
-      { name: 'Rosemary Brown Arena', aliases: ['Rosemary Brown', 'RBR', 'Rosemary Brown Recreation Centre'], lat: 49.2258, lng: -122.9892, address: '5930 Humphries Ave, Burnaby' },
+      { name: 'Burnaby Lake Arena', aliases: ['Burnaby Lake'], lat: 49.2492, lng: -122.9567, address: '3676 Kensington Ave, Burnaby' },
+      { name: 'C.G. Brown Memorial Pool Arena', aliases: ['C.G. Brown', 'CG Brown'], lat: 49.2758, lng: -122.9833, address: '5858 Rumble St, Burnaby' },
+      { name: 'Rosemary Brown Recreation Centre', aliases: ['Rosemary Brown', 'RBR', 'Rosemary Brown Recreation Centre (RBR)'], lat: 49.2258, lng: -122.9892, address: '5930 Humphries Ave, Burnaby' },
     ],
   },
 
-  // Search URLs - multiple searches to capture all skating activities
+  // Calendar URLs - these show individual drop-in sessions
+  calendars: [
+    {
+      city: 'vancouver',
+      name: 'Vancouver Drop-in Skating',
+      // Calendar ID 3 is Drop-in Skating for Vancouver
+      baseUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars',
+      calendarId: 3,
+    },
+  ],
+
+  // Activity search URLs (fallback / supplementary)
   searches: [
     { city: 'vancouver', keyword: 'skating', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skating&viewMode=list' },
     { city: 'vancouver', keyword: 'skate', url: 'https://anc.ca.apm.activecommunities.com/vancouver/activity/search?activity_keyword=skate&viewMode=list' },
@@ -78,7 +91,102 @@ async function createBrowser(debug = false) {
 }
 
 /**
- * Extract structured data from activity cards
+ * Scrape calendar view for a specific month
+ */
+async function scrapeCalendarMonth(page, calendar, year, month) {
+  const { city, baseUrl, calendarId } = calendar;
+
+  // Build calendar URL with specific month
+  // Format: view=2 is month view, displayType=0 shows all
+  const url = `${baseUrl}?onlineSiteId=0&defaultCalendarId=${calendarId}&displayType=0&view=2&month=${month}&year=${year}`;
+
+  console.error(`  Scraping ${city} calendar for ${year}-${String(month).padStart(2, '0')}...`);
+
+  try {
+    await page.goto(url, {
+      waitUntil: 'networkidle0',
+      timeout: CONFIG.timeout,
+    });
+
+    // Wait for calendar to load
+    await page.waitForSelector('.calendar-container, .fc-event, .calendar-event, [class*="calendar"]', { timeout: 15000 }).catch(() => {});
+
+    // Give extra time for events to render
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Extract events from the calendar
+    const events = await page.evaluate(() => {
+      const results = [];
+
+      // Try multiple selectors for calendar events
+      const eventSelectors = [
+        '.fc-event',
+        '.calendar-event',
+        '[class*="event-item"]',
+        '.activity-item',
+        '[data-activity]',
+      ];
+
+      for (const selector of eventSelectors) {
+        const elements = document.querySelectorAll(selector);
+        elements.forEach(el => {
+          const text = el.textContent || '';
+          const title = el.getAttribute('title') || el.querySelector('[class*="title"]')?.textContent || '';
+          const time = el.querySelector('[class*="time"]')?.textContent || '';
+          const location = el.querySelector('[class*="location"]')?.textContent || '';
+
+          // Try to get date from parent day cell or data attribute
+          let date = el.getAttribute('data-date') || '';
+          if (!date) {
+            const dayCell = el.closest('[data-date], .fc-day, .calendar-day');
+            if (dayCell) {
+              date = dayCell.getAttribute('data-date') || '';
+            }
+          }
+
+          if (text.toLowerCase().includes('skat')) {
+            results.push({
+              text: text.trim().substring(0, 500),
+              title: title.trim(),
+              time: time.trim(),
+              location: location.trim(),
+              date: date,
+              html: el.innerHTML.substring(0, 200),
+            });
+          }
+        });
+      }
+
+      // Also check for list view items
+      const listItems = document.querySelectorAll('.list-item, .activity-row, tr[class*="activity"]');
+      listItems.forEach(el => {
+        const text = el.textContent || '';
+        if (text.toLowerCase().includes('skat')) {
+          results.push({
+            text: text.trim().substring(0, 500),
+            title: '',
+            time: '',
+            location: '',
+            date: '',
+            html: el.innerHTML.substring(0, 200),
+          });
+        }
+      });
+
+      return results;
+    });
+
+    console.error(`    Found ${events.length} potential skating events`);
+    return events;
+
+  } catch (e) {
+    console.error(`    Error scraping calendar: ${e.message}`);
+    return [];
+  }
+}
+
+/**
+ * Extract structured data from activity cards (search results)
  */
 async function extractActivityCards(page) {
   return await page.evaluate(() => {
@@ -99,27 +207,24 @@ async function extractActivityCards(page) {
         const locationEl = card.querySelector('.activity-card-info__location');
         const location = locationEl ? locationEl.textContent.trim().replace(/^\*/, '') : '';
 
-        // Get date - look for date elements
-        const dateEl = card.querySelector('.activity-card-info__date, [class*="date"]');
-        let dateText = '';
-        if (dateEl) {
-          dateText = dateEl.textContent.trim();
-        } else {
-          // Try to find date in card text (format: "Month DD, YYYY" or "Month DD, YYYY to Month DD, YYYY")
-          const cardText = card.textContent;
-          const dateMatch = cardText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s*\d{4}/);
-          if (dateMatch) {
-            dateText = dateMatch[0];
-          }
-        }
+        // Get ALL date occurrences from the activity details
+        const cardText = card.textContent;
+
+        // Look for date range pattern first
+        const dateRangeMatch = cardText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}\s*(?:to|-)\s*(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/i);
+
+        // Get individual date mentions
+        const dateMatches = cardText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/gi) || [];
 
         // Get time - look for time patterns
         let timeText = '';
-        const cardText = card.textContent;
         const timeMatch = cardText.match(/(\d{1,2}:\d{2}\s*(?:AM|PM))\s*-\s*(\d{1,2}:\d{2}\s*(?:AM|PM))/i);
         if (timeMatch) {
           timeText = timeMatch[0];
         }
+
+        // Get day of week pattern (indicates recurring)
+        const dayPattern = cardText.match(/(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)s?/gi);
 
         // Get reference number
         const refMatch = cardText.match(/#(\d+)/);
@@ -132,10 +237,13 @@ async function extractActivityCards(page) {
         results.push({
           name,
           location,
-          dateText,
+          dateTexts: dateMatches,
+          dateRangeText: dateRangeMatch ? dateRangeMatch[0] : '',
           timeText,
+          dayPattern: dayPattern ? [...new Set(dayPattern.map(d => d.toLowerCase()))] : [],
           refNumber,
           openings,
+          rawText: cardText.substring(0, 1000),
         });
       } catch (e) {
         // Skip malformed cards
@@ -208,6 +316,41 @@ function parseTimeRange(timeText) {
   }
 
   return { startTime: null, endTime: null };
+}
+
+/**
+ * Expand date range to individual dates based on day pattern
+ */
+function expandDateRange(startDateStr, endDateStr, dayPatterns, timeText) {
+  const dates = [];
+  const dayMap = {
+    'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,
+    'thursday': 4, 'friday': 5, 'saturday': 6
+  };
+
+  const targetDays = dayPatterns.map(d => dayMap[d.toLowerCase()]).filter(d => d !== undefined);
+
+  if (targetDays.length === 0) {
+    // If no day pattern, just return the start date
+    return [startDateStr];
+  }
+
+  const start = new Date(startDateStr + 'T00:00:00');
+  const end = new Date(endDateStr + 'T00:00:00');
+
+  // Limit to 90 days to prevent runaway loops
+  const maxDate = new Date(start);
+  maxDate.setDate(maxDate.getDate() + 90);
+  const actualEnd = end < maxDate ? end : maxDate;
+
+  for (let d = new Date(start); d <= actualEnd; d.setDate(d.getDate() + 1)) {
+    if (targetDays.includes(d.getDay())) {
+      const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      dates.push(dateStr);
+    }
+  }
+
+  return dates;
 }
 
 /**
@@ -285,12 +428,17 @@ function determineActivityType(activityName) {
     return 'Practice';
   }
 
+  // Adult skating
+  if (name.includes('adult')) {
+    return 'Public Skating';
+  }
+
   // Default - general skating
   return 'Skating';
 }
 
 /**
- * Scrape a single search URL
+ * Scrape a single search URL with date expansion
  */
 async function scrapeSearch(page, search) {
   const { city, keyword, url } = search;
@@ -313,11 +461,14 @@ async function scrapeSearch(page, search) {
     // Scroll to load more results if available
     await autoScroll(page);
 
+    // Click "Load More" if available
+    await clickLoadMore(page);
+
     // Extract card data
     const rawCards = await extractActivityCards(page);
     console.error(`  Found ${rawCards.length} activities`);
 
-    // Parse into structured sessions
+    // Parse into structured sessions with date expansion
     const sessions = [];
     for (const card of rawCards) {
       const facility = matchFacility(card.location, city) || matchFacility(card.name, city);
@@ -326,28 +477,47 @@ async function scrapeSearch(page, search) {
         continue;
       }
 
-      const date = parseDate(card.dateText);
       const { startTime, endTime } = parseTimeRange(card.timeText);
 
-      if (!date) {
-        console.error(`  Could not parse date: ${card.dateText}`);
-        continue;
+      // Try to expand date range
+      let dates = [];
+      if (card.dateRangeText && card.dayPattern.length > 0) {
+        // Parse start and end dates from range
+        const rangeDates = card.dateRangeText.match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},?\s*\d{4}/gi);
+        if (rangeDates && rangeDates.length >= 2) {
+          const startDate = parseDate(rangeDates[0]);
+          const endDate = parseDate(rangeDates[1]);
+          if (startDate && endDate) {
+            dates = expandDateRange(startDate, endDate, card.dayPattern, card.timeText);
+            console.error(`    Expanded "${card.name}" to ${dates.length} dates`);
+          }
+        }
       }
 
-      sessions.push({
-        facility: facility.name,
-        city: city.charAt(0).toUpperCase() + city.slice(1),
-        address: facility.address,
-        lat: facility.lat,
-        lng: facility.lng,
-        date,
-        startTime: startTime || '00:00',
-        endTime: endTime || '00:00',
-        type: determineActivityType(card.name),
-        activityName: card.name,
-        openings: card.openings,
-        refNumber: card.refNumber,
-      });
+      // Fall back to individual dates
+      if (dates.length === 0 && card.dateTexts.length > 0) {
+        dates = card.dateTexts.map(d => parseDate(d)).filter(Boolean);
+      }
+
+      // Create session for each date
+      for (const date of dates) {
+        if (!date) continue;
+
+        sessions.push({
+          facility: facility.name,
+          city: city.charAt(0).toUpperCase() + city.slice(1),
+          address: facility.address,
+          lat: facility.lat,
+          lng: facility.lng,
+          date,
+          startTime: startTime || '00:00',
+          endTime: endTime || '00:00',
+          type: determineActivityType(card.name),
+          activityName: card.name,
+          openings: card.openings,
+          refNumber: card.refNumber,
+        });
+      }
     }
 
     return sessions;
@@ -355,6 +525,31 @@ async function scrapeSearch(page, search) {
   } catch (e) {
     console.error(`  Error scraping ${city} - "${keyword}":`, e.message);
     return [];
+  }
+}
+
+/**
+ * Click "Load More" button repeatedly to get all results
+ */
+async function clickLoadMore(page) {
+  let clicked = 0;
+  const maxClicks = 10;
+
+  while (clicked < maxClicks) {
+    try {
+      const loadMoreBtn = await page.$('button:has-text("Load More"), .load-more-btn, [class*="load-more"]');
+      if (!loadMoreBtn) break;
+
+      const isVisible = await loadMoreBtn.isIntersectingViewport();
+      if (!isVisible) break;
+
+      await loadMoreBtn.click();
+      clicked++;
+      console.error(`    Clicked "Load More" (${clicked})`);
+      await new Promise(r => setTimeout(r, 2000));
+    } catch (e) {
+      break;
+    }
   }
 }
 
@@ -440,6 +635,7 @@ async function scrapeAll(options = {}) {
     const { browser: b, page } = await createBrowser(debug);
     browser = b;
 
+    // Scrape activity searches with date expansion
     for (const search of searches) {
       const sessions = await scrapeSearch(page, search);
 

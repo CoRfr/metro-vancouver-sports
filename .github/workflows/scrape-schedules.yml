@@ -13,6 +13,10 @@ on:
       - 'backend/**'
       - '.github/workflows/scrape-schedules.yml'
 
+# Grant write permissions for pushing commits
+permissions:
+  contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
