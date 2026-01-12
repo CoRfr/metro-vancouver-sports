@@ -18,9 +18,9 @@
       "eventItemId": 594474
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-12",
@@ -76,6 +76,19 @@
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
+    },
+    {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-12",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Skate - 50+",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -169,9 +182,9 @@
       "eventItemId": 599719
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-12",
@@ -181,6 +194,19 @@
       "activityName": "Toonie Skate",
       "ageRange": "All ages",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
+    },
+    {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-12",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -305,9 +331,9 @@
       "eventItemId": 592179
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-12",
@@ -378,5 +404,5 @@
       "eventItemId": 591944
     }
   ],
-  "count": 25
+  "count": 27
 }

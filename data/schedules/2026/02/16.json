@@ -2,6 +2,19 @@
   "date": "2026-02-16",
   "sessions": [
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "08:15",
+      "endTime": "09:45",
+      "type": "Public Skating",
+      "activityName": "18y+",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver",
@@ -66,6 +79,45 @@
       "eventItemId": 601438
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Public Skating",
+      "activityName": "Adult Noon Hour",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "14:00",
+      "endTime": "14:45",
+      "type": "Family Skate",
+      "activityName": "5-8y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "type": "Family Skate",
+      "activityName": "9-11y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver",
@@ -80,7 +132,33 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---monday-3-45pm/592184",
       "eventItemId": 592184
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "15:45",
+      "endTime": "16:30",
+      "type": "Family Skate",
+      "activityName": "12y+ (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-16",
+      "startTime": "16:45",
+      "endTime": "18:00",
+      "type": "Family Skate",
+      "activityName": "Public Skate (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     }
   ],
-  "count": 5
+  "count": 11
 }

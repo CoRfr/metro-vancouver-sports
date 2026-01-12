@@ -2,9 +2,9 @@
   "date": "2026-01-22",
   "sessions": [
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-22",
@@ -45,9 +45,22 @@
       "eventItemId": 601360
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster",
+      "lat": 49.2267,
+      "lng": -122.935,
+      "date": "2026-01-22",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "type": "Family Skate",
+      "activityName": "Try-It! - Parent & Tot Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-22",
@@ -57,6 +70,19 @@
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986"
+    },
+    {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-22",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Skate - 50+",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -70,6 +96,19 @@
       "type": "Public Skating",
       "activityName": "Adult 19yr+ Social Skate: Gilmore Skate Club",
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-social-skate-gilmore-skate-club-karen-magnussen"
+    },
+    {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster",
+      "lat": 49.2267,
+      "lng": -122.935,
+      "date": "2026-01-22",
+      "startTime": "11:15",
+      "endTime": "12:45",
+      "type": "Public Skating",
+      "activityName": "Try-it! - Public Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -118,9 +157,9 @@
       "eventItemId": 601448
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-22",
@@ -162,6 +201,19 @@
       "eventItemId": 595073
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-22",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
       "address": "800 Robson St, Vancouver",
@@ -190,9 +242,9 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-22",
@@ -274,6 +326,19 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm"
     },
     {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster",
+      "lat": 49.2267,
+      "lng": -122.935,
+      "date": "2026-01-22",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "type": "Public Skating",
+      "activityName": "Try-it! - Public Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -288,5 +353,5 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     }
   ],
-  "count": 20
+  "count": 25
 }

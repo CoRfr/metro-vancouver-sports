@@ -57,10 +57,10 @@ const CONFIG = {
     dailyActivitiesUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities',
     facilities: {
       'kensington': {
-        name: 'Kensington Arena',
+        name: 'Kensington Complex',
         lat: 49.2267,
         lng: -123.0036,
-        address: '6050 McMurray Ave, Burnaby',
+        address: '6159 Curtis St, Burnaby',
         locationRef: '2986', // location_ref parameter
       },
       'rosemary-brown': {
@@ -129,6 +129,26 @@ const CONFIG = {
       lat: 49.3270,
       lng: -123.1660,
       address: '2121 Marine Dr, West Vancouver',
+    },
+  },
+
+  // New Westminster config - uses PerfectMind booking system
+  newwest: {
+    skatingUrl: 'https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False',
+    hockeyUrl: 'https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False',
+    facilities: {
+      "queen's park arena": {
+        name: "Queen's Park Arena",
+        lat: 49.2186,
+        lng: -122.9082,
+        address: '203 First St, New Westminster',
+      },
+      'moody park arena': {
+        name: 'Moody Park Arena',
+        lat: 49.2267,
+        lng: -122.9350,
+        address: '701 8th Ave, New Westminster',
+      },
     },
   },
 };
@@ -324,8 +344,8 @@ function getBurnabySchedules() {
   // Burnaby facilities
   const facilities = {
     'kensington': {
-      name: 'Kensington Arena',
-      address: '6050 McMurray Ave, Burnaby',
+      name: 'Kensington Complex',
+      address: '6159 Curtis St, Burnaby',
       lat: 49.2267, lng: -123.0036,
       url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2986',
     },
@@ -782,6 +802,161 @@ async function scrapeWestVan(browser) {
 }
 
 /**
+ * Scrape New Westminster drop-in skating and hockey schedules from PerfectMind
+ */
+async function scrapeNewWest(browser) {
+  console.error('Scraping New Westminster...');
+  const allSessions = [];
+  const seenKeys = new Set();
+
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1280, height: 800 });
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+
+  // Scrape both skating and hockey pages
+  const urls = [
+    { url: CONFIG.newwest.skatingUrl, label: 'Skating' },
+    { url: CONFIG.newwest.hockeyUrl, label: 'Hockey' },
+  ];
+
+  try {
+    for (const { url, label } of urls) {
+      try {
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
+        await new Promise(r => setTimeout(r, 10000)); // Wait for dynamic content
+
+        const pageTitle = await page.title();
+        console.error(`    ${label} page loaded: ${pageTitle}`);
+
+        // Parse sessions from page text - PerfectMind renders events as text blocks
+        const sessions = await page.evaluate(() => {
+          const events = [];
+          const text = document.body.innerText;
+          const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+
+          let currentDate = null;
+          const currentYear = new Date().getFullYear();
+          const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+          for (let i = 0; i < lines.length; i++) {
+            const line = lines[i];
+
+            // Check for date header like "Mon, Jan 12th, 2026"
+            const dateMatch = line.match(/^\w+,\s+(\w+)\s+(\d+)\w*,?\s*(\d{4})?$/);
+            if (dateMatch) {
+              const [, monthStr, day, year] = dateMatch;
+              const monthIdx = months.indexOf(monthStr);
+              if (monthIdx !== -1) {
+                const y = year ? parseInt(year) : currentYear;
+                currentDate = `${y}-${String(monthIdx + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+              }
+              continue;
+            }
+
+            // Check for activity name (contains # followed by number)
+            const activityMatch = line.match(/^(.+?)\s+#(\d+)$/);
+            if (activityMatch && currentDate) {
+              const activityName = activityMatch[1].trim();
+
+              // Next line should be time
+              const timeLine = lines[i + 1] || '';
+              const timeMatch = timeLine.match(/^(\d{1,2}:\d{2}\s*(?:am|pm))\s*-\s*(\d{1,2}:\d{2}\s*(?:am|pm))$/i);
+
+              // Line after that should be location
+              const locationLine = lines[i + 2] || '';
+
+              if (timeMatch) {
+                const [, startTimeStr, endTimeStr] = timeMatch;
+
+                // Convert to 24h format
+                const to24 = (timeStr) => {
+                  const match = timeStr.match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+                  if (!match) return null;
+                  let [, h, m, period] = match;
+                  h = parseInt(h);
+                  if (period.toLowerCase() === 'pm' && h < 12) h += 12;
+                  if (period.toLowerCase() === 'am' && h === 12) h = 0;
+                  return `${String(h).padStart(2, '0')}:${m}`;
+                };
+
+                const startTime = to24(startTimeStr);
+                const endTime = to24(endTimeStr);
+
+                if (startTime && endTime) {
+                  events.push({
+                    date: currentDate,
+                    activityName,
+                    startTime,
+                    endTime,
+                    location: locationLine
+                  });
+                }
+              }
+            }
+          }
+
+          return events;
+        });
+
+        console.error(`    Found ${sessions.length} ${label.toLowerCase()} activities`);
+
+        // Convert to session format with facility matching
+        for (const session of sessions) {
+          const eventKey = `${session.date}-${session.startTime}-${session.activityName}`;
+          if (seenKeys.has(eventKey)) continue;
+          seenKeys.add(eventKey);
+
+          // Match facility from location
+          let facility = null;
+          const locationLower = (session.location || '').toLowerCase();
+          for (const [facKey, fac] of Object.entries(CONFIG.newwest.facilities)) {
+            if (locationLower.includes(facKey)) {
+              facility = fac;
+              break;
+            }
+          }
+          // Default to Queen's Park Arena if no match
+          if (!facility) facility = CONFIG.newwest.facilities["queen's park arena"];
+
+          // Determine activity type
+          const actName = session.activityName.toLowerCase();
+          let type = 'Public Skating';
+          if (actName.includes('family')) type = 'Family Skate';
+          else if (actName.includes('parent') && actName.includes('tot')) type = 'Family Skate';
+          else if (actName.includes('figure')) type = 'Figure Skating';
+          else if (actName.includes('hockey') || actName.includes('stick') || actName.includes('puck') || actName.includes('shinny')) type = 'Drop-in Hockey';
+          else if (actName.includes('adult') || actName.includes('50+')) type = 'Public Skating';
+
+          allSessions.push({
+            facility: facility.name,
+            city: 'New Westminster',
+            address: facility.address,
+            lat: facility.lat,
+            lng: facility.lng,
+            date: session.date,
+            startTime: session.startTime,
+            endTime: session.endTime,
+            type,
+            activityName: session.activityName,
+            activityUrl: url,
+          });
+        }
+
+      } catch (e) {
+        console.error(`    Error scraping ${label}: ${e.message}`);
+      }
+    }
+
+    console.error(`  New Westminster total: ${allSessions.length} sessions`);
+
+  } finally {
+    await page.close();
+  }
+
+  return allSessions;
+}
+
+/**
  * Get outdoor rink schedules (Robson Square, Shipyards)
  * These have fixed seasonal hours
  */
@@ -1071,10 +1246,10 @@ function generateICal(sessions) {
 
 /**
  * Main scraping function
- * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'] }
+ * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'northvan', 'westvan', 'newwest', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, cities = ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
 
   let browser;
   const allSessions = [];
@@ -1124,6 +1299,18 @@ async function scrapeAll(options = {}) {
     if (cities.includes('westvan')) {
       const westvanSessions = await scrapeWestVan(browser);
       for (const session of westvanSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
+    // Scrape New Westminster
+    if (cities.includes('newwest')) {
+      const newwestSessions = await scrapeNewWest(browser);
+      for (const session of newwestSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
         if (!seenKeys.has(key)) {
           seenKeys.add(key);
@@ -1241,7 +1428,7 @@ async function main() {
       i++;
     }
   }
-  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'northvan', 'westvan', 'outdoor'];
+  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'northvan', 'westvan', 'newwest', 'outdoor'];
 
   console.error('Metro Vancouver Skating Schedule Scraper');
   console.error('========================================');

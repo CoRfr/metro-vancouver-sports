@@ -850,6 +850,7 @@
         .legend-dot.burnaby { background: #7b1fa2; }
         .legend-dot.northvan { background: #388e3c; }
         .legend-dot.westvan { background: #00796b; }
+        .legend-dot.newwest { background: #c2185b; }
         .legend-dot.outdoor { background: #ef6c00; }
 
         .view-map-btn {
@@ -930,7 +931,7 @@
     <div class="container">
         <header>
             <h1>Metro Vancouver Public Skating</h1>
-            <p class="subtitle">Vancouver, Burnaby, North & West Vancouver Community Centers</p>
+            <p class="subtitle">Vancouver, Burnaby, North & West Vancouver, New Westminster</p>
         </header>
 
         <details class="info-box">
@@ -954,6 +955,10 @@
                     <div class="data-source-item">
                         <span class="data-source-city">West Vancouver</span>
                         <span class="data-source-info"><a href="https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results" target="_blank">westvancouver.ca</a></span>
+                    </div>
+                    <div class="data-source-item">
+                        <span class="data-source-city">New Westminster</span>
+                        <span class="data-source-info"><a href="https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67" target="_blank">PerfectMind</a></span>
                     </div>
                     <div class="data-source-item">
                         <span class="data-source-city">Outdoor Rinks</span>
@@ -981,6 +986,7 @@
                         <option value="Burnaby">Burnaby</option>
                         <option value="North Vancouver">North Vancouver</option>
                         <option value="West Vancouver">West Vancouver</option>
+                        <option value="New Westminster">New Westminster</option>
                     </select>
                 </div>
 
@@ -1081,6 +1087,7 @@
                 <div class="legend-item"><div class="legend-dot burnaby"></div> Burnaby</div>
                 <div class="legend-item"><div class="legend-dot northvan"></div> North Vancouver</div>
                 <div class="legend-item"><div class="legend-dot westvan"></div> West Vancouver</div>
+                <div class="legend-item"><div class="legend-dot newwest"></div> New Westminster</div>
                 <div class="legend-item"><div class="legend-dot outdoor"></div> Outdoor Rinks</div>
             </div>
         </div>
@@ -1684,7 +1691,7 @@
                 'Sunset Rink': 'Sunset',
                 'Trout Lake Rink': 'Trout Lake',
                 'West End Community Centre': 'West End',
-                'Kensington Arena': 'Kensington',
+                'Kensington Complex': 'Kensington',
                 'Rosemary Brown Recreation Centre': 'Rosemary Brown',
                 'Bill Copeland Sports Centre': 'Bill Copeland',
                 'Burnaby Lake Arena': 'Burnaby Lake',
@@ -1694,6 +1701,8 @@
                 'West Vancouver Community Centre': 'West Van CC',
                 'Robson Square Ice Rink': 'Robson Square',
                 'Shipyards Skate Plaza': 'Shipyards',
+                "Queen's Park Arena": "Queen's Park",
+                'Moody Park Arena': 'Moody Park',
             };
             return shortNames[facility] || facility.split(' ').slice(0, 2).join(' ');
         }
@@ -2507,7 +2516,8 @@
                 'Vancouver': '#1976d2',
                 'Burnaby': '#7b1fa2',
                 'North Vancouver': '#388e3c',
-                'West Vancouver': '#00796b'
+                'West Vancouver': '#00796b',
+                'New Westminster': '#c2185b'
             };
 
             // Add markers for each facility
@@ -2558,7 +2568,7 @@
                     const dateStr = dateObj.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
                     popupContent += `
                         <div style="margin-bottom: 6px; font-size: 12px;">
-                            <strong>${dateStr}</strong> ${formatTime(session.startTime)}<br>
+                            <strong>${dateStr}</strong> ${formatTime(session.startTime)}-${formatTime(session.endTime)}<br>
                             <span style="color: #555;">${session.activityName || session.type}</span>
                         </div>
                     `;

@@ -54,7 +54,7 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 The Burnaby website displays repeating weekly schedules with "Effective January 5-March 12/13" date ranges. Rather than scraping the complex page structure, schedules are hardcoded and expanded for 30 days.
 
 **Burnaby Facilities:**
-- Kensington Arena
+- Kensington Complex
 - Rosemary Brown Recreation Centre
 
 **Schedule Source:** `https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=XXXX`
@@ -119,6 +119,37 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 
 ---
 
+### New Westminster (PerfectMind Scraping)
+
+**Method:** Scrape PerfectMind booking system (both skating and hockey pages)
+
+**URLs:**
+- Skating: `https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5`
+- Hockey: `https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5`
+
+**How it works:**
+1. Load the drop-in skating booking page
+2. Wait for dynamic content to load (10 seconds)
+3. Parse page text for date headers like "Mon, Jan 12th, 2026"
+4. Extract activity entries with format "Activity Name #NNNNNN"
+5. Parse subsequent lines for time range and location
+
+**New Westminster Facilities:**
+- Queen's Park Arena
+- Moody Park Arena
+
+**Page Structure:**
+```
+Mon, Jan 13th, 2026
+50+ Social Skate  #243704
+10:45am - 11:45am
+Moody Park Arena - Ice
+```
+
+**Note:** PerfectMind renders content dynamically via JavaScript, requiring extended wait times for page load.
+
+---
+
 ### Outdoor Rinks (Seasonal)
 
 **Method:** Hardcoded seasonal hours
@@ -156,6 +187,7 @@ node puppeteer-scraper.js --city vancouver --output ../data/schedules.json
 node puppeteer-scraper.js --city burnaby --output ../data/schedules.json
 node puppeteer-scraper.js --city northvan --output ../data/schedules.json
 node puppeteer-scraper.js --city westvan --output ../data/schedules.json
+node puppeteer-scraper.js --city newwest --output ../data/schedules.json
 node puppeteer-scraper.js --city outdoor --output ../data/schedules.json
 node puppeteer-scraper.js --city vancouver,outdoor --output ../data/schedules.json
 
@@ -170,7 +202,7 @@ node puppeteer-scraper.js --debug --output ../data/schedules.json
 ```typescript
 interface Session {
   facility: string;      // "Hillcrest Centre"
-  city: string;          // "Vancouver" | "Burnaby" | "North Vancouver" | "West Vancouver"
+  city: string;          // "Vancouver" | "Burnaby" | "North Vancouver" | "West Vancouver" | "New Westminster"
   address: string;       // Full street address
   lat: number;           // Latitude
   lng: number;           // Longitude

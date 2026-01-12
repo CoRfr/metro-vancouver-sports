@@ -2,6 +2,19 @@
   "date": "2026-02-27",
   "sessions": [
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "type": "Public Skating",
+      "activityName": "Adult and Senior Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -16,6 +29,19 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-figure-skating---friday-10-00am/595173",
       "eventItemId": 595173
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "10:15",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Ice Dance Session",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -66,6 +92,71 @@
       "eventItemId": 602930
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey Skills and Drills Drop-in (Fri)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "13:15",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Figure Skate Session",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "14:45",
+      "endTime": "15:45",
+      "type": "Discount Skate",
+      "activityName": "Toonie Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "15:45",
+      "endTime": "16:30",
+      "type": "Public Skating",
+      "activityName": "5-8y",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "16:45",
+      "endTime": "17:30",
+      "type": "Public Skating",
+      "activityName": "9-11y",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -80,6 +171,32 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---para-hockey-beginner---friday-5-15pm/595213",
       "eventItemId": 595213
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "17:30",
+      "endTime": "18:15",
+      "type": "Public Skating",
+      "activityName": "12y+",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr, West Vancouver",
+      "lat": 49.327,
+      "lng": -123.166,
+      "date": "2026-02-27",
+      "startTime": "18:30",
+      "endTime": "19:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -98,5 +215,5 @@
       "eventItemId": 595224
     }
   ],
-  "count": 6
+  "count": 15
 }

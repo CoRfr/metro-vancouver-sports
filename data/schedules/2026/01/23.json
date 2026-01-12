@@ -32,6 +32,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-23",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick & Puck - Adult",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "5930 Humphries Ave, Burnaby",
@@ -122,6 +135,19 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "203 First St, New Westminster",
+      "lat": 49.2186,
+      "lng": -122.9082,
+      "date": "2026-01-23",
+      "startTime": "12:30",
+      "endTime": "13:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Ice Hockey - Adult - Goalie",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "Harry Jerome Community Recreation Centre",
       "city": "North Vancouver",
       "address": "123 East 23rd St, North Vancouver",
@@ -151,9 +177,9 @@
       "eventItemId": 595208
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-23",
@@ -178,9 +204,9 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-harry-jerome-friday-615-815pm"
     },
     {
-      "facility": "Kensington Arena",
+      "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6050 McMurray Ave, Burnaby",
+      "address": "6159 Curtis St, Burnaby",
       "lat": 49.2267,
       "lng": -123.0036,
       "date": "2026-01-23",
@@ -208,5 +234,5 @@
       "eventItemId": 595219
     }
   ],
-  "count": 14
+  "count": 16
 }
