@@ -2,19 +2,6 @@
   "date": "2026-01-12",
   "sessions": [
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver",
-      "lat": 49.327,
-      "lng": -123.166,
-      "date": "2026-01-12",
-      "startTime": "08:15",
-      "endTime": "09:45",
-      "type": "Public Skating",
-      "activityName": "18y+",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -29,20 +16,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler/594474",
       "eventItemId": 594474
-    },
-    {
-      "facility": "Kensington Complex",
-      "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
-      "lat": 49.2778,
-      "lng": -122.9755,
-      "date": "2026-01-12",
-      "startTime": "09:30",
-      "endTime": "11:30",
-      "type": "Skating",
-      "activityName": "Lap Skate",
-      "ageRange": "8 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -77,33 +50,6 @@
       "eventItemId": 599832
     },
     {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-12",
-      "startTime": "10:00",
-      "endTime": "11:15",
-      "type": "Hockey",
-      "activityName": "Recreational Hockey",
-      "ageRange": "50 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
-    },
-    {
-      "facility": "Queen's Park Arena",
-      "city": "New Westminster",
-      "address": "203 First St, New Westminster",
-      "lat": 49.2186,
-      "lng": -122.9082,
-      "date": "2026-01-12",
-      "startTime": "10:30",
-      "endTime": "11:30",
-      "type": "Public Skating",
-      "activityName": "Adult Skate - 50+",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
-    },
-    {
       "facility": "Karen Magnussen Community Centre",
       "city": "North Vancouver",
       "address": "2300 Kirkstone Rd, North Vancouver",
@@ -131,20 +77,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/594475",
       "eventItemId": 594475
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-12",
-      "startTime": "11:30",
-      "endTime": "12:45",
-      "type": "Skating",
-      "activityName": "Shoot & Score",
-      "ageRange": "18 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -195,46 +127,6 @@
       "eventItemId": 599719
     },
     {
-      "facility": "Kensington Complex",
-      "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
-      "lat": 49.2778,
-      "lng": -122.9755,
-      "date": "2026-01-12",
-      "startTime": "11:45",
-      "endTime": "13:15",
-      "type": "Public Skating",
-      "activityName": "Toonie Skate",
-      "ageRange": "All ages",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver",
-      "lat": 49.327,
-      "lng": -123.166,
-      "date": "2026-01-12",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Public Skating",
-      "activityName": "Adult Noon Hour",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "Queen's Park Arena",
-      "city": "New Westminster",
-      "address": "203 First St, New Westminster",
-      "lat": 49.2186,
-      "lng": -122.9082,
-      "date": "2026-01-12",
-      "startTime": "12:00",
-      "endTime": "13:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
-    },
-    {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
       "address": "800 Robson St, Vancouver",
@@ -261,20 +153,6 @@
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-12",
-      "startTime": "13:15",
-      "endTime": "15:15",
-      "type": "Family Skate",
-      "activityName": "Parent & Tot Skate",
-      "ageRange": "2-5 yrs with adult, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
       "facility": "Trout Lake Rink",
@@ -357,20 +235,6 @@
       "eventItemId": 592179
     },
     {
-      "facility": "Kensington Complex",
-      "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
-      "lat": 49.2778,
-      "lng": -122.9755,
-      "date": "2026-01-12",
-      "startTime": "18:00",
-      "endTime": "20:15",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "ageRange": "Children with adult 16 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver",
@@ -400,20 +264,6 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-monday-645-845pm"
     },
     {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
-      "date": "2026-01-12",
-      "startTime": "19:30",
-      "endTime": "20:45",
-      "type": "Skating",
-      "activityName": "Lap Skate",
-      "ageRange": "8 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
-    },
-    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver",
@@ -430,5 +280,5 @@
       "eventItemId": 591944
     }
   ],
-  "count": 29
+  "count": 18
 }

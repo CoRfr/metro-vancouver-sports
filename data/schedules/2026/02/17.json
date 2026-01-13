@@ -2,19 +2,6 @@
   "date": "2026-02-17",
   "sessions": [
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver",
-      "lat": 49.327,
-      "lng": -123.166,
-      "date": "2026-02-17",
-      "startTime": "08:30",
-      "endTime": "10:00",
-      "type": "Public Skating",
-      "activityName": "Adult and Senior Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -47,19 +34,6 @@
       "eventItemId": 590821
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver",
-      "lat": 49.327,
-      "lng": -123.166,
-      "date": "2026-02-17",
-      "startTime": "10:15",
-      "endTime": "11:30",
-      "type": "Public Skating",
-      "activityName": "Adult Ice Dance Session",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver",
@@ -90,20 +64,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---stick-puck-ring---tuesday-11-45am/590809",
       "eventItemId": 590809
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver",
-      "lat": 49.327,
-      "lng": -123.166,
-      "date": "2026-02-17",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Hockey Skills and Drills Drop-in (Tue)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     }
   ],
-  "count": 7
+  "count": 4
 }
