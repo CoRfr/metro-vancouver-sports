@@ -4,9 +4,9 @@
     {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-02-13",
       "startTime": "10:00",
       "endTime": "11:30",
@@ -18,11 +18,39 @@
       "eventItemId": 595171
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
+      "date": "2026-02-13",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Skating",
+      "activityName": "Recreational Ringette",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
+      "date": "2026-02-13",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Hockey",
+      "activityName": "Recreational Hockey",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-02-13",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -36,9 +64,9 @@
     {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
-      "address": "2690 Larch St, Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
       "lat": 49.2713,
-      "lng": -123.157,
+      "lng": -123.1592,
       "date": "2026-02-13",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -52,9 +80,9 @@
     {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
       "lat": 49.2544,
-      "lng": -123.0636,
+      "lng": -123.0658,
       "date": "2026-02-13",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -68,9 +96,9 @@
     {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-02-13",
       "startTime": "17:15",
       "endTime": "18:30",
@@ -82,11 +110,39 @@
       "eventItemId": 595211
     },
     {
+      "facility": "Kensington Complex",
+      "city": "Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
+      "lat": 49.2778,
+      "lng": -122.9755,
+      "date": "2026-02-13",
+      "startTime": "17:15",
+      "endTime": "19:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "ageRange": "All ages",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+    },
+    {
+      "facility": "Kensington Complex",
+      "city": "Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
+      "lat": 49.2778,
+      "lng": -122.9755,
+      "date": "2026-02-13",
+      "startTime": "19:45",
+      "endTime": "20:45",
+      "type": "Family Hockey",
+      "activityName": "Family Hockey & Ringette",
+      "ageRange": "6-12 yrs with adult",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-02-13",
       "startTime": "20:15",
       "endTime": "21:30",
@@ -98,5 +154,5 @@
       "eventItemId": 595222
     }
   ],
-  "count": 6
+  "count": 10
 }

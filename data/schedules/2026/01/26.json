@@ -4,7 +4,7 @@
     {
       "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
       "lat": 49.2778,
       "lng": -122.9755,
       "date": "2026-01-26",
@@ -18,9 +18,9 @@
     {
       "facility": "Sunset Rink",
       "city": "Vancouver",
-      "address": "6810 Main St, Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
       "lat": 49.2267,
-      "lng": -123.1003,
+      "lng": -123.1025,
       "date": "2026-01-26",
       "startTime": "10:00",
       "endTime": "11:30",
@@ -34,9 +34,9 @@
     {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
       "date": "2026-01-26",
       "startTime": "10:00",
       "endTime": "11:15",
@@ -48,9 +48,9 @@
     {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
-      "address": "203 First St, New Westminster",
-      "lat": 49.2186,
-      "lng": -122.9082,
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.2144,
+      "lng": -122.9105,
       "date": "2026-01-26",
       "startTime": "10:30",
       "endTime": "11:30",
@@ -59,11 +59,24 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.3217,
+      "lng": -123.0767,
+      "date": "2026-01-26",
+      "startTime": "11:00",
+      "endTime": "12:15",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-monday-1100-1215pm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
       "date": "2026-01-26",
       "startTime": "11:30",
       "endTime": "12:45",
@@ -75,7 +88,7 @@
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
-      "address": "5851 West Boulevard, Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
       "lat": 49.2337,
       "lng": -123.1607,
       "date": "2026-01-26",
@@ -91,9 +104,9 @@
     {
       "facility": "Sunset Rink",
       "city": "Vancouver",
-      "address": "6810 Main St, Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
       "lat": 49.2267,
-      "lng": -123.1003,
+      "lng": -123.1025,
       "date": "2026-01-26",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -107,9 +120,9 @@
     {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
       "lat": 49.2544,
-      "lng": -123.0636,
+      "lng": -123.0658,
       "date": "2026-01-26",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -123,7 +136,7 @@
     {
       "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
       "lat": 49.2778,
       "lng": -122.9755,
       "date": "2026-01-26",
@@ -137,9 +150,9 @@
     {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
-      "address": "203 First St, New Westminster",
-      "lat": 49.2186,
-      "lng": -122.9082,
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.2144,
+      "lng": -122.9105,
       "date": "2026-01-26",
       "startTime": "12:00",
       "endTime": "13:30",
@@ -150,7 +163,7 @@
     {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
+      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
       "lat": 49.2827,
       "lng": -123.1207,
       "date": "2026-01-26",
@@ -164,9 +177,9 @@
     {
       "facility": "Shipyards Skate Plaza",
       "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
       "lat": 49.3103,
-      "lng": -123.0826,
+      "lng": -123.0848,
       "date": "2026-01-26",
       "startTime": "12:00",
       "endTime": "20:00",
@@ -178,9 +191,9 @@
     {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
       "date": "2026-01-26",
       "startTime": "13:15",
       "endTime": "15:15",
@@ -192,9 +205,9 @@
     {
       "facility": "West End Community Centre",
       "city": "Vancouver",
-      "address": "870 Denman St, Vancouver",
-      "lat": 49.2863,
-      "lng": -123.1353,
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.2877,
+      "lng": -123.1373,
       "date": "2026-01-26",
       "startTime": "15:45",
       "endTime": "17:00",
@@ -208,7 +221,7 @@
     {
       "facility": "Kensington Complex",
       "city": "Burnaby",
-      "address": "6159 Curtis St, Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
       "lat": 49.2778,
       "lng": -122.9755,
       "date": "2026-01-26",
@@ -220,11 +233,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3156,
+      "lng": -123.0711,
+      "date": "2026-01-26",
+      "startTime": "18:45",
+      "endTime": "20:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-monday-645-845pm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
       "date": "2026-01-26",
       "startTime": "19:30",
       "endTime": "20:45",
@@ -234,5 +260,5 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     }
   ],
-  "count": 16
+  "count": 18
 }

@@ -4,9 +4,9 @@
     {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-01-12",
       "startTime": "09:30",
       "endTime": "11:00",
@@ -20,7 +20,7 @@
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
-      "address": "5851 West Boulevard, Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
       "lat": 49.2337,
       "lng": -123.1607,
       "date": "2026-01-12",
@@ -36,9 +36,9 @@
     {
       "facility": "Sunset Rink",
       "city": "Vancouver",
-      "address": "6810 Main St, Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
       "lat": 49.2267,
-      "lng": -123.1003,
+      "lng": -123.1025,
       "date": "2026-01-12",
       "startTime": "10:00",
       "endTime": "11:30",
@@ -50,24 +50,11 @@
       "eventItemId": 599832
     },
     {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver",
-      "lat": 49.3217,
-      "lng": -123.0745,
-      "date": "2026-01-12",
-      "startTime": "11:00",
-      "endTime": "12:15",
-      "type": "Public Skating",
-      "activityName": "Adult 19yr+ Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-monday-1100-1215pm"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
       "lat": 49.2438,
-      "lng": -123.109,
+      "lng": -123.1112,
       "date": "2026-01-12",
       "startTime": "11:15",
       "endTime": "12:45",
@@ -81,7 +68,7 @@
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
-      "address": "5851 West Boulevard, Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
       "lat": 49.2337,
       "lng": -123.1607,
       "date": "2026-01-12",
@@ -97,9 +84,9 @@
     {
       "facility": "Sunset Rink",
       "city": "Vancouver",
-      "address": "6810 Main St, Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
       "lat": 49.2267,
-      "lng": -123.1003,
+      "lng": -123.1025,
       "date": "2026-01-12",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -113,9 +100,9 @@
     {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
       "lat": 49.2544,
-      "lng": -123.0636,
+      "lng": -123.0658,
       "date": "2026-01-12",
       "startTime": "11:45",
       "endTime": "13:15",
@@ -127,39 +114,11 @@
       "eventItemId": 599719
     },
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
-      "lat": 49.2827,
-      "lng": -123.1207,
-      "date": "2026-01-12",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver",
-      "lat": 49.3103,
-      "lng": -123.0826,
-      "date": "2026-01-12",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
       "lat": 49.2544,
-      "lng": -123.0636,
+      "lng": -123.0658,
       "date": "2026-01-12",
       "startTime": "13:30",
       "endTime": "15:15",
@@ -173,9 +132,9 @@
     {
       "facility": "West End Community Centre",
       "city": "Vancouver",
-      "address": "870 Denman St, Vancouver",
-      "lat": 49.2863,
-      "lng": -123.1353,
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.2877,
+      "lng": -123.1373,
       "date": "2026-01-12",
       "startTime": "14:15",
       "endTime": "15:30",
@@ -189,7 +148,7 @@
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
-      "address": "5851 West Boulevard, Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
       "lat": 49.2337,
       "lng": -123.1607,
       "date": "2026-01-12",
@@ -205,7 +164,7 @@
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
-      "address": "5851 West Boulevard, Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
       "lat": 49.2337,
       "lng": -123.1607,
       "date": "2026-01-12",
@@ -221,9 +180,9 @@
     {
       "facility": "West End Community Centre",
       "city": "Vancouver",
-      "address": "870 Denman St, Vancouver",
-      "lat": 49.2863,
-      "lng": -123.1353,
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.2877,
+      "lng": -123.1373,
       "date": "2026-01-12",
       "startTime": "15:45",
       "endTime": "17:00",
@@ -237,9 +196,9 @@
     {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
       "lat": 49.2544,
-      "lng": -123.0636,
+      "lng": -123.0658,
       "date": "2026-01-12",
       "startTime": "18:15",
       "endTime": "19:30",
@@ -251,24 +210,11 @@
       "eventItemId": 593895
     },
     {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver",
-      "lat": 49.3156,
-      "lng": -123.0689,
-      "date": "2026-01-12",
-      "startTime": "18:45",
-      "endTime": "20:45",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-monday-645-845pm"
-    },
-    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
-      "address": "870 Denman St, Vancouver",
-      "lat": 49.2863,
-      "lng": -123.1353,
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.2877,
+      "lng": -123.1373,
       "date": "2026-01-12",
       "startTime": "21:15",
       "endTime": "22:00",
@@ -280,5 +226,5 @@
       "eventItemId": 591944
     }
   ],
-  "count": 18
+  "count": 14
 }

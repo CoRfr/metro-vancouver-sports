@@ -4,7 +4,7 @@
     {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
-      "address": "800 Robson St, Vancouver",
+      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
       "lat": 49.2827,
       "lng": -123.1207,
       "date": "2026-02-08",
@@ -18,9 +18,9 @@
     {
       "facility": "Shipyards Skate Plaza",
       "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
       "lat": 49.3103,
-      "lng": -123.0826,
+      "lng": -123.0848,
       "date": "2026-02-08",
       "startTime": "12:00",
       "endTime": "20:00",
@@ -32,9 +32,9 @@
     {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
-      "address": "5930 Humphries Ave, Burnaby",
-      "lat": 49.2258,
-      "lng": -122.9892,
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2085,
+      "lng": -122.9526,
       "date": "2026-02-08",
       "startTime": "13:45",
       "endTime": "17:00",
