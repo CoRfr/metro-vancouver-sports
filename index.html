@@ -2052,6 +2052,11 @@
             });
 
             renderCalendar();
+
+            // Refresh map if it's open
+            if (mapPanel.classList.contains('open') && facilityMap) {
+                initMap();
+            }
         }
 
         function formatTime(time) {
