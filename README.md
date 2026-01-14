@@ -2,7 +2,7 @@
 
 A web app that aggregates public skating schedules from recreation centers across Metro Vancouver into a unified calendar interface.
 
-**Live site:** [https://corfr.github.io/metro-vancouver-sports/](https://corfr.github.io/metro-vancouver-sports/)
+**Live site:** [https://metro-vancouver-sports.cor-net.org/](https://metro-vancouver-sports.cor-net.org/)
 
 ## Features
 
