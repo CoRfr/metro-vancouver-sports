@@ -16,15 +16,6 @@ const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
 
-// PDF parsers for cities with PDF schedules
-let richmondParser = null;
-let pocoParser = null;
-try {
-  richmondParser = require('./parsers/richmond-parser');
-  pocoParser = require('./parsers/poco-parser');
-} catch (e) {
-  // Parsers may not be available in all environments
-}
 
 // Configuration
 const CONFIG = {
@@ -65,6 +56,8 @@ const CONFIG = {
   burnaby: {
     // Daily activities pages by facility
     dailyActivitiesUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities',
+    // Schedule valid: Jan 5 - Mar 12/13, 2026
+    scheduleEnd: '2026-03-13',
     facilities: {
       'kensington': {
         name: 'Kensington Complex',
@@ -185,7 +178,7 @@ const CONFIG = {
     scheduleEnd: '2026-03-13',
   },
 
-  // Port Coquitlam config - PDF schedules from portcoquitlam.ca
+  // Port Coquitlam config - hardcoded from portcoquitlam.ca PDF
   poco: {
     facility: {
       name: 'Port Coquitlam Community Centre',
@@ -194,9 +187,84 @@ const CONFIG = {
       address: '2150 Wilson Ave, Port Coquitlam, BC V3C 6J5',
     },
     schedulesUrl: 'https://www.portcoquitlam.ca/recreation-parks/skating/public-skates',
-    pdfUrl: 'https://www.portcoquitlam.ca/media/file/public-skate-schedule',
+    // Schedule valid: Jan 5 - Feb 24, 2026
+    scheduleEnd: '2026-02-24',
+  },
+
+  // Coquitlam config - hardcoded from coquitlam.ca PDF
+  coquitlam: {
+    facility: {
+      name: 'Poirier Sport and Leisure Complex',
+      lat: 49.25460,
+      lng: -122.84526,
+      address: '633 Poirier St, Coquitlam, BC V3J 6B1',
+    },
+    schedulesUrl: 'https://www.coquitlam.ca/979/Drop-In-Activities',
+    // Schedule valid: Jan 3 - Mar 12, 2026
+    scheduleEnd: '2026-03-12',
   },
 };
+
+/**
+ * Validate that hardcoded schedules are not expired
+ * Returns list of expired schedules, empty if all valid
+ */
+function validateScheduleDates() {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const expired = [];
+
+  // Check Burnaby schedule
+  if (CONFIG.burnaby.scheduleEnd) {
+    const endDate = new Date(CONFIG.burnaby.scheduleEnd);
+    if (today > endDate) {
+      expired.push({
+        city: 'Burnaby',
+        scheduleEnd: CONFIG.burnaby.scheduleEnd,
+        function: 'getBurnabySchedules()',
+      });
+    }
+  }
+
+  // Check Richmond schedule
+  if (CONFIG.richmond.scheduleEnd) {
+    const endDate = new Date(CONFIG.richmond.scheduleEnd);
+    if (today > endDate) {
+      expired.push({
+        city: 'Richmond',
+        scheduleEnd: CONFIG.richmond.scheduleEnd,
+        function: 'getRichmondSchedules()',
+      });
+    }
+  }
+
+  // Check Port Coquitlam schedule
+  if (CONFIG.poco.scheduleEnd) {
+    const endDate = new Date(CONFIG.poco.scheduleEnd);
+    if (today > endDate) {
+      expired.push({
+        city: 'Port Coquitlam',
+        scheduleEnd: CONFIG.poco.scheduleEnd,
+        function: 'getPocoSchedules()',
+      });
+    }
+  }
+
+  // Check Coquitlam schedule
+  if (CONFIG.coquitlam.scheduleEnd) {
+    const endDate = new Date(CONFIG.coquitlam.scheduleEnd);
+    if (today > endDate) {
+      expired.push({
+        city: 'Coquitlam',
+        scheduleEnd: CONFIG.coquitlam.scheduleEnd,
+        function: 'getCoquitlamSchedules()',
+      });
+    }
+  }
+
+  return expired;
+}
 
 /**
  * Launch browser
@@ -752,6 +820,242 @@ function getRichmondSchedules() {
   console.error(`  Minoru Arenas: ${minoruCount} sessions`);
 
   console.error(`  Richmond total: ${allSessions.length} sessions`);
+  return allSessions;
+}
+
+/**
+ * Get Port Coquitlam schedules from hardcoded weekly patterns
+ * Based on PDF from portcoquitlam.ca for Winter 2026 (Jan 5 - Feb 24)
+ */
+function getPocoSchedules() {
+  console.error('Adding Port Coquitlam schedules...');
+  const allSessions = [];
+
+  const facility = CONFIG.poco.facility;
+  const scheduleUrl = 'https://www.portcoquitlam.ca/recreation-parks/skating/public-skates';
+
+  // Date range for Winter 2026
+  const startDate = new Date();
+  const scheduleEnd = new Date(CONFIG.poco.scheduleEnd);
+
+  // Weekly schedule
+  const schedule = {
+    0: [ // Sunday
+      { name: 'Public Skate', start: '14:30', end: '16:00', type: 'Public Skating' },
+      { name: 'Public Skate', start: '19:30', end: '21:00', type: 'Public Skating' },
+    ],
+    1: [ // Monday
+      { name: 'Family Play and Skate', start: '12:00', end: '13:00', type: 'Family Skate' },
+      { name: '40+ Adult Hockey', start: '10:00', end: '11:30', type: 'Drop-in Hockey', age: '40+' },
+    ],
+    2: [ // Tuesday
+      { name: 'Playtime On Ice Skate', start: '12:00', end: '13:00', type: 'Family Skate' },
+    ],
+    3: [ // Wednesday
+      { name: 'Toonie Skate', start: '10:00', end: '11:30', type: 'Discount Skate' },
+      { name: 'Public Skate', start: '12:00', end: '13:00', type: 'Public Skating' },
+      { name: 'Ring, Stick and Puck', start: '10:00', end: '11:30', type: 'Drop-in Hockey' },
+      { name: 'Ring, Stick and Puck', start: '12:00', end: '13:30', type: 'Drop-in Hockey' },
+    ],
+    4: [ // Thursday
+      { name: 'Public Skate', start: '12:00', end: '13:00', type: 'Public Skating' },
+      { name: 'Ring, Stick and Puck', start: '07:15', end: '08:45', type: 'Drop-in Hockey' },
+      { name: 'Public Skate', start: '15:15', end: '16:30', type: 'Public Skating' },
+    ],
+    5: [ // Friday
+      { name: 'Public Skate', start: '18:15', end: '19:15', type: 'Public Skating' },
+      { name: 'Ring, Stick and Puck', start: '10:00', end: '11:30', type: 'Drop-in Hockey' },
+      { name: 'Ring, Stick and Puck', start: '12:00', end: '13:30', type: 'Drop-in Hockey' },
+    ],
+    6: [ // Saturday
+      { name: 'Public Skate', start: '12:30', end: '13:30', type: 'Public Skating' },
+      { name: 'Public Skate', start: '14:30', end: '16:00', type: 'Public Skating' },
+      { name: 'Public Skate', start: '19:30', end: '21:00', type: 'Public Skating' },
+      { name: 'Family Play and Skate', start: '16:30', end: '17:30', type: 'Family Skate' },
+    ],
+  };
+
+  // Generate sessions
+  let sessionCount = 0;
+  for (let d = new Date(startDate); d <= scheduleEnd; d.setDate(d.getDate() + 1)) {
+    const dateStr = formatDate(d);
+    const dayActivities = schedule[d.getDay()] || [];
+
+    for (const activity of dayActivities) {
+      allSessions.push({
+        facility: facility.name,
+        city: 'Port Coquitlam',
+        address: facility.address,
+        lat: facility.lat,
+        lng: facility.lng,
+        date: dateStr,
+        startTime: activity.start,
+        endTime: activity.end,
+        type: activity.type,
+        activityName: activity.name,
+        ageRange: activity.age,
+        activityUrl: scheduleUrl,
+      });
+      sessionCount++;
+    }
+  }
+
+  console.error(`  Port Coquitlam: ${sessionCount} sessions`);
+  return allSessions;
+}
+
+/**
+ * Get Coquitlam schedules from hardcoded weekly patterns
+ * Based on PDF from coquitlam.ca for Winter 2026 (Jan 3 - Mar 12)
+ */
+function getCoquitlamSchedules() {
+  console.error('Adding Coquitlam schedules...');
+  const allSessions = [];
+
+  const facility = CONFIG.coquitlam.facility;
+  const scheduleUrl = CONFIG.coquitlam.schedulesUrl;
+
+  const startDate = new Date();
+  const scheduleEnd = new Date(CONFIG.coquitlam.scheduleEnd);
+
+  // Cancellations and end dates for specific activities
+  const cancellations = {
+    'familyStickRingPuck': ['2026-01-18', '2026-01-25'],
+    'femaleStickRingPuck': ['2026-01-18', '2026-01-25'],
+    'adultHockeySun': ['2026-01-25'],
+    '30plusHockey': ['2026-01-24', '2026-02-14'],
+    'stickRingPuckSat1130': ['2026-01-24', '2026-02-14'],
+    'adultStickRingPuckSat': ['2026-01-24', '2026-02-14'],
+    'stickRingPuckFri': ['2026-01-23'],
+  };
+
+  const endDates = {
+    'adultChildSun': '2026-03-01',
+    'familySkate': '2026-03-08',
+    'familyStickRingPuck': '2026-03-01',
+    'femaleStickRingPuck': '2026-03-01',
+    'adultHockeySun': '2026-03-01',
+    'adultToonieSkate': '2026-02-27',
+    'stickRingPuckFri': '2026-02-27',
+    '30plusHockey': '2026-02-28',
+    'stickRingPuckSat1130': '2026-02-28',
+    'stickRingPuckSat615': '2026-02-28',
+    'adultStickRingPuckSat': '2026-02-28',
+  };
+
+  const startDates = {
+    '30plusHockey': '2026-01-10',
+    'stickRingPuckSat1130': '2026-01-10',
+  };
+
+  // Weekly schedule
+  const schedule = {
+    0: [ // Sunday
+      { name: 'Adult & Child Toonie Skate', start: '09:15', end: '10:15', type: 'Family Skate', age: '0-6 yrs with adult', key: 'adultChildSun' },
+      { name: 'Family Skate', start: '14:45', end: '16:00', type: 'Family Skate', key: 'familySkate' },
+      { name: 'Family Stick, Ring & Puck', start: '17:30', end: '18:30', type: 'Family Hockey', key: 'familyStickRingPuck' },
+      { name: 'Female Stick, Ring & Puck', start: '18:45', end: '19:45', type: 'Drop-in Hockey', age: '7 yrs+', key: 'femaleStickRingPuck' },
+      { name: 'Adult Hockey', start: '20:00', end: '21:15', type: 'Drop-in Hockey', age: '19 yrs+', key: 'adultHockeySun' },
+    ],
+    1: [ // Monday
+      { name: 'Adult & Child Toonie Skate', start: '12:15', end: '13:15', type: 'Family Skate', age: '0-6 yrs with adult' },
+      { name: '50+ Toonie Skate', start: '13:30', end: '14:45', type: 'Public Skating', age: '50 yrs+' },
+      { name: 'Stick, Ring & Puck', start: '15:30', end: '16:30', type: 'Drop-in Hockey' },
+      { name: 'Toonie Skate', start: '20:15', end: '21:15', type: 'Discount Skate' },
+    ],
+    2: [ // Tuesday
+      { name: 'Toonie Stick, Ring & Puck', start: '10:00', end: '11:00', type: 'Drop-in Hockey' },
+      { name: 'Toonie Stick, Ring & Puck', start: '11:15', end: '12:15', type: 'Drop-in Hockey' },
+      { name: 'Toonie Skate', start: '12:30', end: '13:30', type: 'Discount Skate' },
+    ],
+    3: [ // Wednesday
+      { name: 'Stick, Ring & Puck', start: '15:30', end: '16:30', type: 'Drop-in Hockey' },
+    ],
+    4: [ // Thursday
+      { name: 'Toonie Adult Hockey', start: '10:00', end: '11:00', type: 'Drop-in Hockey', age: '19 yrs+' },
+      { name: 'Toonie Stick, Ring & Puck', start: '11:15', end: '12:15', type: 'Drop-in Hockey' },
+      { name: 'Toonie Skate', start: '12:30', end: '13:30', type: 'Discount Skate' },
+    ],
+    5: [ // Friday
+      { name: 'Adult Toonie Skate', start: '09:30', end: '10:30', type: 'Discount Skate', age: '19 yrs+', key: 'adultToonieSkate' },
+      { name: 'Adult & Child Toonie Skate', start: '11:15', end: '12:15', type: 'Family Skate', age: '0-6 yrs with adult' },
+      { name: 'Toonie Skate', start: '12:30', end: '13:30', type: 'Discount Skate' },
+      { name: 'Stick, Ring & Puck', start: '15:45', end: '16:45', type: 'Drop-in Hockey', key: 'stickRingPuckFri' },
+      { name: 'Youth Toonie Skate', start: '20:30', end: '21:30', type: 'Discount Skate', age: '13-18 yrs' },
+      { name: 'Adult Stick, Ring & Puck', start: '21:45', end: '22:45', type: 'Drop-in Hockey' },
+      { name: 'Adult Hockey', start: '22:00', end: '23:15', type: 'Drop-in Hockey', age: '19 yrs+' },
+    ],
+    6: [ // Saturday
+      { name: '30+ Hockey', start: '10:00', end: '11:15', type: 'Drop-in Hockey', age: '30 yrs+', key: '30plusHockey' },
+      { name: 'Stick, Ring & Puck', start: '11:30', end: '12:30', type: 'Drop-in Hockey', key: 'stickRingPuckSat1130' },
+      { name: 'Public Skate', start: '16:45', end: '18:00', type: 'Public Skating' },
+      { name: 'Stick, Ring & Puck', start: '18:15', end: '19:15', type: 'Drop-in Hockey', key: 'stickRingPuckSat615' },
+      { name: 'Adult Stick, Ring & Puck', start: '19:30', end: '20:30', type: 'Drop-in Hockey', key: 'adultStickRingPuckSat' },
+    ],
+  };
+
+  // Special events
+  const specialEvents = [
+    { date: '2026-02-16', name: 'Family Day Family Skate', start: '14:15', end: '15:30', type: 'Family Skate' },
+    { date: '2026-02-16', name: 'Family Day Family Skate', start: '15:45', end: '17:00', type: 'Family Skate' },
+    { date: '2026-02-27', name: 'Pro D Day Toonie Skate', start: '13:45', end: '14:45', type: 'Discount Skate' },
+  ];
+
+  // Generate sessions
+  let sessionCount = 0;
+  for (let d = new Date(startDate); d <= scheduleEnd; d.setDate(d.getDate() + 1)) {
+    const dateStr = formatDate(d);
+    const dayActivities = schedule[d.getDay()] || [];
+
+    for (const activity of dayActivities) {
+      // Check start date restriction
+      if (activity.key && startDates[activity.key] && dateStr < startDates[activity.key]) continue;
+
+      // Check end date restriction
+      if (activity.key && endDates[activity.key] && dateStr > endDates[activity.key]) continue;
+
+      // Check cancellations
+      if (activity.key && cancellations[activity.key] && cancellations[activity.key].includes(dateStr)) continue;
+
+      allSessions.push({
+        facility: facility.name,
+        city: 'Coquitlam',
+        address: facility.address,
+        lat: facility.lat,
+        lng: facility.lng,
+        date: dateStr,
+        startTime: activity.start,
+        endTime: activity.end,
+        type: activity.type,
+        activityName: activity.name,
+        ageRange: activity.age,
+        activityUrl: scheduleUrl,
+      });
+      sessionCount++;
+    }
+  }
+
+  // Add special events
+  for (const event of specialEvents) {
+    if (event.date >= formatDate(startDate) && event.date <= formatDate(scheduleEnd)) {
+      allSessions.push({
+        facility: facility.name,
+        city: 'Coquitlam',
+        address: facility.address,
+        lat: facility.lat,
+        lng: facility.lng,
+        date: event.date,
+        startTime: event.start,
+        endTime: event.end,
+        type: event.type,
+        activityName: event.name,
+        activityUrl: scheduleUrl,
+      });
+      sessionCount++;
+    }
+  }
+
+  console.error(`  Coquitlam: ${sessionCount} sessions`);
   return allSessions;
 }
 
@@ -1553,10 +1857,24 @@ function generateICal(sessions) {
 
 /**
  * Main scraping function
- * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'] }
+ * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
+
+  // Validate hardcoded schedule dates before scraping
+  const expiredSchedules = validateScheduleDates();
+  if (expiredSchedules.length > 0) {
+    console.error('\n*** SCHEDULE VALIDATION FAILED ***');
+    console.error('The following hardcoded schedules have expired and need to be updated:\n');
+    for (const schedule of expiredSchedules) {
+      console.error(`  ${schedule.city}:`);
+      console.error(`    - Schedule ended: ${schedule.scheduleEnd}`);
+      console.error(`    - Update function: ${schedule.function}`);
+      console.error(`    - See CLAUDE.md for update instructions\n`);
+    }
+    throw new Error(`Expired schedules: ${expiredSchedules.map(s => s.city).join(', ')}`);
+  }
 
   let browser;
   const allSessions = [];
@@ -1590,24 +1908,10 @@ async function scrapeAll(options = {}) {
       }
     }
 
-    // Add Richmond schedules (PDF parser with hardcoded fallback)
+    // Add Richmond schedules (hardcoded - updated quarterly from PDF)
     if (cities.includes('richmond')) {
       const startTime = Date.now();
-      let richmondSessions = [];
-
-      // Try PDF parser first
-      if (richmondParser) {
-        try {
-          richmondSessions = await richmondParser.scrapeRichmond();
-        } catch (e) {
-          console.error(`  Richmond PDF parser failed: ${e.message}, using fallback...`);
-        }
-      }
-
-      // Fallback to hardcoded schedules if PDF parser fails or returns no results
-      if (richmondSessions.length === 0) {
-        richmondSessions = getRichmondSchedules();
-      }
+      const richmondSessions = getRichmondSchedules();
 
       for (const session of richmondSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
@@ -1619,21 +1923,10 @@ async function scrapeAll(options = {}) {
       console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
     }
 
-    // Add Port Coquitlam schedules (PDF parser)
+    // Add Port Coquitlam schedules (hardcoded - updated quarterly from PDF)
     if (cities.includes('poco')) {
       const startTime = Date.now();
-      let pocoSessions = [];
-
-      if (pocoParser) {
-        try {
-          pocoSessions = await pocoParser.scrapePoCo();
-        } catch (e) {
-          console.error(`  Port Coquitlam PDF parser failed: ${e.message}`);
-        }
-      } else {
-        console.error('Scraping Port Coquitlam...');
-        console.error('  Warning: PDF parser not available');
-      }
+      const pocoSessions = getPocoSchedules();
 
       for (const session of pocoSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
@@ -1642,9 +1935,22 @@ async function scrapeAll(options = {}) {
           allSessions.push(session);
         }
       }
-      if (pocoSessions.length > 0) {
-        console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
+      console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
+    }
+
+    // Add Coquitlam schedules (hardcoded - updated quarterly from PDF)
+    if (cities.includes('coquitlam')) {
+      const startTime = Date.now();
+      const coquitlamSessions = getCoquitlamSchedules();
+
+      for (const session of coquitlamSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
       }
+      console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
     }
 
     // Scrape North Vancouver
@@ -1792,7 +2098,7 @@ async function main() {
       i++;
     }
   }
-  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'];
+  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'];
 
   console.error('Metro Vancouver Skating Schedule Scraper');
   console.error('========================================');

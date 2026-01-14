@@ -42,19 +42,34 @@ jobs:
         run: npm ci
 
       - name: Run scraper (daily files)
+        id: scrape
         working-directory: backend
         env:
           CHROMIUM_PATH: /usr/bin/chromium-browser
         run: |
+          set -o pipefail
           node puppeteer-scraper.js --daily --output ../data/schedules 2>&1 | tee scrape.log
 
       - name: Generate GitHub Summary
+        if: always()
         run: |
           echo "# 🛼 Skating Schedule Update" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Updated:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          if [ -f data/schedules/index.json ]; then
+
+          # Check for schedule validation failure
+          if [ -f backend/scrape.log ] && grep -q "SCHEDULE VALIDATION FAILED" backend/scrape.log; then
+            echo "## ⚠️ Schedule Validation Failed" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "The following hardcoded schedules have expired and need to be updated:" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            grep -A 20 "SCHEDULE VALIDATION FAILED" backend/scrape.log >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "See **CLAUDE.md** for instructions on updating schedules." >> $GITHUB_STEP_SUMMARY
+          elif [ -f data/schedules/index.json ]; then
             TOTAL=$(jq '.totalSessions' data/schedules/index.json)
             START=$(jq -r '.dateRange.start' data/schedules/index.json)
             END=$(jq -r '.dateRange.end' data/schedules/index.json)

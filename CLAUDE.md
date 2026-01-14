@@ -8,11 +8,7 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 /
 ├── index.html              # Main frontend (single-page app)
 ├── backend/
-│   ├── puppeteer-scraper.js  # Main scraper script
-│   ├── pdf-parser.js         # Generic PDF parsing utilities
-│   ├── parsers/              # City-specific PDF parsers
-│   │   ├── richmond-parser.js
-│   │   └── poco-parser.js
+│   ├── puppeteer-scraper.js  # Main scraper script (all cities)
 │   ├── package.json          # Node.js dependencies
 │   └── check-other-facilities.js  # Utility to check for new facilities
 ├── data/
@@ -67,51 +63,110 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 
 ---
 
-### Richmond (PDF Parsing)
+### Richmond (Hardcoded Weekly Pattern)
 
-**Method:** Parse PDF schedules from richmond.ca
+**Method:** Hardcoded weekly schedules from richmond.ca PDFs
 
 **Schedules Page:** `https://www.richmond.ca/parks-recreation/about/schedules.htm`
 
-**How it works:**
-1. Scrape the schedules page to find current PDF URLs
-2. Download PDFs for Richmond Ice Centre and Minoru Arenas
-3. Convert to text using `pdftotext`
-4. Parse the grid-based schedule format
-5. Extract date ranges, activities, times, and cancellations
-6. Falls back to hardcoded schedules if PDF parsing fails
-
 **Richmond Facilities:**
-- Richmond Ice Centre (14140 Triangle Rd)
-- Minoru Arenas (7551 Minoru Gate)
+- Richmond Ice Centre (14140 Triangle Rd, Richmond, BC V6W 1K4)
+- Minoru Arenas (7551 Minoru Gate, Richmond, BC V6Y 1R8)
 
-**PDF Format:**
-- Grid layout with days as columns (SUN through SAT)
-- Activities listed in rows with time slots
-- Date range header (e.g., "WINTER 2026 — JAN 5 – MAR 13")
-- Cancellations section at bottom
+**Note:** Richmond publishes PDF schedules with grid layouts. The PDFs have a complex column-based format that is brittle to parse automatically. Schedules are hardcoded in `getRichmondSchedules()` and need to be updated manually each season (typically quarterly).
 
-**Parser:** `backend/parsers/richmond-parser.js`
+#### How to Update Richmond Schedules
+
+1. **Download the PDFs** from the schedules page:
+   - Look for "Richmond Ice Centre" and "Minoru Arenas" PDF links
+   - Current URLs typically follow pattern: `RIC_Public_Skate_and_Drop-In_Schedule_Winter*.pdf`
+
+2. **Extract text from PDF** (for reference):
+   ```bash
+   pdftotext -layout downloaded.pdf - | less
+   ```
+
+3. **PDF Structure:**
+   - Header with date range: "WINTER 2026 — JAN 5 – MAR 13"
+   - Day columns: SUN | MON | TUE | WED | THU | FRI | SAT
+   - Activities stacked vertically in each column:
+     ```
+     Activity Name
+     Time (e.g., 9:00am – 3:00pm)
+     Date Range (e.g., Jan 5 – Mar 9)
+     ```
+   - Cancellations section at bottom
+
+4. **Update `getRichmondSchedules()` in `puppeteer-scraper.js`:**
+   - Update `dateRange` (start/end dates)
+   - Update `ricSchedule` and `minoruSchedule` objects
+   - Each day (0=Sun, 1=Mon, etc.) has array of activities:
+     ```javascript
+     1: [ // Monday
+       { name: 'Public Skate', start: '09:00', end: '15:00', type: 'Public Skating' },
+       { name: 'Adult Stick and Puck', start: '09:00', end: '11:00', type: 'Drop-in Hockey' },
+     ],
+     ```
+   - Update `cancellations` array with dates to skip
+
+5. **Activity Types:**
+   - `Public Skating` - Public Skate, Toonie Skate
+   - `Drop-in Hockey` - Adult Stick and Puck, Masters 65+ Hockey, Senior 55+ Hockey, Adult Hockey
+   - `Figure Skating` - Figure Skating
+   - `Family Skate` - Family sessions
 
 ---
 
-### Port Coquitlam (PDF Parsing)
+### Port Coquitlam (Hardcoded Weekly Pattern)
 
-**Method:** Parse PDF schedule from portcoquitlam.ca
+**Method:** Hardcoded weekly schedules from portcoquitlam.ca PDF
 
 **Schedules Page:** `https://www.portcoquitlam.ca/recreation-parks/skating/public-skates`
 **PDF URL:** `https://www.portcoquitlam.ca/media/file/public-skate-schedule`
 
-**How it works:**
-1. Download the skating schedule PDF
-2. Convert to text using `pdftotext`
-3. Parse the grid-based schedule format
-4. Extract activities and time slots for each day
-
 **Port Coquitlam Facilities:**
-- Port Coquitlam Community Centre (2150 Wilson Ave)
+- Port Coquitlam Community Centre (2150 Wilson Ave, Port Coquitlam, BC V3C 6J5)
 
-**Parser:** `backend/parsers/poco-parser.js`
+**Note:** Schedules are hardcoded in `getPocoSchedules()` and need to be updated manually each season.
+
+#### How to Update Port Coquitlam Schedules
+
+1. **Download the PDF** from the schedules page
+2. **View the PDF** to see the schedule grid
+3. **Update `getPocoSchedules()` in `puppeteer-scraper.js`:**
+   - Update `scheduleEnd` date
+   - Update the `schedule` object for each day
+   - Each day (0=Sun, 1=Mon, etc.) has array of activities:
+     ```javascript
+     1: [ // Monday
+       { name: 'Family Play and Skate', start: '12:00', end: '13:00', type: 'Family Skate' },
+       { name: '40+ Adult Hockey', start: '10:00', end: '11:30', type: 'Drop-in Hockey', age: '40+' },
+     ],
+     ```
+
+---
+
+### Coquitlam (Hardcoded Weekly Pattern)
+
+**Method:** Hardcoded weekly schedules from coquitlam.ca PDF
+
+**Schedules Page:** `https://www.coquitlam.ca/979/Drop-In-Activities`
+**PDF URL:** `https://www.coquitlam.ca/DocumentCenter/View/16098/PSLC-Winter-2026-Arena-Drop-in-Schedule`
+
+**Coquitlam Facilities:**
+- Poirier Sport and Leisure Complex (633 Poirier St, Coquitlam, BC V3J 6B1)
+
+**Note:** Schedules are hardcoded in `getCoquitlamSchedules()` and need to be updated manually each season.
+
+#### How to Update Coquitlam Schedules
+
+1. **Download the PDF** from the schedules page
+2. **View the PDF** to see the schedule grid with days as columns
+3. **Update `getCoquitlamSchedules()` in `puppeteer-scraper.js`:**
+   - Update `CONFIG.coquitlam.scheduleEnd` date
+   - Update the `schedule` object for each day
+   - Update `cancellations`, `endDates`, and `startDates` objects for specific restrictions
+   - Update `specialEvents` array for holiday schedules
 
 ---
 
@@ -328,8 +383,91 @@ GitHub Actions workflow (`.github/workflows/scrape-schedules.yml`):
 
 1. **Vancouver API changes**: If ActiveNet updates their API, check the response structure in browser DevTools
 2. **Burnaby schedule updates**: Update `getBurnabySchedules()` when burnaby.ca publishes new quarterly schedules
-3. **Outdoor rink seasons**: Update season dates annually in `getOutdoorRinks()`
-4. **New facilities**: Add facility configs to the relevant section in `puppeteer-scraper.js`
+3. **Richmond schedule updates**: Update `getRichmondSchedules()` when richmond.ca publishes new quarterly PDFs
+4. **Port Coquitlam schedule updates**: Update `getPocoSchedules()` when portcoquitlam.ca publishes new PDFs
+5. **Outdoor rink seasons**: Update season dates annually in `getOutdoorRinks()`
+6. **New facilities**: Add facility configs to the relevant section in `puppeteer-scraper.js`
+
+---
+
+## Adding a New City
+
+### Step-by-Step Guide
+
+1. **Research the city's recreation website:**
+   - Find their ice arena / skating schedules page
+   - Determine the data format (API, PDF, HTML table, Drupal, PerfectMind, etc.)
+   - Note the URL patterns and schedule structure
+
+2. **Add city configuration to `CONFIG` in `puppeteer-scraper.js`:**
+   ```javascript
+   cityname: {
+     facilities: {
+       'facility-key': {
+         name: 'Facility Full Name',
+         lat: 49.XXXXX,
+         lng: -122.XXXXX,
+         address: 'Full Address, City, BC Postal Code',
+       },
+     },
+     schedulesUrl: 'https://city-website.ca/schedules',
+   },
+   ```
+
+3. **Get GPS coordinates using OSM Nominatim:**
+   ```bash
+   curl -s "https://nominatim.openstreetmap.org/search?q=Facility+Name+City+BC&format=json" | jq '.[0] | {lat, lon}'
+   ```
+   - Use the facility name and city in the query
+   - Results return `lat` and `lon` fields
+
+4. **Create a scraping function:**
+   - For **API-based** (like Vancouver): Intercept network requests
+   - For **Drupal** (like North Vancouver): Extract from `drupalSettings`
+   - For **PerfectMind** (like New Westminster): Parse rendered page text
+   - For **PDF/static schedules** (like Burnaby, Richmond, Port Coquitlam): Create `getCitySchedules()` function with hardcoded weekly patterns
+
+5. **Add the city to the scraper:**
+   - Add to the `scrapeAll()` function in `puppeteer-scraper.js`
+   - Add city name to the `cities` array in function signature and CLI help
+
+6. **Update the frontend (`index.html`):**
+   - Add city to `CITY_COLORS` object with a unique color
+   - Add city abbreviation to `CITY_ABBREV` object
+
+7. **Update documentation:**
+   - Add city section to this file (CLAUDE.md)
+   - Add to README.md if it exists
+
+### Session Object Structure
+
+Each scraped session must have these fields:
+```javascript
+{
+  facility: 'Facility Name',
+  city: 'City Name',
+  address: 'Full Address',
+  lat: 49.XXXXX,
+  lng: -122.XXXXX,
+  date: '2026-01-15',      // YYYY-MM-DD
+  startTime: '14:30',       // HH:MM (24-hour)
+  endTime: '16:00',
+  type: 'Public Skating',   // Activity type classification
+  activityName: 'Public Skate',
+  activityUrl: 'https://...',  // Optional: link to registration
+  ageRange: '6-12 yrs',        // Optional
+  description: '...',          // Optional
+}
+```
+
+### Testing
+
+```bash
+cd backend
+node puppeteer-scraper.js --city cityname --output /tmp/test.json
+cat /tmp/test.json | jq '.sessions | length'
+cat /tmp/test.json | jq '.sessions[0]'
+```
 
 ---
 
@@ -347,12 +485,27 @@ When adding or updating facility information, use the official city websites to 
 | **West Vancouver** | `https://westvancouver.ca/parks-recreation/community-centres` | May require manual lookup |
 | **New Westminster** | `https://www.newwestcity.ca/parks-and-recreation/facilities/arenas` | Individual arena pages |
 
-### Finding GPS Coordinates
+### Finding GPS Coordinates (OSM Nominatim)
 
-1. Go to Google Maps and search for the facility by name and address
-2. Right-click on the exact building location
-3. Click the coordinates that appear (e.g., `49.2144, -122.9105`)
-4. The coordinates are copied to clipboard in `lat, lng` format
+Use OpenStreetMap's Nominatim API to find coordinates:
+
+```bash
+# Search by facility name and city
+curl -s "https://nominatim.openstreetmap.org/search?q=Poirier+Sport+Leisure+Complex+Coquitlam+BC&format=json" | jq '.[0] | {lat, lon}'
+
+# Search by address
+curl -s "https://nominatim.openstreetmap.org/search?q=633+Poirier+St+Coquitlam+BC&format=json" | jq '.[0] | {lat, lon}'
+```
+
+The API returns `lat` and `lon` as strings - convert to numbers for the config.
+
+**Example Response:**
+```json
+{
+  "lat": "49.25460",
+  "lon": "-122.84526"
+}
+```
 
 ### Address Format
 
