@@ -24,7 +24,7 @@ const VANCOUVER_FACILITIES = [
 const BURNABY_FACILITIES = [
   { name: 'Bill Copeland Sports Centre', lat: 49.2389, lng: -123.0042, address: '3676 Kensington Ave, Burnaby' },
   { name: 'Kensington Arena', lat: 49.2267, lng: -123.0036, address: '6050 McMurray Ave, Burnaby' },
-  { name: 'Rosemary Brown Arena', lat: 49.2258, lng: -122.9892, address: '5930 Humphries Ave, Burnaby' }
+  { name: 'Rosemary Brown Arena', lat: 49.2085, lng: -122.9526, address: '7789 18th St, Burnaby, BC V3N 5E5' }
 ];
 
 function determineActivityType(activityName) {

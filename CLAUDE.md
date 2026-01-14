@@ -278,3 +278,32 @@ GitHub Actions workflow (`.github/workflows/scrape-schedules.yml`):
 2. **Burnaby schedule updates**: Update `getBurnabySchedules()` when burnaby.ca publishes new quarterly schedules
 3. **Outdoor rink seasons**: Update season dates annually in `getOutdoorRinks()`
 4. **New facilities**: Add facility configs to the relevant section in `puppeteer-scraper.js`
+
+---
+
+## Finding Facility Addresses & GPS Coordinates
+
+When adding or updating facility information, use the official city websites to find accurate addresses:
+
+### Official Facility Pages
+
+| City | URL | Notes |
+|------|-----|-------|
+| **Vancouver** | `https://vancouver.ca/parks-recreation-culture/{facility-name}.aspx` | e.g., `hillcrest-centre`, `sunset-community-centre` |
+| **Burnaby** | `https://www.burnaby.ca/recreation-and-arts/recreation-facilities/{facility-name}` | e.g., `kensington-complex`, `rosemary-brown-recreation-centre` |
+| **North Vancouver** | `https://www.nvrc.ca/facilities-fields/locations-hours/community-recreation-centres/{facility-name}` | e.g., `karen-magnussen-community-recreation` |
+| **West Vancouver** | `https://westvancouver.ca/parks-recreation/community-centres` | May require manual lookup |
+| **New Westminster** | `https://www.newwestcity.ca/parks-and-recreation/facilities/arenas` | Individual arena pages |
+
+### Finding GPS Coordinates
+
+1. Go to Google Maps and search for the facility by name and address
+2. Right-click on the exact building location
+3. Click the coordinates that appear (e.g., `49.2144, -122.9105`)
+4. The coordinates are copied to clipboard in `lat, lng` format
+
+### Address Format
+
+Use full addresses with postal codes: `Street Address, City, BC Postal Code`
+
+Example: `51 3rd Ave, New Westminster, BC V3L 1L7`
