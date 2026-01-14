@@ -2,6 +2,19 @@
   "date": "2026-02-19",
   "sessions": [
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-19",
+      "startTime": "07:15",
+      "endTime": "08:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Ring, Stick and Puck",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -11,7 +24,7 @@
       "startTime": "07:30",
       "endTime": "08:45",
       "type": "Drop-in Hockey",
-      "activityName": "Adult Hockey*                            Adult Hockey                               Adult Hockey",
+      "activityName": "Early Morning Adult Hockey",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -23,8 +36,8 @@
       "date": "2026-02-19",
       "startTime": "09:00",
       "endTime": "11:00",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -44,17 +57,18 @@
       "eventItemId": 601364
     },
     {
-      "facility": "Port Coquitlam Community Centre",
-      "city": "Port Coquitlam",
-      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
-      "lat": 49.26008,
-      "lng": -122.77703,
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
       "date": "2026-02-19",
       "startTime": "10:00",
-      "endTime": "11:30",
-      "type": "Family Skate",
-      "activityName": "Playtime On Ice Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "endTime": "11:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Toonie Adult Hockey",
+      "ageRange": "19 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -65,9 +79,22 @@
       "date": "2026-02-19",
       "startTime": "11:15",
       "endTime": "13:15",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-19",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Toonie Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -78,8 +105,9 @@
       "date": "2026-02-19",
       "startTime": "11:30",
       "endTime": "13:30",
-      "type": "Public Skating",
-      "activityName": "Public Skate*         Public Skate*      Public Skate          Public Skate         Public Skate",
+      "type": "Drop-in Hockey",
+      "activityName": "Masters 65+ Hockey",
+      "ageRange": "65+",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -144,6 +172,32 @@
       "eventItemId": 595078
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-19",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-19",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Discount Skate",
+      "activityName": "Toonie Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -152,8 +206,8 @@
       "date": "2026-02-19",
       "startTime": "13:30",
       "endTime": "15:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -171,7 +225,20 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-hockey---thursday-1-45pm/595112",
       "eventItemId": 595112
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-19",
+      "startTime": "15:15",
+      "endTime": "16:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     }
   ],
-  "count": 12
+  "count": 17
 }

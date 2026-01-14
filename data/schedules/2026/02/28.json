@@ -2,6 +2,46 @@
   "date": "2026-02-28",
   "sessions": [
     {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-28",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Drop-in Hockey",
+      "activityName": "30+ Hockey",
+      "ageRange": "30 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-28",
+      "startTime": "11:30",
+      "endTime": "12:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-02-28",
+      "startTime": "13:30",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Weekend Hockey",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -11,7 +51,7 @@
       "startTime": "14:00",
       "endTime": "17:00",
       "type": "Public Skating",
-      "activityName": "Public Skate                                                                                                                Public Skate",
+      "activityName": "Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -31,6 +71,45 @@
       "eventItemId": 592362
     },
     {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-28",
+      "startTime": "16:45",
+      "endTime": "18:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-28",
+      "startTime": "18:15",
+      "endTime": "19:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-02-28",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -47,5 +126,5 @@
       "eventItemId": 592373
     }
   ],
-  "count": 3
+  "count": 9
 }

@@ -23,9 +23,24 @@
       "date": "2026-01-30",
       "startTime": "09:15",
       "endTime": "10:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Family Hockey",
+      "activityName": "Adult and Child Stick and Puck",
+      "ageRange": "12 yrs and under with adult",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "type": "Discount Skate",
+      "activityName": "Adult Toonie Skate",
+      "ageRange": "19 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -40,6 +55,19 @@
       "activityName": "Recreational Ringette",
       "ageRange": "18 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-01-30",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Ring, Stick and Puck",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "West Vancouver Community Centre",
@@ -63,9 +91,24 @@
       "date": "2026-01-30",
       "startTime": "10:45",
       "endTime": "12:00",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Family Hockey",
+      "activityName": "Adult and Child Stick and Puck",
+      "ageRange": "12 yrs and under with adult",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Family Skate",
+      "activityName": "Adult & Child Toonie Skate",
+      "ageRange": "0-6 yrs with adult",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -143,6 +186,19 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-01-30",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Ring, Stick and Puck",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "Robson Square Ice Rink",
       "city": "Vancouver",
       "address": "800 Robson St, Vancouver, BC V6Z 2E7",
@@ -171,6 +227,19 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Discount Skate",
+      "activityName": "Toonie Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
       "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
@@ -195,6 +264,19 @@
       "type": "Discount Skate",
       "activityName": "Toonie Public Skate",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "15:45",
+      "endTime": "16:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "West Vancouver Community Centre",
@@ -250,6 +332,19 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-01-30",
+      "startTime": "18:15",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
       "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
@@ -261,6 +356,19 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-01-30",
+      "startTime": "18:45",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kensington Complex",
@@ -275,7 +383,48 @@
       "activityName": "Family Hockey & Ringette",
       "ageRange": "6-12 yrs with adult",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "20:30",
+      "endTime": "21:30",
+      "type": "Discount Skate",
+      "activityName": "Youth Toonie Skate",
+      "ageRange": "13-18 yrs",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "21:45",
+      "endTime": "22:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-01-30",
+      "startTime": "22:00",
+      "endTime": "23:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey",
+      "ageRange": "19 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 20
+  "count": 31
 }

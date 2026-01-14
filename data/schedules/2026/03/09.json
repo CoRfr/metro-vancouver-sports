@@ -2,32 +2,6 @@
   "date": "2026-03-09",
   "sessions": [
     {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-03-09",
-      "startTime": "00:00",
-      "endTime": "13:30",
-      "type": "Family Skate",
-      "activityName": "Family Day Skate       Figure Skating*        and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-03-09",
-      "startTime": "00:15",
-      "endTime": "13:15",
-      "type": "Public Skating",
-      "activityName": "Public Skate                                                                                                                Public Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -36,8 +10,8 @@
       "date": "2026-03-09",
       "startTime": "09:00",
       "endTime": "11:00",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -49,8 +23,8 @@
       "date": "2026-03-09",
       "startTime": "11:15",
       "endTime": "13:15",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -62,8 +36,9 @@
       "date": "2026-03-09",
       "startTime": "11:30",
       "endTime": "13:30",
-      "type": "Public Skating",
-      "activityName": "Public Skate*         Public Skate*      Public Skate          Public Skate         Public Skate",
+      "type": "Drop-in Hockey",
+      "activityName": "Senior 55+ Hockey",
+      "ageRange": "55+",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -80,6 +55,33 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-03-09",
+      "startTime": "12:15",
+      "endTime": "13:15",
+      "type": "Discount Skate",
+      "activityName": "Adult Toonie Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-09",
+      "startTime": "12:15",
+      "endTime": "13:15",
+      "type": "Family Skate",
+      "activityName": "Adult & Child Toonie Skate",
+      "ageRange": "0-6 yrs with adult",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -88,10 +90,50 @@
       "date": "2026-03-09",
       "startTime": "13:30",
       "endTime": "15:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-09",
+      "startTime": "13:30",
+      "endTime": "14:45",
+      "type": "Public Skating",
+      "activityName": "50+ Toonie Skate",
+      "ageRange": "50 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-09",
+      "startTime": "15:30",
+      "endTime": "16:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-09",
+      "startTime": "20:15",
+      "endTime": "21:15",
+      "type": "Discount Skate",
+      "activityName": "Toonie Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 7
+  "count": 10
 }

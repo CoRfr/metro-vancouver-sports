@@ -23,8 +23,9 @@
       "date": "2026-03-06",
       "startTime": "09:15",
       "endTime": "10:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Family Hockey",
+      "activityName": "Adult and Child Stick and Puck",
+      "ageRange": "12 yrs and under with adult",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -65,9 +66,24 @@
       "date": "2026-03-06",
       "startTime": "10:45",
       "endTime": "12:00",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
+      "type": "Family Hockey",
+      "activityName": "Adult and Child Stick and Puck",
+      "ageRange": "12 yrs and under with adult",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-06",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Family Skate",
+      "activityName": "Adult & Child Toonie Skate",
+      "ageRange": "0-6 yrs with adult",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Hillcrest Centre",
@@ -129,6 +145,19 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Hockey Skills and Drills Drop-in (Fri)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-06",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Discount Skate",
+      "activityName": "Toonie Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "West Vancouver Community Centre",
@@ -225,6 +254,19 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-03-06",
+      "startTime": "18:45",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -239,7 +281,48 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---para-hockey-int-scrim---friday-8-15pm/595225",
       "eventItemId": 595225
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-06",
+      "startTime": "20:30",
+      "endTime": "21:30",
+      "type": "Discount Skate",
+      "activityName": "Youth Toonie Skate",
+      "ageRange": "13-18 yrs",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-06",
+      "startTime": "21:45",
+      "endTime": "22:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick, Ring & Puck",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-06",
+      "startTime": "22:00",
+      "endTime": "23:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey",
+      "ageRange": "19 yrs+",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 17
+  "count": 23
 }

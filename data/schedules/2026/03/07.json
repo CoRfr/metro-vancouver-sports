@@ -2,6 +2,19 @@
   "date": "2026-03-07",
   "sessions": [
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-03-07",
+      "startTime": "13:30",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Weekend Hockey",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -11,7 +24,7 @@
       "startTime": "14:00",
       "endTime": "17:00",
       "type": "Public Skating",
-      "activityName": "Public Skate                                                                                                                Public Skate",
+      "activityName": "Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -31,6 +44,19 @@
       "eventItemId": 592363
     },
     {
+      "facility": "Poirier Sport and Leisure Complex",
+      "city": "Coquitlam",
+      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
+      "lat": 49.2546,
+      "lng": -122.84526,
+      "date": "2026-03-07",
+      "startTime": "16:45",
+      "endTime": "18:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -47,5 +73,5 @@
       "eventItemId": 592374
     }
   ],
-  "count": 3
+  "count": 5
 }
