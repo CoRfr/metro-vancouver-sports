@@ -102,8 +102,8 @@ const CONFIG = {
     facilities: {
       'karen magnussen': {
         name: 'Karen Magnussen Community Centre',
-        lat: 49.3217,
-        lng: -123.0767,
+        lat: 49.3323,
+        lng: -123.0457,
         address: '2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6',
       },
       'harry jerome': {
