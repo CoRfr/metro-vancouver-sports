@@ -30,12 +30,12 @@ const CONFIG = {
     facilities: {
       // Map center_id to facility info (IDs from ActiveNet)
       9: { name: 'West End Community Centre', lat: 49.29048, lng: -123.13653, address: '870 Denman St, Vancouver, BC V6G 2L8' },
-      22: { name: 'Hillcrest Centre', lat: 49.2438, lng: -123.1112, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
-      23: { name: 'Kerrisdale Cyclone Taylor Arena', lat: 49.2337, lng: -123.1607, address: '5670 East Blvd, Vancouver, BC V6M 3Y2' },
-      25: { name: 'Killarney Rink', lat: 49.2275, lng: -123.0478, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
-      26: { name: 'Kitsilano Rink', lat: 49.2713, lng: -123.1592, address: '2690 Larch St, Vancouver, BC V6K 4K9' },
-      27: { name: 'Sunset Rink', lat: 49.2267, lng: -123.1025, address: '6810 Main St, Vancouver, BC V5X 0A1' },
-      28: { name: 'Trout Lake Rink', lat: 49.2544, lng: -123.0658, address: '3360 Victoria Dr, Vancouver, BC V5N 4M4' },
+      22: { name: 'Hillcrest Centre', lat: 49.24407, lng: -123.10781, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
+      23: { name: 'Kerrisdale Cyclone Taylor Arena', lat: 49.23529, lng: -123.15403, address: '5670 East Blvd, Vancouver, BC V6M 3Y2' },
+      25: { name: 'Killarney Rink', lat: 49.22673, lng: -123.04345, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
+      26: { name: 'Kitsilano Rink', lat: 49.26237, lng: -123.16199, address: '2690 Larch St, Vancouver, BC V6K 4K9' },
+      27: { name: 'Sunset Rink', lat: 49.22323, lng: -123.09821, address: '6810 Main St, Vancouver, BC V5X 0A1' },
+      28: { name: 'Trout Lake Rink', lat: 49.25486, lng: -123.06521, address: '3360 Victoria Dr, Vancouver, BC V5N 4M4' },
     },
     // Fallback facility matching by name
     facilityAliases: {
@@ -72,15 +72,15 @@ const CONFIG = {
       },
       'bill-copeland': {
         name: 'Bill Copeland Sports Centre',
-        lat: 49.2389,
-        lng: -123.0042,
+        lat: 49.25240,
+        lng: -122.96537,
         address: '3676 Kensington Ave, Burnaby, BC V5B 4Z6',
         locationRef: '2991',
       },
       'burnaby-lake': {
         name: 'Burnaby Lake Arena',
-        lat: 49.2492,
-        lng: -122.9589,
+        lat: 49.25073,
+        lng: -122.96543,
         address: '3676 Kensington Ave, Burnaby, BC V5B 4Z6',
         locationRef: '2982',
       },
@@ -108,8 +108,8 @@ const CONFIG = {
       },
       'harry jerome': {
         name: 'Harry Jerome Community Recreation Centre',
-        lat: 49.3156,
-        lng: -123.0711,
+        lat: 49.32990,
+        lng: -123.07048,
         address: '123 East 23rd St, North Vancouver, BC V7L 3E2',
       },
       'canlan': {
@@ -983,8 +983,8 @@ function getOutdoorRinks() {
       name: 'Robson Square Ice Rink',
       city: 'Vancouver',
       address: '800 Robson St, Vancouver, BC V6Z 2E7',
-      lat: 49.2827,
-      lng: -123.1207,
+      lat: 49.28221,
+      lng: -123.12113,
       url: 'https://www.robsonsquare.com/',
       // Season: Nov 28 - Feb 28
       seasonStart: new Date(seasonYear, 10, 28), // Nov 28
@@ -999,8 +999,8 @@ function getOutdoorRinks() {
       name: 'Shipyards Skate Plaza',
       city: 'North Vancouver',
       address: '125 Victory Ship Way, North Vancouver, BC V7L 0B2',
-      lat: 49.3103,
-      lng: -123.0848,
+      lat: 49.30958,
+      lng: -123.07878,
       url: 'https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza',
       // Season: Nov 15 - March 29
       seasonStart: new Date(seasonYear, 10, 15), // Nov 15
