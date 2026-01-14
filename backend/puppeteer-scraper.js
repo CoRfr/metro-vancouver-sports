@@ -341,21 +341,14 @@ function getBurnabySchedules() {
   console.error('Adding Burnaby schedules...');
   const allSessions = [];
 
-  // Burnaby facilities
-  const facilities = {
-    'kensington': {
-      name: 'Kensington Complex',
-      address: '6159 Curtis St, Burnaby, BC V5B 4X7',
-      lat: 49.27777, lng: -122.97553,
-      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046',
-    },
-    'rosemary-brown': {
-      name: 'Rosemary Brown Recreation Centre',
-      address: '7789 18th St, Burnaby, BC V3N 5E5',
-      lat: 49.20880, lng: -122.95250,
-      url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916',
-    },
-  };
+  // Use facilities from CONFIG, add URL from locationRef
+  const facilities = {};
+  for (const [key, facility] of Object.entries(CONFIG.burnaby.facilities)) {
+    facilities[key] = {
+      ...facility,
+      url: `${CONFIG.burnaby.dailyActivitiesUrl}?activity_tid=656&location_ref=${facility.locationRef}`,
+    };
+  }
 
   // Weekly schedules from burnaby.ca screenshots
   // Format: { day: [{ name, start, end, age }] }
