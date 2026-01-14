@@ -6,7 +6,11 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 
 ```
 /
-├── index.html              # Main frontend (single-page app)
+├── index.html              # Main frontend (HTML only)
+├── css/
+│   └── styles.css          # All CSS styles
+├── js/
+│   └── app.js              # All JavaScript
 ├── backend/
 │   ├── puppeteer-scraper.js  # Main scraper script (all cities)
 │   ├── package.json          # Node.js dependencies
@@ -431,11 +435,12 @@ GitHub Actions workflow (`.github/workflows/scrape-schedules.yml`):
    - Add to the `scrapeAll()` function in `puppeteer-scraper.js`
    - Add city name to the `cities` array in function signature and CLI help
 
-6. **Update the frontend (`index.html`):**
-   - Add city to `cityColors` object (in `updateMap` function) with a unique color
-   - Add city abbreviation to `CITY_ABBREV` object
-   - Add CSS class `.legend-dot.citykey { background: #color; }`
-   - Add legend HTML item in `.map-legend` div
+6. **Update the frontend:**
+   - `js/app.js`: Add city to `cityColors` object (in `initMap` function) with a unique color
+   - `js/app.js`: Add city abbreviation to the `abbrs` object in `getCityAbbr` function
+   - `css/styles.css`: Add CSS class `.legend-dot.citykey { background: #color; }`
+   - `index.html`: Add legend HTML item in `.map-legend` div
+   - `index.html`: Add data source entry in `.data-sources` div (for "Disclaimer & About" section)
 
 7. **Update documentation:**
    - Add city section to this file (CLAUDE.md)
