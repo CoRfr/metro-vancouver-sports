@@ -677,8 +677,10 @@ async function scrapeWestVan(browser) {
     const endDate = formatDate(new Date(today.getTime() + 60 * 24 * 60 * 60 * 1000)); // 60 days ahead
     const url = `${CONFIG.westvan.dropInUrl}&start_date=${startDate}&end_date=${endDate}`;
 
-    await page.goto(url, { waitUntil: 'networkidle0', timeout: 60000 });
-    await new Promise(r => setTimeout(r, 5000)); // Wait longer for content to load
+    // Use longer timeout and domcontentloaded for faster initial load in CI environments
+    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    // Wait for dynamic content to render
+    await new Promise(r => setTimeout(r, 8000));
 
     const pageTitle = await page.title();
     console.error(`    Page loaded: ${pageTitle}`);

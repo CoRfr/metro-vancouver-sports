@@ -78,6 +78,8 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/
           git commit -m "Update skating schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          # Handle potential conflicts from concurrent pushes
+          git pull --rebase origin main || true
           git push
 
       - name: Upload scrape log
