@@ -432,8 +432,10 @@ GitHub Actions workflow (`.github/workflows/scrape-schedules.yml`):
    - Add city name to the `cities` array in function signature and CLI help
 
 6. **Update the frontend (`index.html`):**
-   - Add city to `CITY_COLORS` object with a unique color
+   - Add city to `cityColors` object (in `updateMap` function) with a unique color
    - Add city abbreviation to `CITY_ABBREV` object
+   - Add CSS class `.legend-dot.citykey { background: #color; }`
+   - Add legend HTML item in `.map-legend` div
 
 7. **Update documentation:**
    - Add city section to this file (CLAUDE.md)
