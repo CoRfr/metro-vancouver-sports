@@ -29,7 +29,7 @@ const CONFIG = {
     apiPattern: '/rest/onlinecalendar/multicenter/events',
     facilities: {
       // Map center_id to facility info (IDs from ActiveNet)
-      9: { name: 'West End Community Centre', lat: 49.2905, lng: -123.1365, address: '870 Denman St, Vancouver, BC V6G 2L8' },
+      9: { name: 'West End Community Centre', lat: 49.29048, lng: -123.13653, address: '870 Denman St, Vancouver, BC V6G 2L8' },
       22: { name: 'Hillcrest Centre', lat: 49.2438, lng: -123.1112, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
       23: { name: 'Kerrisdale Cyclone Taylor Arena', lat: 49.2337, lng: -123.1607, address: '5670 East Blvd, Vancouver, BC V6M 3Y2' },
       25: { name: 'Killarney Rink', lat: 49.2275, lng: -123.0478, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
@@ -58,15 +58,15 @@ const CONFIG = {
     facilities: {
       'kensington': {
         name: 'Kensington Complex',
-        lat: 49.2778,
-        lng: -122.9755,
+        lat: 49.27777,
+        lng: -122.97553,
         address: '6159 Curtis St, Burnaby, BC V5B 4X7',
         locationRef: '3046',
       },
       'rosemary-brown': {
         name: 'Rosemary Brown Recreation Centre',
-        lat: 49.2088,
-        lng: -122.9525,
+        lat: 49.20880,
+        lng: -122.95250,
         address: '7789 18th St, Burnaby, BC V3N 5E5',
         locationRef: '6916',
       },
@@ -102,8 +102,8 @@ const CONFIG = {
     facilities: {
       'karen magnussen': {
         name: 'Karen Magnussen Community Centre',
-        lat: 49.3323,
-        lng: -123.0457,
+        lat: 49.33232,
+        lng: -123.04566,
         address: '2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6',
       },
       'harry jerome': {
@@ -114,8 +114,8 @@ const CONFIG = {
       },
       'canlan': {
         name: 'Canlan Ice Sports North Shore',
-        lat: 49.3133,
-        lng: -123.1554,
+        lat: 49.31334,
+        lng: -123.15544,
         address: '2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9',
       },
     },
@@ -126,8 +126,8 @@ const CONFIG = {
     dropInUrl: 'https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35',
     facility: {
       name: 'West Vancouver Community Centre',
-      lat: 49.3317,
-      lng: -123.3227,
+      lat: 49.33171,
+      lng: -123.32268,
       address: '2121 Marine Dr #2, West Vancouver, BC V7V 4Y2',
     },
   },
@@ -139,14 +139,14 @@ const CONFIG = {
     facilities: {
       "queen's park arena": {
         name: "Queen's Park Arena",
-        lat: 49.2149,
-        lng: -122.9060,
+        lat: 49.21487,
+        lng: -122.90604,
         address: '51 3rd Ave, New Westminster, BC V3L 1L7',
       },
       'moody park arena': {
         name: 'Moody Park Arena',
-        lat: 49.2155,
-        lng: -122.9288,
+        lat: 49.21554,
+        lng: -122.92878,
         address: '701 8th Ave, New Westminster, BC V3M 2R2',
       },
     },
@@ -346,13 +346,13 @@ function getBurnabySchedules() {
     'kensington': {
       name: 'Kensington Complex',
       address: '6159 Curtis St, Burnaby, BC V5B 4X7',
-      lat: 49.2778, lng: -122.9755,
+      lat: 49.27777, lng: -122.97553,
       url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046',
     },
     'rosemary-brown': {
       name: 'Rosemary Brown Recreation Centre',
       address: '7789 18th St, Burnaby, BC V3N 5E5',
-      lat: 49.2088, lng: -122.9525,
+      lat: 49.20880, lng: -122.95250,
       url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916',
     },
   };
