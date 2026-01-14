@@ -114,8 +114,8 @@ const CONFIG = {
       },
       'canlan': {
         name: 'Canlan Ice Sports North Shore',
-        lat: 49.31334,
-        lng: -123.15544,
+        lat: 49.31372,
+        lng: -123.00401,
         address: '2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9',
       },
     },
