@@ -2,19 +2,6 @@
   "date": "2026-03-07",
   "sessions": [
     {
-      "facility": "Richmond Ice Centre",
-      "city": "Richmond",
-      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
-      "lat": 49.13639,
-      "lng": -123.06669,
-      "date": "2026-03-07",
-      "startTime": "13:30",
-      "endTime": "14:45",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Weekend Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -24,7 +11,7 @@
       "startTime": "14:00",
       "endTime": "17:00",
       "type": "Public Skating",
-      "activityName": "Public Skate",
+      "activityName": "Public Skate                                                                                                                Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -60,5 +47,5 @@
       "eventItemId": 592374
     }
   ],
-  "count": 4
+  "count": 3
 }

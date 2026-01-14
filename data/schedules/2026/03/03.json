@@ -11,7 +11,7 @@
       "startTime": "07:30",
       "endTime": "09:00",
       "type": "Drop-in Hockey",
-      "activityName": "Early Morning Adult Hockey",
+      "activityName": "Adult Hockey*                            Adult Hockey                               Adult Hockey",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -35,7 +35,7 @@
       "lng": -123.06669,
       "date": "2026-03-03",
       "startTime": "09:00",
-      "endTime": "10:30",
+      "endTime": "11:00",
       "type": "Figure Skating",
       "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
@@ -55,20 +55,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---tuesday-10-00am/594484",
       "eventItemId": 594484
-    },
-    {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-03-03",
-      "startTime": "10:00",
-      "endTime": "11:00",
-      "type": "Public Skating",
-      "activityName": "Adult 55+ Skate",
-      "ageRange": "55+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kitsilano Rink",
@@ -108,8 +94,8 @@
       "date": "2026-03-03",
       "startTime": "11:15",
       "endTime": "13:15",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -121,9 +107,21 @@
       "date": "2026-03-03",
       "startTime": "11:30",
       "endTime": "13:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Masters 65+ Hockey",
-      "ageRange": "65+",
+      "type": "Public Skating",
+      "activityName": "Public Skate*         Public Skate*      Public Skate          Public Skate         Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-03-03",
+      "startTime": "11:30",
+      "endTime": "13:30",
+      "type": "Family Skate",
+      "activityName": "Family Day Skate       Figure Skating*        and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -172,19 +170,6 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-03-03",
-      "startTime": "12:00",
-      "endTime": "13:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -193,8 +178,21 @@
       "date": "2026-03-03",
       "startTime": "13:30",
       "endTime": "15:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-03-03",
+      "startTime": "18:45",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate                         Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     }
   ],

@@ -2,6 +2,58 @@
   "date": "2026-02-02",
   "sessions": [
     {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-02-02",
+      "startTime": "00:00",
+      "endTime": "13:30",
+      "type": "Family Skate",
+      "activityName": "Family Day Skate       Figure Skating*        and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "00:00",
+      "endTime": "13:00",
+      "type": "Family Skate",
+      "activityName": "Family Play and Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-02-02",
+      "startTime": "00:15",
+      "endTime": "13:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate                                                                                                                Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "07:15",
+      "endTime": "08:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
       "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
@@ -23,8 +75,8 @@
       "date": "2026-02-02",
       "startTime": "09:00",
       "endTime": "11:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -72,6 +124,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Family Skate",
+      "activityName": "Family Play and Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -80,8 +145,8 @@
       "date": "2026-02-02",
       "startTime": "11:15",
       "endTime": "13:15",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -107,9 +172,8 @@
       "date": "2026-02-02",
       "startTime": "11:30",
       "endTime": "13:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Senior 55+ Hockey",
-      "ageRange": "55+",
+      "type": "Public Skating",
+      "activityName": "Public Skate*         Public Skate*      Public Skate          Public Skate         Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -216,19 +280,6 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-02-02",
-      "startTime": "12:15",
-      "endTime": "13:15",
-      "type": "Discount Skate",
-      "activityName": "Adult Toonie Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -251,9 +302,35 @@
       "date": "2026-02-02",
       "startTime": "13:30",
       "endTime": "15:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "14:30",
+      "endTime": "16:00",
+      "type": "Family Skate",
+      "activityName": "Playtime On Ice Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "15:15",
+      "endTime": "16:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Ring, Stick and Puck",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "West End Community Centre",
@@ -298,7 +375,20 @@
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-02",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "type": "Family Skate",
+      "activityName": "Playtime On Ice Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     }
   ],
-  "count": 21
+  "count": 28
 }

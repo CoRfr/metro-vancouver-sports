@@ -9,6 +9,10 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 ├── index.html              # Main frontend (single-page app)
 ├── backend/
 │   ├── puppeteer-scraper.js  # Main scraper script
+│   ├── pdf-parser.js         # Generic PDF parsing utilities
+│   ├── parsers/              # City-specific PDF parsers
+│   │   ├── richmond-parser.js
+│   │   └── poco-parser.js
 │   ├── package.json          # Node.js dependencies
 │   └── check-other-facilities.js  # Utility to check for new facilities
 ├── data/
@@ -60,6 +64,54 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 **Schedule Source:** `https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=XXXX`
 
 **Note:** When Burnaby updates their schedules (typically quarterly), the hardcoded patterns in `getBurnabySchedules()` need to be updated manually.
+
+---
+
+### Richmond (PDF Parsing)
+
+**Method:** Parse PDF schedules from richmond.ca
+
+**Schedules Page:** `https://www.richmond.ca/parks-recreation/about/schedules.htm`
+
+**How it works:**
+1. Scrape the schedules page to find current PDF URLs
+2. Download PDFs for Richmond Ice Centre and Minoru Arenas
+3. Convert to text using `pdftotext`
+4. Parse the grid-based schedule format
+5. Extract date ranges, activities, times, and cancellations
+6. Falls back to hardcoded schedules if PDF parsing fails
+
+**Richmond Facilities:**
+- Richmond Ice Centre (14140 Triangle Rd)
+- Minoru Arenas (7551 Minoru Gate)
+
+**PDF Format:**
+- Grid layout with days as columns (SUN through SAT)
+- Activities listed in rows with time slots
+- Date range header (e.g., "WINTER 2026 — JAN 5 – MAR 13")
+- Cancellations section at bottom
+
+**Parser:** `backend/parsers/richmond-parser.js`
+
+---
+
+### Port Coquitlam (PDF Parsing)
+
+**Method:** Parse PDF schedule from portcoquitlam.ca
+
+**Schedules Page:** `https://www.portcoquitlam.ca/recreation-parks/skating/public-skates`
+**PDF URL:** `https://www.portcoquitlam.ca/media/file/public-skate-schedule`
+
+**How it works:**
+1. Download the skating schedule PDF
+2. Convert to text using `pdftotext`
+3. Parse the grid-based schedule format
+4. Extract activities and time slots for each day
+
+**Port Coquitlam Facilities:**
+- Port Coquitlam Community Centre (2150 Wilson Ave)
+
+**Parser:** `backend/parsers/poco-parser.js`
 
 ---
 

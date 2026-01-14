@@ -32,6 +32,9 @@ A web app that aggregates public skating schedules from recreation centers acros
 - Richmond Ice Centre
 - Minoru Arenas
 
+### Port Coquitlam
+- Port Coquitlam Community Centre
+
 ### North Vancouver
 - Karen Magnussen Community Recreation Centre
 - Harry Jerome Community Recreation Centre

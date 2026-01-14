@@ -11,7 +11,7 @@
       "startTime": "07:30",
       "endTime": "08:45",
       "type": "Drop-in Hockey",
-      "activityName": "Early Morning Adult Hockey",
+      "activityName": "Adult Hockey*                            Adult Hockey                               Adult Hockey",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -23,8 +23,8 @@
       "date": "2026-02-19",
       "startTime": "09:00",
       "endTime": "11:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -44,6 +44,19 @@
       "eventItemId": 601364
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-02-19",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Family Skate",
+      "activityName": "Playtime On Ice Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -52,8 +65,8 @@
       "date": "2026-02-19",
       "startTime": "11:15",
       "endTime": "13:15",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -65,9 +78,8 @@
       "date": "2026-02-19",
       "startTime": "11:30",
       "endTime": "13:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Masters 65+ Hockey",
-      "ageRange": "65+",
+      "type": "Public Skating",
+      "activityName": "Public Skate*         Public Skate*      Public Skate          Public Skate         Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -140,8 +152,8 @@
       "date": "2026-02-19",
       "startTime": "13:30",
       "endTime": "15:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick and Puck",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -161,5 +173,5 @@
       "eventItemId": 595112
     }
   ],
-  "count": 11
+  "count": 12
 }

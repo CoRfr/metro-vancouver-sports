@@ -43,19 +43,6 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-saturday-100-230pm"
     },
     {
-      "facility": "Richmond Ice Centre",
-      "city": "Richmond",
-      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
-      "lat": 49.13639,
-      "lng": -123.06669,
-      "date": "2026-01-24",
-      "startTime": "13:30",
-      "endTime": "14:45",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Weekend Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -75,10 +62,10 @@
       "lat": 49.16447,
       "lng": -123.14295,
       "date": "2026-01-24",
-      "startTime": "14:15",
-      "endTime": "16:30",
+      "startTime": "14:00",
+      "endTime": "17:00",
       "type": "Public Skating",
-      "activityName": "Public Skate",
+      "activityName": "Public Skate                                                                                                                Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -125,6 +112,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-01-24",
+      "startTime": "18:15",
+      "endTime": "19:15",
+      "type": "Family Skate",
+      "activityName": "Family Play and Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -152,6 +152,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Port Coquitlam Community Centre",
+      "city": "Port Coquitlam",
+      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
+      "lat": 49.26008,
+      "lng": -122.77703,
+      "date": "2026-01-24",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -168,5 +181,5 @@
       "eventItemId": 592368
     }
   ],
-  "count": 12
+  "count": 13
 }

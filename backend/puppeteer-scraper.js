@@ -16,6 +16,16 @@ const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
 
+// PDF parsers for cities with PDF schedules
+let richmondParser = null;
+let pocoParser = null;
+try {
+  richmondParser = require('./parsers/richmond-parser');
+  pocoParser = require('./parsers/poco-parser');
+} catch (e) {
+  // Parsers may not be available in all environments
+}
+
 // Configuration
 const CONFIG = {
   chromiumPath: process.env.CHROMIUM_PATH || '/snap/bin/chromium',
@@ -173,6 +183,18 @@ const CONFIG = {
     // Schedule valid: Jan 5 - Mar 13, 2026
     scheduleStart: '2026-01-05',
     scheduleEnd: '2026-03-13',
+  },
+
+  // Port Coquitlam config - PDF schedules from portcoquitlam.ca
+  poco: {
+    facility: {
+      name: 'Port Coquitlam Community Centre',
+      lat: 49.26008,
+      lng: -122.77703,
+      address: '2150 Wilson Ave, Port Coquitlam, BC V3C 6J5',
+    },
+    schedulesUrl: 'https://www.portcoquitlam.ca/recreation-parks/skating/public-skates',
+    pdfUrl: 'https://www.portcoquitlam.ca/media/file/public-skate-schedule',
   },
 };
 
@@ -1531,10 +1553,10 @@ function generateICal(sessions) {
 
 /**
  * Main scraping function
- * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'richmond', 'northvan', 'westvan', 'newwest', 'outdoor'] }
+ * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
 
   let browser;
   const allSessions = [];
@@ -1568,15 +1590,60 @@ async function scrapeAll(options = {}) {
       }
     }
 
-    // Add Richmond schedules (hardcoded weekly pattern from PDFs)
+    // Add Richmond schedules (PDF parser with hardcoded fallback)
     if (cities.includes('richmond')) {
-      const richmondSessions = getRichmondSchedules();
+      const startTime = Date.now();
+      let richmondSessions = [];
+
+      // Try PDF parser first
+      if (richmondParser) {
+        try {
+          richmondSessions = await richmondParser.scrapeRichmond();
+        } catch (e) {
+          console.error(`  Richmond PDF parser failed: ${e.message}, using fallback...`);
+        }
+      }
+
+      // Fallback to hardcoded schedules if PDF parser fails or returns no results
+      if (richmondSessions.length === 0) {
+        richmondSessions = getRichmondSchedules();
+      }
+
       for (const session of richmondSessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
         if (!seenKeys.has(key)) {
           seenKeys.add(key);
           allSessions.push(session);
         }
+      }
+      console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
+    }
+
+    // Add Port Coquitlam schedules (PDF parser)
+    if (cities.includes('poco')) {
+      const startTime = Date.now();
+      let pocoSessions = [];
+
+      if (pocoParser) {
+        try {
+          pocoSessions = await pocoParser.scrapePoCo();
+        } catch (e) {
+          console.error(`  Port Coquitlam PDF parser failed: ${e.message}`);
+        }
+      } else {
+        console.error('Scraping Port Coquitlam...');
+        console.error('  Warning: PDF parser not available');
+      }
+
+      for (const session of pocoSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+      if (pocoSessions.length > 0) {
+        console.error(`    (${((Date.now() - startTime) / 1000).toFixed(1)}s)`);
       }
     }
 
@@ -1725,7 +1792,7 @@ async function main() {
       i++;
     }
   }
-  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'richmond', 'northvan', 'westvan', 'newwest', 'outdoor'];
+  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'richmond', 'poco', 'northvan', 'westvan', 'newwest', 'outdoor'];
 
   console.error('Metro Vancouver Skating Schedule Scraper');
   console.error('========================================');
