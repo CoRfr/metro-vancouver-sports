@@ -65,8 +65,8 @@ const CONFIG = {
       },
       'rosemary-brown': {
         name: 'Rosemary Brown Recreation Centre',
-        lat: 49.2085,
-        lng: -122.9526,
+        lat: 49.2088,
+        lng: -122.9525,
         address: '7789 18th St, Burnaby, BC V3N 5E5',
         locationRef: '6916',
       },
@@ -352,7 +352,7 @@ function getBurnabySchedules() {
     'rosemary-brown': {
       name: 'Rosemary Brown Recreation Centre',
       address: '7789 18th St, Burnaby, BC V3N 5E5',
-      lat: 49.2085, lng: -122.9526,
+      lat: 49.2088, lng: -122.9525,
       url: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916',
     },
   };
