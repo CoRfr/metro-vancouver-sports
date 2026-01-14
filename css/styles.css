@@ -923,6 +923,22 @@ select:focus, input[type="text"]:focus {
     margin-bottom: 10px;
 }
 
+.disclaimer {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+}
+
+.disclaimer strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
 .info-box a {
     color: #667eea;
     text-decoration: none;
