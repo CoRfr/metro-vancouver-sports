@@ -48,6 +48,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.2144,
+      "lng": -122.9105,
+      "date": "2026-01-28",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick & Puck - Adult",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -152,6 +165,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
+      "lat": 49.2155,
+      "lng": -122.9288,
+      "date": "2026-01-28",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -168,5 +194,5 @@
       "eventItemId": 592193
     }
   ],
-  "count": 11
+  "count": 13
 }
