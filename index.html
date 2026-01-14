@@ -2977,10 +2977,11 @@
                     .sort((a, b) => a.date.localeCompare(b.date) || a.startTime.localeCompare(b.startTime))
                     .slice(0, 5);
 
+                const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(facility.address || facility.facility + ', ' + facility.city)}`;
                 let popupContent = `
                     <div style="min-width: 200px;">
-                        <strong style="font-size: 14px;">${facility.facility}</strong><br>
-                        <span style="color: #666; font-size: 12px;">${facility.address}</span><br>
+                        <a href="${mapsUrl}" target="_blank" style="font-size: 14px; font-weight: bold; color: #1976d2; text-decoration: none;">${facility.facility}</a><br>
+                        <a href="${mapsUrl}" target="_blank" style="color: #666; font-size: 12px; text-decoration: none;">${facility.address} ↗</a><br>
                         <span style="color: ${color}; font-weight: 600;">${facility.sessions.length} upcoming sessions</span>
                         <hr style="margin: 8px 0; border: none; border-top: 1px solid #eee;">
                 `;
