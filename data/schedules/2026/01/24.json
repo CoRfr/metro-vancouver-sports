@@ -43,6 +43,19 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-saturday-100-230pm"
     },
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-24",
+      "startTime": "13:30",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Weekend Hockey",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -54,6 +67,19 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-01-24",
+      "startTime": "14:15",
+      "endTime": "16:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Harry Jerome Community Recreation Centre",
@@ -142,5 +168,5 @@
       "eventItemId": 592368
     }
   ],
-  "count": 10
+  "count": 12
 }

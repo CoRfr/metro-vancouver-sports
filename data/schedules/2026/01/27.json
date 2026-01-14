@@ -2,6 +2,45 @@
   "date": "2026-01-27",
   "sessions": [
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-27",
+      "startTime": "07:30",
+      "endTime": "09:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Early Morning Adult Hockey",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-01-27",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "type": "Public Skating",
+      "activityName": "Adult and Senior Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-27",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -16,6 +55,20 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---tuesday-10-00am/594479",
       "eventItemId": 594479
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-01-27",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "type": "Public Skating",
+      "activityName": "Adult 55+ Skate",
+      "ageRange": "55+",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kitsilano Rink",
@@ -48,6 +101,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-01-27",
+      "startTime": "10:15",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Ice Dance Session",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
       "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
@@ -59,6 +125,19 @@
       "type": "Drop-in Hockey",
       "activityName": "Stick & Puck - Adult",
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-27",
+      "startTime": "11:15",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -73,6 +152,20 @@
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-27",
+      "startTime": "11:30",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Masters 65+ Hockey",
+      "ageRange": "65+",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -121,6 +214,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-01-27",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Hockey Skills and Drills Drop-in (Tue)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
       "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
@@ -132,6 +238,19 @@
       "type": "Public Skating",
       "activityName": "Public Skate - Queen's Park Arena",
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+    },
+    {
+      "facility": "Minoru Arenas",
+      "city": "Richmond",
+      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
+      "lat": 49.16447,
+      "lng": -123.14295,
+      "date": "2026-01-27",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -176,6 +295,19 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-01-27",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -190,5 +322,5 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     }
   ],
-  "count": 13
+  "count": 23
 }

@@ -28,6 +28,10 @@ A web app that aggregates public skating schedules from recreation centers acros
 - Kensington Complex
 - Rosemary Brown Recreation Centre
 
+### Richmond
+- Richmond Ice Centre
+- Minoru Arenas
+
 ### North Vancouver
 - Karen Magnussen Community Recreation Centre
 - Harry Jerome Community Recreation Centre
