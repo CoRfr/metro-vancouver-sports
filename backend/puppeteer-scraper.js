@@ -29,7 +29,7 @@ const CONFIG = {
     apiPattern: '/rest/onlinecalendar/multicenter/events',
     facilities: {
       // Map center_id to facility info (IDs from ActiveNet)
-      9: { name: 'West End Community Centre', lat: 49.2877, lng: -123.1373, address: '870 Denman St, Vancouver, BC V6G 2L8' },
+      9: { name: 'West End Community Centre', lat: 49.2905, lng: -123.1365, address: '870 Denman St, Vancouver, BC V6G 2L8' },
       22: { name: 'Hillcrest Centre', lat: 49.2438, lng: -123.1112, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
       23: { name: 'Kerrisdale Cyclone Taylor Arena', lat: 49.2337, lng: -123.1607, address: '5670 East Blvd, Vancouver, BC V6M 3Y2' },
       25: { name: 'Killarney Rink', lat: 49.2275, lng: -123.0478, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
