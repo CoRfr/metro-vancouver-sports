@@ -139,8 +139,8 @@ const CONFIG = {
     facilities: {
       "queen's park arena": {
         name: "Queen's Park Arena",
-        lat: 49.2144,
-        lng: -122.9105,
+        lat: 49.2149,
+        lng: -122.9060,
         address: '51 3rd Ave, New Westminster, BC V3L 1L7',
       },
       'moody park arena': {
