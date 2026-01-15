@@ -1409,7 +1409,9 @@ document.addEventListener('click', () => {
 sportFilter.querySelector('.dropdown-single-menu').addEventListener('click', e => e.stopPropagation());
 
 let postalCodeTimeout;
+let isRestoringSettings = false;
 postalCodeInput.addEventListener('input', () => {
+    if (isRestoringSettings) return;
     clearTimeout(postalCodeTimeout);
     postalCodeTimeout = setTimeout(handlePostalCodeChange, 1000);
 });
@@ -1455,13 +1457,15 @@ function loadSettings() {
 function applySettings(settings) {
     if (!settings) return;
 
-    // Apply location
+    // Apply location (prevent triggering geocode)
+    isRestoringSettings = true;
     if (settings.postalCode) {
         postalCodeInput.value = settings.postalCode;
     }
     if (settings.userLocation) {
         userLocation = settings.userLocation;
     }
+    isRestoringSettings = false;
 
     // Apply filters
     if (settings.cities && Array.isArray(settings.cities)) {
