@@ -94,7 +94,7 @@
       "date": "2026-01-23",
       "startTime": "10:15",
       "endTime": "11:30",
-      "type": "Public Skating",
+      "type": "Figure Skating",
       "activityName": "Adult Ice Dance Session",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
@@ -290,7 +290,7 @@
       "date": "2026-01-23",
       "startTime": "13:15",
       "endTime": "14:15",
-      "type": "Public Skating",
+      "type": "Figure Skating",
       "activityName": "Figure Skate Session",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
@@ -329,7 +329,7 @@
       "date": "2026-01-23",
       "startTime": "15:45",
       "endTime": "16:30",
-      "type": "Public Skating",
+      "type": "Drop-in Hockey",
       "activityName": "5-8y",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
@@ -342,7 +342,7 @@
       "date": "2026-01-23",
       "startTime": "16:45",
       "endTime": "17:30",
-      "type": "Public Skating",
+      "type": "Drop-in Hockey",
       "activityName": "9-11y",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
@@ -385,7 +385,7 @@
       "date": "2026-01-23",
       "startTime": "17:30",
       "endTime": "18:15",
-      "type": "Public Skating",
+      "type": "Drop-in Hockey",
       "activityName": "12y+",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },

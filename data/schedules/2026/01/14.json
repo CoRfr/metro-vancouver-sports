@@ -98,19 +98,6 @@
       "eventItemId": 599730
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-14",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Hockey Skills and Drills Drop-in (Wed)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -171,19 +158,6 @@
       "eventItemId": 590840
     },
     {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
-      "lat": 49.33232,
-      "lng": -123.04566,
-      "date": "2026-01-14",
-      "startTime": "17:30",
-      "endTime": "18:45",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -198,19 +172,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/594552",
       "eventItemId": 594552
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-14",
-      "startTime": "18:15",
-      "endTime": "19:45",
-      "type": "Discount Skate",
-      "activityName": "Toonie Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Kitsilano Rink",
@@ -243,19 +204,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/592156",
       "eventItemId": 592156
-    },
-    {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
-      "lat": 49.33232,
-      "lng": -123.04566,
-      "date": "2026-01-14",
-      "startTime": "19:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Adult 19yr+ Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-wednesday-700-800pm"
     },
     {
       "facility": "Kitsilano Rink",
@@ -306,5 +254,5 @@
       "eventItemId": 592191
     }
   ],
-  "count": 20
+  "count": 16
 }
