@@ -2,6 +2,45 @@
   "date": "2026-02-14",
   "sessions": [
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-02-14",
+      "startTime": "09:30",
+      "endTime": "10:15",
+      "type": "Family Skate",
+      "activityName": "5-8y (Family Day Weekend)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-02-14",
+      "startTime": "10:15",
+      "endTime": "11:00",
+      "type": "Family Skate",
+      "activityName": "9-11y (Family Day Weekend)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-02-14",
+      "startTime": "11:15",
+      "endTime": "12:00",
+      "type": "Family Skate",
+      "activityName": "12y+ (Family Day Weekend)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Port Coquitlam Community Centre",
       "city": "Port Coquitlam",
       "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
@@ -96,6 +135,20 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-02-14",
+      "startTime": "17:00",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "ageRange": "All ages, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -107,6 +160,20 @@
       "type": "Drop-in Hockey",
       "activityName": "Stick, Ring & Puck",
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-02-14",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Toonie Skate & Activities",
+      "ageRange": "13-17 yrs, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -138,5 +205,5 @@
       "eventItemId": 592371
     }
   ],
-  "count": 10
+  "count": 15
 }

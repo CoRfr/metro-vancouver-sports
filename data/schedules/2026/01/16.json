@@ -444,22 +444,6 @@
       "eventItemId": 593588
     },
     {
-      "facility": "Hillcrest Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-01-16",
-      "startTime": "17:15",
-      "endTime": "18:30",
-      "type": "Para Hockey",
-      "activityName": "Hillcrest Arena - Para Hockey Beginner - Friday 5:15pm",
-      "description": "Para hockey for Beginners. Everyone is welcome to participate - all players will be required to be in a sled  This session is open to people aged 8+ years who are new to sledge or just want to improv",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---para-hockey-beginner---friday-5-15pm/595207",
-      "eventItemId": 595207
-    },
-    {
       "facility": "Kensington Complex",
       "city": "Burnaby",
       "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
@@ -627,7 +611,7 @@
       "endTime": "21:30",
       "type": "Para Hockey",
       "activityName": "Hillcrest Arena - Para Hockey Int Scrim - Friday 8:15pm",
-      "description": "Para Ice hockey for Intermediate/Advanced who want to play in a casual game.  Everyone is welcome to participate - people with a physical disability and able-bodied people, but all participants must",
+      "description": "**RENTAL EQUIPMENT WILL NOT BE AVAILABLE FOR USE AT THIS TIME** We apologize for any inconvenience.  Para Ice hockey for Intermediate/Advanced who want to play in a casual game.  Everyone is welcome",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---para-hockey-int-scrim---friday-8-15pm/595218",
       "eventItemId": 595218
@@ -690,5 +674,5 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 48
+  "count": 47
 }
