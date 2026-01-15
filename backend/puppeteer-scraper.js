@@ -1357,6 +1357,7 @@ async function scrapeWestVan(browser) {
           events.push({
             date: dateStr,
             activityName,
+            categoryName: categoryTitle || '',
             location,
             startTime,
             endTime,
@@ -1377,14 +1378,23 @@ async function scrapeWestVan(browser) {
       if (seenKeys.has(eventKey)) continue;
       seenKeys.add(eventKey);
 
-      // Determine activity type
+      // Determine activity type - check both activity name and category
       const actName = activity.activityName.toLowerCase();
+      const catName = (activity.categoryName || '').toLowerCase();
       let type = 'Public Skating';
-      if (actName.includes('family')) type = 'Family Skate';
-      else if (actName.includes('hockey') || actName.includes('stick') || actName.includes('puck')) type = 'Drop-in Hockey';
-      else if (actName.includes('adult') && actName.includes('skate')) type = 'Public Skating';
-      else if (actName.includes('figure') || actName.includes('dance')) type = 'Public Skating';
-      else if (actName.includes('toonie')) type = 'Discount Skate';
+
+      // First check category for hockey-related activities
+      if (catName.includes('hockey') || catName.includes('stick and puck')) {
+        type = 'Drop-in Hockey';
+      } else if (actName.includes('family')) {
+        type = 'Family Skate';
+      } else if (actName.includes('hockey') || actName.includes('stick') || actName.includes('puck')) {
+        type = 'Drop-in Hockey';
+      } else if (actName.includes('figure') || actName.includes('dance')) {
+        type = 'Figure Skating';
+      } else if (actName.includes('toonie')) {
+        type = 'Discount Skate';
+      }
 
       allSessions.push({
         facility: facility.name,
