@@ -114,34 +114,6 @@
       "eventItemId": 591945
     },
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
-      "lat": 49.28221,
-      "lng": -123.12113,
-      "date": "2026-01-14",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
-      "lat": 49.30958,
-      "lng": -123.07878,
-      "date": "2026-01-14",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver, BC V6K 4K9",
@@ -254,5 +226,5 @@
       "eventItemId": 592191
     }
   ],
-  "count": 16
+  "count": 14
 }

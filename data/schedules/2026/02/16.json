@@ -213,6 +213,19 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "West Vancouver Community Centre",
+      "city": "West Vancouver",
+      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
+      "lat": 49.33171,
+      "lng": -123.32268,
+      "date": "2026-02-16",
+      "startTime": "13:15",
+      "endTime": "14:00",
+      "type": "Drop-in Hockey",
+      "activityName": "5-8y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -236,7 +249,7 @@
       "startTime": "14:00",
       "endTime": "14:45",
       "type": "Drop-in Hockey",
-      "activityName": "5-8y (Family Day)",
+      "activityName": "9-11y (Family Day)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
@@ -276,7 +289,7 @@
       "startTime": "15:00",
       "endTime": "15:45",
       "type": "Drop-in Hockey",
-      "activityName": "9-11y (Family Day)",
+      "activityName": "12y+ (Family Day)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
@@ -322,19 +335,6 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-02-16",
-      "startTime": "15:45",
-      "endTime": "16:30",
-      "type": "Drop-in Hockey",
-      "activityName": "12y+ (Family Day)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -355,8 +355,8 @@
       "lat": 49.33171,
       "lng": -123.32268,
       "date": "2026-02-16",
-      "startTime": "16:45",
-      "endTime": "18:00",
+      "startTime": "16:00",
+      "endTime": "17:15",
       "type": "Family Skate",
       "activityName": "Public Skate (Family Day)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
