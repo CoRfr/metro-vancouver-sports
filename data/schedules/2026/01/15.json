@@ -98,19 +98,6 @@
       "eventItemId": 599726
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-15",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Noon Hour",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -141,34 +128,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-public-skate/592167",
       "eventItemId": 592167
-    },
-    {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
-      "lat": 49.28221,
-      "lng": -123.12113,
-      "date": "2026-01-15",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
-      "lat": 49.30958,
-      "lng": -123.07878,
-      "date": "2026-01-15",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
       "facility": "Hillcrest Centre",
@@ -219,19 +178,6 @@
       "eventItemId": 592168
     },
     {
-      "facility": "Canlan Ice Sports North Shore",
-      "city": "North Vancouver",
-      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
-      "lat": 49.31372,
-      "lng": -123.00401,
-      "date": "2026-01-15",
-      "startTime": "16:00",
-      "endTime": "18:05",
-      "type": "Family Skate",
-      "activityName": "$2 Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-605pm"
-    },
-    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver, BC V5X 0A1",
@@ -262,19 +208,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593584",
       "eventItemId": 593584
-    },
-    {
-      "facility": "Canlan Ice Sports North Shore",
-      "city": "North Vancouver",
-      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
-      "lat": 49.31372,
-      "lng": -123.00401,
-      "date": "2026-01-15",
-      "startTime": "18:15",
-      "endTime": "19:35",
-      "type": "Public Skating",
-      "activityName": "Adult Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -341,5 +274,5 @@
       "eventItemId": 593898
     }
   ],
-  "count": 22
+  "count": 17
 }
