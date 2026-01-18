@@ -129,9 +129,9 @@ const CONFIG = {
     dropInUrl: 'https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35',
     facility: {
       name: 'West Vancouver Community Centre',
-      lat: 49.33171,
-      lng: -123.32268,
-      address: '2121 Marine Dr #2, West Vancouver, BC V7V 4Y2',
+      lat: 49.3415329,
+      lng: -123.2338840,
+      address: '2121 Marine Dr, West Vancouver, BC V7V 1K5',
     },
   },
 
