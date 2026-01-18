@@ -1252,3 +1252,191 @@ body.dark-mode .dark-mode-toggle .icon-moon {
     opacity: 0;
     transform: rotate(90deg);
 }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .controls {
+        padding: 15px;
+    }
+
+    .filter-group {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-container {
+        padding: 15px;
+    }
+
+    .calendar-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .calendar-header h2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .calendar-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .view-toggle {
+        justify-content: center;
+    }
+
+    .calendar-nav {
+        justify-content: center;
+    }
+
+    /* Day picker mobile styles */
+    .day-view-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .day-picker {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .day-picker-nav {
+        justify-content: center;
+        order: 2;
+    }
+
+    .day-picker-days {
+        order: 1;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        justify-content: flex-start;
+        padding: 6px;
+    }
+
+    .day-picker-days::-webkit-scrollbar {
+        display: none;
+    }
+
+    .day-picker-days button {
+        min-width: 52px;
+        padding: 6px 8px;
+        flex-shrink: 0;
+    }
+
+    .day-picker-days button .day-name {
+        font-size: 0.65rem;
+    }
+
+    .day-picker-days button .day-num {
+        font-size: 0.95rem;
+    }
+
+    .day-picker input[type="date"] {
+        order: 3;
+        width: 100%;
+    }
+
+    /* Timeline adjustments */
+    .timeline-hours {
+        width: 45px;
+    }
+
+    .timeline-hour {
+        font-size: 0.65rem;
+        padding: 4px 4px;
+    }
+
+    .timeline-grid {
+        margin-left: 50px;
+        margin-right: 5px;
+    }
+
+    .timeline-event {
+        font-size: 0.75rem;
+        padding: 4px 6px;
+    }
+
+    .timeline-event-name {
+        font-size: 0.7rem;
+    }
+
+    .timeline-event-location {
+        font-size: 0.6rem;
+    }
+
+    .timeline-event-city {
+        font-size: 0.5rem;
+    }
+
+    /* Map panel */
+    #facilityMap {
+        height: 250px;
+        min-height: 200px;
+    }
+
+    .map-legend {
+        gap: 10px;
+        font-size: 0.75rem;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .modal-title {
+        font-size: 1.2rem;
+    }
+
+    /* Activity filters */
+    .activity-filters {
+        gap: 6px;
+    }
+
+    .activity-checkbox {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .day-picker-days button {
+        min-width: 44px;
+        padding: 5px 6px;
+    }
+
+    .day-picker-days button .day-name {
+        font-size: 0.6rem;
+    }
+
+    .day-picker-days button .day-num {
+        font-size: 0.85rem;
+    }
+
+    .calendar-nav button {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .view-toggle button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
