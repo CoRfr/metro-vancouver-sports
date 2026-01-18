@@ -16,6 +16,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/598868",
       "eventItemId": 598868,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     },
     {
@@ -33,6 +34,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---mild/597989",
       "eventItemId": 597989,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
@@ -50,6 +52,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/599137",
       "eventItemId": 599137,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
     },
     {
@@ -67,6 +70,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/597497",
       "eventItemId": 597497,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     }
   ],

@@ -13,6 +13,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -30,6 +31,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-figure-skating---wednesday-10-00am/594589",
       "eventItemId": 594589,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
@@ -47,6 +49,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---stick-puck-ring---wednesday-10-00am/602917",
       "eventItemId": 602917,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
@@ -62,6 +65,7 @@
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -76,6 +80,7 @@
       "type": "Discount Skate",
       "activityName": "Toonie Skate",
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
@@ -90,6 +95,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -105,6 +111,7 @@
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -120,6 +127,7 @@
       "activityName": "Senior 55+ Hockey",
       "ageRange": "55+",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -134,6 +142,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -151,6 +160,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-hockey---wednesday-11-45am/594601",
       "eventItemId": 594601,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
@@ -168,6 +178,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---stick-puck-ring---wednesday-11-45am/590848",
       "eventItemId": 590848,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     },
     {
@@ -185,6 +196,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---40-hockey---wednesday-11-45am/602897",
       "eventItemId": 602897,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
@@ -199,6 +211,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Hockey Skills and Drills Drop-in (Wed)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
@@ -213,6 +226,7 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
@@ -228,6 +242,7 @@
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink",
       "activityUrl": "https://www.robsonsquare.com/",
+      "facilityUrl": "https://www.robsonsquare.com/",
       "scheduleUrl": "https://www.robsonsquare.com/"
     },
     {
@@ -243,6 +258,7 @@
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
       "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
@@ -258,6 +274,7 @@
       "activityName": "Figure Skating",
       "ageRange": "16 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -272,6 +289,7 @@
       "type": "Discount Skate",
       "activityName": "Adult Toonie Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -286,6 +304,7 @@
       "type": "Family Skate",
       "activityName": "Public Skate - Adult and Tot",
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
@@ -300,6 +319,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -314,6 +334,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Stick, Ring & Puck",
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
@@ -328,6 +349,7 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
@@ -342,6 +364,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Stick and Puck - Children",
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
@@ -356,6 +379,7 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -370,6 +394,7 @@
       "type": "Discount Skate",
       "activityName": "Toonie Public Skate",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
@@ -387,6 +412,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---public-hockey---wednesday-10-00pm/592194",
       "eventItemId": 592194,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],

@@ -13,6 +13,7 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Weekend Hockey",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -27,6 +28,7 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
@@ -44,6 +46,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---saturday-4-00pm/592363",
       "eventItemId": 592363,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
@@ -58,6 +61,7 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
@@ -75,6 +79,7 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---public-hockey---saturday-10-15pm/592374",
       "eventItemId": 592374,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],

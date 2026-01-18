@@ -14,6 +14,7 @@
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink",
       "activityUrl": "https://www.robsonsquare.com/",
+      "facilityUrl": "https://www.robsonsquare.com/",
       "scheduleUrl": "https://www.robsonsquare.com/"
     },
     {
@@ -29,6 +30,7 @@
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
       "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     }
   ],
