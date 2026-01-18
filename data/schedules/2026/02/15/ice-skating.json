@@ -42,32 +42,6 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-02-15",
-      "startTime": "10:00",
-      "endTime": "10:45",
-      "type": "Drop-in Hockey",
-      "activityName": "5-8y (Family Day Weekend)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-02-15",
-      "startTime": "10:45",
-      "endTime": "11:30",
-      "type": "Drop-in Hockey",
-      "activityName": "9-11y (Family Day Weekend)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -93,19 +67,6 @@
       "activityName": "Masters 65+ Hockey",
       "ageRange": "65+",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-02-15",
-      "startTime": "11:45",
-      "endTime": "12:30",
-      "type": "Drop-in Hockey",
-      "activityName": "12y+ (Family Day Weekend)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -147,19 +108,6 @@
       "type": "Discount Skate",
       "activityName": "Adult Toonie Skate",
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-02-15",
-      "startTime": "12:45",
-      "endTime": "14:15",
-      "type": "Family Skate",
-      "activityName": "Public Skate (Family Day Weekend)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -321,5 +269,5 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 24
+  "count": 20
 }
