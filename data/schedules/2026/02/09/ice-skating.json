@@ -99,6 +99,19 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-02-09",
+      "startTime": "11:15",
+      "endTime": "12:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -270,6 +283,19 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-02-09",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -309,6 +335,19 @@
       "activityName": "50+ Toonie Skate",
       "ageRange": "50 yrs+",
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-02-09",
+      "startTime": "13:45",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -381,5 +420,5 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 27
+  "count": 30
 }

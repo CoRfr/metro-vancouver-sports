@@ -257,6 +257,19 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-02-11",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Family Skate",
+      "activityName": "Public Skate - Adult and Tot",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -281,6 +294,32 @@
       "type": "Drop-in Hockey",
       "activityName": "Stick, Ring & Puck",
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-02-11",
+      "startTime": "15:45",
+      "endTime": "16:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-02-11",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck - Children",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
     },
     {
       "facility": "Minoru Arenas",
@@ -325,5 +364,5 @@
       "eventItemId": 592195
     }
   ],
-  "count": 23
+  "count": 26
 }

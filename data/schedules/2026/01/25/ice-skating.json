@@ -149,6 +149,19 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-01-25",
+      "startTime": "13:15",
+      "endTime": "14:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -228,6 +241,19 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-01-25",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "Karen Magnussen Community Centre",
       "city": "North Vancouver",
       "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
@@ -280,5 +306,5 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     }
   ],
-  "count": 21
+  "count": 23
 }

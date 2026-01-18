@@ -414,6 +414,19 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-01-19",
+      "startTime": "13:45",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -577,5 +590,5 @@
       "eventItemId": 591944
     }
   ],
-  "count": 40
+  "count": 41
 }
