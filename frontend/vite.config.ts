@@ -4,8 +4,8 @@ import path from 'path'
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  // Use /metro-vancouver-sports/ for GitHub Pages, / for local dev
-  base: mode === 'production' ? '/metro-vancouver-sports/' : '/',
+  // Custom domain doesn't need a base path
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
