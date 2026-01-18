@@ -1538,6 +1538,7 @@ distanceFilter.addEventListener('change', () => {
     updateFacilityFilter(); // Update facility distances display
     filterSessions();
     saveSettings();
+    initMap(); // Redraw map with updated radius circle
 });
 
 // Save on view mode change
