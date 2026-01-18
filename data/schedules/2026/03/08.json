@@ -70,9 +70,9 @@
     {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
+      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
+      "lat": 49.3415329,
+      "lng": -123.233884,
       "date": "2026-03-08",
       "startTime": "12:45",
       "endTime": "14:15",

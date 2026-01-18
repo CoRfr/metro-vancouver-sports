@@ -1,0 +1,38 @@
+{
+  "date": "2026-03-14",
+  "sessions": [
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-03-14",
+      "startTime": "16:00",
+      "endTime": "17:15",
+      "type": "Drop-in Hockey",
+      "activityName": "West End Arena - Stick, Puck & Ring - Saturday 4:00pm",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required.  This is a session for individual practice only with no scrimmage, bring your own equipment. Skate rentals are not available.  All",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---saturday-4-00pm/592364",
+      "eventItemId": 592364
+    },
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-03-14",
+      "startTime": "22:15",
+      "endTime": "23:45",
+      "type": "Hockey",
+      "activityName": "West End Arena - Public Hockey - Saturday 10:15pm",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---public-hockey---saturday-10-15pm/592375",
+      "eventItemId": 592375
+    }
+  ],
+  "count": 2
+}

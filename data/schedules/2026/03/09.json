@@ -15,6 +15,22 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-03-09",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Hockey",
+      "activityName": "Sunset Arena - 40+ Hockey - Monday 10:00am",
+      "description": "Recreational hockey game for those 40 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---40-hockey---monday-10-00am/601377",
+      "eventItemId": 601377
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -42,11 +58,59 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-03-09",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Kerrisdale Arena - Stick, Puck & Ring - Monday 11:45am",
+      "description": "For those 19 years and older. Helmets and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants must sign",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kerrisdale-arena---stick-puck-ring---monday-11-45am/590762",
+      "eventItemId": 590762
+    },
+    {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-03-09",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Sunset Arena - Stick, Puck & Ring - Monday 11:45am",
+      "description": "For those 19 years and older. CSA Helmets and hockey gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participant",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---stick-puck-ring---monday-11-45am/601389",
+      "eventItemId": 601389
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-03-09",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Hockey",
+      "activityName": "Trout Lake Arena - Public Hockey - Monday 11:45am",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---monday-11-45am/601430",
+      "eventItemId": 601430
+    },
+    {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
+      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
+      "lat": 49.3415329,
+      "lng": -123.233884,
       "date": "2026-03-09",
       "startTime": "11:45",
       "endTime": "13:00",
@@ -122,6 +186,22 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-03-09",
+      "startTime": "15:45",
+      "endTime": "17:00",
+      "type": "Drop-in Hockey",
+      "activityName": "West End Arena - Stick, Puck & Ring - Monday 3:45pm",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required.  This is a session for individual practice only with no scrimmage, bring your own equipment. Skate rentals are not available.  All",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---monday-3-45pm/592187",
+      "eventItemId": 592187
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -135,5 +215,5 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 10
+  "count": 15
 }

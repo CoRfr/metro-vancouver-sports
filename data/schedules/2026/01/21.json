@@ -31,6 +31,22 @@
       "eventItemId": 594587
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-01-21",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Open skate for people 50 years and older.        *Monthly Flexipass and 10-Visit passes are accepted for this program.         For detailed admission fees, rental fee and discount  information  pleas",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/590839",
+      "eventItemId": 590839
+    },
+    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -191,15 +207,31 @@
     {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
+      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
+      "lat": 49.3415329,
+      "lng": -123.233884,
       "date": "2026-01-21",
       "startTime": "11:45",
       "endTime": "13:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Hockey Skills and Drills Drop-in (Wed)",
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-01-21",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Family Skate",
+      "activityName": "Parent and Preschooler Skate",
+      "description": "The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older   *Monthly Flexipass and 10-Visit passes are accepted for this program .   For d",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler-skate/591945",
+      "eventItemId": 591945
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -283,6 +315,22 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-01-21",
+      "startTime": "15:15",
+      "endTime": "16:30",
+      "type": "Public Skating",
+      "activityName": "Discount Public Skate",
+      "description": "50% off  regular public skating admission prices        Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-public-skate/590840",
+      "eventItemId": 590840
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -322,6 +370,22 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-21",
+      "startTime": "18:00",
+      "endTime": "19:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/594552",
+      "eventItemId": 594552
+    },
+    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -337,9 +401,9 @@
     {
       "facility": "West Vancouver Community Centre",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
+      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
+      "lat": 49.3415329,
+      "lng": -123.233884,
       "date": "2026-01-21",
       "startTime": "18:15",
       "endTime": "19:45",
@@ -361,6 +425,38 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-01-21",
+      "startTime": "19:00",
+      "endTime": "19:45",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Plastic sticks and pucks only for this session (provided). Helmets and gloves required.        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Mont",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/590841",
+      "eventItemId": 590841
+    },
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-01-21",
+      "startTime": "19:00",
+      "endTime": "20:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual 16 years old or over    *Monthly Flexipass and 10-Visit passes are accepted for this program .",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/592156",
+      "eventItemId": 592156
+    },
+    {
       "facility": "Karen Magnussen Community Centre",
       "city": "North Vancouver",
       "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
@@ -372,6 +468,38 @@
       "type": "Public Skating",
       "activityName": "Adult 19yr+ Skate",
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-wednesday-700-800pm"
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-01-21",
+      "startTime": "19:45",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this program",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590842",
+      "eventItemId": 590842
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-01-21",
+      "startTime": "21:15",
+      "endTime": "22:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this program",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590843",
+      "eventItemId": 590843
     },
     {
       "facility": "West End Community Centre",
@@ -390,5 +518,5 @@
       "eventItemId": 592192
     }
   ],
-  "count": 28
+  "count": 36
 }
