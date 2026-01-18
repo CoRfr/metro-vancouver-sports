@@ -11,6 +11,7 @@ const { getCoquitlamSchedules } = require('./coquitlam');
 const { scrapeNorthVan } = require('./northvan');
 const { scrapeWestVan } = require('./westvan');
 const { scrapeNewWest } = require('./newwest');
+const { scrapeLangleySkating, scrapeLangleySwimming } = require('./langley');
 const { getOutdoorRinks } = require('./outdoor');
 
 // Swimming scrapers
@@ -26,7 +27,9 @@ module.exports = {
   scrapeNorthVan,
   scrapeWestVan,
   scrapeNewWest,
+  scrapeLangleySkating,
   getOutdoorRinks,
   // Swimming
   scrapeVancouverSwimming,
+  scrapeLangleySwimming,
 };

@@ -743,6 +743,7 @@ function getCityAbbr(city) {
         'North Vancouver': 'NV',
         'West Vancouver': 'WV',
         'New Westminster': 'NW',
+        'Langley': 'LGL',
     };
     return abbrs[city] || city.substring(0, 3).toUpperCase();
 }
@@ -1645,7 +1646,8 @@ function initMap() {
         'Coquitlam': '#6d4c41',
         'North Vancouver': '#388e3c',
         'West Vancouver': '#00796b',
-        'New Westminster': '#c2185b'
+        'New Westminster': '#c2185b',
+        'Langley': '#455a64'
     };
 
     // Add markers for each facility

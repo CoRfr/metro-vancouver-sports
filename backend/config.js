@@ -218,6 +218,46 @@ const CONFIG = {
     // Schedule valid: Jan 3 - Mar 12, 2026
     scheduleEnd: '2026-03-12',
   },
+
+  // Township of Langley config - uses PerfectMind booking system
+  langley: {
+    skatingUrl: 'https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4',
+    swimmingUrl: 'https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783',
+    facilities: {
+      'aldergrove': {
+        name: 'Aldergrove Community Centre',
+        lat: 49.1125355,
+        lng: -122.6766332,
+        address: '27032 Fraser Highway, Langley, BC',
+        hasSkating: true,
+        hasSwimming: true,
+      },
+      'george preston': {
+        name: 'George Preston Recreation Centre',
+        lat: 49.0788784,
+        lng: -122.6518472,
+        address: '20699 - 42 Avenue, Langley, BC',
+        hasSkating: true,
+        hasSwimming: false,
+      },
+      'wc blair': {
+        name: 'W.C. Blair Recreation Centre',
+        lat: 49.0913815,
+        lng: -122.6096282,
+        address: '22200 Fraser Highway, Langley, BC',
+        hasSkating: false,
+        hasSwimming: true,
+      },
+      'walnut grove': {
+        name: 'Walnut Grove Community Centre',
+        lat: 49.1635264,
+        lng: -122.6415541,
+        address: '8889 Walnut Grove Drive, Langley, BC',
+        hasSkating: false,
+        hasSwimming: true,
+      },
+    },
+  },
 };
 
 module.exports = { CONFIG };

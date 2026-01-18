@@ -34,8 +34,10 @@ const {
   scrapeNorthVan,
   scrapeWestVan,
   scrapeNewWest,
+  scrapeLangleySkating,
   getOutdoorRinks,
   scrapeVancouverSwimming,
+  scrapeLangleySwimming,
 } = require('./scrapers');
 
 /**
@@ -69,7 +71,7 @@ async function createBrowser(debug = false) {
  * @param {Object} options - { debug, cities: ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'] }
  */
 async function scrapeAll(options = {}) {
-  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'langley', 'outdoor'] } = options;
 
   // Validate hardcoded schedule dates before scraping
   const expiredSchedules = validateScheduleDates();
@@ -198,6 +200,18 @@ async function scrapeAll(options = {}) {
       }
     }
 
+    // Scrape Langley skating
+    if (cities.includes('langley')) {
+      const langleySessions = await scrapeLangleySkating(browser);
+      for (const session of langleySessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
     // Add outdoor rinks (Robson Square, Shipyards)
     if (cities.includes('outdoor')) {
       const outdoorSessions = getOutdoorRinks();
@@ -234,7 +248,7 @@ async function scrapeAll(options = {}) {
  * @param {Object} options - { debug, cities: ['vancouver'] }
  */
 async function scrapeSwimming(options = {}) {
-  const { debug = false, cities = ['vancouver'] } = options;
+  const { debug = false, cities = ['vancouver', 'langley'] } = options;
 
   let browser;
   const allSessions = [];
@@ -256,8 +270,17 @@ async function scrapeSwimming(options = {}) {
       }
     }
 
-    // Future: Add other cities' swimming scrapers here
-    // if (cities.includes('burnaby')) { ... }
+    // Scrape Langley Swimming via PerfectMind
+    if (cities.includes('langley')) {
+      const langleySessions = await scrapeLangleySwimming(browser);
+      for (const session of langleySessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
 
   } finally {
     if (browser) await browser.close();
@@ -367,8 +390,8 @@ async function main() {
       i++;
     }
   }
-  const defaultSkatingCities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'];
-  const defaultSwimmingCities = ['vancouver']; // Only Vancouver swimming supported currently
+  const defaultSkatingCities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'langley', 'outdoor'];
+  const defaultSwimmingCities = ['vancouver', 'langley'];
   const cities = cityArgs.length > 0 ? cityArgs : (sport === 'swimming' ? defaultSwimmingCities : defaultSkatingCities);
 
   console.error('Metro Vancouver Sports Schedule Scraper');

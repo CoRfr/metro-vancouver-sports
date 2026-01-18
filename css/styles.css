@@ -1174,6 +1174,7 @@ select:focus, input[type="text"]:focus {
 .legend-dot.northvan { background: #388e3c; }
 .legend-dot.westvan { background: #00796b; }
 .legend-dot.newwest { background: #c2185b; }
+.legend-dot.langley { background: #455a64; }
 .legend-dot.outdoor { background: #ef6c00; }
 
 /* Hover highlight styles */
