@@ -1822,10 +1822,12 @@ function initMap() {
             .slice(0, 5);
 
         const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(facility.address || facility.facility + ', ' + facility.city)}`;
+        const scheduleUrl = facility.sessions[0]?.scheduleUrl || '';
         let popupContent = `
             <div style="min-width: 200px;">
                 <a href="${mapsUrl}" target="_blank" style="font-size: 14px; font-weight: bold; color: #1976d2; text-decoration: none;">${facility.facility}</a><br>
                 <a href="${mapsUrl}" target="_blank" style="color: #666; font-size: 12px; text-decoration: none;">${facility.address} ↗</a><br>
+                ${scheduleUrl ? `<a href="${scheduleUrl}" target="_blank" style="color: #667eea; font-size: 12px; text-decoration: none;">View Schedule ↗</a><br>` : ''}
                 <span style="color: ${color}; font-weight: 600;">${facility.sessions.length} upcoming sessions</span>
                 <hr style="margin: 8px 0; border: none; border-top: 1px solid #eee;">
         `;
