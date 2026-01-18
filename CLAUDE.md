@@ -1,6 +1,6 @@
-# Metro Vancouver Skating Schedule
+# Metro Vancouver Sports Schedules
 
-This project scrapes public skating schedules from various Metro Vancouver recreation centers and presents them in a unified calendar interface.
+This project scrapes public skating and swimming schedules from various Metro Vancouver recreation centers and presents them in a unified calendar interface.
 
 ## Project Structure
 
@@ -16,9 +16,11 @@ This project scrapes public skating schedules from various Metro Vancouver recre
 │   ├── package.json          # Node.js dependencies
 │   └── check-other-facilities.js  # Utility to check for new facilities
 ├── data/
-│   └── schedules/          # Daily JSON files organized by date
+│   └── schedules/          # Daily JSON files organized by date and sport
 │       ├── index.json      # Index with metadata and date list
-│       └── YYYY/MM/DD.json # Daily schedule files
+│       └── YYYY/MM/DD/     # Daily folders
+│           ├── ice-skating.json  # Ice skating schedules
+│           └── swimming.json     # Swimming schedules (coming soon)
 └── .github/workflows/
     └── scrape-schedules.yml  # Automated daily scraping
 ```

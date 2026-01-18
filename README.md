@@ -87,11 +87,15 @@ node puppeteer-scraper.js --debug --output ../data/schedules.json
 ```
 /
 ├── index.html              # Frontend (single-page app)
+├── css/styles.css          # CSS styles
+├── js/app.js               # JavaScript
 ├── backend/
 │   ├── puppeteer-scraper.js  # Main scraper
 │   └── package.json
 ├── data/
-│   └── schedules/          # Daily JSON files
+│   └── schedules/          # Daily JSON files by sport
+│       └── YYYY/MM/DD/     # Date folders
+│           └── ice-skating.json
 └── .github/workflows/
     └── scrape-schedules.yml  # Automated scraping
 ```

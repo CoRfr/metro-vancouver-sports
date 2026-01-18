@@ -2031,7 +2031,7 @@ async function scrapeAll(options = {}) {
 }
 
 /**
- * Write sessions to daily JSON files organized as schedules/YYYY/MM/DD.json
+ * Write sessions to daily JSON files organized as schedules/YYYY/MM/DD/ice-skating.json
  */
 function writeDailyFiles(result, outputDir) {
   // Group sessions by date
@@ -2047,10 +2047,10 @@ function writeDailyFiles(result, outputDir) {
   const dates = Object.keys(sessionsByDate).sort();
   for (const dateStr of dates) {
     const [year, month, day] = dateStr.split('-');
-    const dirPath = path.join(outputDir, year, month);
+    const dirPath = path.join(outputDir, year, month, day);
     fs.mkdirSync(dirPath, { recursive: true });
 
-    const filePath = path.join(dirPath, `${day}.json`);
+    const filePath = path.join(dirPath, 'ice-skating.json');
     const dayData = {
       date: dateStr,
       sessions: sessionsByDate[dateStr],

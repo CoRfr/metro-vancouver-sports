@@ -221,29 +221,36 @@ async function loadScheduleIndex() {
     return await response.json();
 }
 
+// Get the sport filename for schedule files
+function getSportFilename() {
+    return currentSport === 'skating' ? 'ice-skating' : currentSport;
+}
+
 // Load a single day's schedule
 async function loadDay(dateStr) {
-    if (loadedDays.has(dateStr)) {
-        return loadedDays.get(dateStr);
+    const cacheKey = `${currentSport}:${dateStr}`;
+    if (loadedDays.has(cacheKey)) {
+        return loadedDays.get(cacheKey);
     }
 
     const [year, month, day] = dateStr.split('-');
-    const url = `${SCHEDULES_BASE}/${year}/${month}/${day}.json?v=${getCacheBuster()}`;
+    const sportFile = getSportFilename();
+    const url = `${SCHEDULES_BASE}/${year}/${month}/${day}/${sportFile}.json?v=${getCacheBuster()}`;
 
     try {
         const response = await fetch(url);
         if (!response.ok) {
             // Day might not exist (no sessions), return empty
-            loadedDays.set(dateStr, []);
+            loadedDays.set(cacheKey, []);
             return [];
         }
         const data = await response.json();
         const sessions = data.sessions || [];
-        loadedDays.set(dateStr, sessions);
+        loadedDays.set(cacheKey, sessions);
         return sessions;
     } catch (e) {
         console.warn(`Could not load ${dateStr}:`, e);
-        loadedDays.set(dateStr, []);
+        loadedDays.set(cacheKey, []);
         return [];
     }
 }
