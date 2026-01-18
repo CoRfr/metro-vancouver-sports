@@ -1,3 +1,37 @@
+:root {
+    --bg-primary: white;
+    --bg-secondary: #fafafa;
+    --bg-tertiary: #f5f5f5;
+    --bg-hover: #f0f0f0;
+    --text-primary: #333;
+    --text-secondary: #555;
+    --text-muted: #666;
+    --text-light: #888;
+    --border-color: #e0e0e0;
+    --border-light: #eee;
+    --shadow-color: rgba(0,0,0,0.2);
+    --accent: #667eea;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.dark-mode {
+    --bg-primary: #1e1e1e;
+    --bg-secondary: #2d2d2d;
+    --bg-tertiary: #3d3d3d;
+    --bg-hover: #4d4d4d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #c0c0c0;
+    --text-muted: #a0a0a0;
+    --text-light: #808080;
+    --border-color: #404040;
+    --border-light: #353535;
+    --shadow-color: rgba(0,0,0,0.5);
+}
+
+body.dark-mode.sport-skating {
+    --sport-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +43,8 @@ body {
     background: var(--sport-gradient, linear-gradient(135deg, #667eea 0%, #764ba2 100%));
     min-height: 100vh;
     padding: 20px;
-    transition: background 0.5s ease;
+    transition: background 0.5s ease, color 0.3s ease;
+    color: var(--text-primary);
 }
 
 body.sport-skating {
@@ -45,11 +80,12 @@ h1 {
 }
 
 .controls {
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: background 0.3s ease;
 }
 
 .filter-group {
@@ -67,7 +103,7 @@ h1 {
 
 .filter-group label, .filter-item > label {
     font-weight: 600;
-    color: #555;
+    color: var(--text-secondary);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -75,23 +111,23 @@ h1 {
 
 select, input[type="text"] {
     padding: 12px 15px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     font-size: 1rem;
     transition: all 0.3s;
-    background: #fafafa;
+    background: var(--bg-secondary);
     width: 100%;
 }
 
 select:hover, input[type="text"]:hover {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
 }
 
 select:focus, input[type="text"]:focus {
     outline: none;
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
@@ -134,9 +170,9 @@ select:focus, input[type="text"]:focus {
     align-items: center;
     gap: 8px;
     padding: 12px 15px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
-    background: #fafafa;
+    background: var(--bg-secondary);
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s;
@@ -145,7 +181,7 @@ select:focus, input[type="text"]:focus {
 .dropdown-single-trigger::after {
     content: '▼';
     font-size: 0.7rem;
-    color: #888;
+    color: var(--text-light);
     margin-left: auto;
     transition: transform 0.2s;
 }
@@ -156,12 +192,12 @@ select:focus, input[type="text"]:focus {
 
 .dropdown-single-trigger:hover {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
 }
 
 .dropdown-single.open .dropdown-single-trigger {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -172,7 +208,7 @@ select:focus, input[type="text"]:focus {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--bg-primary);
     border: 2px solid #667eea;
     border-top: none;
     border-radius: 0 0 8px 8px;
@@ -193,7 +229,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .dropdown-single-item:hover:not(.disabled) {
-    background: #f5f5f5;
+    background: var(--bg-tertiary);
 }
 
 .dropdown-single-item.selected {
@@ -217,7 +253,7 @@ select:focus, input[type="text"]:focus {
 .coming-soon {
     font-size: 0.7rem;
     background: #eee;
-    color: #888;
+    color: var(--text-light);
     padding: 2px 6px;
     border-radius: 4px;
     margin-left: auto;
@@ -238,9 +274,9 @@ select:focus, input[type="text"]:focus {
     justify-content: space-between;
     align-items: center;
     padding: 12px 15px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
-    background: #fafafa;
+    background: var(--bg-secondary);
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.3s;
@@ -248,12 +284,12 @@ select:focus, input[type="text"]:focus {
 
 .dropdown-multi-trigger:hover {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
 }
 
 .dropdown-multi.open .dropdown-multi-trigger {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -261,7 +297,7 @@ select:focus, input[type="text"]:focus {
 .dropdown-multi-trigger::after {
     content: '▼';
     font-size: 0.7rem;
-    color: #888;
+    color: var(--text-light);
     transition: transform 0.2s;
 }
 
@@ -275,7 +311,7 @@ select:focus, input[type="text"]:focus {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--bg-primary);
     border: 2px solid #667eea;
     border-top: none;
     border-radius: 0 0 8px 8px;
@@ -298,7 +334,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .dropdown-multi-item:hover {
-    background: #f5f5f5;
+    background: var(--bg-tertiary);
 }
 
 .dropdown-multi-item input {
@@ -313,7 +349,7 @@ select:focus, input[type="text"]:focus {
 
 .dropdown-multi-item .item-distance {
     font-size: 0.8rem;
-    color: #888;
+    color: var(--text-light);
 }
 
 .dropdown-multi-item .item-city {
@@ -325,7 +361,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .calendar-container {
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -342,7 +378,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .calendar-header h2 {
-    color: #333;
+    color: var(--text-primary);
     font-size: 1.8rem;
 }
 
@@ -364,7 +400,7 @@ select:focus, input[type="text"]:focus {
 .view-toggle button {
     padding: 8px 16px;
     background: transparent;
-    color: #666;
+    color: var(--text-muted);
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -421,10 +457,10 @@ select:focus, input[type="text"]:focus {
 
 .calendar-day {
     min-height: 120px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     padding: 8px;
-    background: #fafafa;
+    background: var(--bg-secondary);
     transition: all 0.3s;
 }
 
@@ -441,7 +477,7 @@ select:focus, input[type="text"]:focus {
 .day-view-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .day-picker {
@@ -459,7 +495,7 @@ select:focus, input[type="text"]:focus {
 
 .day-picker button {
     padding: 10px 14px;
-    background: #f5f5f5;
+    background: var(--bg-tertiary);
     border: 2px solid transparent;
     border-radius: 8px;
     cursor: pointer;
@@ -469,14 +505,14 @@ select:focus, input[type="text"]:focus {
 }
 
 .day-picker button:hover {
-    background: #e8e8e8;
+    background: var(--bg-hover);
     transform: translateY(-1px);
 }
 
 .day-picker button.nav-btn {
     padding: 10px 12px;
-    background: white;
-    border: 2px solid #e0e0e0;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
 }
 
 .day-picker button.nav-btn:hover {
@@ -506,14 +542,14 @@ select:focus, input[type="text"]:focus {
 .day-picker-days button .day-name {
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: #888;
+    color: var(--text-light);
     font-weight: 500;
 }
 
 .day-picker-days button .day-num {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .day-picker-days button:hover {
@@ -521,7 +557,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .day-picker-days button.selected {
-    background: white;
+    background: var(--bg-primary);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
@@ -556,7 +592,7 @@ select:focus, input[type="text"]:focus {
 
 .day-picker input[type="date"] {
     padding: 8px 12px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     font-size: 0.9rem;
     cursor: pointer;
@@ -568,9 +604,9 @@ select:focus, input[type="text"]:focus {
 
 .timeline-container {
     position: relative;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: white;
+    background: var(--bg-primary);
     overflow: hidden;
 }
 
@@ -581,7 +617,7 @@ select:focus, input[type="text"]:focus {
     bottom: 0;
     width: 60px;
     background: #f8f9fa;
-    border-right: 1px solid #e0e0e0;
+    border-right: 1px solid var(--border-color);
     z-index: 1;
 }
 
@@ -589,8 +625,8 @@ select:focus, input[type="text"]:focus {
     height: 60px;
     padding: 4px 8px;
     font-size: 0.75rem;
-    color: #666;
-    border-bottom: 1px solid #eee;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-light);
 }
 
 .timeline-grid {
@@ -665,7 +701,7 @@ select:focus, input[type="text"]:focus {
 
 .timeline-event-location {
     font-size: 0.7rem;
-    color: #555;
+    color: var(--text-secondary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -684,7 +720,7 @@ select:focus, input[type="text"]:focus {
 .no-sessions-message {
     text-align: center;
     padding: 60px 20px;
-    color: #666;
+    color: var(--text-muted);
 }
 
 .no-sessions-message .icon {
@@ -709,7 +745,7 @@ select:focus, input[type="text"]:focus {
     font-size: 0.7rem;
     font-weight: 700;
     color: #e74c3c;
-    background: white;
+    background: var(--bg-primary);
     padding: 2px 4px;
     border-radius: 3px;
 }
@@ -732,7 +768,7 @@ select:focus, input[type="text"]:focus {
 
 .calendar-day:hover {
     border-color: #667eea;
-    background: white;
+    background: var(--bg-primary);
 }
 
 .calendar-day.other-month {
@@ -746,7 +782,7 @@ select:focus, input[type="text"]:focus {
 
 .day-number {
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 5px;
     font-size: 0.9rem;
 }
@@ -820,7 +856,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .modal-content {
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
     padding: 30px;
     max-width: 500px;
@@ -839,7 +875,7 @@ select:focus, input[type="text"]:focus {
 .modal-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .modal-close {
@@ -847,7 +883,7 @@ select:focus, input[type="text"]:focus {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #666;
+    color: var(--text-muted);
     padding: 0;
     width: 30px;
     height: 30px;
@@ -882,7 +918,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .info-box {
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
     margin-bottom: 20px;
     border-left: 4px solid #667eea;
@@ -918,7 +954,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .info-box p {
-    color: #666;
+    color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 10px;
 }
@@ -952,12 +988,12 @@ select:focus, input[type="text"]:focus {
 .data-sources {
     margin-top: 15px;
     padding-top: 15px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-light);
 }
 
 .data-sources h4 {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 10px;
 }
 
@@ -971,7 +1007,7 @@ select:focus, input[type="text"]:focus {
 
 .data-source-city {
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     min-width: 120px;
 }
 
@@ -983,12 +1019,12 @@ select:focus, input[type="text"]:focus {
 }
 
 .data-source-info {
-    color: #666;
+    color: var(--text-muted);
 }
 
 /* Map panel styles (collapsible) */
 .map-panel {
-    background: white;
+    background: var(--bg-primary);
     border-radius: 12px;
     margin-bottom: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
@@ -1042,12 +1078,12 @@ select:focus, input[type="text"]:focus {
 
 .map-legend {
     padding: 10px 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-light);
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     font-size: 0.85rem;
-    color: #666;
+    color: var(--text-muted);
 }
 
 .legend-item {
@@ -1116,13 +1152,13 @@ select:focus, input[type="text"]:focus {
     flex-wrap: wrap;
     margin-top: 20px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--border-light);
     align-items: center;
 }
 
 .activity-label {
     font-weight: 600;
-    color: #555;
+    color: var(--text-secondary);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -1134,7 +1170,7 @@ select:focus, input[type="text"]:focus {
     align-items: center;
     gap: 6px;
     padding: 8px 12px;
-    background: #f5f5f5;
+    background: var(--bg-tertiary);
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s;
@@ -1142,7 +1178,7 @@ select:focus, input[type="text"]:focus {
 }
 
 .activity-checkbox:hover {
-    background: #e8e8e8;
+    background: var(--bg-hover);
 }
 
 .activity-checkbox:has(input:checked) {
@@ -1164,4 +1200,55 @@ select:focus, input[type="text"]:focus {
     width: 16px;
     height: 16px;
     accent-color: white;
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px var(--shadow-color);
+}
+
+.dark-mode-toggle .icon-sun,
+.dark-mode-toggle .icon-moon {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode-toggle .icon-sun {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+.dark-mode-toggle .icon-moon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+body.dark-mode .dark-mode-toggle .icon-sun {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+body.dark-mode .dark-mode-toggle .icon-moon {
+    opacity: 0;
+    transform: rotate(90deg);
 }

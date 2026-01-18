@@ -1434,7 +1434,8 @@ function saveSettings() {
         facilities: selectedFacilities,
         distance: distanceFilter.value,
         viewMode: viewMode,
-        activityTypes: getSelectedActivityTypes()
+        activityTypes: getSelectedActivityTypes(),
+        darkMode: document.body.classList.contains('dark-mode')
     };
     try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
@@ -1484,6 +1485,11 @@ function applySettings(settings) {
     // Activity types will be applied after data loads
     if (settings.activityTypes) {
         window._savedActivityTypes = settings.activityTypes;
+    }
+
+    // Apply dark mode
+    if (settings.darkMode) {
+        document.body.classList.add('dark-mode');
     }
 }
 
@@ -1763,6 +1769,14 @@ function toggleMapPanel() {
 }
 
 mapPanelHeader.addEventListener('click', toggleMapPanel);
+
+// Dark mode toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    saveSettings();
+}
+darkModeToggle.addEventListener('click', toggleDarkMode);
 
 // Initialize app
 const savedSettings = loadSettings();
