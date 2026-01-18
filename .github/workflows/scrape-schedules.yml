@@ -69,16 +69,75 @@ jobs:
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "See **CLAUDE.md** for instructions on updating schedules." >> $GITHUB_STEP_SUMMARY
-          elif [ -f data/schedules/index.json ]; then
-            TOTAL=$(jq '.totalSessions' data/schedules/index.json)
-            START=$(jq -r '.dateRange.start' data/schedules/index.json)
-            END=$(jq -r '.dateRange.end' data/schedules/index.json)
-            FILES=$(jq '.dates | length' data/schedules/index.json)
-            echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
-            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
-            echo "| Total Sessions | $TOTAL |" >> $GITHUB_STEP_SUMMARY
-            echo "| Daily Files | $FILES |" >> $GITHUB_STEP_SUMMARY
-            echo "| Date Range | $START to $END |" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Ice Skating Summary
+          if [ -f data/schedules/index-ice-skating.json ]; then
+            echo "## ⛸️ Ice Skating" >> $GITHUB_STEP_SUMMARY
+            TOTAL=$(jq '.totalSessions' data/schedules/index-ice-skating.json)
+            START=$(jq -r '.dateRange.start' data/schedules/index-ice-skating.json)
+            END=$(jq -r '.dateRange.end' data/schedules/index-ice-skating.json)
+            echo "**$TOTAL sessions** from $START to $END" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            # Per-city breakdown from scrape log
+            if [ -f backend/scrape.log ]; then
+              echo "<details><summary>Sessions by City</summary>" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "| City | Sessions |" >> $GITHUB_STEP_SUMMARY
+              echo "|------|----------|" >> $GITHUB_STEP_SUMMARY
+              grep -E "^\s+(Vancouver|Burnaby|Richmond|Coquitlam|Port Coquitlam|North Vancouver|West Vancouver|New Westminster|Langley|Outdoor).*sessions" backend/scrape.log | head -15 | while read line; do
+                CITY=$(echo "$line" | sed 's/:.*//' | xargs)
+                COUNT=$(echo "$line" | grep -oE '[0-9]+ sessions' | grep -oE '[0-9]+')
+                if [ -n "$COUNT" ]; then
+                  echo "| $CITY | $COUNT |" >> $GITHUB_STEP_SUMMARY
+                fi
+              done
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "</details>" >> $GITHUB_STEP_SUMMARY
+            fi
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Swimming Summary
+          if [ -f data/schedules/index-swimming.json ]; then
+            echo "## 🏊 Swimming" >> $GITHUB_STEP_SUMMARY
+            TOTAL=$(jq '.totalSessions' data/schedules/index-swimming.json)
+            START=$(jq -r '.dateRange.start' data/schedules/index-swimming.json)
+            END=$(jq -r '.dateRange.end' data/schedules/index-swimming.json)
+            echo "**$TOTAL sessions** from $START to $END" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+
+            # Per-city breakdown from scrape log
+            if [ -f backend/scrape.log ]; then
+              echo "<details><summary>Sessions by City</summary>" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "| City | Sessions |" >> $GITHUB_STEP_SUMMARY
+              echo "|------|----------|" >> $GITHUB_STEP_SUMMARY
+              # Look for swimming-specific output
+              grep -E "(Vancouver Swimming|Burnaby swimming|Langley swimming).*sessions" backend/scrape.log | while read line; do
+                if echo "$line" | grep -q "Vancouver Swimming"; then
+                  COUNT=$(echo "$line" | grep -oE '[0-9]+ sessions' | grep -oE '[0-9]+')
+                  echo "| Vancouver | $COUNT |" >> $GITHUB_STEP_SUMMARY
+                elif echo "$line" | grep -q "Burnaby swimming"; then
+                  COUNT=$(echo "$line" | grep -oE '[0-9]+ sessions' | grep -oE '[0-9]+')
+                  echo "| Burnaby | $COUNT |" >> $GITHUB_STEP_SUMMARY
+                elif echo "$line" | grep -q "Langley swimming"; then
+                  COUNT=$(echo "$line" | grep -oE '[0-9]+ sessions' | grep -oE '[0-9]+')
+                  echo "| Langley | $COUNT |" >> $GITHUB_STEP_SUMMARY
+                fi
+              done
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "</details>" >> $GITHUB_STEP_SUMMARY
+            fi
+            echo "" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Pool closures
+          if [ -f backend/scrape.log ] && grep -q "CLOSED" backend/scrape.log; then
+            echo "## 🚫 Facility Closures" >> $GITHUB_STEP_SUMMARY
+            grep "CLOSED" backend/scrape.log | grep -v "skipping" | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Check for changes
