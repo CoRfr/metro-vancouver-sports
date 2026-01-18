@@ -533,11 +533,30 @@ function updateFacilityFilter() {
 
     // Get currently selected facilities
     const currentSelected = new Set(
-        Array.from(menu.querySelectorAll('input:checked')).map(cb => cb.value)
+        Array.from(menu.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value)
     );
-    const isFirstLoad = menu.children.length === 0;
+    const isFirstLoad = menu.querySelectorAll('.dropdown-multi-item').length === 0;
+
+    // Preserve search input if it exists
+    const existingSearch = menu.querySelector('.facility-search');
+    const searchValue = existingSearch ? existingSearch.value : '';
 
     menu.innerHTML = '';
+
+    // Add search input at the top
+    const searchContainer = document.createElement('div');
+    searchContainer.className = 'facility-search-container';
+    searchContainer.innerHTML = `
+        <input type="text" class="facility-search" placeholder="Search facilities..." value="${searchValue}">
+    `;
+    menu.appendChild(searchContainer);
+
+    // Create container for facility items
+    const itemsContainer = document.createElement('div');
+    itemsContainer.className = 'facility-items';
+    menu.appendChild(itemsContainer);
+
+    // Add facility items
     facilities.forEach(f => {
         const isChecked = !isFirstLoad && currentSelected.has(f.name);
         const distanceStr = f.distance !== undefined ? `${f.distance.toFixed(1)} km` : '';
@@ -545,6 +564,8 @@ function updateFacilityFilter() {
 
         const label = document.createElement('label');
         label.className = 'dropdown-multi-item';
+        label.dataset.facilityName = f.name.toLowerCase();
+        label.dataset.city = f.city.toLowerCase();
         label.innerHTML = `
             <input type="checkbox" value="${f.name}" ${isChecked ? 'checked' : ''}>
             <span>${shortFacilityName(f.name)}</span>
@@ -556,8 +577,41 @@ function updateFacilityFilter() {
             filterSessions();
             saveSettings();
         });
-        menu.appendChild(label);
+        itemsContainer.appendChild(label);
     });
+
+    // Setup search filtering
+    const searchInput = menu.querySelector('.facility-search');
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        itemsContainer.querySelectorAll('.dropdown-multi-item').forEach(item => {
+            const name = item.dataset.facilityName;
+            const city = item.dataset.city;
+            const matches = !query || name.includes(query) || city.includes(query);
+            item.style.display = matches ? '' : 'none';
+        });
+    });
+
+    // Prevent dropdown from closing when clicking search input
+    searchInput.addEventListener('click', (e) => e.stopPropagation());
+
+    // Focus search when dropdown opens (only add once)
+    if (!facilityFilter.dataset.searchFocusSetup) {
+        facilityFilter.dataset.searchFocusSetup = 'true';
+        facilityFilter.addEventListener('click', () => {
+            setTimeout(() => {
+                const input = facilityFilter.querySelector('.facility-search');
+                if (facilityFilter.classList.contains('open') && input) {
+                    input.focus();
+                }
+            }, 10);
+        });
+    }
+
+    // Apply existing search filter if any
+    if (searchValue) {
+        searchInput.dispatchEvent(new Event('input'));
+    }
 
     updateDropdownTrigger(facilityFilter);
 }

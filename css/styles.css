@@ -324,6 +324,12 @@ select:focus, input[type="text"]:focus {
     z-index: 100;
 }
 
+/* Facility filter has search, needs more height */
+#facilityFilter .dropdown-multi-menu {
+    max-height: none;
+    overflow: visible;
+}
+
 .dropdown-multi.open .dropdown-multi-menu {
     display: block;
 }
@@ -362,6 +368,41 @@ select:focus, input[type="text"]:focus {
     background: #f0f0f0;
     padding: 2px 6px;
     border-radius: 4px;
+}
+
+/* Facility search */
+.facility-search-container {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    background: var(--bg-primary);
+    z-index: 1;
+}
+
+.facility-search {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+}
+
+.facility-search:focus {
+    outline: none;
+    border-color: #667eea;
+    background: var(--bg-primary);
+}
+
+.facility-search::placeholder {
+    color: var(--text-light);
+}
+
+.facility-items {
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .calendar-container {
