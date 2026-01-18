@@ -780,9 +780,22 @@ function filterSessions() {
 
     renderCalendar();
 
+    // Always update map title (even when panel is closed)
+    updateMapTitle();
+
     // Refresh map if it's open
     if (mapPanel.classList.contains('open') && facilityMap) {
         initMap();
+    }
+}
+
+function updateMapTitle() {
+    const mapTitle = document.getElementById('mapTitle');
+    if (mapTitle && filteredSessions.length > 0) {
+        const facilityCount = new Set(filteredSessions.map(s => s.facility)).size;
+        mapTitle.textContent = `${filteredSessions.length} Sessions at ${facilityCount} Facilities`;
+    } else if (mapTitle) {
+        mapTitle.textContent = 'Facility Map';
     }
 }
 
@@ -1886,8 +1899,8 @@ function initMap() {
             const color = isOutdoor ? '#ef6c00' : (cityColors[facility.city] || '#666');
             const scheduleUrl = facility.sessions[0]?.scheduleUrl || '';
             const facilityKey = facility.facility.replace(/[^a-zA-Z0-9]/g, '-');
-            // Link facility name to city's facility info page
-            const facilityInfoUrl = facility.sessions[0]?.facilityUrl || '';
+            // Link facility name to city's facility info page (fallback to scheduleUrl)
+            const facilityInfoUrl = facility.sessions[0]?.facilityUrl || facility.sessions[0]?.scheduleUrl || '';
             const facilityNameLink = facilityInfoUrl
                 ? `<a href="${facilityInfoUrl}" target="_blank">${facility.facility}</a>`
                 : facility.facility;
