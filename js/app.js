@@ -981,36 +981,44 @@ function renderDayView() {
                 start: startH * 60 + startM,
                 end: endH * 60 + endM,
                 column: 0,
-                totalColumns: 1
+                totalColumns: 1,
+                layer: 0
             };
         });
 
-        // Assign columns to overlapping events
+        // Assign columns to overlapping events (capped at MAX_COLUMNS)
+        const MAX_COLUMNS = 5;
         for (let i = 0; i < events.length; i++) {
             const event = events[i];
             // Find overlapping events that come before this one
             const overlapping = events.slice(0, i).filter(e =>
                 e.end > event.start && e.start < event.end
             );
-            // Find first available column
-            const usedColumns = overlapping.map(e => e.column);
+            // Find first available column (with wraparound if > MAX_COLUMNS)
+            const usedColumns = overlapping.map(e => e.column % MAX_COLUMNS);
             let col = 0;
-            while (usedColumns.includes(col)) col++;
+            while (usedColumns.includes(col) && col < MAX_COLUMNS) col++;
+            // If all columns are used, layer on top with offset
+            if (col >= MAX_COLUMNS) {
+                col = overlapping.length % MAX_COLUMNS;
+            }
             event.column = col;
+            // Track the layer (0 = first layer, 1+ = stacked)
+            event.layer = Math.floor(overlapping.filter(e => e.column === col).length);
         }
 
-        // Calculate total columns for each event group
+        // Calculate total columns for each event group (capped at MAX_COLUMNS)
         for (let i = 0; i < events.length; i++) {
             const event = events[i];
             const overlapping = events.filter(e =>
                 e.end > event.start && e.start < event.end
             );
-            const maxCol = Math.max(...overlapping.map(e => e.column)) + 1;
+            const maxCol = Math.min(Math.max(...overlapping.map(e => e.column)) + 1, MAX_COLUMNS);
             overlapping.forEach(e => e.totalColumns = Math.max(e.totalColumns, maxCol));
         }
 
         // Render sessions as positioned blocks
-        events.forEach(({ session, start, end, column, totalColumns }) => {
+        events.forEach(({ session, start, end, column, totalColumns, layer }) => {
             const startMinutes = start - startHour * 60;
             const durationMins = end - start;
             const durationStr = formatDuration(durationMins);
@@ -1024,6 +1032,11 @@ function renderDayView() {
             const width = (100 / totalColumns) - 1;
             const left = column * (100 / totalColumns);
 
+            // For stacked events (layer > 0), add z-index and slight visual offset
+            const zIndex = layer > 0 ? 10 + layer : 1;
+            const topOffset = layer > 0 ? layer * 3 : 0; // Slight vertical offset for visibility
+            const layerStyle = layer > 0 ? `z-index: ${zIndex}; box-shadow: -2px 2px 4px rgba(0,0,0,0.2);` : '';
+
             const sessionClass = getSessionClass(session);
             const activityName = session.activityName || session.type;
             const facilityKey = session.facility.replace(/[^a-zA-Z0-9]/g, '-');
@@ -1035,7 +1048,7 @@ function renderDayView() {
 
             html += `
                 <div class="timeline-event ${sessionClass}${pastClass}"
-                     style="top: ${top}px; height: ${height}px; left: ${left}%; width: ${width}%;"
+                     style="top: ${top + topOffset}px; height: ${height}px; left: ${left}%; width: ${width}%; ${layerStyle}"
                      data-facility="${facilityKey}"
                      onmouseenter="highlightMapMarker('${facilityKey}')"
                      onmouseleave="clearMapMarkerHighlights()"

@@ -90,6 +90,23 @@ function determineActivityType(name) {
 }
 
 /**
+ * Check if a swimming activity should be skipped (not actual swimming)
+ */
+function shouldSkipSwimmingActivity(name) {
+  const n = (name || '').toLowerCase();
+
+  // Skip sauna/whirlpool-only activities (not actual swimming)
+  if ((n.includes('sauna') || n.includes('whirlpool') || n.includes('hot tub') ||
+       n.includes('steam') || n.includes('jacuzzi')) &&
+      !n.includes('swim') && !n.includes('pool') && !n.includes('lap') &&
+      !n.includes('aqua')) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
  * Determine swimming activity type from name
  */
 function determineSwimmingActivityType(name) {
@@ -323,6 +340,7 @@ module.exports = {
   validateScheduleDates,
   determineActivityType,
   determineSwimmingActivityType,
+  shouldSkipSwimmingActivity,
   parseDate,
   formatDate,
   parseTimeRange,

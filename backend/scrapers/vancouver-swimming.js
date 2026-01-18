@@ -4,7 +4,7 @@
  */
 
 const { CONFIG } = require('../config');
-const { determineSwimmingActivityType } = require('../utils');
+const { determineSwimmingActivityType, shouldSkipSwimmingActivity } = require('../utils');
 
 /**
  * Find swimming facility by name matching
@@ -164,12 +164,20 @@ async function scrapeVancouverSwimming(page) {
         }
 
         let addedCount = 0;
+        let skippedCount = 0;
         for (const event of center.events || []) {
           if (event.event_item_id && seenEventIds.has(event.event_item_id)) {
             continue;
           }
           if (event.event_item_id) {
             seenEventIds.add(event.event_item_id);
+          }
+
+          // Skip non-swimming activities (sauna/whirlpool only)
+          const title = (event.title || '').replace(/\|/g, '').trim();
+          if (shouldSkipSwimmingActivity(title)) {
+            skippedCount++;
+            continue;
           }
 
           const session = parseVancouverSwimmingEvent(event, facilityInfo);
@@ -179,7 +187,8 @@ async function scrapeVancouverSwimming(page) {
           }
         }
 
-        console.error(`    ${facilityInfo.name}: ${addedCount} sessions`);
+        const skippedMsg = skippedCount > 0 ? ` (${skippedCount} skipped)` : '';
+        console.error(`    ${facilityInfo.name}: ${addedCount} sessions${skippedMsg}`);
       }
     }
   } catch (e) {
