@@ -2,6 +2,7 @@
  * Scraper exports
  */
 
+// Skating scrapers
 const { scrapeVancouver } = require('./vancouver');
 const { getBurnabySchedules } = require('./burnaby');
 const { getRichmondSchedules } = require('./richmond');
@@ -12,7 +13,11 @@ const { scrapeWestVan } = require('./westvan');
 const { scrapeNewWest } = require('./newwest');
 const { getOutdoorRinks } = require('./outdoor');
 
+// Swimming scrapers
+const { scrapeVancouverSwimming } = require('./vancouver-swimming');
+
 module.exports = {
+  // Skating
   scrapeVancouver,
   getBurnabySchedules,
   getRichmondSchedules,
@@ -22,4 +27,6 @@ module.exports = {
   scrapeWestVan,
   scrapeNewWest,
   getOutdoorRinks,
+  // Swimming
+  scrapeVancouverSwimming,
 };

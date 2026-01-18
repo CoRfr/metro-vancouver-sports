@@ -1,4 +1,4 @@
-name: Scrape Skating Schedules
+name: Scrape Sports Schedules
 
 on:
   # Run daily at 6 AM UTC (10 PM Pacific)
@@ -41,19 +41,19 @@ jobs:
         working-directory: backend
         run: npm ci
 
-      - name: Run scraper (daily files)
+      - name: Run scraper (skating + swimming)
         id: scrape
         working-directory: backend
         env:
           CHROMIUM_PATH: /usr/bin/chromium-browser
         run: |
           set -o pipefail
-          node puppeteer-scraper.js --daily --output ../data/schedules 2>&1 | tee scrape.log
+          node puppeteer-scraper.js --sport all --daily --output ../data/schedules 2>&1 | tee scrape.log
 
       - name: Generate GitHub Summary
         if: always()
         run: |
-          echo "# 🛼 Skating Schedule Update" >> $GITHUB_STEP_SUMMARY
+          echo "# 🏊⛸️ Sports Schedule Update" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Updated:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
@@ -92,7 +92,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/
-          git commit -m "Update skating schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "Update sports schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
           # Handle potential conflicts from concurrent pushes
           git pull --rebase origin main || true
           git push

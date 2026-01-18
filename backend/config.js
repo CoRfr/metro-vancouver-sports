@@ -7,7 +7,7 @@ const CONFIG = {
   headless: true,
   timeout: 60000,
 
-  // Vancouver calendar config - uses ActiveNet API
+  // Vancouver skating calendar config - uses ActiveNet API
   vancouver: {
     // Use view=1 and multiple locationIds to get all facilities
     calendarUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22,23,25,26,27,28,9&displayType=0&view=1',
@@ -33,6 +33,38 @@ const CONFIG = {
       'sunset': 27,
       'trout lake': 28,
       'west end': 9,
+    },
+  },
+
+  // Vancouver swimming calendar config - uses ActiveNet API (calendar ID 55)
+  vancouverSwimming: {
+    // Calendar ID 55 for swimming (vs 3 for skating)
+    // Location IDs: 1=Britannia, 2=Hillcrest, 3=Kensington, 4=Killarney, 5=Templeton, 6=VAC, 7=Kitsilano, 8=Second Beach
+    calendarUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=1,2,3,4,5,6,7,8&displayType=0&view=1',
+    apiPattern: '/rest/onlinecalendar/multicenter/events',
+    facilities: {
+      // Map center_id to facility info (IDs need to be verified from API response)
+      1: { name: 'Britannia Pool', lat: 49.27540, lng: -123.07190, address: '1661 Napier St, Vancouver, BC V5L 4X4' },
+      2: { name: 'Hillcrest Centre', lat: 49.24407, lng: -123.10781, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
+      3: { name: 'Kensington Pool', lat: 49.23900, lng: -123.07580, address: '5175 Dumfries St, Vancouver, BC V5P 3A3' },
+      4: { name: 'Killarney Pool', lat: 49.22673, lng: -123.04345, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
+      5: { name: 'Templeton Pool', lat: 49.28180, lng: -123.05140, address: '700 Templeton Dr, Vancouver, BC V5L 4N8' },
+      6: { name: 'Vancouver Aquatic Centre', lat: 49.27770, lng: -123.13940, address: '1050 Beach Ave, Vancouver, BC V6E 1T7' },
+      7: { name: 'Kitsilano Pool', lat: 49.27340, lng: -123.15420, address: '2305 Cornwall Ave, Vancouver, BC V6K 1B7', seasonal: true },
+      8: { name: 'Second Beach Pool', lat: 49.29070, lng: -123.14540, address: 'Stanley Park, Vancouver, BC V6G 3E2', seasonal: true },
+    },
+    // Fallback facility matching by name
+    facilityAliases: {
+      'britannia': 1,
+      'hillcrest': 2,
+      'kensington': 3,
+      'killarney': 4,
+      'templeton': 5,
+      'aquatic centre': 6,
+      'vac': 6,
+      'kitsilano': 7,
+      'kits': 7,
+      'second beach': 8,
     },
   },
 
@@ -111,10 +143,10 @@ const CONFIG = {
   westvan: {
     dropInUrl: 'https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35',
     facility: {
-      name: 'West Vancouver Community Centre',
-      lat: 49.3415329,
-      lng: -123.2338840,
-      address: '2121 Marine Dr, West Vancouver, BC V7V 1K5',
+      name: 'West Vancouver Ice Arena',
+      lat: 49.3321417,
+      lng: -123.1703066,
+      address: '786 22nd St, West Vancouver, BC V7V 4T3',
     },
   },
 

@@ -2,7 +2,7 @@
 const SPORTS_CONFIG = {
     skating: {
         name: 'Ice Skating',
-        dataUrl: './data/schedules.json',
+        dataFile: 'ice-skating.json',
         activityTypes: [
             { id: 'activityAll', value: '__all__', label: 'All', checked: false, isAll: true },
             { id: 'activityPublic', value: 'Public Skating', label: 'Public Skating', checked: true },
@@ -19,12 +19,15 @@ const SPORTS_CONFIG = {
     },
     swimming: {
         name: 'Swimming',
-        dataUrl: './data/swimming.json',
+        dataFile: 'swimming.json',
         activityTypes: [
-            { id: 'activityLap', value: 'Lap Swim', label: 'Lap Swim', checked: true },
+            { id: 'activityAll', value: '__all__', label: 'All', checked: false, isAll: true },
             { id: 'activityPublicSwim', value: 'Public Swim', label: 'Public Swim', checked: true },
-            { id: 'activityLessons', value: 'Lessons', label: 'Lessons', checked: false },
+            { id: 'activityLap', value: 'Lap Swim', label: 'Lap Swim', checked: true },
+            { id: 'activityFamilySwim', value: 'Family Swim', label: 'Family Swim', checked: true },
+            { id: 'activityAdultSwim', value: 'Adult Swim', label: 'Adult Swim', checked: false },
             { id: 'activityAquafit', value: 'Aquafit', label: 'Aquafit', checked: false },
+            { id: 'activitySwimLessons', value: 'Lessons', label: 'Lessons', checked: false },
         ]
     }
 };
@@ -221,9 +224,10 @@ async function loadScheduleIndex() {
     return await response.json();
 }
 
-// Get the sport filename for schedule files
+// Get the sport filename for schedule files (e.g., 'ice-skating.json', 'swimming.json')
 function getSportFilename() {
-    return currentSport === 'skating' ? 'ice-skating' : currentSport;
+    const config = SPORTS_CONFIG[currentSport];
+    return config?.dataFile?.replace('.json', '') || 'ice-skating';
 }
 
 // Load a single day's schedule
@@ -821,15 +825,26 @@ function isDiscountSession(session) {
 }
 
 function getSessionClass(session) {
-    // Check for discount/free sessions first
-    if (isDiscountSession(session)) return 'discount';
+    // Check for discount/free sessions first (skating only)
+    if (currentSport === 'skating' && isDiscountSession(session)) return 'discount';
 
     const type = typeof session === 'string' ? session : session.type;
+
+    // Skating types
     if (type === 'Public Skating') return 'public';
     if (type === 'Family Skate') return 'family';
     if (type === 'Family Hockey') return 'hockey';
     if (type === 'Figure Skating') return 'figure';
-    return 'public';
+
+    // Swimming types
+    if (type === 'Public Swim') return 'public-swim';
+    if (type === 'Lap Swim') return 'lap-swim';
+    if (type === 'Family Swim') return 'family-swim';
+    if (type === 'Adult Swim') return 'adult-swim';
+    if (type === 'Aquafit') return 'aquafit';
+    if (type === 'Lessons') return 'swim-lessons';
+
+    return currentSport === 'swimming' ? 'public-swim' : 'public';
 }
 
 function renderCalendar() {

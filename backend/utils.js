@@ -90,6 +90,55 @@ function determineActivityType(name) {
 }
 
 /**
+ * Determine swimming activity type from name
+ */
+function determineSwimmingActivityType(name) {
+  const n = (name || '').toLowerCase();
+
+  // Lessons and programs
+  if (n.includes('lesson') || n.includes('learn') || n.includes('class') ||
+      n.includes('preschool swim') || n.includes('youth swim') || n.includes('red cross')) {
+    return 'Lessons';
+  }
+
+  // Aquafit / Water fitness
+  if (n.includes('aquafit') || n.includes('aqua fit') || n.includes('water fitness') ||
+      n.includes('aquacise') || n.includes('deep water') || n.includes('hydro')) {
+    return 'Aquafit';
+  }
+
+  // Lap swim
+  if (n.includes('lap') || n.includes('lane swim') || n.includes('lengths')) {
+    return 'Lap Swim';
+  }
+
+  // Family / Parent-tot swim
+  if (n.includes('family') || n.includes('parent') || n.includes('tot') ||
+      n.includes('child') && n.includes('swim')) {
+    return 'Family Swim';
+  }
+
+  // Adult swim
+  if (n.includes('adult') && (n.includes('swim') || n.includes('only'))) {
+    return 'Adult Swim';
+  }
+
+  // Public / Everyone swim
+  if (n.includes('public') || n.includes('everyone') || n.includes('all ages') ||
+      n.includes('drop-in') || n.includes('drop in') || n.includes('open swim') ||
+      n.includes('recreation') || n.includes('leisure')) {
+    return 'Public Swim';
+  }
+
+  // Length swim / Fitness swim
+  if (n.includes('fitness swim') || n.includes('workout')) {
+    return 'Lap Swim';
+  }
+
+  return 'Public Swim';
+}
+
+/**
  * Parse date string to YYYY-MM-DD
  */
 function parseDate(dateText) {
@@ -273,6 +322,7 @@ function generateICal(sessions) {
 module.exports = {
   validateScheduleDates,
   determineActivityType,
+  determineSwimmingActivityType,
   parseDate,
   formatDate,
   parseTimeRange,

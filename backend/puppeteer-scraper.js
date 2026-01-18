@@ -1,17 +1,19 @@
 #!/usr/bin/env node
 /**
- * Puppeteer-based scraper for Metro Vancouver skating schedules
+ * Puppeteer-based scraper for Metro Vancouver sports schedules
  *
  * Intercepts the ActiveNet calendar API to get all scheduled events.
  * The API returns individual event occurrences (not series), which is what we need.
  *
  * Usage:
- *   node puppeteer-scraper.js                    # Scrape all and output JSON
+ *   node puppeteer-scraper.js                    # Scrape skating and output JSON
  *   node puppeteer-scraper.js --output data.json # Save to file
  *   node puppeteer-scraper.js --daily --output ../data/schedules  # Daily files
  *   node puppeteer-scraper.js --ical             # Output iCal format
  *   node puppeteer-scraper.js --debug            # Show browser window
  *   node puppeteer-scraper.js --city vancouver   # Specific city only
+ *   node puppeteer-scraper.js --sport swimming   # Scrape swimming only
+ *   node puppeteer-scraper.js --sport all        # Scrape both skating and swimming
  */
 
 const puppeteer = require('puppeteer-core');
@@ -33,6 +35,7 @@ const {
   scrapeWestVan,
   scrapeNewWest,
   getOutdoorRinks,
+  scrapeVancouverSwimming,
 } = require('./scrapers');
 
 /**
@@ -227,6 +230,55 @@ async function scrapeAll(options = {}) {
 }
 
 /**
+ * Scrape swimming schedules
+ * @param {Object} options - { debug, cities: ['vancouver'] }
+ */
+async function scrapeSwimming(options = {}) {
+  const { debug = false, cities = ['vancouver'] } = options;
+
+  let browser;
+  const allSessions = [];
+  const seenKeys = new Set();
+
+  try {
+    const { browser: b, page } = await createBrowser(debug);
+    browser = b;
+
+    // Scrape Vancouver Swimming via API
+    if (cities.includes('vancouver')) {
+      const vancouverSessions = await scrapeVancouverSwimming(page);
+      for (const session of vancouverSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
+    // Future: Add other cities' swimming scrapers here
+    // if (cities.includes('burnaby')) { ... }
+
+  } finally {
+    if (browser) await browser.close();
+  }
+
+  // Sort by date and time
+  allSessions.sort((a, b) => {
+    const dateCompare = a.date.localeCompare(b.date);
+    if (dateCompare !== 0) return dateCompare;
+    return a.startTime.localeCompare(b.startTime);
+  });
+
+  return {
+    success: true,
+    lastUpdated: new Date().toISOString(),
+    sessions: allSessions,
+    count: allSessions.length,
+  };
+}
+
+/**
  * Write sessions to daily JSON files organized as schedules/YYYY/MM/DD/<sport>.json
  * @param {Object} result - Scraper result with sessions
  * @param {string} outputDir - Output directory path
@@ -299,6 +351,14 @@ async function main() {
   const outputIndex = args.indexOf('--output');
   const outputPath = outputIndex !== -1 ? args[outputIndex + 1] : null;
 
+  // Parse sport filter: --sport skating|swimming|all (default: skating)
+  const sportIndex = args.indexOf('--sport');
+  const sport = sportIndex !== -1 ? args[sportIndex + 1] : 'skating';
+  if (!['skating', 'swimming', 'all'].includes(sport)) {
+    console.error(`Invalid sport: ${sport}. Use 'skating', 'swimming', or 'all'`);
+    process.exit(1);
+  }
+
   // Parse city filters: --city vancouver --city burnaby OR --city vancouver,burnaby
   const cityArgs = [];
   for (let i = 0; i < args.length; i++) {
@@ -307,34 +367,62 @@ async function main() {
       i++;
     }
   }
-  const cities = cityArgs.length > 0 ? cityArgs : ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'];
+  const defaultSkatingCities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'outdoor'];
+  const defaultSwimmingCities = ['vancouver']; // Only Vancouver swimming supported currently
+  const cities = cityArgs.length > 0 ? cityArgs : (sport === 'swimming' ? defaultSwimmingCities : defaultSkatingCities);
 
-  console.error('Metro Vancouver Skating Schedule Scraper');
+  console.error('Metro Vancouver Sports Schedule Scraper');
   console.error('========================================');
   console.error(`Date: ${new Date().toISOString()}`);
   console.error(`Mode: ${debug ? 'Debug' : 'Headless'}`);
+  console.error(`Sport: ${sport}`);
   console.error(`Cities: ${cities.join(', ')}`);
   console.error(`Output: ${daily ? 'Daily files' : 'Single file'}`);
   console.error('');
 
   try {
-    const result = await scrapeAll({ debug, cities });
+    // Scrape skating
+    if (sport === 'skating' || sport === 'all') {
+      console.error('--- Scraping Ice Skating ---');
+      const skatingResult = await scrapeAll({ debug, cities });
 
-    if (daily && outputPath) {
-      // Write daily files to directory structure
-      fs.mkdirSync(outputPath, { recursive: true });
-      writeDailyFiles(result, outputPath);
-    } else {
-      const output = ical ? generateICal(result.sessions) : JSON.stringify(result, null, 2);
-      if (outputPath) {
-        fs.writeFileSync(outputPath, output);
-        console.error(`Output written to: ${outputPath}`);
-      } else {
-        console.log(output);
+      if (daily && outputPath) {
+        fs.mkdirSync(outputPath, { recursive: true });
+        writeDailyFiles(skatingResult, outputPath, 'ice-skating');
+      } else if (sport === 'skating') {
+        const output = ical ? generateICal(skatingResult.sessions) : JSON.stringify(skatingResult, null, 2);
+        if (outputPath) {
+          fs.writeFileSync(outputPath, output);
+          console.error(`Output written to: ${outputPath}`);
+        } else {
+          console.log(output);
+        }
       }
+
+      console.error(`\nIce skating complete. Found ${skatingResult.count} sessions.`);
     }
 
-    console.error(`\nScraping complete. Found ${result.count} sessions.`);
+    // Scrape swimming
+    if (sport === 'swimming' || sport === 'all') {
+      console.error('\n--- Scraping Swimming ---');
+      const swimmingCities = cityArgs.length > 0 ? cityArgs : defaultSwimmingCities;
+      const swimmingResult = await scrapeSwimming({ debug, cities: swimmingCities });
+
+      if (daily && outputPath) {
+        fs.mkdirSync(outputPath, { recursive: true });
+        writeDailyFiles(swimmingResult, outputPath, 'swimming');
+      } else if (sport === 'swimming') {
+        const output = ical ? generateICal(swimmingResult.sessions) : JSON.stringify(swimmingResult, null, 2);
+        if (outputPath) {
+          fs.writeFileSync(outputPath, output);
+          console.error(`Output written to: ${outputPath}`);
+        } else {
+          console.log(output);
+        }
+      }
+
+      console.error(`\nSwimming complete. Found ${swimmingResult.count} sessions.`);
+    }
 
   } catch (e) {
     console.error('Scraping failed:', e.message);
@@ -343,7 +431,7 @@ async function main() {
   }
 }
 
-module.exports = { scrapeAll, generateICal, CONFIG, writeDailyFiles };
+module.exports = { scrapeAll, scrapeSwimming, generateICal, CONFIG, writeDailyFiles };
 
 if (require.main === module) {
   main();
