@@ -454,40 +454,38 @@ function initializeFilters() {
     initDropdownMulti();
 }
 
+let dropdownMultiInitialized = false;
+
 function initDropdownMulti() {
-    // Setup dropdown toggle behavior
-    document.querySelectorAll('.dropdown-multi').forEach(dropdown => {
-        const trigger = dropdown.querySelector('.dropdown-multi-trigger');
-        trigger.addEventListener('click', (e) => {
-            e.stopPropagation();
-            // Close other dropdowns
-            document.querySelectorAll('.dropdown-multi.open').forEach(d => {
-                if (d !== dropdown) d.classList.remove('open');
-            });
-            dropdown.classList.toggle('open');
-        });
+    // Only setup global handlers once
+    if (!dropdownMultiInitialized) {
+        dropdownMultiInitialized = true;
 
-        // Update trigger text and filter when checkboxes change
-        dropdown.querySelectorAll('input[type="checkbox"]').forEach(cb => {
-            cb.addEventListener('change', () => {
-                updateDropdownTrigger(dropdown);
-                filterSessions();
-                saveSettings();
+        // Setup dropdown toggle behavior for all dropdowns
+        document.querySelectorAll('.dropdown-multi').forEach(dropdown => {
+            const trigger = dropdown.querySelector('.dropdown-multi-trigger');
+            trigger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown-multi.open').forEach(d => {
+                    if (d !== dropdown) d.classList.remove('open');
+                });
+                dropdown.classList.toggle('open');
             });
         });
-    });
 
-    // Close dropdowns when clicking outside
-    document.addEventListener('click', () => {
-        document.querySelectorAll('.dropdown-multi.open').forEach(d => d.classList.remove('open'));
-    });
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.dropdown-multi.open').forEach(d => d.classList.remove('open'));
+        });
 
-    // Prevent closing when clicking inside menu
-    document.querySelectorAll('.dropdown-multi-menu').forEach(menu => {
-        menu.addEventListener('click', e => e.stopPropagation());
-    });
+        // Prevent closing when clicking inside menu
+        document.querySelectorAll('.dropdown-multi-menu').forEach(menu => {
+            menu.addEventListener('click', e => e.stopPropagation());
+        });
+    }
 
-    // Initialize trigger text
+    // Always update trigger text (this is safe to call multiple times)
     document.querySelectorAll('.dropdown-multi').forEach(updateDropdownTrigger);
 }
 
