@@ -1222,6 +1222,57 @@ select:focus, input[type="text"]:focus {
 .legend-dot.langley { background: #455a64; }
 .legend-dot.outdoor { background: #ef6c00; }
 
+/* Facility table */
+.facility-table {
+    padding: 10px 20px;
+    border-top: 1px solid var(--border-light);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.facility-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.facility-table th {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border-light);
+    color: var(--text-muted);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    background: var(--bg-primary);
+}
+
+.facility-table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.facility-table tr:hover {
+    background: var(--hover-bg);
+}
+
+.facility-table a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.facility-table a:hover {
+    text-decoration: underline;
+}
+
+.facility-table .city-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
 /* Hide skating-only elements when not in skating mode */
 body.sport-swimming .skating-only {
     display: none;

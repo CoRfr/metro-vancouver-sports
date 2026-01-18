@@ -1857,6 +1857,47 @@ function initMap() {
         marker.on('mouseout', () => clearCalendarHighlights());
     });
 
+    // Populate facility table
+    const facilityTableEl = document.getElementById('facilityTable');
+    const facilitiesList = Object.values(facilitySessions)
+        .sort((a, b) => a.city.localeCompare(b.city) || a.facility.localeCompare(b.facility));
+
+    if (facilitiesList.length > 0) {
+        let tableHTML = `
+            <table>
+                <thead>
+                    <tr>
+                        <th>Facility</th>
+                        <th>Sessions</th>
+                        <th>Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+
+        facilitiesList.forEach(facility => {
+            const isOutdoor = facility.facility.includes('Robson Square') || facility.facility.includes('Shipyards');
+            const color = isOutdoor ? '#ef6c00' : (cityColors[facility.city] || '#666');
+            const scheduleUrl = facility.sessions[0]?.scheduleUrl || '';
+            const scheduleLink = scheduleUrl
+                ? `<a href="${scheduleUrl}" target="_blank">View ↗</a>`
+                : '-';
+
+            tableHTML += `
+                <tr>
+                    <td><span class="city-dot" style="background: ${color};"></span>${facility.facility}</td>
+                    <td>${facility.sessions.length}</td>
+                    <td>${scheduleLink}</td>
+                </tr>
+            `;
+        });
+
+        tableHTML += '</tbody></table>';
+        facilityTableEl.innerHTML = tableHTML;
+    } else {
+        facilityTableEl.innerHTML = '<p style="color: var(--text-muted); font-size: 0.85rem;">No facilities match current filters</p>';
+    }
+
     // Add distance circle if user location is set
     if (userLocation && distanceFilter.value !== '999') {
         const radiusKm = parseFloat(distanceFilter.value);
