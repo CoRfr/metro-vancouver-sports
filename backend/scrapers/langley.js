@@ -25,6 +25,9 @@ function findLangleyFacility(locationText, sport = 'skating') {
 
 /**
  * Parse PerfectMind page text for sessions
+ * Handles two formats:
+ * 1. Skating: "Activity Name #12345" followed by time and location
+ * 2. Swimming: "Activity Name" followed by time and location (no # number)
  */
 async function parsePerfectMindPage(page) {
   return await page.evaluate(() => {
@@ -36,10 +39,21 @@ async function parsePerfectMindPage(page) {
     const currentYear = new Date().getFullYear();
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+    // Convert time string to 24h format
+    const to24 = (timeStr) => {
+      const match = timeStr.match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
+      if (!match) return null;
+      let [, h, m, period] = match;
+      h = parseInt(h);
+      if (period.toLowerCase() === 'pm' && h < 12) h += 12;
+      if (period.toLowerCase() === 'am' && h === 12) h = 0;
+      return `${String(h).padStart(2, '0')}:${m}`;
+    };
+
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
 
-      // Check for date header like "Mon, Jan 12th, 2026"
+      // Check for date header like "Mon, Jan 12th, 2026" or "Sun, Jan 18th, 2026"
       const dateMatch = line.match(/^\w+,\s+(\w+)\s+(\d+)\w*,?\s*(\d{4})?$/);
       if (dateMatch) {
         const [, monthStr, day, year] = dateMatch;
@@ -51,44 +65,46 @@ async function parsePerfectMindPage(page) {
         continue;
       }
 
-      // Check for activity name (contains # followed by number)
-      const activityMatch = line.match(/^(.+?)\s+#(\d+)$/);
-      if (activityMatch && currentDate) {
-        const activityName = activityMatch[1].trim();
+      // Skip if no current date yet
+      if (!currentDate) continue;
 
-        // Next line should be time
-        const timeLine = lines[i + 1] || '';
-        const timeMatch = timeLine.match(/^(\d{1,2}:\d{2}\s*(?:am|pm))\s*-\s*(\d{1,2}:\d{2}\s*(?:am|pm))$/i);
+      // Check if next line is a time range (indicates current line is activity name)
+      const nextLine = lines[i + 1] || '';
+      const timeMatch = nextLine.match(/^(\d{1,2}:\d{2}\s*(?:am|pm))\s*-\s*(\d{1,2}:\d{2}\s*(?:am|pm))$/i);
 
-        // Line after that should be location
+      if (timeMatch) {
+        // Current line is activity name (may or may not have # number)
+        let activityName = line;
+        // Remove # number if present (skating format)
+        const numberMatch = line.match(/^(.+?)\s+#\d+$/);
+        if (numberMatch) {
+          activityName = numberMatch[1].trim();
+        }
+
+        // Skip non-activity lines
+        if (activityName.toLowerCase().includes('skip to') ||
+            activityName.toLowerCase().includes('filter') ||
+            activityName.toLowerCase().includes('login') ||
+            activityName.toLowerCase().includes('more info') ||
+            activityName.match(/^\d{3}-\d{3}-\d{4}$/)) {
+          continue;
+        }
+
+        const [, startTimeStr, endTimeStr] = timeMatch;
+        const startTime = to24(startTimeStr);
+        const endTime = to24(endTimeStr);
+
+        // Location is line after time
         const locationLine = lines[i + 2] || '';
 
-        if (timeMatch) {
-          const [, startTimeStr, endTimeStr] = timeMatch;
-
-          // Convert to 24h format
-          const to24 = (timeStr) => {
-            const match = timeStr.match(/(\d{1,2}):(\d{2})\s*(am|pm)/i);
-            if (!match) return null;
-            let [, h, m, period] = match;
-            h = parseInt(h);
-            if (period.toLowerCase() === 'pm' && h < 12) h += 12;
-            if (period.toLowerCase() === 'am' && h === 12) h = 0;
-            return `${String(h).padStart(2, '0')}:${m}`;
-          };
-
-          const startTime = to24(startTimeStr);
-          const endTime = to24(endTimeStr);
-
-          if (startTime && endTime) {
-            events.push({
-              date: currentDate,
-              activityName,
-              startTime,
-              endTime,
-              location: locationLine
-            });
-          }
+        if (startTime && endTime && activityName) {
+          events.push({
+            date: currentDate,
+            activityName,
+            startTime,
+            endTime,
+            location: locationLine
+          });
         }
       }
     }
@@ -110,8 +126,8 @@ async function scrapeLangleySkating(browser) {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
   try {
-    await page.goto(CONFIG.langley.skatingUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
-    await new Promise(r => setTimeout(r, 10000)); // Wait for dynamic content
+    await page.goto(CONFIG.langley.skatingUrl, { waitUntil: 'networkidle0', timeout: 90000 });
+    await new Promise(r => setTimeout(r, 5000)); // Wait for dynamic content
 
     const pageTitle = await page.title();
     console.error(`    Page loaded: ${pageTitle}`);
@@ -172,8 +188,8 @@ async function scrapeLangleySwimming(browser) {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
   try {
-    await page.goto(CONFIG.langley.swimmingUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
-    await new Promise(r => setTimeout(r, 10000)); // Wait for dynamic content
+    await page.goto(CONFIG.langley.swimmingUrl, { waitUntil: 'networkidle0', timeout: 90000 });
+    await new Promise(r => setTimeout(r, 5000)); // Wait for dynamic content
 
     const pageTitle = await page.title();
     console.error(`    Page loaded: ${pageTitle}`);
