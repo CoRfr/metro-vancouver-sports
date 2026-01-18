@@ -1252,8 +1252,13 @@ select:focus, input[type="text"]:focus {
     border-bottom: 1px solid var(--border-light);
 }
 
-.facility-table tr:hover {
+.facility-table tr:hover,
+.facility-table tr.highlighted {
     background: var(--hover-bg);
+}
+
+.facility-table tr.highlighted {
+    box-shadow: inset 3px 0 0 #ffd700;
 }
 
 .facility-table a {

@@ -1852,9 +1852,15 @@ function initMap() {
         marker.addTo(facilityMap);
         markers.push(marker);
 
-        // Add hover handlers for marker -> calendar highlighting
-        marker.on('mouseover', () => highlightCalendarEvents(facilityKey));
-        marker.on('mouseout', () => clearCalendarHighlights());
+        // Add hover handlers for marker -> calendar and table highlighting
+        marker.on('mouseover', () => {
+            highlightCalendarEvents(facilityKey);
+            highlightTableRow(facilityKey);
+        });
+        marker.on('mouseout', () => {
+            clearCalendarHighlights();
+            clearTableRowHighlights();
+        });
     });
 
     // Populate facility table
@@ -1879,13 +1885,19 @@ function initMap() {
             const isOutdoor = facility.facility.includes('Robson Square') || facility.facility.includes('Shipyards');
             const color = isOutdoor ? '#ef6c00' : (cityColors[facility.city] || '#666');
             const scheduleUrl = facility.sessions[0]?.scheduleUrl || '';
+            const facilityKey = facility.facility.replace(/[^a-zA-Z0-9]/g, '-');
+            // Link facility name to city's facility info page (stored in activityUrl for some scrapers)
+            const facilityInfoUrl = facility.sessions[0]?.activityUrl || '';
+            const facilityName = facilityInfoUrl
+                ? `<a href="${facilityInfoUrl}" target="_blank">${facility.facility}</a>`
+                : facility.facility;
             const scheduleLink = scheduleUrl
                 ? `<a href="${scheduleUrl}" target="_blank">View ↗</a>`
                 : '-';
 
             tableHTML += `
-                <tr>
-                    <td><span class="city-dot" style="background: ${color};"></span>${facility.facility}</td>
+                <tr data-facility="${facilityKey}">
+                    <td><span class="city-dot" style="background: ${color};"></span>${facilityName}</td>
                     <td>${facility.sessions.length}</td>
                     <td>${scheduleLink}</td>
                 </tr>
@@ -1894,6 +1906,19 @@ function initMap() {
 
         tableHTML += '</tbody></table>';
         facilityTableEl.innerHTML = tableHTML;
+
+        // Add hover handlers to table rows
+        facilityTableEl.querySelectorAll('tr[data-facility]').forEach(row => {
+            row.addEventListener('mouseenter', () => {
+                const facilityKey = row.dataset.facility;
+                highlightMapMarker(facilityKey);
+                highlightCalendarEvents(facilityKey);
+            });
+            row.addEventListener('mouseleave', () => {
+                clearMapMarkerHighlights();
+                clearCalendarHighlights();
+            });
+        });
     } else {
         facilityTableEl.innerHTML = '<p style="color: var(--text-muted); font-size: 0.85rem;">No facilities match current filters</p>';
     }
@@ -1964,6 +1989,21 @@ function highlightMapMarker(facilityKey) {
 function clearMapMarkerHighlights() {
     document.querySelectorAll('.marker-icon.map-marker-highlighted').forEach(el => {
         el.classList.remove('map-marker-highlighted');
+    });
+}
+
+// Highlight table row for a facility
+function highlightTableRow(facilityKey) {
+    const row = document.querySelector(`.facility-table tr[data-facility="${facilityKey}"]`);
+    if (row) {
+        row.classList.add('highlighted');
+    }
+}
+
+// Clear all table row highlights
+function clearTableRowHighlights() {
+    document.querySelectorAll('.facility-table tr.highlighted').forEach(el => {
+        el.classList.remove('highlighted');
     });
 }
 
