@@ -1,0 +1,38 @@
+{
+  "date": "2026-01-18",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-18",
+      "startTime": "08:00",
+      "endTime": "18:29",
+      "type": "Public Swim",
+      "activityName": "Swim Meet",
+      "description": "Date and Time    Fri. 7am-7:30pm Sat. 8am-7:30pm Sun. 8am - 6:30pm           Session       January 16-18, 2026              Vancouver Aquatic Centre is hosting a swim meet, which affects po",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/swim-meet/442052",
+      "eventItemId": 442052
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-18",
+      "startTime": "13:00",
+      "endTime": "15:59",
+      "type": "Family Swim",
+      "activityName": "Tot Pool",
+      "description": "Date and Time   Fri. 12:30-3pm Sat. 1-4pm Sun. 1-4pm            Session      Jan. 16-Jan 18, 2026                 Warmer water great for young children with their parents and older adults/",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool/488666",
+      "eventItemId": 488666
+    }
+  ],
+  "count": 2
+}

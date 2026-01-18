@@ -15,11 +15,11 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
-      "facility": "West Vancouver Community Centre",
+      "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
-      "lat": 49.3415329,
-      "lng": -123.233884,
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
       "date": "2026-02-24",
       "startTime": "08:30",
       "endTime": "10:00",
@@ -100,11 +100,11 @@
       "eventItemId": 590822
     },
     {
-      "facility": "West Vancouver Community Centre",
+      "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
-      "lat": 49.3415329,
-      "lng": -123.233884,
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
       "date": "2026-02-24",
       "startTime": "10:15",
       "endTime": "11:30",
@@ -185,11 +185,11 @@
       "eventItemId": 590810
     },
     {
-      "facility": "West Vancouver Community Centre",
+      "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
-      "lat": 49.3415329,
-      "lng": -123.233884,
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
       "date": "2026-02-24",
       "startTime": "11:45",
       "endTime": "13:00",

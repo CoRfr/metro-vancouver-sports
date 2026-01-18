@@ -1,0 +1,22 @@
+{
+  "date": "2026-03-03",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-03",
+      "startTime": "11:20",
+      "endTime": "12:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Deep Water",
+      "description": "This 55-minute Deep Water Aquafit class runs in the dive tank.     Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm u",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/599138",
+      "eventItemId": 599138
+    }
+  ],
+  "count": 1
+}

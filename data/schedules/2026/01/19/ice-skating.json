@@ -2,11 +2,11 @@
   "date": "2026-01-19",
   "sessions": [
     {
-      "facility": "West Vancouver Community Centre",
+      "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
-      "lat": 49.3415329,
-      "lng": -123.233884,
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
       "date": "2026-01-19",
       "startTime": "08:15",
       "endTime": "09:45",
@@ -263,11 +263,11 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
     },
     {
-      "facility": "West Vancouver Community Centre",
+      "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
-      "address": "2121 Marine Dr, West Vancouver, BC V7V 1K5",
-      "lat": 49.3415329,
-      "lng": -123.233884,
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
       "date": "2026-01-19",
       "startTime": "11:45",
       "endTime": "13:00",

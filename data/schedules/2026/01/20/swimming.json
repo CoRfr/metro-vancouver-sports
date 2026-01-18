@@ -1,0 +1,54 @@
+{
+  "date": "2026-01-20",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-20",
+      "startTime": "06:30",
+      "endTime": "15:29",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Tue. & Thu. 6:30am-3:30pm             Session    Jan 6 - Apr 30, 2026               3 X 50m single lanes for continuous lengths swim for all ages.  Lanes are designated f",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/519080",
+      "eventItemId": 519080
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-20",
+      "startTime": "11:20",
+      "endTime": "12:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Deep Water",
+      "description": "This 55-minute Deep Water Aquafit class runs in the dive tank.     Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm u",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/599113",
+      "eventItemId": 599113
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-20",
+      "startTime": "16:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Widths (20.7m/25m)",
+      "description": "Date and Time   Tue/Thu 4-9pm Sat 10:30am-12:30pm Sun 8am-12:30pm            Session      January 6 - March 15, 2026               3 single lanes for continuous lengths swim for all ages.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/widths-20-7m-25m/519088",
+      "eventItemId": 519088
+    }
+  ],
+  "count": 3
+}

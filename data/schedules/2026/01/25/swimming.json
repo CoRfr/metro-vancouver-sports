@@ -1,0 +1,22 @@
+{
+  "date": "2026-01-25",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-25",
+      "startTime": "13:00",
+      "endTime": "19:29",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Sun. 1-7:30pm             Session   January 11- May 3, 2026 Except for swim meets on  Jan 18 and Feb 22                3 X 50m single lanes for continuous lengths swim fo",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/519084",
+      "eventItemId": 519084
+    }
+  ],
+  "count": 1
+}

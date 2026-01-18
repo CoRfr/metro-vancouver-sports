@@ -1,0 +1,70 @@
+{
+  "date": "2026-01-19",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-19",
+      "startTime": "06:30",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Mon. Wed. & Fri. 6:30am-9:00pm             Session    Dec  29, 2025 - May 1, 2026                3 X 50m single lanes for continuous lengths swim for all ages.  Lanes are",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/519052",
+      "eventItemId": 519052
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-19",
+      "startTime": "07:30",
+      "endTime": "15:59",
+      "type": "Public Swim",
+      "activityName": "Leisure Lane",
+      "description": "Date and Time     Mon/Wed/Fri, 7:30am-4pm & 7:30-9pm Tue/Thu 7am-3:30pm & 4-9pm  Sat 10:30am - 7:30pm Sun 8am-7:30pm            Session   January 5 - May 3, 2026               Open section",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/leisure-lane/519079",
+      "eventItemId": 519079
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-19",
+      "startTime": "09:20",
+      "endTime": "10:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Water Moderate",
+      "description": "This 55-minute Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down com",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/599109",
+      "eventItemId": 599109
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-01-19",
+      "startTime": "14:00",
+      "endTime": "15:59",
+      "type": "Family Swim",
+      "activityName": "Tot Pool",
+      "description": "Date and Time   Mon. 2-4pm Tue. 1-3pm Wed. 2-3:30pm Thu. 1:30-3pm Fri. 2-3:30pm & 5:30-7pm  Sat. 1-4pm Sun. 1-4pm             Session          January 5 - March 15, 2026 Exceptions: Jan 16",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool/571456",
+      "eventItemId": 571456
+    }
+  ],
+  "count": 4
+}
