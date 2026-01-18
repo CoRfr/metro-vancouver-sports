@@ -78,6 +78,7 @@ function getPocoSchedules() {
         activityName: activity.name,
         ageRange: activity.age,
         activityUrl: scheduleUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || scheduleUrl,
       });
       sessionCount++;

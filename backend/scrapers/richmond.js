@@ -198,6 +198,7 @@ function getRichmondSchedules() {
         activityName: activity.name,
         ageRange: activity.age,
         activityUrl: ricFacility.url,
+        facilityUrl: ricFacility.scheduleUrl || '',
         scheduleUrl: ricFacility.scheduleUrl || '',
       });
       ricCount++;
@@ -237,6 +238,7 @@ function getRichmondSchedules() {
         activityName: activity.name,
         ageRange: activity.age,
         activityUrl: minoruFacility.url,
+        facilityUrl: minoruFacility.scheduleUrl || '',
         scheduleUrl: minoruFacility.scheduleUrl || '',
       });
       minoruCount++;
@@ -259,6 +261,7 @@ function getRichmondSchedules() {
         activityName: event.name,
         ageRange: event.age,
         activityUrl: event.facility.url,
+        facilityUrl: event.facility.scheduleUrl || '',
         scheduleUrl: event.facility.scheduleUrl || '',
       });
       minoruCount++;

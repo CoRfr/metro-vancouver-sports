@@ -73,6 +73,7 @@ function parseNorthVanEvent(event) {
     type,
     activityName: activityName.trim(),
     activityUrl: event.url ? `https://www.nvrc.ca${event.url}` : CONFIG.northvan.dropInUrl,
+    facilityUrl: facility.scheduleUrl || '',
     scheduleUrl: facility.scheduleUrl || '',
   };
 }
@@ -130,6 +131,7 @@ function parseNorthVanEventFromDOM(event) {
     type,
     activityName: activityName.trim(),
     activityUrl: CONFIG.northvan.dropInUrl,
+    facilityUrl: facility.scheduleUrl || '',
     scheduleUrl: facility.scheduleUrl || '',
   };
 }

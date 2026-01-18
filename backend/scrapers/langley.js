@@ -161,6 +161,7 @@ async function scrapeLangleySkating(browser) {
         type,
         activityName: session.activityName,
         activityUrl: CONFIG.langley.skatingUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || '',
       });
     }
@@ -224,6 +225,7 @@ async function scrapeLangleySwimming(browser) {
         type,
         activityName: session.activityName,
         activityUrl: CONFIG.langley.swimmingUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || '',
       });
     }

@@ -172,6 +172,9 @@ async function scrapeBurnabySwimming(browser) {
           const dayActivities = scheduleData.filter(a => a.day === dayOfWeek);
 
           for (const activity of dayActivities) {
+            // Generate schedule URL with activity_tid and location_ref
+            const scheduleUrl = `${CONFIG.burnabySwimming.dailyActivitiesUrl}?activity_tid=${CONFIG.burnabySwimming.activityTid}&location_ref=${facility.locationRef}`;
+
             allSessions.push({
               facility: facility.name,
               city: 'Burnaby',
@@ -185,7 +188,8 @@ async function scrapeBurnabySwimming(browser) {
               activityName: activity.name,
               ageRange: activity.notes,
               activityUrl: url,
-              scheduleUrl: facility.scheduleUrl || '',
+              facilityUrl: facility.facilityUrl || '',
+              scheduleUrl: scheduleUrl,
             });
             count++;
           }

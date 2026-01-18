@@ -1886,8 +1886,8 @@ function initMap() {
             const color = isOutdoor ? '#ef6c00' : (cityColors[facility.city] || '#666');
             const scheduleUrl = facility.sessions[0]?.scheduleUrl || '';
             const facilityKey = facility.facility.replace(/[^a-zA-Z0-9]/g, '-');
-            // Link facility name to city's facility info page (stored in activityUrl for some scrapers)
-            const facilityInfoUrl = facility.sessions[0]?.activityUrl || '';
+            // Link facility name to city's facility info page
+            const facilityInfoUrl = facility.sessions[0]?.facilityUrl || '';
             const facilityName = facilityInfoUrl
                 ? `<a href="${facilityInfoUrl}" target="_blank">${facility.facility}</a>`
                 : facility.facility;

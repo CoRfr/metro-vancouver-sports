@@ -135,6 +135,7 @@ function getBurnabySchedules() {
           activityName: activity.name,
           ageRange: activity.age,
           activityUrl: scheduleUrl,
+          facilityUrl: facility.facilityUrl || '',
           scheduleUrl: scheduleUrl,
         });
         count++;

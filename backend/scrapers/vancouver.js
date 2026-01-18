@@ -50,7 +50,9 @@ function parseVancouverEvent(event, facilityInfo, centerId) {
   }
 
   // Generate dynamic schedule URL with specific locationId
-  const scheduleUrl = centerId ? getVancouverScheduleUrl(centerId) : (facilityInfo.scheduleUrl || '');
+  const scheduleUrl = centerId ? getVancouverScheduleUrl(centerId) : '';
+  // Facility URL is the city's facility info page (from config)
+  const facilityUrl = facilityInfo.scheduleUrl || '';
 
   return {
     facility: facilityInfo.name,
@@ -67,6 +69,7 @@ function parseVancouverEvent(event, facilityInfo, centerId) {
     ageRange,
     activityUrl: event.activity_detail_url || '',
     eventItemId: event.event_item_id,
+    facilityUrl,
     scheduleUrl,
   };
 }

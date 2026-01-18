@@ -146,6 +146,7 @@ async function scrapeWestVan(browser) {
         type,
         activityName: activity.activityName,
         activityUrl: activity.activityUrl || CONFIG.westvan.dropInUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || '',
       });
     }

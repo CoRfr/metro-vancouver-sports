@@ -50,7 +50,9 @@ function parseVancouverSwimmingEvent(event, facilityInfo, centerId) {
   }
 
   // Generate dynamic schedule URL with specific locationId and swimming calendar ID
-  const scheduleUrl = centerId ? getSwimmingScheduleUrl(centerId) : (facilityInfo.scheduleUrl || '');
+  const scheduleUrl = centerId ? getSwimmingScheduleUrl(centerId) : '';
+  // Facility URL is the city's facility info page (from config)
+  const facilityUrl = facilityInfo.scheduleUrl || '';
 
   return {
     facility: facilityInfo.name,
@@ -67,6 +69,7 @@ function parseVancouverSwimmingEvent(event, facilityInfo, centerId) {
     ageRange,
     activityUrl: event.activity_detail_url || '',
     eventItemId: event.event_item_id,
+    facilityUrl,
     scheduleUrl,
   };
 }

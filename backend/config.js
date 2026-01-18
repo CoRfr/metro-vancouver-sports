@@ -82,7 +82,7 @@ const CONFIG = {
         lng: -122.97553,
         address: '6159 Curtis St, Burnaby, BC V5B 4X7',
         locationRef: '3046',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/kensington-complex',
       },
       'rosemary-brown': {
         name: 'Rosemary Brown Recreation Centre',
@@ -90,7 +90,7 @@ const CONFIG = {
         lng: -122.95250,
         address: '7789 18th St, Burnaby, BC V3N 5E5',
         locationRef: '6916',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre',
       },
       'bill-copeland': {
         name: 'Bill Copeland Sports Centre',
@@ -98,7 +98,7 @@ const CONFIG = {
         lng: -122.96537,
         address: '3676 Kensington Ave, Burnaby, BC V5B 4Z6',
         locationRef: '2991',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2991',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bill-copeland-sports-centre',
       },
       'burnaby-lake': {
         name: 'Burnaby Lake Arena',
@@ -106,7 +106,7 @@ const CONFIG = {
         lng: -122.96543,
         address: '3676 Kensington Ave, Burnaby, BC V5B 4Z6',
         locationRef: '2982',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2982',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bill-copeland-sports-centre',
       },
     },
     // Activity type IDs on burnaby.ca
@@ -121,6 +121,9 @@ const CONFIG = {
 
   // Burnaby swimming config - scraped from burnaby.ca pool pages
   burnabySwimming: {
+    dailyActivitiesUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities',
+    // Swimming activity type ID on burnaby.ca
+    activityTid: 651,
     facilities: {
       'bonsor': {
         name: 'Bonsor Recreation Complex',
@@ -128,7 +131,7 @@ const CONFIG = {
         lng: -122.99389,
         address: '6550 Bonsor Ave, Burnaby, BC V5H 3G4',
         locationRef: '2996',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2996',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex',
       },
       'edmonds': {
         name: 'Edmonds Community Centre',
@@ -136,7 +139,7 @@ const CONFIG = {
         lng: -122.95865,
         address: '7433 Edmonds St, Burnaby, BC V3N 1B1',
         locationRef: '2336',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre',
       },
       'eileen-dailly': {
         name: 'Eileen Dailly Leisure Pool',
@@ -144,7 +147,7 @@ const CONFIG = {
         lng: -122.97858,
         address: '240 Willingdon Ave, Burnaby, BC V5C 5E9',
         locationRef: '3041',
-        scheduleUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041',
+        facilityUrl: 'https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre',
       },
     },
   },

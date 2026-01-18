@@ -132,6 +132,7 @@ function getCoquitlamSchedules() {
         activityName: activity.name,
         ageRange: activity.age,
         activityUrl: scheduleUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || scheduleUrl,
       });
       sessionCount++;
@@ -153,6 +154,7 @@ function getCoquitlamSchedules() {
         type: event.type,
         activityName: event.name,
         activityUrl: scheduleUrl,
+        facilityUrl: facility.scheduleUrl || '',
         scheduleUrl: facility.scheduleUrl || scheduleUrl,
       });
       sessionCount++;
