@@ -1511,7 +1511,11 @@ function applySavedActivityTypes() {
 }
 
 // Save settings when distance filter changes
-distanceFilter.addEventListener('change', () => { filterSessions(); saveSettings(); });
+distanceFilter.addEventListener('change', () => {
+    updateFacilityFilter(); // Update facility distances display
+    filterSessions();
+    saveSettings();
+});
 
 // Save on view mode change
 const originalDayClick = dayViewBtn.onclick;
@@ -1551,6 +1555,15 @@ const originalFetchRealData = fetchRealData;
 fetchRealData = async function() {
     await originalFetchRealData();
     const saved = loadSettings();
+
+    // Restore userLocation if it was saved (needed for distance filtering)
+    if (saved?.userLocation) {
+        userLocation = saved.userLocation;
+    }
+
+    // Update facility filter with distances now that userLocation is set
+    updateFacilityFilter();
+
     if (saved?.facilities && Array.isArray(saved.facilities)) {
         facilityFilter.querySelectorAll('input').forEach(cb => {
             cb.checked = saved.facilities.includes(cb.value);
