@@ -19,7 +19,7 @@ async function scrapeBurnabySwimming(browser) {
 
   try {
     for (const [facilityKey, facility] of Object.entries(facilities)) {
-      const url = `https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=${facility.locationRef}`;
+      const url = `${CONFIG.burnabySwimming.dailyActivitiesUrl}?activity_tid=${CONFIG.burnabySwimming.activityTid}&location_ref=${facility.locationRef}`;
       console.error(`  Fetching ${facility.name}...`);
 
       try {
