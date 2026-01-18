@@ -7,6 +7,24 @@ const { CONFIG } = require('../config');
 const { formatDate, determineActivityType } = require('../utils');
 
 /**
+ * Get activity type ID for Burnaby schedule URL
+ * Maps activity names to burnaby.ca activity_tid values
+ */
+function getBurnabyActivityTid(activityName) {
+  const name = (activityName || '').toLowerCase();
+
+  // Map activity names to their activity_tid on burnaby.ca
+  if (name.includes('parent') && name.includes('tot')) return 661; // Parent & Tot Skate
+  if (name.includes('family') && name.includes('skate')) return 657; // Family Skate
+  if (name.includes('toonie')) return 658; // Toonie Skate
+  if (name.includes('lap skate')) return 660; // Lap Skate
+  if (name.includes('public')) return 656; // Public Skating
+
+  // No specific activity_tid for hockey/ringette/figure skating
+  return null;
+}
+
+/**
  * Get Burnaby schedules from hardcoded weekly patterns
  * Based on "Effective January 5-March 12/13" schedules from burnaby.ca
  */
@@ -14,13 +32,10 @@ function getBurnabySchedules() {
   console.error('Adding Burnaby schedules...');
   const allSessions = [];
 
-  // Use facilities from CONFIG, add URL from locationRef
+  // Use facilities from CONFIG
   const facilities = {};
   for (const [key, facility] of Object.entries(CONFIG.burnaby.facilities)) {
-    facilities[key] = {
-      ...facility,
-      url: `${CONFIG.burnaby.dailyActivitiesUrl}?activity_tid=656&location_ref=${facility.locationRef}`,
-    };
+    facilities[key] = { ...facility };
   }
 
   // Weekly schedules from burnaby.ca screenshots
@@ -98,6 +113,15 @@ function getBurnabySchedules() {
       if (!dayActivities) continue;
 
       for (const activity of dayActivities) {
+        // Generate dynamic scheduleUrl with activity_tid and location_ref
+        const activityTid = getBurnabyActivityTid(activity.name);
+        let scheduleUrl = CONFIG.burnaby.dailyActivitiesUrl;
+        if (activityTid) {
+          scheduleUrl += `?activity_tid=${activityTid}&location_ref=${facility.locationRef}`;
+        } else {
+          scheduleUrl += `?location_ref=${facility.locationRef}`;
+        }
+
         allSessions.push({
           facility: facility.name,
           city: 'Burnaby',
@@ -110,8 +134,8 @@ function getBurnabySchedules() {
           type: determineActivityType(activity.name),
           activityName: activity.name,
           ageRange: activity.age,
-          activityUrl: facility.url,
-          scheduleUrl: facility.scheduleUrl || '',
+          activityUrl: scheduleUrl,
+          scheduleUrl: scheduleUrl,
         });
         count++;
       }
