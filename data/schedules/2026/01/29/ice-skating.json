@@ -12,7 +12,8 @@
       "endTime": "08:45",
       "type": "Drop-in Hockey",
       "activityName": "Ring, Stick and Puck",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -25,7 +26,8 @@
       "endTime": "08:45",
       "type": "Drop-in Hockey",
       "activityName": "Early Morning Adult Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kensington Complex",
@@ -39,7 +41,8 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -52,7 +55,8 @@
       "endTime": "11:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -65,7 +69,8 @@
       "endTime": "10:30",
       "type": "Family Skate",
       "activityName": "Early Years/ Family Skate 0-6yrs Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/early-years-family-skate-0-6yrs-skate-karen-magnussen-thursdays"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/early-years-family-skate-0-6yrs-skate-karen-magnussen-thursdays",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Killarney Rink",
@@ -81,7 +86,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/killarney-arena---stick-puck-ring---thursday-10-00am/601361",
-      "eventItemId": 601361
+      "eventItemId": 601361,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -95,7 +101,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Toonie Adult Hockey",
       "ageRange": "19 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Moody Park Arena",
@@ -108,7 +115,8 @@
       "endTime": "11:00",
       "type": "Family Skate",
       "activityName": "Try-It! - Parent & Tot Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
       "facility": "Kensington Complex",
@@ -122,7 +130,8 @@
       "type": "Skating",
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Queen's Park Arena",
@@ -135,7 +144,8 @@
       "endTime": "11:30",
       "type": "Public Skating",
       "activityName": "Adult Skate - 50+",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -148,7 +158,8 @@
       "endTime": "12:15",
       "type": "Public Skating",
       "activityName": "Adult 19yr+ Social Skate: Gilmore Skate Club",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-social-skate-gilmore-skate-club-karen-magnussen"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-social-skate-gilmore-skate-club-karen-magnussen",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -161,7 +172,8 @@
       "endTime": "13:15",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -174,7 +186,8 @@
       "endTime": "12:15",
       "type": "Drop-in Hockey",
       "activityName": "Toonie Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Moody Park Arena",
@@ -187,7 +200,8 @@
       "endTime": "12:45",
       "type": "Public Skating",
       "activityName": "Try-it! - Public Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -201,7 +215,8 @@
       "type": "Skating",
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -215,7 +230,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Masters 65+ Hockey",
       "ageRange": "65+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Killarney Rink",
@@ -231,7 +247,8 @@
       "description": "This session is for those looking to practice their jumps, spins and field moves.  No partners or pairs skating allowed. No skate rentals, and no lessons are provided.   *Monthly Flexipass and 10-Vis",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/killarney-arena---public-figure-skating---thursday-11-45am/601353",
-      "eventItemId": 601353
+      "eventItemId": 601353,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Trout Lake Rink",
@@ -247,7 +264,8 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---thursday-11-45am/601449",
-      "eventItemId": 601449
+      "eventItemId": 601449,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx"
     },
     {
       "facility": "Kensington Complex",
@@ -261,7 +279,8 @@
       "type": "Public Skating",
       "activityName": "Toonie Skate",
       "ageRange": "All ages",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -275,7 +294,22 @@
       "type": "Public Skating",
       "activityName": "Toonie Skate",
       "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-01-29",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Noon Hour",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -291,7 +325,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-12-00pm/595074",
-      "eventItemId": 595074
+      "eventItemId": 595074,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -304,7 +339,8 @@
       "endTime": "13:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Queen's Park Arena",
@@ -317,7 +353,8 @@
       "endTime": "13:30",
       "type": "Figure Skating",
       "activityName": "Figure Skating",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -331,7 +368,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
+      "activityUrl": "https://www.robsonsquare.com/",
+      "scheduleUrl": "https://www.robsonsquare.com/"
     },
     {
       "facility": "Shipyards Skate Plaza",
@@ -345,7 +383,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -358,7 +397,8 @@
       "endTime": "13:30",
       "type": "Discount Skate",
       "activityName": "Toonie Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Kensington Complex",
@@ -372,7 +412,8 @@
       "type": "Family Skate",
       "activityName": "Parent & Tot Skate",
       "ageRange": "2-5 yrs with adult",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -385,7 +426,8 @@
       "endTime": "15:30",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -401,7 +443,8 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-hockey---thursday-1-45pm/595095",
-      "eventItemId": 595095
+      "eventItemId": 595095,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -415,7 +458,8 @@
       "type": "Public Skating",
       "activityName": "Toonie Skate & Activities",
       "ageRange": "8-17 yrs, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -428,7 +472,8 @@
       "endTime": "16:30",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Canlan Ice Sports North Shore",
@@ -441,7 +486,8 @@
       "endTime": "18:05",
       "type": "Family Skate",
       "activityName": "$2 Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-605pm"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-605pm",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -455,7 +501,8 @@
       "type": "Family Skate",
       "activityName": "Family Skate",
       "ageRange": "Children with adults, 16 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Canlan Ice Sports North Shore",
@@ -468,7 +515,8 @@
       "endTime": "19:35",
       "type": "Public Skating",
       "activityName": "Adult Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Moody Park Arena",
@@ -481,7 +529,8 @@
       "endTime": "20:30",
       "type": "Public Skating",
       "activityName": "Try-it! - Public Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -495,8 +544,9 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     }
   ],
-  "count": 36
+  "count": 37
 }

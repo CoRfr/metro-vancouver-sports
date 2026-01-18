@@ -2,6 +2,34 @@
   "date": "2026-02-16",
   "sessions": [
     {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "08:15",
+      "endTime": "09:00",
+      "type": "Drop-in Hockey",
+      "activityName": "18y+ (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "09:00",
+      "endTime": "09:45",
+      "type": "Drop-in Hockey",
+      "activityName": "5-8y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Kensington Complex",
       "city": "Burnaby",
       "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
@@ -13,7 +41,8 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Sunset Rink",
@@ -29,7 +58,8 @@
       "description": "Recreational hockey game for those 40 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---40-hockey---monday-10-00am/601374",
-      "eventItemId": 601374
+      "eventItemId": 601374,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -43,7 +73,8 @@
       "type": "Hockey",
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -57,7 +88,36 @@
       "type": "Drop-in Hockey",
       "activityName": "40+ Adult Hockey",
       "ageRange": "40+",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "10:00",
+      "endTime": "10:45",
+      "type": "Drop-in Hockey",
+      "activityName": "9-11y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "10:45",
+      "endTime": "11:30",
+      "type": "Drop-in Hockey",
+      "activityName": "12y+ (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Aldergrove Community Centre",
@@ -70,7 +130,8 @@
       "endTime": "12:15",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -84,7 +145,8 @@
       "type": "Skating",
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -98,7 +160,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Senior 55+ Hockey",
       "ageRange": "55+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -114,7 +177,8 @@
       "description": "For those 19 years and older. Helmets and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants must sign",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kerrisdale-arena---stick-puck-ring---monday-11-45am/590759",
-      "eventItemId": 590759
+      "eventItemId": 590759,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx"
     },
     {
       "facility": "Sunset Rink",
@@ -130,7 +194,8 @@
       "description": "For those 19 years and older. CSA Helmets and hockey gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participant",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---stick-puck-ring---monday-11-45am/601386",
-      "eventItemId": 601386
+      "eventItemId": 601386,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "Trout Lake Rink",
@@ -146,7 +211,8 @@
       "description": "GOALIE REGISTRATION ONLY!! Players should register in the Public Hockey session.  Only 2 goalies permitted per session. Free admission.  Recreational hockey game for those 19 years and older. Full ge",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey-goalies---monday-11-45am/601438",
-      "eventItemId": 601438
+      "eventItemId": 601438,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx"
     },
     {
       "facility": "Kensington Complex",
@@ -160,7 +226,22 @@
       "type": "Public Skating",
       "activityName": "Toonie Skate",
       "ageRange": "All ages",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Family Skate",
+      "activityName": "Public Skate (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Minoru Arenas",
@@ -173,7 +254,8 @@
       "endTime": "16:00",
       "type": "Family Skate",
       "activityName": "Family Day Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -186,7 +268,8 @@
       "endTime": "13:00",
       "type": "Family Skate",
       "activityName": "Family Play and Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -200,7 +283,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
+      "activityUrl": "https://www.robsonsquare.com/",
+      "scheduleUrl": "https://www.robsonsquare.com/"
     },
     {
       "facility": "Shipyards Skate Plaza",
@@ -214,7 +298,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -228,7 +313,8 @@
       "type": "Family Skate",
       "activityName": "Adult & Child Toonie Skate",
       "ageRange": "0-6 yrs with adult",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Minoru Arenas",
@@ -242,7 +328,8 @@
       "type": "Family Hockey",
       "activityName": "Family Day Adult and Child Stick and Puck",
       "ageRange": "12 yrs and under with adult",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -256,7 +343,22 @@
       "type": "Family Skate",
       "activityName": "Parent & Tot Skate",
       "ageRange": "2-5 yrs with adult, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "13:15",
+      "endTime": "14:00",
+      "type": "Drop-in Hockey",
+      "activityName": "5-8y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -270,7 +372,22 @@
       "type": "Public Skating",
       "activityName": "50+ Toonie Skate",
       "ageRange": "50 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "14:00",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "9-11y (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -283,7 +400,8 @@
       "endTime": "15:30",
       "type": "Family Skate",
       "activityName": "Family Day Family Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Minoru Arenas",
@@ -297,7 +415,22 @@
       "type": "Family Hockey",
       "activityName": "Family Day Adult and Child Stick and Puck",
       "ageRange": "12 yrs and under with adult",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "type": "Drop-in Hockey",
+      "activityName": "12y+ (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -310,7 +443,8 @@
       "endTime": "16:30",
       "type": "Drop-in Hockey",
       "activityName": "Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "West End Community Centre",
@@ -326,7 +460,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required.  This is a session for individual practice only with no scrimmage, bring your own equipment. Skate rentals are not available.  All",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---monday-3-45pm/592184",
-      "eventItemId": 592184
+      "eventItemId": 592184,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -339,7 +474,8 @@
       "endTime": "17:00",
       "type": "Family Skate",
       "activityName": "Family Day Family Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Minoru Arenas",
@@ -353,7 +489,22 @@
       "type": "Drop-in Hockey",
       "activityName": "Family Day Youth Stick and Puck",
       "ageRange": "Youth",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-16",
+      "startTime": "16:00",
+      "endTime": "17:15",
+      "type": "Family Skate",
+      "activityName": "Public Skate (Family Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Kensington Complex",
@@ -367,7 +518,8 @@
       "type": "Family Skate",
       "activityName": "Family Skate",
       "ageRange": "Children with adult 16 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -381,7 +533,8 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -394,8 +547,9 @@
       "endTime": "21:15",
       "type": "Discount Skate",
       "activityName": "Toonie Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 28
+  "count": 37
 }

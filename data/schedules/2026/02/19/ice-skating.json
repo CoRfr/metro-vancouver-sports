@@ -12,7 +12,8 @@
       "endTime": "08:45",
       "type": "Drop-in Hockey",
       "activityName": "Ring, Stick and Puck",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -25,7 +26,8 @@
       "endTime": "08:45",
       "type": "Drop-in Hockey",
       "activityName": "Early Morning Adult Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -38,7 +40,8 @@
       "endTime": "11:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Killarney Rink",
@@ -54,7 +57,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/killarney-arena---stick-puck-ring---thursday-10-00am/601364",
-      "eventItemId": 601364
+      "eventItemId": 601364,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -68,7 +72,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Toonie Adult Hockey",
       "ageRange": "19 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -81,7 +86,8 @@
       "endTime": "13:15",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -94,7 +100,8 @@
       "endTime": "12:15",
       "type": "Drop-in Hockey",
       "activityName": "Toonie Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -108,7 +115,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Masters 65+ Hockey",
       "ageRange": "65+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Killarney Rink",
@@ -124,7 +132,8 @@
       "description": "This session is for those looking to practice their jumps, spins and field moves.  No partners or pairs skating allowed. No skate rentals, and no lessons are provided.   *Monthly Flexipass and 10-Vis",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/killarney-arena---public-figure-skating---thursday-11-45am/601356",
-      "eventItemId": 601356
+      "eventItemId": 601356,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Trout Lake Rink",
@@ -140,7 +149,22 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---thursday-11-45am/601453",
-      "eventItemId": 601453
+      "eventItemId": 601453,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-02-19",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Noon Hour",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -156,7 +180,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-12-00pm/595078",
-      "eventItemId": 595078
+      "eventItemId": 595078,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -169,7 +194,8 @@
       "endTime": "13:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -182,7 +208,8 @@
       "endTime": "13:30",
       "type": "Discount Skate",
       "activityName": "Toonie Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -195,7 +222,8 @@
       "endTime": "15:30",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -211,7 +239,8 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-hockey---thursday-1-45pm/595112",
-      "eventItemId": 595112
+      "eventItemId": 595112,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -224,8 +253,9 @@
       "endTime": "16:30",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     }
   ],
-  "count": 16
+  "count": 17
 }

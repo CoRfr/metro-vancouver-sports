@@ -15,7 +15,8 @@
       "description": "This 55-minute Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down com",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/599130",
-      "eventItemId": 599130
+      "eventItemId": 599130,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx"
     },
     {
       "facility": "Britannia Pool",
@@ -31,7 +32,8 @@
       "description": "This 60-minute  Deep Water Aquafit class runs in the 25m deep pool.    Aquafit  is a moderately paced and energizing class that utilizes water resistance for a  variety of exercise combinations with w",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep/597995",
-      "eventItemId": 597995
+      "eventItemId": 597995,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx"
     }
   ],
   "count": 2

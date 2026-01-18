@@ -12,7 +12,8 @@
       "endTime": "11:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Sunset Rink",
@@ -28,7 +29,8 @@
       "description": "Recreational hockey game for those 40 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---40-hockey---monday-10-00am/601377",
-      "eventItemId": 601377
+      "eventItemId": 601377,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -41,7 +43,8 @@
       "endTime": "13:15",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -55,7 +58,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Senior 55+ Hockey",
       "ageRange": "55+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -71,7 +75,8 @@
       "description": "For those 19 years and older. Helmets and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants must sign",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kerrisdale-arena---stick-puck-ring---monday-11-45am/590762",
-      "eventItemId": 590762
+      "eventItemId": 590762,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx"
     },
     {
       "facility": "Sunset Rink",
@@ -87,7 +92,8 @@
       "description": "For those 19 years and older. CSA Helmets and hockey gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participant",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---stick-puck-ring---monday-11-45am/601389",
-      "eventItemId": 601389
+      "eventItemId": 601389,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "Trout Lake Rink",
@@ -103,7 +109,22 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---monday-11-45am/601430",
-      "eventItemId": 601430
+      "eventItemId": 601430,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-03-09",
+      "startTime": "11:45",
+      "endTime": "13:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Noon Hour",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Minoru Arenas",
@@ -116,7 +137,8 @@
       "endTime": "13:15",
       "type": "Discount Skate",
       "activityName": "Adult Toonie Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -130,7 +152,8 @@
       "type": "Family Skate",
       "activityName": "Adult & Child Toonie Skate",
       "ageRange": "0-6 yrs with adult",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -143,7 +166,8 @@
       "endTime": "15:30",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -157,7 +181,8 @@
       "type": "Public Skating",
       "activityName": "50+ Toonie Skate",
       "ageRange": "50 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -170,7 +195,8 @@
       "endTime": "16:30",
       "type": "Drop-in Hockey",
       "activityName": "Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "West End Community Centre",
@@ -186,7 +212,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required.  This is a session for individual practice only with no scrimmage, bring your own equipment. Skate rentals are not available.  All",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---monday-3-45pm/592187",
-      "eventItemId": 592187
+      "eventItemId": 592187,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -199,8 +226,9 @@
       "endTime": "21:15",
       "type": "Discount Skate",
       "activityName": "Toonie Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 14
+  "count": 15
 }

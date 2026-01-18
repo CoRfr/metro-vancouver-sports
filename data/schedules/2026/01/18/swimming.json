@@ -15,7 +15,8 @@
       "description": "Date and Time     Tue and Thu 6:00am - 9:00am Sun 6:00a - 8:30am            Session   January 5, 2026 to March 15, 2026                        Continuous  lengths swim for all ages. Lanes",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-3-lanes-x-25m/596548",
-      "eventItemId": 596548
+      "eventItemId": 596548,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -29,7 +30,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "4 lanes",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -43,7 +45,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "2 lanes",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     },
     {
       "facility": "Killarney Pool",
@@ -59,7 +62,8 @@
       "description": "Date & Time        Sun 8:00am-9:29am             Session        Jan 11-Mar 15, 2026            Limitation        Leisure pool is closed from 9:30-11:30am due to swim lessons.",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-8-00am-9-29am/600414",
-      "eventItemId": 600414
+      "eventItemId": 600414,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -75,7 +79,8 @@
       "description": "Date and Time    Fri. 7am-7:30pm Sat. 8am-7:30pm Sun. 8am - 6:30pm           Session       January 16-18, 2026              Vancouver Aquatic Centre is hosting a swim meet, which affects po",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/swim-meet/442052",
-      "eventItemId": 442052
+      "eventItemId": 442052,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -89,7 +94,8 @@
       "type": "Lessons",
       "activityName": "Lessons & Leisure Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "Walnut Grove Community Centre",
@@ -102,7 +108,8 @@
       "endTime": "10:00",
       "type": "Family Swim",
       "activityName": "Adult and Tot Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
       "facility": "Hillcrest Aquatic Centre",
@@ -118,7 +125,8 @@
       "description": "Date and Time      Mon, Tue, Wed, Fri 9:00am to 9:30am Sat and Sun 8:30am to 9:00am            Session   January 5, 2026 to March 15, 2026                No lanes available due to bulkhead",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/bulkhead-move---no-lanes-available/596549",
-      "eventItemId": 596549
+      "eventItemId": 596549,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Hillcrest Aquatic Centre",
@@ -134,7 +142,8 @@
       "description": "Date and Time      Mon, Tue, Wed, Thu, and Fri 9:30AM to 9:00PM Sat and Sun 9:00AM to 9:00PM             Session   January 5, 2026 to March 15, 2026               Recreational  swim for al",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-3-lanes-x-25m/596550",
-      "eventItemId": 596550
+      "eventItemId": 596550,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Kensington Pool",
@@ -150,7 +159,8 @@
       "description": "Date and Time     Mon: 10am to 12:30pm Tue: 1:15pm to 2:30pm  Wed: 10am to 12:30pm Thurs: 1:15pm to 2:30pm Fri: 3pm to 6pm Sun: 9am to 1pm            Session    Jan. 5, 2026 to Mar. 15, 20",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sauna-and-whirlpool-only/600365",
-      "eventItemId": 600365
+      "eventItemId": 600365,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx"
     },
     {
       "facility": "Renfrew Park Pool",
@@ -166,7 +176,8 @@
       "description": "Date and Time     Mon. 6:30 AM - 9:30 AM and 12:00 PM - 1:30 PM Tue 6:30 AM - 9:30 AM and 12:00 PM - 1:30 PM Wed 6:30 AM - 9:30 AM and 12:00 PM - 1:30 PM Thu 6:30 AM - 9:30 AM and 12:00 PM",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-swim/600237",
-      "eventItemId": 600237
+      "eventItemId": 600237,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -180,7 +191,8 @@
       "type": "Lessons",
       "activityName": "Swim Lessons Only",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     },
     {
       "facility": "W.C. Blair Recreation Centre",
@@ -193,7 +205,8 @@
       "endTime": "12:30",
       "type": "Lessons",
       "activityName": "Lessons and Limited Public Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
       "facility": "Britannia Pool",
@@ -209,7 +222,8 @@
       "description": "Date and Time   Sun 10:00am-11:00am            Session     Jan 5- Mar 15, 2026                 Only Tot pool is available during this time.   Whirl Pool, Sauna, and Steam Room are also ava",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool-only/538273",
-      "eventItemId": 538273
+      "eventItemId": 538273,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx"
     },
     {
       "facility": "Lord Byng Pool",
@@ -225,7 +239,8 @@
       "description": "Date and Time     Mon-Thu 3:00pm-7:30pm Fri 3:00pm-6:00pm Sat & Sun 10:00am-2:00pm          Winter 2025                 Continuous length swim for all ages. Lanes are designated for specif",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-swim-club-1l-lengths/598232",
-      "eventItemId": 598232
+      "eventItemId": 598232,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -239,7 +254,8 @@
       "type": "Aquafit",
       "activityName": "Aquafit",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2996"
     },
     {
       "facility": "Aldergrove Community Centre",
@@ -252,7 +268,8 @@
       "endTime": "13:00",
       "type": "Lessons",
       "activityName": "Lessons and Limited Lap Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
       "facility": "Walnut Grove Community Centre",
@@ -265,7 +282,8 @@
       "endTime": "17:00",
       "type": "Public Swim",
       "activityName": "Public Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
       "facility": "Renfrew Park Pool",
@@ -281,7 +299,8 @@
       "description": "Date & Time     M-F: 4:00 PM - 8:00 PM   Sat & Sun: 10:30 AM - 2:30 PM            Sessions   Jan 5 - Feb 22  No Lengths/Group Lessons on Feb 16                    Continuous  lengths swim",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-group-lessons/600259",
-      "eventItemId": 600259
+      "eventItemId": 600259,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx"
     },
     {
       "facility": "Britannia Pool",
@@ -297,7 +316,8 @@
       "description": "Date and Time     Mon- Thu 4:00pm-6:30pm Wed, Fri 1:00pm-2:30pm Fri 4:00pm-6:00pm Sat, Sun 11:00am-1:30pm            Session   Jan 5- Mar 15, 2026                 Continuous length swim fo",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-and-one-lane/526349",
-      "eventItemId": 526349
+      "eventItemId": 526349,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx"
     },
     {
       "facility": "Killarney Pool",
@@ -313,7 +333,8 @@
       "description": "Date & Time        Sun 11:30am-8:59pm             Session        Jan 11-Mar 15, 2026            Limitation        Leisure pool is closed from 9:30-11:30am due to swim lessons.",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-8-00am-9-29am/600415",
-      "eventItemId": 600415
+      "eventItemId": 600415,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -327,7 +348,8 @@
       "type": "Public Swim",
       "activityName": "Public Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -341,7 +363,8 @@
       "type": "Public Swim",
       "activityName": "Slide",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "W.C. Blair Recreation Centre",
@@ -354,7 +377,8 @@
       "endTime": "21:00",
       "type": "Public Swim",
       "activityName": "Public Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
       "facility": "Kensington Pool",
@@ -370,7 +394,8 @@
       "description": "Date and Time     Mon: 3:30pm to 6pm Tue: 4:30pm to 7pm Wed: 3:30pm to 6pm Thu: 4:30pm to 7pm Sat: 10:30am to 2pm Sun: 1pm to 2pm            Session     Jan. 5, 2026 to Mar. 15, 2026",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-lessons/600362",
-      "eventItemId": 600362
+      "eventItemId": 600362,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -386,7 +411,8 @@
       "description": "Date and Time   Fri. 12:30-3pm Sat. 1-4pm Sun. 1-4pm            Session      Jan. 16-Jan 18, 2026                 Warmer water great for young children with their parents and older adults/",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool/488666",
-      "eventItemId": 488666
+      "eventItemId": 488666,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -400,7 +426,8 @@
       "type": "Family Swim",
       "activityName": "Family Swim",
       "ageRange": "No lap lanes",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2996"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -414,7 +441,8 @@
       "type": "Family Swim",
       "activityName": "Family Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     },
     {
       "facility": "Aldergrove Community Centre",
@@ -427,7 +455,8 @@
       "endTime": "20:00",
       "type": "Public Swim",
       "activityName": "Public Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
       "facility": "Britannia Pool",
@@ -443,7 +472,8 @@
       "description": "Date and Time     Mon 10:00am-11:30am; 1:00pm-4:00pm; 6:30pm-8:00pm Tue 1:00pm-2:00pm; 6:30pm-8:00pm Wed 2:30pm- 4:00pm; 6:30pm-8:00pm Thu 1:00pm-4:00pm; 6:30pm-8:00pm Fri 10:00am-11:30am;",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-with-tot-pool/515454",
-      "eventItemId": 515454
+      "eventItemId": 515454,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx"
     },
     {
       "facility": "Kensington Pool",
@@ -459,7 +489,8 @@
       "description": "Date and Time   Mon: 12:30pm to 3:30pm Tue: 9am to 1:15pm, 3:30pm to 4:30pm, 7pm to 8pm Wed: 12:30pm to 3:30pm Thu: 9am to 1:15pm, 3:30pm to 4:30pm, 7pm to 8pm Fri: 10am to 3pm Sat: 2:00pm",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/600363",
-      "eventItemId": 600363
+      "eventItemId": 600363,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx"
     },
     {
       "facility": "Lord Byng Pool",
@@ -475,7 +506,8 @@
       "description": "Date and Time   Tue & Thu 10:35am-11:30am Tue & Thu 7:35pm-8:30pm Sat, Sun 2:00pm-5:00pm            Session    Winter 2025                      For  detailed admission fee and discount inf",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-1l-lengths/598231",
-      "eventItemId": 598231
+      "eventItemId": 598231,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx"
     },
     {
       "facility": "Renfrew Park Pool",
@@ -491,7 +523,8 @@
       "description": "Date & Time   M - F (1:30 PM - 3:30 PM and 8:00 PM - 9:30 PM)  Sat - Sun (2:30 PM - 5:00 PM)  Jan 11, Jan 18 and Jan 25 (2:30 PM - 4:00 PM) Feb 16 (1:00 PM - 5:00 PM)              Session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/600273",
-      "eventItemId": 600273
+      "eventItemId": 600273,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -505,7 +538,8 @@
       "type": "Public Swim",
       "activityName": "Slide",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -519,7 +553,8 @@
       "type": "Public Swim",
       "activityName": "Public Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     },
     {
       "facility": "Walnut Grove Community Centre",
@@ -532,7 +567,8 @@
       "endTime": "21:00",
       "type": "Lessons",
       "activityName": "Lessons and Limited Lap Swim",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
       "facility": "Britannia Pool",
@@ -548,7 +584,8 @@
       "description": "Date and   Mon, Wed 6:30am-10:00am; 11:30am-1:00pm Tue 6:30am-10:00am; 8:00pm-9:00pm Thu, Fri 6:30am-10:00am; 11:30am-1:00pm; 8:00pm-9:00pm Sat, Sun 5:30pm-7:00pm            Session   Jan",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/526343",
-      "eventItemId": 526343
+      "eventItemId": 526343,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -562,7 +599,8 @@
       "type": "Public Swim",
       "activityName": "Leisure Pool Only Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -576,7 +614,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "No shallow end",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2996"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -590,7 +629,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2996",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2996"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -604,7 +644,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "4 lanes",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=2336",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=2336"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -618,7 +659,8 @@
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "4 lanes",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref=3041",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3041"
     }
   ],
   "count": 42

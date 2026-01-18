@@ -12,7 +12,8 @@
       "endTime": "09:00",
       "type": "Drop-in Hockey",
       "activityName": "Early Morning Adult Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -25,7 +26,8 @@
       "endTime": "11:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -38,7 +40,8 @@
       "endTime": "13:15",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -52,7 +55,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Masters 65+ Hockey",
       "ageRange": "65+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Minoru Arenas",
@@ -65,7 +69,22 @@
       "endTime": "13:15",
       "type": "Discount Skate",
       "activityName": "Adult Toonie Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-03-08",
+      "startTime": "12:45",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -78,7 +97,8 @@
       "endTime": "15:30",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Minoru Arenas",
@@ -91,7 +111,8 @@
       "endTime": "17:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -104,7 +125,8 @@
       "endTime": "16:00",
       "type": "Family Skate",
       "activityName": "Family Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -117,8 +139,9 @@
       "endTime": "20:45",
       "type": "Drop-in Hockey",
       "activityName": "Adult Evening Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     }
   ],
-  "count": 9
+  "count": 10
 }

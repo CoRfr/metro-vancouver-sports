@@ -12,7 +12,8 @@
       "endTime": "09:00",
       "type": "Drop-in Hockey",
       "activityName": "Early Morning Adult Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -25,7 +26,8 @@
       "endTime": "11:00",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -39,7 +41,8 @@
       "type": "Family Skate",
       "activityName": "Adult & Child Toonie Skate",
       "ageRange": "0-6 yrs with adult",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Kitsilano Rink",
@@ -55,7 +58,8 @@
       "description": "Minimum Family rate is $6.00.   The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older   *Monthly Flexipass and 10-Visit passes are acc",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler-skate/590796",
-      "eventItemId": 590796
+      "eventItemId": 590796,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -68,7 +72,8 @@
       "endTime": "13:15",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -82,7 +87,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Masters 65+ Hockey",
       "ageRange": "65+",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Kitsilano Rink",
@@ -98,7 +104,8 @@
       "description": "Plastic sticks and pucks only for this session (provided). Helmets and gloves required.        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Mont",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/590797",
-      "eventItemId": 590797
+      "eventItemId": 590797,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -112,7 +119,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
+      "activityUrl": "https://www.robsonsquare.com/",
+      "scheduleUrl": "https://www.robsonsquare.com/"
     },
     {
       "facility": "Shipyards Skate Plaza",
@@ -126,7 +134,8 @@
       "type": "Public Skating",
       "activityName": "Free Public Skating",
       "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
     },
     {
       "facility": "Minoru Arenas",
@@ -139,7 +148,22 @@
       "endTime": "13:15",
       "type": "Discount Skate",
       "activityName": "Adult Toonie Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-01-18",
+      "startTime": "12:45",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Kitsilano Rink",
@@ -155,7 +179,8 @@
       "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this program",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590798",
-      "eventItemId": 590798
+      "eventItemId": 590798,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -168,7 +193,8 @@
       "endTime": "14:45",
       "type": "Family Skate",
       "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-sunday-115-245pm"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-sunday-115-245pm",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Moody Park Arena",
@@ -181,7 +207,8 @@
       "endTime": "14:45",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -194,7 +221,8 @@
       "endTime": "14:45",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -207,7 +235,8 @@
       "endTime": "15:30",
       "type": "Drop-in Hockey",
       "activityName": "Adult Stick and Puck",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -223,7 +252,8 @@
       "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/591627",
-      "eventItemId": 591627
+      "eventItemId": 591627,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -237,7 +267,8 @@
       "type": "Public Skating",
       "activityName": "Public Skate",
       "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Sunset Rink",
@@ -253,7 +284,8 @@
       "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions       Jan 11 - Mar 29, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individu",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593872",
-      "eventItemId": 593872
+      "eventItemId": 593872,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "West End Community Centre",
@@ -269,7 +301,8 @@
       "description": "The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older   *Monthly Flexipass and 10-Visit passes are accepted for this program .   For d",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler-skate/591941",
-      "eventItemId": 591941
+      "eventItemId": 591941,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     },
     {
       "facility": "Minoru Arenas",
@@ -282,7 +315,8 @@
       "endTime": "17:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Killarney Rink",
@@ -298,7 +332,8 @@
       "description": "Date & Time   Sundays, 2:15pm - 3:00pm     Sessions   Jan 4- Mar 15, 2026              Plastic sticks and pucks only for this session (provided). Helmets and gloves required.          Children un",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/593582",
-      "eventItemId": 593582
+      "eventItemId": 593582,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Trout Lake Rink",
@@ -314,7 +349,8 @@
       "description": "Date & Time   Sundays, 2:15pm-3:30pm     Sessions    Jan 4- Mar 29, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual 16 y",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593889",
-      "eventItemId": 593889
+      "eventItemId": 593889,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -327,7 +363,8 @@
       "endTime": "16:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -340,7 +377,8 @@
       "endTime": "16:00",
       "type": "Family Skate",
       "activityName": "Family Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Hillcrest Centre",
@@ -356,7 +394,8 @@
       "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/596285",
-      "eventItemId": 596285
+      "eventItemId": 596285,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx"
     },
     {
       "facility": "Killarney Rink",
@@ -372,7 +411,8 @@
       "description": "Date & Time   Sunday, 3:00-4:00pm     Sessions   Jan 4 - Mar 15. 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual 16 year",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593581",
-      "eventItemId": 593581
+      "eventItemId": 593581,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx"
     },
     {
       "facility": "Moody Park Arena",
@@ -385,7 +425,8 @@
       "endTime": "16:15",
       "type": "Drop-in Hockey",
       "activityName": "Stick, Puck & Ring",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -398,7 +439,8 @@
       "endTime": "16:00",
       "type": "Drop-in Hockey",
       "activityName": "Stick and Puck",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4"
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
       "facility": "West End Community Centre",
@@ -414,7 +456,8 @@
       "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over    *Monthly Flexipass and 10-Visit passes are accepted for this program .",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/591942",
-      "eventItemId": 591942
+      "eventItemId": 591942,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -427,7 +470,8 @@
       "endTime": "16:45",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-karen-magnussen-sunday-315pm-445pm"
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-karen-magnussen-sunday-315pm-445pm",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Sunset Rink",
@@ -443,7 +487,8 @@
       "description": "Date & Time   Sundays, 4:30pm -5:30pm     Sessions   Jan 11- Mar 29, 2026               Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has a limited",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/593874",
-      "eventItemId": 593874
+      "eventItemId": 593874,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx"
     },
     {
       "facility": "Kerrisdale Cyclone Taylor Arena",
@@ -459,7 +504,8 @@
       "description": "Open Skate for all ages          Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this prog",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590773",
-      "eventItemId": 590773
+      "eventItemId": 590773,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -472,7 +518,8 @@
       "endTime": "20:45",
       "type": "Drop-in Hockey",
       "activityName": "Adult Evening Hockey",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -485,7 +532,8 @@
       "endTime": "21:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
+      "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -499,7 +547,8 @@
       "type": "Drop-in Hockey",
       "activityName": "Adult Hockey",
       "ageRange": "19 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
+      "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Moody Park Arena",
@@ -512,8 +561,9 @@
       "endTime": "21:30",
       "type": "Public Skating",
       "activityName": "Adult Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 36
+  "count": 37
 }

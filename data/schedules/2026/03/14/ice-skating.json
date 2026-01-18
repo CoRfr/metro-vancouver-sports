@@ -15,7 +15,8 @@
       "description": "For those 19 years and older. Hockey helmet and gloves are required.  This is a session for individual practice only with no scrimmage, bring your own equipment. Skate rentals are not available.  All",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---stick-puck-ring---saturday-4-00pm/592364",
-      "eventItemId": 592364
+      "eventItemId": 592364,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     },
     {
       "facility": "West End Community Centre",
@@ -31,7 +32,8 @@
       "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/west-end-arena---public-hockey---saturday-10-15pm/592375",
-      "eventItemId": 592375
+      "eventItemId": 592375,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx"
     }
   ],
   "count": 2

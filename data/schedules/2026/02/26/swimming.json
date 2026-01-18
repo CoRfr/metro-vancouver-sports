@@ -15,7 +15,8 @@
       "description": "Shallow aquafit   This 50-minute Aquafit class is imbedded in a 90-minute Swim Session. Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise com",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/598870",
-      "eventItemId": 598870
+      "eventItemId": 598870,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -31,7 +32,8 @@
       "description": "This 55-minute Deep Water Aquafit class runs in the dive tank.     Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm u",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/599149",
-      "eventItemId": 599149
+      "eventItemId": 599149,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx"
     },
     {
       "facility": "Kensington Pool",
@@ -47,7 +49,8 @@
       "description": "A gentle, no impact water workout to enhance joint mobility. Participants will receive instruction to move the joint through flexion, extension, and rotation in a controlled manner. Designed for par",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---range-of-motion/597518",
-      "eventItemId": 597518
+      "eventItemId": 597518,
+      "scheduleUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx"
     }
   ],
   "count": 3
