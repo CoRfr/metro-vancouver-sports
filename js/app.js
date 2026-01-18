@@ -1888,16 +1888,26 @@ function initMap() {
             const facilityKey = facility.facility.replace(/[^a-zA-Z0-9]/g, '-');
             // Link facility name to city's facility info page
             const facilityInfoUrl = facility.sessions[0]?.facilityUrl || '';
-            const facilityName = facilityInfoUrl
+            const facilityNameLink = facilityInfoUrl
                 ? `<a href="${facilityInfoUrl}" target="_blank">${facility.facility}</a>`
                 : facility.facility;
             const scheduleLink = scheduleUrl
                 ? `<a href="${scheduleUrl}" target="_blank">View ↗</a>`
                 : '-';
 
+            // Calculate distance if user location is available
+            let distanceText = '';
+            if (userLocation && facility.lat && facility.lng) {
+                const dist = calculateDistance(userLocation.lat, userLocation.lng, facility.lat, facility.lng);
+                distanceText = `, ${dist.toFixed(1)}km`;
+            }
+
+            // Format: "Facility Name (City, Xkm)"
+            const facilityDisplay = `${facilityNameLink} <span style="color: var(--text-muted); font-size: 0.85em;">(${facility.city}${distanceText})</span>`;
+
             tableHTML += `
                 <tr data-facility="${facilityKey}">
-                    <td><span class="city-dot" style="background: ${color};"></span>${facilityName}</td>
+                    <td><span class="city-dot" style="background: ${color};"></span>${facilityDisplay}</td>
                     <td>${facility.sessions.length}</td>
                     <td>${scheduleLink}</td>
                 </tr>
