@@ -74,7 +74,7 @@
       "type": "Skating",
       "activityName": "Recreational Ringette",
       "ageRange": "18 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -161,7 +161,7 @@
       "type": "Hockey",
       "activityName": "Recreational Hockey",
       "ageRange": "18 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -429,7 +429,7 @@
       "activityName": "Public Skate",
       "ageRange": "All ages",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -499,7 +499,7 @@
       "type": "Family Hockey",
       "activityName": "Family Hockey & Ringette",
       "ageRange": "6-12 yrs with adult",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
     },
     {

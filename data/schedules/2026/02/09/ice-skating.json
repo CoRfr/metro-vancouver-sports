@@ -41,8 +41,8 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=3046"
     },
     {
       "facility": "Sunset Rink",
@@ -73,7 +73,7 @@
       "type": "Hockey",
       "activityName": "Recreational Hockey",
       "ageRange": "50 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -131,7 +131,7 @@
       "type": "Skating",
       "activityName": "Shoot & Score",
       "ageRange": "18 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
@@ -212,8 +212,8 @@
       "type": "Public Skating",
       "activityName": "Toonie Skate",
       "ageRange": "All ages",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=3046"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -328,8 +328,8 @@
       "type": "Family Skate",
       "activityName": "Parent & Tot Skate",
       "ageRange": "2-5 yrs with adult, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -417,8 +417,8 @@
       "type": "Family Skate",
       "activityName": "Family Skate",
       "ageRange": "Children with adult 16 yrs+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=3046",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=3046"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=3046",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=3046"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -432,8 +432,8 @@
       "type": "Skating",
       "activityName": "Lap Skate",
       "ageRange": "8 yrs+, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
