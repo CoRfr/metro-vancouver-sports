@@ -22,9 +22,16 @@ function findSwimmingFacilityByName(name) {
 }
 
 /**
+ * Generate ActiveNet calendar URL for a specific swimming facility
+ */
+function getSwimmingScheduleUrl(centerId) {
+  return `https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=${centerId}`;
+}
+
+/**
  * Parse a Vancouver swimming API event into a session
  */
-function parseVancouverSwimmingEvent(event, facilityInfo) {
+function parseVancouverSwimmingEvent(event, facilityInfo, centerId) {
   if (!event.start_time || !event.end_time) return null;
 
   // Parse datetime (format: "2026-01-12 11:15:00")
@@ -42,6 +49,9 @@ function parseVancouverSwimmingEvent(event, facilityInfo) {
     ageRange = ageMatch[1];
   }
 
+  // Generate dynamic schedule URL with specific locationId and swimming calendar ID
+  const scheduleUrl = centerId ? getSwimmingScheduleUrl(centerId) : (facilityInfo.scheduleUrl || '');
+
   return {
     facility: facilityInfo.name,
     city: 'Vancouver',
@@ -57,7 +67,7 @@ function parseVancouverSwimmingEvent(event, facilityInfo) {
     ageRange,
     activityUrl: event.activity_detail_url || '',
     eventItemId: event.event_item_id,
-    scheduleUrl: facilityInfo.scheduleUrl || '',
+    scheduleUrl,
   };
 }
 
@@ -181,7 +191,7 @@ async function scrapeVancouverSwimming(page) {
             continue;
           }
 
-          const session = parseVancouverSwimmingEvent(event, facilityInfo);
+          const session = parseVancouverSwimmingEvent(event, facilityInfo, center.center_id);
           if (session) {
             allSessions.push(session);
             addedCount++;

@@ -22,9 +22,16 @@ function findFacilityByName(name) {
 }
 
 /**
+ * Generate ActiveNet calendar URL for a specific facility
+ */
+function getVancouverScheduleUrl(centerId, calendarId = 3) {
+  return `https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=${calendarId}&locationId=${centerId}`;
+}
+
+/**
  * Parse a Vancouver API event into a session
  */
-function parseVancouverEvent(event, facilityInfo) {
+function parseVancouverEvent(event, facilityInfo, centerId) {
   if (!event.start_time || !event.end_time) return null;
 
   // Parse datetime (format: "2026-01-12 11:15:00")
@@ -42,6 +49,9 @@ function parseVancouverEvent(event, facilityInfo) {
     ageRange = ageMatch[1];
   }
 
+  // Generate dynamic schedule URL with specific locationId
+  const scheduleUrl = centerId ? getVancouverScheduleUrl(centerId) : (facilityInfo.scheduleUrl || '');
+
   return {
     facility: facilityInfo.name,
     city: 'Vancouver',
@@ -57,7 +67,7 @@ function parseVancouverEvent(event, facilityInfo) {
     ageRange,
     activityUrl: event.activity_detail_url || '',
     eventItemId: event.event_item_id,
-    scheduleUrl: facilityInfo.scheduleUrl || '',
+    scheduleUrl,
   };
 }
 
@@ -117,7 +127,7 @@ async function scrapeVancouver(page) {
             seenEventIds.add(event.event_item_id);
           }
 
-          const session = parseVancouverEvent(event, facilityInfo);
+          const session = parseVancouverEvent(event, facilityInfo, center.center_id);
           if (session) {
             allSessions.push(session);
             addedCount++;
@@ -141,4 +151,5 @@ module.exports = {
   scrapeVancouver,
   parseVancouverEvent,
   findFacilityByName,
+  getVancouverScheduleUrl,
 };
