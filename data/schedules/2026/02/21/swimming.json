@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-21",
+  "sessions": [
+    {
+      "facility": "Kensington Pool",
+      "city": "Vancouver",
+      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
+      "lat": 49.239,
+      "lng": -123.0758,
+      "date": "2026-02-21",
+      "startTime": "09:15",
+      "endTime": "10:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Moderate",
+      "description": "This Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down components,",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/597507",
+      "eventItemId": 597507
+    }
+  ],
+  "count": 1
+}

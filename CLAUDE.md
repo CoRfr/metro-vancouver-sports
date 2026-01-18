@@ -69,6 +69,44 @@ The Burnaby website displays repeating weekly schedules with "Effective January 
 
 ---
 
+### Burnaby Swimming (Dynamic Table Scraping)
+
+**Method:** Dynamic scraping of HTML tables from burnaby.ca
+
+**URL Pattern:** `https://www.burnaby.ca/recreation-and-arts/programs-and-activities/daily-activities?activity_tid=651&location_ref={locationRef}`
+
+**Burnaby Swimming Facilities:**
+| Facility | Address | Location Ref |
+|----------|---------|--------------|
+| Bonsor Recreation Complex | 6550 Bonsor Ave, Burnaby | 2996 |
+| Edmonds Community Centre | 7433 Edmonds St, Burnaby | 2336 |
+| Eileen Dailly Leisure Pool | 240 Willingdon Ave, Burnaby | 3041 |
+
+**How it works:**
+1. Load the daily activities page for each pool (activity_tid=651 for swimming)
+2. Find the schedule table with class `site-table--no-border`
+3. Parse day headers (Monday, Tuesday, etc.) to determine column mapping
+4. For each data cell, extract:
+   - Activity name from `<strong>` or `<b>` tag
+   - Time from the text (patterns like "6-8:55 am", "10 am-1 pm")
+   - Notes/age range from `<em>` tag
+5. Expand weekly patterns to 30 days of sessions
+
+**Table Structure:**
+```html
+<table class="site-table--no-border">
+  <tr><th colspan="7">Effective January 5-March 15</th></tr>
+  <tr><th>Monday</th><th>Tuesday</th>...</tr>
+  <tr>
+    <td><strong>Lap Swim</strong><br>6-8:55 am</td>
+    <td><strong>Aquafit</strong><br>9-10 am<br><em>Reserve</em></td>
+    ...
+  </tr>
+</table>
+```
+
+---
+
 ### Richmond (Hardcoded Weekly Pattern)
 
 **Method:** Hardcoded weekly schedules from richmond.ca PDFs
@@ -307,6 +345,19 @@ node puppeteer-scraper.js --city vancouver,outdoor --output ../data/schedules.js
 # Debug mode (show browser)
 node puppeteer-scraper.js --debug --output ../data/schedules.json
 ```
+
+---
+
+## Local Testing
+
+To test the frontend locally:
+
+```bash
+# From project root
+./serve.sh
+```
+
+This starts a Python HTTP server on port 8080. Open http://localhost:8080 in your browser.
 
 ---
 

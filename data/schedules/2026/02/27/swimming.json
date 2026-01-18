@@ -2,11 +2,11 @@
   "date": "2026-02-27",
   "sessions": [
     {
-      "facility": "Hillcrest Centre",
+      "facility": "Vancouver Aquatic Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
       "date": "2026-02-27",
       "startTime": "09:20",
       "endTime": "10:15",
@@ -16,7 +16,23 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/599156",
       "eventItemId": 599156
+    },
+    {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-02-27",
+      "startTime": "14:00",
+      "endTime": "14:55",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Moderate",
+      "description": "Shallow aquafit   This 60-minute Aquafit class is imbedded in a 90-minute Swim Session. Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise com",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/598872",
+      "eventItemId": 598872
     }
   ],
-  "count": 1
+  "count": 2
 }

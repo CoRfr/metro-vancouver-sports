@@ -61,6 +61,42 @@ function parseVancouverSwimmingEvent(event, facilityInfo) {
 }
 
 /**
+ * Check if a facility is closed by fetching its info page
+ */
+async function checkFacilityClosure(page, facility) {
+  if (!facility.closureCheckUrl) return false;
+
+  try {
+    const response = await page.goto(facility.closureCheckUrl, {
+      waitUntil: 'domcontentloaded',
+      timeout: 15000,
+    });
+
+    const content = await page.content();
+    const lowerContent = content.toLowerCase();
+
+    // Check for closure indicators
+    const closurePatterns = [
+      'closed until further notice',
+      'pool closure',
+      'temporarily closed',
+      'is closed',
+      'currently closed',
+    ];
+
+    for (const pattern of closurePatterns) {
+      if (lowerContent.includes(pattern)) {
+        return true;
+      }
+    }
+  } catch (e) {
+    console.error(`    Could not check closure for ${facility.name}: ${e.message}`);
+  }
+
+  return false;
+}
+
+/**
  * Scrape Vancouver swimming by intercepting the calendar API
  * Uses calendar ID 55 (vs 3 for skating)
  */
@@ -69,6 +105,21 @@ async function scrapeVancouverSwimming(page) {
 
   const allSessions = [];
   const seenEventIds = new Set();
+  const closedFacilities = new Set();
+
+  // Check for facility closures first
+  for (const [id, facility] of Object.entries(CONFIG.vancouverSwimming.facilities)) {
+    if (facility.closureCheckUrl) {
+      console.error(`  Checking closure status for ${facility.name}...`);
+      const isClosed = await checkFacilityClosure(page, facility);
+      if (isClosed) {
+        console.error(`    ${facility.name}: CLOSED (from website)`);
+        closedFacilities.add(parseInt(id));
+      } else {
+        console.error(`    ${facility.name}: Open`);
+      }
+    }
+  }
 
   const calendarUrl = CONFIG.vancouverSwimming.calendarUrl;
 
@@ -103,6 +154,12 @@ async function scrapeVancouverSwimming(page) {
 
         if (!facilityInfo) {
           console.error(`    Unknown pool: ${center.center_name} (ID: ${center.center_id})`);
+          continue;
+        }
+
+        // Skip closed facilities (checked dynamically)
+        if (closedFacilities.has(center.center_id)) {
+          console.error(`    ${facilityInfo.name}: CLOSED - skipping`);
           continue;
         }
 

@@ -16,6 +16,7 @@ const { getOutdoorRinks } = require('./outdoor');
 
 // Swimming scrapers
 const { scrapeVancouverSwimming } = require('./vancouver-swimming');
+const { scrapeBurnabySwimming } = require('./burnaby-swimming');
 
 module.exports = {
   // Skating
@@ -31,5 +32,6 @@ module.exports = {
   getOutdoorRinks,
   // Swimming
   scrapeVancouverSwimming,
+  scrapeBurnabySwimming,
   scrapeLangleySwimming,
 };

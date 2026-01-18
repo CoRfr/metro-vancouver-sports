@@ -2,11 +2,11 @@
   "date": "2026-03-04",
   "sessions": [
     {
-      "facility": "Hillcrest Centre",
+      "facility": "Vancouver Aquatic Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
       "date": "2026-03-04",
       "startTime": "09:20",
       "endTime": "10:15",

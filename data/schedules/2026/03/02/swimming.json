@@ -2,11 +2,11 @@
   "date": "2026-03-02",
   "sessions": [
     {
-      "facility": "Hillcrest Centre",
+      "facility": "Vancouver Aquatic Centre",
       "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
       "date": "2026-03-02",
       "startTime": "09:20",
       "endTime": "10:15",
@@ -16,7 +16,23 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/599132",
       "eventItemId": 599132
+    },
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-03-02",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Deep",
+      "description": "This 60-minute  Deep Water Aquafit class runs in the 25m deep pool.    Aquafit  is a moderately paced and energizing class that utilizes water resistance for a  variety of exercise combinations with w",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep/597994",
+      "eventItemId": 597994
     }
   ],
-  "count": 1
+  "count": 2
 }

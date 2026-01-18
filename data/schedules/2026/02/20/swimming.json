@@ -1,0 +1,22 @@
+{
+  "date": "2026-02-20",
+  "sessions": [
+    {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-02-20",
+      "startTime": "14:00",
+      "endTime": "14:55",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Moderate",
+      "description": "Shallow aquafit   This 60-minute Aquafit class is imbedded in a 90-minute Swim Session. Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise com",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/598574",
+      "eventItemId": 598574
+    }
+  ],
+  "count": 1
+}

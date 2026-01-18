@@ -25,8 +25,8 @@ const SPORTS_CONFIG = {
             { id: 'activityPublicSwim', value: 'Public Swim', label: 'Public Swim', checked: true },
             { id: 'activityLap', value: 'Lap Swim', label: 'Lap Swim', checked: true },
             { id: 'activityFamilySwim', value: 'Family Swim', label: 'Family Swim', checked: true },
-            { id: 'activityAdultSwim', value: 'Adult Swim', label: 'Adult Swim', checked: false },
-            { id: 'activityAquafit', value: 'Aquafit', label: 'Aquafit', checked: false },
+            { id: 'activityAdultSwim', value: 'Adult Swim', label: 'Adult Swim', checked: true },
+            { id: 'activityAquafit', value: 'Aquafit', label: 'Aquafit', checked: true },
             { id: 'activitySwimLessons', value: 'Lessons', label: 'Lessons', checked: false },
         ]
     }
@@ -217,9 +217,10 @@ function getCacheBuster() {
     return Math.floor(Date.now() / 3600000);
 }
 
-// Load the index.json with metadata
+// Load the sport-specific index file with metadata
 async function loadScheduleIndex() {
-    const response = await fetch(`${SCHEDULES_BASE}/index.json?v=${getCacheBuster()}`);
+    const sportFile = getSportFilename();
+    const response = await fetch(`${SCHEDULES_BASE}/index-${sportFile}.json?v=${getCacheBuster()}`);
     if (!response.ok) throw new Error(`Failed to load index: ${response.status}`);
     return await response.json();
 }
@@ -325,11 +326,15 @@ function getRelativeTimeString(date) {
     return date.toLocaleDateString();
 }
 
-// Rebuild allSessions from loaded days
+// Rebuild allSessions from loaded days (only for current sport)
 function rebuildAllSessions() {
     allSessions = [];
-    for (const [dateStr, sessions] of loadedDays) {
-        allSessions.push(...sessions);
+    const prefix = `${currentSport}:`;
+    for (const [cacheKey, sessions] of loadedDays) {
+        // Only include sessions for the current sport
+        if (cacheKey.startsWith(prefix)) {
+            allSessions.push(...sessions);
+        }
     }
 }
 
@@ -573,14 +578,15 @@ async function geocodePostalCode(postalCode) {
     if (cleanedCode.length < 6) return null;
 
     try {
+        // Use geocoder.ca for Canadian postal codes
         const response = await fetch(
-            `https://nominatim.openstreetmap.org/search?postalcode=${cleanedCode}&country=Canada&format=json&limit=1`
+            `https://geocoder.ca/${cleanedCode}?json=1`
         );
         const data = await response.json();
-        if (data && data.length > 0) {
+        if (data && data.latt && data.longt) {
             return {
-                lat: parseFloat(data[0].lat),
-                lng: parseFloat(data[0].lon)
+                lat: parseFloat(data.latt),
+                lng: parseFloat(data.longt)
             };
         }
     } catch (error) {
@@ -595,6 +601,7 @@ async function handlePostalCodeChange() {
         userLocation = null;
         updateFacilityFilter();
         filterSessions();
+        saveSettings();
         return;
     }
 
@@ -606,6 +613,7 @@ async function handlePostalCodeChange() {
     }
     updateFacilityFilter(); // Re-sort facilities by distance
     filterSessions();
+    saveSettings(); // Save userLocation to localStorage
 }
 
 async function reverseGeocode(lat, lng) {
@@ -636,7 +644,7 @@ async function useCurrentLocation() {
         async (position) => {
             const lat = position.coords.latitude;
             const lng = position.coords.longitude;
-            
+
             userLocation = { lat, lng };
 
             const postalCode = await reverseGeocode(lat, lng);
@@ -646,13 +654,14 @@ async function useCurrentLocation() {
 
             updateFacilityFilter(); // Re-sort facilities by distance
             filterSessions();
-            useLocationBtn.textContent = '📍 Use My Location';
+            saveSettings(); // Save userLocation to localStorage
+            useLocationBtn.textContent = '📍 Locate';
             useLocationBtn.disabled = false;
         },
         (error) => {
             console.error('Geolocation error:', error);
             alert('Unable to get your location. Please enter your postal code manually.');
-            useLocationBtn.textContent = '📍 Use My Location';
+            useLocationBtn.textContent = '📍 Locate';
             useLocationBtn.disabled = false;
         }
     );
@@ -934,7 +943,6 @@ function renderDayView() {
     if (daySessions.length === 0) {
         html += `
             <div class="no-sessions-message">
-                <div class="icon">⛸️</div>
                 <div>No sessions scheduled for this day</div>
                 <div style="margin-top: 10px; font-size: 0.9rem;">Try selecting different filters or another date</div>
             </div>
@@ -1421,6 +1429,7 @@ sportFilter.querySelectorAll('.dropdown-single-item:not(.disabled)').forEach(ite
         sportFilter.classList.remove('open');
         updateSportTheme();
         updateActivityFilters();
+        saveSettings(); // Save sport selection
         fetchRealData();
     });
 });
@@ -1450,6 +1459,17 @@ const STORAGE_KEY = 'skatingScheduleSettings';
 function saveSettings() {
     const selectedCities = Array.from(cityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
     const selectedFacilities = Array.from(facilityFilter.querySelectorAll('input:checked')).map(cb => cb.value);
+
+    // Load existing activity types to preserve other sport's settings
+    const existingSettings = loadSettings() || {};
+    const existingActivityTypes = existingSettings.activityTypes || {};
+
+    // Save activity types per-sport
+    const activityTypes = {
+        ...existingActivityTypes,
+        [currentSport]: getSelectedActivityTypes()
+    };
+
     const settings = {
         postalCode: postalCodeInput.value,
         userLocation: userLocation,
@@ -1457,8 +1477,10 @@ function saveSettings() {
         facilities: selectedFacilities,
         distance: distanceFilter.value,
         viewMode: viewMode,
-        activityTypes: getSelectedActivityTypes(),
-        darkMode: document.body.classList.contains('dark-mode')
+        activityTypes: activityTypes,
+        currentSport: currentSport,
+        darkMode: document.body.classList.contains('dark-mode'),
+        darkModeExplicit: window._darkModeExplicit || false
     };
     try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
@@ -1480,6 +1502,24 @@ function loadSettings() {
 
 function applySettings(settings) {
     if (!settings) return;
+
+    // Apply sport selection first (before other settings that depend on it)
+    if (settings.currentSport && SPORTS_CONFIG[settings.currentSport]) {
+        currentSport = settings.currentSport;
+        // Update sport dropdown UI
+        const sportItems = sportFilter.querySelectorAll('.dropdown-single-item');
+        sportItems.forEach(item => {
+            item.classList.toggle('selected', item.dataset.value === currentSport);
+        });
+        const selectedItem = sportFilter.querySelector(`.dropdown-single-item[data-value="${currentSport}"]`);
+        if (selectedItem) {
+            const trigger = sportFilter.querySelector('.dropdown-single-trigger');
+            trigger.innerHTML = `
+                <span class="sport-icon">${selectedItem.querySelector('.sport-icon').textContent}</span>
+                <span>${selectedItem.querySelector('span:nth-child(2)').textContent}</span>
+            `;
+        }
+    }
 
     // Apply location (prevent triggering geocode)
     isRestoringSettings = true;
@@ -1511,13 +1551,29 @@ function applySettings(settings) {
     }
 
     // Apply dark mode
-    if (settings.darkMode) {
-        document.body.classList.add('dark-mode');
+    if (settings.darkModeExplicit) {
+        // User explicitly set dark mode preference
+        window._darkModeExplicit = true;
+        if (settings.darkMode) {
+            document.body.classList.add('dark-mode');
+        }
+    } else {
+        // No explicit preference - use time-based default
+        // Dark mode: 8 PM (20:00) to 6 AM (06:00)
+        const hour = new Date().getHours();
+        const shouldBeDark = hour >= 20 || hour < 6;
+        if (shouldBeDark) {
+            document.body.classList.add('dark-mode');
+        }
     }
 }
 
 function applySavedActivityTypes() {
-    const saved = window._savedActivityTypes;
+    const savedAllSports = window._savedActivityTypes;
+    if (!savedAllSports) return;
+
+    // Get saved types for the current sport (supports both old flat format and new per-sport format)
+    const saved = Array.isArray(savedAllSports) ? savedAllSports : savedAllSports[currentSport];
     if (!saved) return;
 
     const checkboxes = activityFiltersContainer.querySelectorAll('input[type="checkbox"]:not([data-all="true"])');
@@ -1613,9 +1669,16 @@ function initMap() {
     // Center on Metro Vancouver
     facilityMap = L.map('facilityMap').setView([49.25, -123.1], 11);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(facilityMap);
+    // Use dark tiles in dark mode
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    const tileUrl = isDarkMode
+        ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+        : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const attribution = isDarkMode
+        ? '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> © <a href="https://carto.com/attributions">CARTO</a>'
+        : '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+    L.tileLayer(tileUrl, { attribution }).addTo(facilityMap);
 
     // Update map title with session count
     const mapTitle = document.getElementById('mapTitle');
@@ -1812,6 +1875,7 @@ mapPanelHeader.addEventListener('click', toggleMapPanel);
 const darkModeToggle = document.getElementById('darkModeToggle');
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+    window._darkModeExplicit = true; // User explicitly set preference
     saveSettings();
 }
 darkModeToggle.addEventListener('click', toggleDarkMode);
@@ -1819,7 +1883,30 @@ darkModeToggle.addEventListener('click', toggleDarkMode);
 // Initialize app
 const savedSettings = loadSettings();
 applySettings(savedSettings);
+
+// If no saved settings, apply time-based dark mode default
+if (!savedSettings) {
+    const hour = new Date().getHours();
+    const shouldBeDark = hour >= 20 || hour < 6;
+    if (shouldBeDark) {
+        document.body.classList.add('dark-mode');
+    }
+}
+
 updateSportTheme();      // Set sport-themed background
 updateActivityFilters(); // Set up activity filters for current sport
 renderCalendar();        // Render empty calendar immediately
+
+// If we have a postal code but no userLocation, geocode it
+if (postalCodeInput.value && !userLocation) {
+    geocodePostalCode(postalCodeInput.value).then(coords => {
+        if (coords) {
+            userLocation = coords;
+            updateFacilityFilter();
+            filterSessions();
+            saveSettings();
+        }
+    });
+}
+
 fetchRealData();         // Then fetch data

@@ -32,6 +32,10 @@ body.dark-mode.sport-skating {
     --sport-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
 }
 
+body.dark-mode.sport-swimming {
+    --sport-gradient: linear-gradient(135deg, #0d2137 0%, #0a3d62 50%, #1e3a5f 100%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1177,6 +1181,11 @@ select:focus, input[type="text"]:focus {
 .legend-dot.langley { background: #455a64; }
 .legend-dot.outdoor { background: #ef6c00; }
 
+/* Hide skating-only elements when not in skating mode */
+body.sport-swimming .skating-only {
+    display: none;
+}
+
 /* Hover highlight styles */
 .timeline-event.highlighted {
     box-shadow: 0 0 0 3px #ffd700, 0 4px 15px rgba(255, 215, 0, 0.5) !important;
@@ -1269,6 +1278,161 @@ select:focus, input[type="text"]:focus {
     width: 16px;
     height: 16px;
     accent-color: white;
+}
+
+/* Dark mode specific overrides */
+body.dark-mode .day-picker-days {
+    background: #2d2d2d;
+}
+
+body.dark-mode .day-picker-days button {
+    background: transparent;
+}
+
+body.dark-mode .day-picker-days button:hover {
+    background: #3d3d3d;
+}
+
+body.dark-mode .day-picker-days button.selected {
+    background: #3d3d3d;
+}
+
+body.dark-mode .day-picker-days button.is-weekend {
+    background: rgba(102, 126, 234, 0.15);
+}
+
+body.dark-mode .day-picker-days button.is-weekend.selected {
+    background: rgba(102, 126, 234, 0.25);
+}
+
+body.dark-mode .view-toggle {
+    background: #2d2d2d;
+}
+
+body.dark-mode .view-toggle button {
+    color: #a0a0a0;
+}
+
+body.dark-mode .timeline-hours {
+    background: #252525;
+}
+
+body.dark-mode .timeline-hour-line {
+    border-bottom-color: #353535;
+}
+
+body.dark-mode .timeline-event {
+    color: #e0e0e0;
+    opacity: 0.9;
+}
+
+body.dark-mode .timeline-event.public {
+    background: linear-gradient(135deg, #1a3a5c 0%, #234567 100%);
+    border-left-color: #4a9eff;
+}
+
+body.dark-mode .timeline-event.family {
+    background: linear-gradient(135deg, #3d2a4d 0%, #4a3560 100%);
+    border-left-color: #b388ff;
+}
+
+body.dark-mode .timeline-event.hockey {
+    background: linear-gradient(135deg, #4a3520 0%, #5c4428 100%);
+    border-left-color: #ffb74d;
+}
+
+body.dark-mode .timeline-event.figure {
+    background: linear-gradient(135deg, #4a2a3d 0%, #5c3548 100%);
+    border-left-color: #ff80ab;
+}
+
+body.dark-mode .timeline-event.discount {
+    background: linear-gradient(135deg, #1e3d2a 0%, #2a4d38 100%);
+    border-left-color: #69f0ae;
+}
+
+body.dark-mode .timeline-event.public-swim {
+    background: linear-gradient(135deg, #1a3d4d 0%, #234d5c 100%);
+    border-left-color: #4dd0e1;
+}
+
+body.dark-mode .timeline-event.lap-swim {
+    background: linear-gradient(135deg, #2a2a4d 0%, #35356d 100%);
+    border-left-color: #7986cb;
+}
+
+body.dark-mode .timeline-event.family-swim {
+    background: linear-gradient(135deg, #3d2a4d 0%, #4a3560 100%);
+    border-left-color: #b388ff;
+}
+
+body.dark-mode .timeline-event.adult-swim {
+    background: linear-gradient(135deg, #4d4020 0%, #5c4d28 100%);
+    border-left-color: #ffd54f;
+}
+
+body.dark-mode .timeline-event.aquafit {
+    background: linear-gradient(135deg, #1e3d2a 0%, #2a4d38 100%);
+    border-left-color: #81c784;
+}
+
+body.dark-mode .timeline-event.swim-lessons {
+    background: linear-gradient(135deg, #4a2a3d 0%, #5c3548 100%);
+    border-left-color: #f48fb1;
+}
+
+body.dark-mode .timeline-event-location {
+    color: #a0a0a0;
+}
+
+body.dark-mode .timeline-event-city {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .calendar-day.today {
+    background: #2a2a40;
+}
+
+body.dark-mode .dropdown-multi-item .item-city {
+    background: #3d3d3d;
+    color: #c0c0c0;
+}
+
+body.dark-mode .dropdown-multi-item .item-distance {
+    color: #a0a0a0;
+}
+
+body.dark-mode .coming-soon {
+    background: #3d3d3d;
+    color: #a0a0a0;
+}
+
+body.dark-mode select {
+    color: var(--text-primary);
+}
+
+body.dark-mode input[type="text"] {
+    color: var(--text-primary);
+}
+
+body.dark-mode input[type="date"] {
+    color: var(--text-primary);
+    color-scheme: dark;
+}
+
+body.dark-mode .day-picker button.nav-btn {
+    color: var(--text-primary);
+    border-color: var(--border-color);
+    background: var(--bg-secondary);
+}
+
+body.dark-mode .day-picker button.nav-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+body.dark-mode .dropdown-multi-item span {
+    color: var(--text-primary);
 }
 
 /* Dark mode toggle */

@@ -37,6 +37,7 @@ const {
   scrapeLangleySkating,
   getOutdoorRinks,
   scrapeVancouverSwimming,
+  scrapeBurnabySwimming,
   scrapeLangleySwimming,
 } = require('./scrapers');
 
@@ -248,7 +249,7 @@ async function scrapeAll(options = {}) {
  * @param {Object} options - { debug, cities: ['vancouver'] }
  */
 async function scrapeSwimming(options = {}) {
-  const { debug = false, cities = ['vancouver', 'langley'] } = options;
+  const { debug = false, cities = ['vancouver', 'burnaby', 'langley'] } = options;
 
   let browser;
   const allSessions = [];
@@ -262,6 +263,18 @@ async function scrapeSwimming(options = {}) {
     if (cities.includes('vancouver')) {
       const vancouverSessions = await scrapeVancouverSwimming(page);
       for (const session of vancouverSessions) {
+        const key = `${session.facility}-${session.date}-${session.startTime}`;
+        if (!seenKeys.has(key)) {
+          seenKeys.add(key);
+          allSessions.push(session);
+        }
+      }
+    }
+
+    // Scrape Burnaby Swimming via HTML tables
+    if (cities.includes('burnaby')) {
+      const burnabySessions = await scrapeBurnabySwimming(browser);
+      for (const session of burnabySessions) {
         const key = `${session.facility}-${session.date}-${session.startTime}`;
         if (!seenKeys.has(key)) {
           seenKeys.add(key);
@@ -333,7 +346,7 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
     fs.writeFileSync(filePath, JSON.stringify(dayData, null, 2));
   }
 
-  // Write index file with metadata
+  // Write sport-specific index file with metadata
   const indexData = {
     success: true,
     lastUpdated: result.lastUpdated,
@@ -344,7 +357,8 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
     },
     dates: dates,
   };
-  fs.writeFileSync(path.join(outputDir, 'index.json'), JSON.stringify(indexData, null, 2));
+  const indexFilename = `index-${sport}.json`;
+  fs.writeFileSync(path.join(outputDir, indexFilename), JSON.stringify(indexData, null, 2));
 
   // Print summary
   console.error(`\n  Schedule Summary:`);
@@ -391,7 +405,7 @@ async function main() {
     }
   }
   const defaultSkatingCities = ['vancouver', 'burnaby', 'richmond', 'poco', 'coquitlam', 'northvan', 'westvan', 'newwest', 'langley', 'outdoor'];
-  const defaultSwimmingCities = ['vancouver', 'langley'];
+  const defaultSwimmingCities = ['vancouver', 'burnaby', 'langley'];
   const cities = cityArgs.length > 0 ? cityArgs : (sport === 'swimming' ? defaultSwimmingCities : defaultSkatingCities);
 
   console.error('Metro Vancouver Sports Schedule Scraper');

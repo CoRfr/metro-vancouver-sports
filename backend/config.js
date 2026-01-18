@@ -39,32 +39,33 @@ const CONFIG = {
   // Vancouver swimming calendar config - uses ActiveNet API (calendar ID 55)
   vancouverSwimming: {
     // Calendar ID 55 for swimming (vs 3 for skating)
-    // Location IDs: 1=Britannia, 2=Hillcrest, 3=Kensington, 4=Killarney, 5=Templeton, 6=VAC, 7=Kitsilano, 8=Second Beach
-    calendarUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=1,2,3,4,5,6,7,8&displayType=0&view=1',
+    // Location IDs verified from API: 2=VAC, 10=Lord Byng, 34=Kerrisdale, 36=Killarney, 37=Britannia, 45=Templeton, 47=Renfrew, 56=Kensington, 59=Hillcrest
+    calendarUrl: 'https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2,10,34,36,37,45,47,56,59&displayType=0&view=1',
     apiPattern: '/rest/onlinecalendar/multicenter/events',
     facilities: {
-      // Map center_id to facility info (IDs need to be verified from API response)
-      1: { name: 'Britannia Pool', lat: 49.27540, lng: -123.07190, address: '1661 Napier St, Vancouver, BC V5L 4X4' },
-      2: { name: 'Hillcrest Centre', lat: 49.24407, lng: -123.10781, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
-      3: { name: 'Kensington Pool', lat: 49.23900, lng: -123.07580, address: '5175 Dumfries St, Vancouver, BC V5P 3A3' },
-      4: { name: 'Killarney Pool', lat: 49.22673, lng: -123.04345, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
-      5: { name: 'Templeton Pool', lat: 49.28180, lng: -123.05140, address: '700 Templeton Dr, Vancouver, BC V5L 4N8' },
-      6: { name: 'Vancouver Aquatic Centre', lat: 49.27770, lng: -123.13940, address: '1050 Beach Ave, Vancouver, BC V6E 1T7' },
-      7: { name: 'Kitsilano Pool', lat: 49.27340, lng: -123.15420, address: '2305 Cornwall Ave, Vancouver, BC V6K 1B7', seasonal: true },
-      8: { name: 'Second Beach Pool', lat: 49.29070, lng: -123.14540, address: 'Stanley Park, Vancouver, BC V6G 3E2', seasonal: true },
+      // Map center_id to facility info (verified from API response)
+      2: { name: 'Vancouver Aquatic Centre', lat: 49.27770, lng: -123.13940, address: '1050 Beach Ave, Vancouver, BC V6E 1T7' },
+      10: { name: 'Lord Byng Pool', lat: 49.2595, lng: -123.1928, address: '3990 14th Ave W, Vancouver, BC V6R 2X3' },
+      34: { name: 'Kerrisdale Pool', lat: 49.2332, lng: -123.1566, address: '5851 West Blvd, Vancouver, BC V6M 3W8', closureCheckUrl: 'https://vancouver.ca/parks-recreation-culture/kerrisdale-pool.aspx' },
+      36: { name: 'Killarney Pool', lat: 49.22673, lng: -123.04345, address: '6260 Killarney St, Vancouver, BC V5S 2X7' },
+      37: { name: 'Britannia Pool', lat: 49.27540, lng: -123.07190, address: '1661 Napier St, Vancouver, BC V5L 4X4' },
+      45: { name: 'Templeton Park Pool', lat: 49.28180, lng: -123.05140, address: '700 Templeton Dr, Vancouver, BC V5L 4N8', closureCheckUrl: 'https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx' },
+      47: { name: 'Renfrew Park Pool', lat: 49.2512, lng: -123.0429, address: '2929 E 22nd Ave, Vancouver, BC V5M 2Y3' },
+      56: { name: 'Kensington Pool', lat: 49.23900, lng: -123.07580, address: '5175 Dumfries St, Vancouver, BC V5P 3A3' },
+      59: { name: 'Hillcrest Aquatic Centre', lat: 49.24407, lng: -123.10781, address: '4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4' },
     },
     // Fallback facility matching by name
     facilityAliases: {
-      'britannia': 1,
-      'hillcrest': 2,
-      'kensington': 3,
-      'killarney': 4,
-      'templeton': 5,
-      'aquatic centre': 6,
-      'vac': 6,
-      'kitsilano': 7,
-      'kits': 7,
-      'second beach': 8,
+      'britannia': 37,
+      'hillcrest': 59,
+      'kensington': 56,
+      'killarney': 36,
+      'templeton': 45,
+      'aquatic centre': 2,
+      'vac': 2,
+      'lord byng': 10,
+      'kerrisdale': 34,
+      'renfrew': 47,
     },
   },
 
@@ -111,6 +112,33 @@ const CONFIG = {
       658: 'Toonie Skate',
       660: 'Lap Skate',
       661: 'Parent & Tot Skate',
+    },
+  },
+
+  // Burnaby swimming config - scraped from burnaby.ca pool pages
+  burnabySwimming: {
+    facilities: {
+      'bonsor': {
+        name: 'Bonsor Recreation Complex',
+        lat: 49.22887,
+        lng: -122.99389,
+        address: '6550 Bonsor Ave, Burnaby, BC V5H 3G4',
+        locationRef: '2996',
+      },
+      'edmonds': {
+        name: 'Edmonds Community Centre',
+        lat: 49.21248,
+        lng: -122.95865,
+        address: '7433 Edmonds St, Burnaby, BC V3N 1B1',
+        locationRef: '2336',
+      },
+      'eileen-dailly': {
+        name: 'Eileen Dailly Leisure Pool',
+        lat: 49.28379,
+        lng: -122.97858,
+        address: '240 Willingdon Ave, Burnaby, BC V5C 5E9',
+        locationRef: '3041',
+      },
     },
   },
 
