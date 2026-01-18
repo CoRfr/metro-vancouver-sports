@@ -2,20 +2,6 @@
   "date": "2026-01-17",
   "sessions": [
     {
-      "facility": "Poirier Sport and Leisure Complex",
-      "city": "Coquitlam",
-      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
-      "lat": 49.2546,
-      "lng": -122.84526,
-      "date": "2026-01-17",
-      "startTime": "10:00",
-      "endTime": "11:15",
-      "type": "Drop-in Hockey",
-      "activityName": "30+ Hockey",
-      "ageRange": "30 yrs+",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
-    },
-    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver, BC V5X 0A1",
@@ -30,19 +16,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593871",
       "eventItemId": 593871
-    },
-    {
-      "facility": "Poirier Sport and Leisure Complex",
-      "city": "Coquitlam",
-      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
-      "lat": 49.2546,
-      "lng": -122.84526,
-      "date": "2026-01-17",
-      "startTime": "11:30",
-      "endTime": "12:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -89,19 +62,6 @@
       "eventItemId": 590795
     },
     {
-      "facility": "Port Coquitlam Community Centre",
-      "city": "Port Coquitlam",
-      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
-      "lat": 49.26008,
-      "lng": -122.77703,
-      "date": "2026-01-17",
-      "startTime": "12:30",
-      "endTime": "13:30",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -116,19 +76,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593900",
       "eventItemId": 593900
-    },
-    {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
-      "lat": 49.3299,
-      "lng": -123.07048,
-      "date": "2026-01-17",
-      "startTime": "13:00",
-      "endTime": "14:30",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-saturday-100-230pm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -147,32 +94,6 @@
       "eventItemId": 595229
     },
     {
-      "facility": "Moody Park Arena",
-      "city": "New Westminster",
-      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
-      "lat": 49.21554,
-      "lng": -122.92878,
-      "date": "2026-01-17",
-      "startTime": "13:30",
-      "endTime": "15:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
-    },
-    {
-      "facility": "Minoru Arenas",
-      "city": "Richmond",
-      "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
-      "lat": 49.16447,
-      "lng": -123.14295,
-      "date": "2026-01-17",
-      "startTime": "14:00",
-      "endTime": "17:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -187,32 +108,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/593901",
       "eventItemId": 593901
-    },
-    {
-      "facility": "Port Coquitlam Community Centre",
-      "city": "Port Coquitlam",
-      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
-      "lat": 49.26008,
-      "lng": -122.77703,
-      "date": "2026-01-17",
-      "startTime": "14:30",
-      "endTime": "16:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
-    },
-    {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
-      "lat": 49.3299,
-      "lng": -123.07048,
-      "date": "2026-01-17",
-      "startTime": "15:00",
-      "endTime": "16:30",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-harry-jerome-saturday-300-430pm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -247,46 +142,6 @@
       "eventItemId": 592356
     },
     {
-      "facility": "Port Coquitlam Community Centre",
-      "city": "Port Coquitlam",
-      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
-      "lat": 49.26008,
-      "lng": -122.77703,
-      "date": "2026-01-17",
-      "startTime": "16:30",
-      "endTime": "17:30",
-      "type": "Family Skate",
-      "activityName": "Family Play and Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
-    },
-    {
-      "facility": "Poirier Sport and Leisure Complex",
-      "city": "Coquitlam",
-      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
-      "lat": 49.2546,
-      "lng": -122.84526,
-      "date": "2026-01-17",
-      "startTime": "16:45",
-      "endTime": "18:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "7789 18th St, Burnaby, BC V3N 5E5",
-      "lat": 49.2088,
-      "lng": -122.9525,
-      "date": "2026-01-17",
-      "startTime": "17:00",
-      "endTime": "19:15",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
-    },
-    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -319,32 +174,6 @@
       "eventItemId": 593579
     },
     {
-      "facility": "Poirier Sport and Leisure Complex",
-      "city": "Coquitlam",
-      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
-      "lat": 49.2546,
-      "lng": -122.84526,
-      "date": "2026-01-17",
-      "startTime": "18:15",
-      "endTime": "19:15",
-      "type": "Drop-in Hockey",
-      "activityName": "Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
-    },
-    {
-      "facility": "Moody Park Arena",
-      "city": "New Westminster",
-      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
-      "lat": 49.21554,
-      "lng": -122.92878,
-      "date": "2026-01-17",
-      "startTime": "18:30",
-      "endTime": "20:00",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False"
-    },
-    {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
       "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
@@ -375,46 +204,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/adult-skate/593580",
       "eventItemId": 593580
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "7789 18th St, Burnaby, BC V3N 5E5",
-      "lat": 49.2088,
-      "lng": -122.9525,
-      "date": "2026-01-17",
-      "startTime": "19:30",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Toonie Skate & Activities",
-      "ageRange": "13-17 yrs, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
-    },
-    {
-      "facility": "Port Coquitlam Community Centre",
-      "city": "Port Coquitlam",
-      "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
-      "lat": 49.26008,
-      "lng": -122.77703,
-      "date": "2026-01-17",
-      "startTime": "19:30",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
-    },
-    {
-      "facility": "Poirier Sport and Leisure Complex",
-      "city": "Coquitlam",
-      "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
-      "lat": 49.2546,
-      "lng": -122.84526,
-      "date": "2026-01-17",
-      "startTime": "19:30",
-      "endTime": "20:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Stick, Ring & Puck",
-      "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
       "facility": "West End Community Centre",
@@ -465,5 +254,5 @@
       "eventItemId": 592367
     }
   ],
-  "count": 32
+  "count": 16
 }

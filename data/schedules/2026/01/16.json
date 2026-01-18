@@ -2,19 +2,6 @@
   "date": "2026-01-16",
   "sessions": [
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "08:30",
-      "endTime": "10:00",
-      "type": "Public Skating",
-      "activityName": "Adult and Senior Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -45,19 +32,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/590858",
       "eventItemId": 590858
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "10:15",
-      "endTime": "11:30",
-      "type": "Figure Skating",
-      "activityName": "Adult Ice Dance Session",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -108,60 +82,6 @@
       "eventItemId": 599729
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Hockey Skills and Drills Drop-in (Fri)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
-      "lat": 49.28221,
-      "lng": -123.12113,
-      "date": "2026-01-16",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
-      "lat": 49.30958,
-      "lng": -123.07878,
-      "date": "2026-01-16",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "13:15",
-      "endTime": "14:15",
-      "type": "Figure Skating",
-      "activityName": "Figure Skate Session",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -176,19 +96,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate-lessons/593899",
       "eventItemId": 593899
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "14:45",
-      "endTime": "15:45",
-      "type": "Discount Skate",
-      "activityName": "Toonie Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Killarney Rink",
@@ -255,45 +162,6 @@
       "eventItemId": 592170
     },
     {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
-      "lat": 49.3299,
-      "lng": -123.07048,
-      "date": "2026-01-16",
-      "startTime": "15:45",
-      "endTime": "17:45",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-friday-345-545pm"
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "15:45",
-      "endTime": "16:30",
-      "type": "Drop-in Hockey",
-      "activityName": "5-8y",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "16:45",
-      "endTime": "17:30",
-      "type": "Drop-in Hockey",
-      "activityName": "9-11y",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Killarney Rink",
       "city": "Vancouver",
       "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
@@ -326,32 +194,6 @@
       "eventItemId": 592171
     },
     {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "17:30",
-      "endTime": "18:15",
-      "type": "Drop-in Hockey",
-      "activityName": "12y+",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
-      "lat": 49.3299,
-      "lng": -123.07048,
-      "date": "2026-01-16",
-      "startTime": "18:15",
-      "endTime": "20:15",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-harry-jerome-friday-615-815pm"
-    },
-    {
       "facility": "Killarney Rink",
       "city": "Vancouver",
       "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
@@ -382,19 +224,6 @@
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590861",
       "eventItemId": 590861
-    },
-    {
-      "facility": "West Vancouver Community Centre",
-      "city": "West Vancouver",
-      "address": "2121 Marine Dr #2, West Vancouver, BC V7V 4Y2",
-      "lat": 49.33171,
-      "lng": -123.32268,
-      "date": "2026-01-16",
-      "startTime": "18:30",
-      "endTime": "19:45",
-      "type": "Public Skating",
-      "activityName": "Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -445,5 +274,5 @@
       "eventItemId": 590860
     }
   ],
-  "count": 30
+  "count": 17
 }
