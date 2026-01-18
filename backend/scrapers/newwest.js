@@ -143,6 +143,7 @@ async function scrapeNewWest(browser) {
             type,
             activityName: session.activityName,
             activityUrl: url,
+            scheduleUrl: facility.scheduleUrl || '',
           });
         }
 

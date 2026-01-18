@@ -89,6 +89,7 @@ function getOutdoorRinks() {
         activityName: `Free Public Skating`,
         description: rink.note,
         activityUrl: rink.url,
+        scheduleUrl: rink.url,
       });
     }
   }

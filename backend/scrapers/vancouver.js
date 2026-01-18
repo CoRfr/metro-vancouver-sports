@@ -57,6 +57,7 @@ function parseVancouverEvent(event, facilityInfo) {
     ageRange,
     activityUrl: event.activity_detail_url || '',
     eventItemId: event.event_item_id,
+    scheduleUrl: facilityInfo.scheduleUrl || '',
   };
 }
 

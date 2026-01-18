@@ -185,6 +185,7 @@ async function scrapeBurnabySwimming(browser) {
               activityName: activity.name,
               ageRange: activity.notes,
               activityUrl: url,
+              scheduleUrl: facility.scheduleUrl || '',
             });
             count++;
           }

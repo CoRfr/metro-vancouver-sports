@@ -1316,6 +1316,7 @@ function showSessionDetails(session) {
     const ageRangeHTML = session.ageRange ? `<div class="session-detail"><strong>Age Range:</strong>${session.ageRange}</div>` : '';
     const descriptionHTML = session.description ? `<div class="session-detail"><strong>Description:</strong>${session.description}</div>` : '';
     const reserveButtonHTML = session.activityUrl ? `<a href="${session.activityUrl}" target="_blank" class="add-to-calendar" style="display: block; text-align: center; text-decoration: none; margin-top: 10px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">Reserve / Register</a>` : '';
+    const scheduleHTML = session.scheduleUrl ? `<div class="session-detail"><strong>Schedule:</strong><a href="${session.scheduleUrl}" target="_blank" style="color: #667eea;">View facility schedule</a></div>` : '';
 
     modalBody.innerHTML = `
         <div class="session-detail">
@@ -1344,6 +1345,7 @@ function showSessionDetails(session) {
             ${session.address}, ${session.city}
         </div>
         ${distanceHTML}
+        ${scheduleHTML}
         ${descriptionHTML}
         ${reserveButtonHTML}
         <button class="add-to-calendar" onclick='addToGoogleCalendar(${JSON.stringify(session).replace(/'/g, "&apos;")})'>
