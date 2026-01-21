@@ -2,21 +2,6 @@
   "date": "2026-01-19",
   "sessions": [
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-01-19",
-      "startTime": "08:15",
-      "endTime": "09:45",
-      "type": "Drop-in Hockey",
-      "activityName": "18y+",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -143,53 +128,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-01-19",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Noon Hour",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
-      "lat": 49.28221,
-      "lng": -123.12113,
-      "date": "2026-01-19",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/",
-      "facilityUrl": "https://www.robsonsquare.com/",
-      "scheduleUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
-      "lat": 49.30958,
-      "lng": -123.07878,
-      "date": "2026-01-19",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
-      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
-      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -298,21 +236,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
-      "facility": "Harry Jerome Community Recreation Centre",
-      "city": "North Vancouver",
-      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
-      "lat": 49.3299,
-      "lng": -123.07048,
-      "date": "2026-01-19",
-      "startTime": "18:45",
-      "endTime": "20:45",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-monday-645-845pm",
-      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
-      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
-    },
-    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -331,5 +254,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 19
+  "count": 14
 }
