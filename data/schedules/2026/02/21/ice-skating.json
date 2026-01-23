@@ -33,6 +33,38 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Robson Square Ice Rink",
+      "city": "Vancouver",
+      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
+      "lat": 49.28221,
+      "lng": -123.12113,
+      "date": "2026-02-21",
+      "startTime": "12:00",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink",
+      "activityUrl": "https://www.robsonsquare.com/",
+      "facilityUrl": "https://www.robsonsquare.com/",
+      "scheduleUrl": "https://www.robsonsquare.com/"
+    },
+    {
+      "facility": "Shipyards Skate Plaza",
+      "city": "North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
+      "lat": 49.30958,
+      "lng": -123.07878,
+      "date": "2026-02-21",
+      "startTime": "12:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
       "facility": "Port Coquitlam Community Centre",
       "city": "Port Coquitlam",
       "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
@@ -236,5 +268,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 15
+  "count": 17
 }
