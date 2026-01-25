@@ -1,13 +1,17 @@
 name: Build and Deploy Frontend
 
 on:
-  # Run on push to main
+  # Run on push to main (for frontend changes)
   push:
     branches: [main]
     paths:
       - 'frontend/**'
-      - 'data/**'
       - '.github/workflows/deploy-frontend.yml'
+  # Run after scraper completes (for data updates)
+  workflow_run:
+    workflows: ["Scrape Sports Schedules"]
+    types: [completed]
+    branches: [main]
   # Allow manual trigger
   workflow_dispatch:
 
@@ -25,9 +29,14 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Skip if triggered by failed scraper run
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Use the commit from the triggering workflow run, or default for other triggers
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
