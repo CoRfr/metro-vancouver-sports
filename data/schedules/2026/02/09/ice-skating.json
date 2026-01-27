@@ -98,6 +98,21 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.21487,
+      "lng": -122.90604,
+      "date": "2026-02-09",
+      "startTime": "10:30",
+      "endTime": "11:30",
+      "type": "Public Skating",
+      "activityName": "Adult Skate - 50+",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -258,6 +273,21 @@
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.21487,
+      "lng": -122.90604,
+      "date": "2026-02-09",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
     },
     {
       "facility": "Robson Square Ice Rink",
@@ -480,5 +510,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 30
+  "count": 32
 }
