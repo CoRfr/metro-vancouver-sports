@@ -128,38 +128,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
-      "facility": "Robson Square Ice Rink",
-      "city": "Vancouver",
-      "address": "800 Robson St, Vancouver, BC V6Z 2E7",
-      "lat": 49.28221,
-      "lng": -123.12113,
-      "date": "2026-01-28",
-      "startTime": "12:00",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink",
-      "activityUrl": "https://www.robsonsquare.com/",
-      "facilityUrl": "https://www.robsonsquare.com/",
-      "scheduleUrl": "https://www.robsonsquare.com/"
-    },
-    {
-      "facility": "Shipyards Skate Plaza",
-      "city": "North Vancouver",
-      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
-      "lat": 49.30958,
-      "lng": -123.07878,
-      "date": "2026-01-28",
-      "startTime": "12:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Free Public Skating",
-      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
-      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
-      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
-      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
-    },
-    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver, BC V6K 4K9",
@@ -176,36 +144,6 @@
       "eventItemId": 590840,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
-    },
-    {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
-      "lat": 49.33232,
-      "lng": -123.04566,
-      "date": "2026-01-28",
-      "startTime": "15:45",
-      "endTime": "17:15",
-      "type": "Family Skate",
-      "activityName": "$2 Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-karen-magnussen-wednesday-345-515pm",
-      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
-      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
-    },
-    {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
-      "lat": 49.33232,
-      "lng": -123.04566,
-      "date": "2026-01-28",
-      "startTime": "17:30",
-      "endTime": "18:45",
-      "type": "Family Skate",
-      "activityName": "Family Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm",
-      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
-      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Hillcrest Centre",
@@ -262,21 +200,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
-      "facility": "Karen Magnussen Community Centre",
-      "city": "North Vancouver",
-      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
-      "lat": 49.33232,
-      "lng": -123.04566,
-      "date": "2026-01-28",
-      "startTime": "19:00",
-      "endTime": "20:00",
-      "type": "Public Skating",
-      "activityName": "Adult 19yr+ Skate",
-      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-wednesday-700-800pm",
-      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
-      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
-    },
-    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver, BC V6K 4K9",
@@ -331,5 +254,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 19
+  "count": 14
 }
