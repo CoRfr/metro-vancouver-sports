@@ -63,6 +63,21 @@
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-02-12",
+      "startTime": "09:30",
+      "endTime": "10:30",
+      "type": "Family Skate",
+      "activityName": "Early Years/ Family Skate 0-6yrs Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/early-years-family-skate-0-6yrs-skate-karen-magnussen-thursdays",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Killarney Rink",
       "city": "Vancouver",
       "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
@@ -141,6 +156,21 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
       "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-02-12",
+      "startTime": "10:45",
+      "endTime": "12:15",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Social Skate: Gilmore Skate Club",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-social-skate-gilmore-skate-club-karen-magnussen",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -286,21 +316,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916"
-    },
-    {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-02-12",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Noon Hour",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
       "facility": "Hillcrest Centre",
@@ -478,6 +493,21 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-02-12",
+      "startTime": "16:00",
+      "endTime": "18:05",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-605pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -492,6 +522,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=6916"
+    },
+    {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-02-12",
+      "startTime": "18:15",
+      "endTime": "19:35",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-615-735pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Moody Park Arena",
@@ -525,5 +570,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     }
   ],
-  "count": 33
+  "count": 36
 }
