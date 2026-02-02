@@ -330,9 +330,18 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
     sessionsByDate[session.date].push(session);
   }
 
-  // Write each day's file
+  // Get today's date in YYYY-MM-DD format (don't overwrite past schedules)
+  const today = new Date().toISOString().split('T')[0];
+
+  // Write each day's file (only for today and future dates)
   const dates = Object.keys(sessionsByDate).sort();
+  let skippedCount = 0;
   for (const dateStr of dates) {
+    if (dateStr < today) {
+      skippedCount++;
+      continue; // Don't overwrite past schedules
+    }
+
     const [year, month, day] = dateStr.split('-');
     const dirPath = path.join(outputDir, year, month, day);
     fs.mkdirSync(dirPath, { recursive: true });
@@ -346,16 +355,24 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
     fs.writeFileSync(filePath, JSON.stringify(dayData, null, 2));
   }
 
+  if (skippedCount > 0) {
+    console.error(`  Skipped ${skippedCount} past date(s) (not overwriting historical data)`);
+  }
+
+  // Filter to only dates that were written (today and future)
+  const writtenDates = dates.filter(d => d >= today);
+  const writtenSessionCount = writtenDates.reduce((sum, d) => sum + sessionsByDate[d].length, 0);
+
   // Write sport-specific index file with metadata
   const indexData = {
     success: true,
     lastUpdated: result.lastUpdated,
-    totalSessions: result.count,
+    totalSessions: writtenSessionCount,
     dateRange: {
-      start: dates[0],
-      end: dates[dates.length - 1],
+      start: writtenDates[0],
+      end: writtenDates[writtenDates.length - 1],
     },
-    dates: dates,
+    dates: writtenDates,
   };
   const indexFilename = `index-${sport}.json`;
   fs.writeFileSync(path.join(outputDir, indexFilename), JSON.stringify(indexData, null, 2));
@@ -363,11 +380,11 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
   // Print summary
   console.error(`\n  Schedule Summary:`);
   console.error(`  ─────────────────────────────────────────`);
-  console.error(`  Total files: ${dates.length}`);
-  console.error(`  Date range: ${dates[0]} to ${dates[dates.length - 1]}`);
-  console.error(`  Total sessions: ${result.count}`);
+  console.error(`  Total files: ${writtenDates.length}`);
+  console.error(`  Date range: ${writtenDates[0]} to ${writtenDates[writtenDates.length - 1]}`);
+  console.error(`  Total sessions: ${writtenSessionCount}`);
   console.error(`\n  Sessions per day:`);
-  for (const dateStr of dates) {
+  for (const dateStr of writtenDates) {
     const count = sessionsByDate[dateStr].length;
     const bar = '█'.repeat(Math.min(count, 30));
     console.error(`    ${dateStr}: ${String(count).padStart(3)} ${bar}`);

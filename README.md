@@ -2,7 +2,7 @@
 
 A web app that aggregates public skating schedules from recreation centers across Metro Vancouver into a unified calendar interface.
 
-**Live site:** [https://metro-vancouver-sports.cor-net.org/](https://metro-vancouver-sports.cor-net.org/)
+**Live site:** [https://dropinrec.ca/](https://dropinrec.ca/)
 
 ## Features
 
