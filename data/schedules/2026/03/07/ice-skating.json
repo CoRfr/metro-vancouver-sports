@@ -65,6 +65,53 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-03-07",
+      "startTime": "17:00",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "ageRange": "All ages, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-03-07",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-03-07",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Toonie Skate & Activities",
+      "ageRange": "13-17 yrs, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -83,5 +130,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 5
+  "count": 8
 }
