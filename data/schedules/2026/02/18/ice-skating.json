@@ -353,6 +353,21 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-02-18",
+      "startTime": "15:45",
+      "endTime": "17:15",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-karen-magnussen-wednesday-345-515pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -381,6 +396,21 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-02-18",
+      "startTime": "17:30",
+      "endTime": "18:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Minoru Arenas",
@@ -428,6 +458,21 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-02-18",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Adult 19yr+ Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-19yr-skate-karen-magnussen-wednesday-700-800pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -446,5 +491,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 28
+  "count": 31
 }

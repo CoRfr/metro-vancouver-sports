@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-16",
+  "sessions": [
+    {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-16",
+      "startTime": "06:00",
+      "endTime": "08:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (3 lanes x 50m)",
+      "description": "Date and Time       Mon., Wed., Fri 6:00am - 9:00am  Sat 6:00am - 8:30am             Session   March 16 to March 29, 2026                       For  detailed admission fee and discount inf",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-3-lanes-x-50m/612138",
+      "eventItemId": 612138,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    },
+    {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-16",
+      "startTime": "09:00",
+      "endTime": "09:29",
+      "type": "Public Swim",
+      "activityName": "Bulkhead Move - No lanes available",
+      "description": "Date and Time      Mon, Tue, Wed, Thu, Fri 9:00am to 9:30am Sat and Sun 8:30am to 9:00am            Session   March 16, 2026 to March 29, 2026                No lanes available due to bulk",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/bulkhead-move---no-lanes-available/612141",
+      "eventItemId": 612141,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    },
+    {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-16",
+      "startTime": "09:30",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim, 3 lanes x 25m",
+      "description": "Date and Time      Mon, Tue, Wed, Thu, and Fri 9:30AM to 9:00PM Sat and Sun 9:00AM to 9:00PM             Session   March 16, 2026 to March 29, 2026               Recreational  swim for all",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-3-lanes-x-25m/612143",
+      "eventItemId": 612143,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    }
+  ],
+  "count": 3
+}
