@@ -213,6 +213,36 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-03-11",
+      "startTime": "15:45",
+      "endTime": "16:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-03-11",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck - Children",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -261,5 +291,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 16
+  "count": 18
 }

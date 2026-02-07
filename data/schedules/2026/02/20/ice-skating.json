@@ -160,6 +160,21 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.21487,
+      "lng": -122.90604,
+      "date": "2026-02-20",
+      "startTime": "11:15",
+      "endTime": "12:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick & Puck - Adult",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -305,6 +320,21 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.21487,
+      "lng": -122.90604,
+      "date": "2026-02-20",
+      "startTime": "12:30",
+      "endTime": "13:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Ice Hockey - Adult - Goalie",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -587,5 +617,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 37
+  "count": 39
 }
