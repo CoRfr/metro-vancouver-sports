@@ -1,0 +1,24 @@
+{
+  "date": "2026-03-30",
+  "sessions": [
+    {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-30",
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "type": "Public Swim",
+      "activityName": "Pool Closure - Mar 30th - Apr 26th",
+      "description": "Date and Time   Mon - Sun 6:00a - 10:00p     Session   Mar 30 - Apr 26, 2026           Pool is closed for Annual Maintenance.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/pool-closure---mar-30th---apr-26th/612657",
+      "eventItemId": 612657,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    }
+  ],
+  "count": 1
+}

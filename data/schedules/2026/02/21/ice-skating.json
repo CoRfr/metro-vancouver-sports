@@ -80,6 +80,21 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-02-21",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-harry-jerome-saturday-100-230pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -138,6 +153,21 @@
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-02-21",
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-harry-jerome-saturday-300-430pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "West End Community Centre",
@@ -298,5 +328,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 19
+  "count": 21
 }

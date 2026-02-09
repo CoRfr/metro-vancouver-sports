@@ -17,6 +17,24 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-04-03",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Open skate for people 50 years and older.       *Monthly Flexipass and 10-Visit passes are accepted for this program .       For detailed admission fees, rental fee and discount  information  please",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/610431",
+      "eventItemId": 610431,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -45,7 +63,25 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-04-03",
+      "startTime": "15:30",
+      "endTime": "17:00",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "Open skate for all ages      Children under 8 years MUST be supervised on the ice by an individual 16 years old or over     For detailed admission fees, rental fees and discount information, please v",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/608387",
+      "eventItemId": 608387,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     }
   ],
-  "count": 3
+  "count": 5
 }
