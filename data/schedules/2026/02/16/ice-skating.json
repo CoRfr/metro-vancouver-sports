@@ -256,24 +256,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     },
     {
-      "facility": "Trout Lake Rink",
-      "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
-      "lat": 49.25486,
-      "lng": -123.06521,
-      "date": "2026-02-16",
-      "startTime": "11:45",
-      "endTime": "13:15",
-      "type": "Hockey",
-      "activityName": "Trout Lake Arena - Public Hockey GOALIES - Monday 11:45am",
-      "description": "GOALIE REGISTRATION ONLY!! Players should register in the Public Hockey session.  Only 2 goalies permitted per session. Free admission.  Recreational hockey game for those 19 years and older. Full ge",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey-goalies---monday-11-45am/601438",
-      "eventItemId": 601438,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
-    },
-    {
       "facility": "Kensington Complex",
       "city": "Burnaby",
       "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
@@ -726,5 +708,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 46
+  "count": 45
 }
