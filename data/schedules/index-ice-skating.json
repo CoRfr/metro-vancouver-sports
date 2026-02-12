@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-02-11T06:58:48.956Z",
-  "totalSessions": 1144,
+  "lastUpdated": "2026-02-12T06:59:45.956Z",
+  "totalSessions": 1131,
   "dateRange": {
-    "start": "2026-02-11",
+    "start": "2026-02-12",
     "end": "2026-06-25"
   },
   "dates": [
-    "2026-02-11",
     "2026-02-12",
     "2026-02-13",
     "2026-02-14",

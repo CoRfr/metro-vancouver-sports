@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-02-16",
+      "startTime": "08:00",
+      "endTime": "19:29",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m) 8am-7:30pm",
+      "description": "Date and Time      Mon.  8am-7:30pm                Session        Feb. 16, 2026              3+ lanes for continuous length swim   Lanes set up for different speeds.            For  detail",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m-8am-7-30pm/439045",
+      "eventItemId": 439045,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -64,6 +82,54 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-02-16",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "type": "Family Swim",
+      "activityName": "Adult and Tot Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-02-16",
+      "startTime": "08:00",
+      "endTime": "18:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
+    },
+    {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-02-16",
+      "startTime": "09:00",
+      "endTime": "10:29",
+      "type": "Family Swim",
+      "activityName": "Tot Pool",
+      "description": "Date and Time   Monday  9-10:30am & 2-4pm              Session          February 16, 2026                   Warmer water great for young children with their parents and older adults/people",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool/519055",
+      "eventItemId": 519055,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -114,6 +180,21 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-02-16",
+      "startTime": "10:00",
+      "endTime": "18:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -144,6 +225,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-02-16",
+      "startTime": "11:00",
+      "endTime": "20:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -374,5 +470,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 23
+  "count": 29
 }
