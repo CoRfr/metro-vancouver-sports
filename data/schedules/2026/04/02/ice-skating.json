@@ -2,21 +2,6 @@
   "date": "2026-04-02",
   "sessions": [
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-04-02",
-      "startTime": "11:45",
-      "endTime": "13:00",
-      "type": "Drop-in Hockey",
-      "activityName": "Adult Noon Hour",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -33,24 +18,6 @@
       "eventItemId": 600132,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
-    },
-    {
-      "facility": "Hillcrest Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-02",
-      "startTime": "13:45",
-      "endTime": "15:15",
-      "type": "Hockey",
-      "activityName": "Hillcrest Arena - 45+ Hockey - Thursday 1:45pm",
-      "description": "Recreational hockey game for those 45 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---45-hockey---thursday-1-45pm/599621",
-      "eventItemId": 599621,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
       "facility": "Trout Lake Rink",
@@ -89,5 +56,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 5
+  "count": 3
 }

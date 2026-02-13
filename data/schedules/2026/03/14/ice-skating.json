@@ -2,6 +2,22 @@
   "date": "2026-03-14",
   "sessions": [
     {
+      "facility": "Shipyards Skate Plaza",
+      "city": "North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
+      "lat": 49.30958,
+      "lng": -123.07878,
+      "date": "2026-03-14",
+      "startTime": "12:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -85,5 +101,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 5
+  "count": 6
 }

@@ -2,21 +2,6 @@
   "date": "2026-03-24",
   "sessions": [
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-03-24",
-      "startTime": "08:30",
-      "endTime": "10:00",
-      "type": "Public Skating",
-      "activityName": "Adult and Senior Public Skate",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -89,5 +74,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     }
   ],
-  "count": 5
+  "count": 4
 }
