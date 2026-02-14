@@ -195,6 +195,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     },
     {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-02-14",
+      "startTime": "11:00",
+      "endTime": "13:29",
+      "type": "Lap Swim",
+      "activityName": "Lengths with Tot Pool",
+      "description": "Date and Time     Sat, Sun 11:00am-1:30pm            Session   Feb 14- Feb 15, 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds a minimum",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-with-tot-pool/560473",
+      "eventItemId": 560473,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -434,5 +452,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 27
+  "count": 28
 }
