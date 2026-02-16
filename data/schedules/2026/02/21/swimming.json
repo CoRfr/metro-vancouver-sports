@@ -18,6 +18,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-02-21",
+      "startTime": "08:00",
+      "endTime": "08:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Leisure Pool  8:00am-8:59am",
+      "description": "Date & Time        Sat 8:00-9:00 am             Session        Jan 10-Mar 14, 2026            Limitation        Leisure pool is closed from 9:00 am-12:00 pm due to swim lessons.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-8-00am-8-59am/504939",
+      "eventItemId": 504939,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -32,6 +50,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-21",
+      "startTime": "09:00",
+      "endTime": "12:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths (1 Lane only)",
+      "description": "Date and Time     Sat  9am - 1 pm            Session     Winter 2026                 1 Lane only for continuous length swim for all ages. Fitness Center, Whirl Pool and Sauna open.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-1-lane-only/606032",
+      "eventItemId": 606032,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -100,6 +136,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-02-21",
+      "startTime": "12:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Leisure Pool  12:00-8:59pm",
+      "description": "Date & Time        Sat 12:00pm-8:59pm             Session        Jan 10-Mar 14, 2026            Limitation        Limited pool space from 12:00-12:30 pm due to swim lessons.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-12-00-8-59pm/600413",
+      "eventItemId": 600413,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -130,6 +184,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-21",
+      "startTime": "13:00",
+      "endTime": "16:29",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Sat. 1:00-4:30pm            Session    Winter 2026                 Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water by a gu",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/606043",
+      "eventItemId": 606043,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -260,5 +332,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 16
+  "count": 20
 }

@@ -418,6 +418,42 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-20",
+      "startTime": "16:30",
+      "endTime": "18:30",
+      "type": "Lap Swim",
+      "activityName": "Lengths (1 Lane only)",
+      "description": "Date and Time     Fri. 4:30-6:30pm            Session     Winter 2026                 1 Lane only for continuous length swim for all ages. Fitness Center, Whirl Pool and Sauna open.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-1-lane-only/606028",
+      "eventItemId": 606028,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-20",
+      "startTime": "18:30",
+      "endTime": "19:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Fri. 6:30pm- 8:00pm            Session    Winter 2026                 Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water by a",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/606040",
+      "eventItemId": 606040,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Walnut Grove Community Centre",
       "city": "Langley",
       "address": "8889 Walnut Grove Drive, Langley, BC",
@@ -447,6 +483,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-02-20",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "type": "Public Swim",
+      "activityName": "Kayak Practice",
+      "description": "Date and Time   Fri. 8:00pm - 9:00pm            Session     Winter 2025          Come in and practice your kayak skills. Must Bring your own Kayak. No Instructor. No lanes available. Drop-",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kayak-practice/598235",
+      "eventItemId": 598235,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -497,5 +551,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 31
+  "count": 34
 }

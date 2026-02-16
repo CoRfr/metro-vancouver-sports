@@ -96,6 +96,24 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-02-17",
+      "startTime": "10:15",
+      "endTime": "11:45",
+      "type": "Public Skating",
+      "activityName": "Discount Public Skate",
+      "description": "50% off  regular public skating admission prices        Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-public-skate/590765",
+      "eventItemId": 590765,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver, BC V6K 4K9",
@@ -304,6 +322,24 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-02-17",
+      "startTime": "12:00",
+      "endTime": "13:45",
+      "type": "Public Skating",
+      "activityName": "Discount Public Skate",
+      "description": "50% off  regular public skating admission prices        Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-public-skate/590767",
+      "eventItemId": 590767,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
       "facility": "Minoru Arenas",
       "city": "Richmond",
       "address": "7551 Minoru Gate, Richmond, BC V6Y 1R8",
@@ -364,6 +400,24 @@
       "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
       "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
       "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-02-17",
+      "startTime": "12:15",
+      "endTime": "13:45",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Tuesdays, 12:15pm - 1:45pm     Sessions    Jan 6 - Mar 31, 2026           Open skate for people 50 years and older.         *Monthly Flexipass and 10-Visit passes are accepted for t",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/593857",
+      "eventItemId": 593857,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     },
     {
       "facility": "Poirier Sport and Leisure Complex",
@@ -427,6 +481,24 @@
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-02-17",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "type": "Public Skating",
+      "activityName": "Discount Public Skate",
+      "description": "Date & Time   Tuesdays, 2:00pm - 3:30pm     Sessions   Jan 6- Mar 31 2026         50% off  regular public skating admission prices         Children under 8 years  MUST be supervised on the ice by",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-public-skate/593858",
+      "eventItemId": 593858,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -441,7 +513,25 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-02-17",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Tuesdays, 6:30pm - 8:00pm     Sessions       Jan 6-Mar 31, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593859",
+      "eventItemId": 593859,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     }
   ],
-  "count": 28
+  "count": 33
 }

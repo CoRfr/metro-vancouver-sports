@@ -2,6 +2,24 @@
   "date": "2026-02-16",
   "sessions": [
     {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-02-16",
+      "startTime": "06:00",
+      "endTime": "08:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (3 lanes x 50m)",
+      "description": "Date and Time       Mon., Wed., Fri 6:00am - 9:00am  Sat 6:00am - 8:30am             Session   January 5, 2026 to March 15, 2026                       For  detailed admission fee and disco",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-3-lanes-x-50m/596547",
+      "eventItemId": 596547,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -48,6 +66,42 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-02-16",
+      "startTime": "06:15",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Main Pool  6:15am-8:59pm",
+      "description": "Date & Time        Mon-Fri             Session      Jan 5-Mar 13, 2026            Limitation        Limited pool space due to swim lessons and Swim Club Mon-Thu (5:00-7:00pm) and Fri",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-main-pool-6-15am-8-59pm/575885",
+      "eventItemId": 575885,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-16",
+      "startTime": "06:30",
+      "endTime": "08:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon - Fri 6:30 -9 am            Session     Winter 2026                   Continuous length swim for all ages. Lanes are designated for specific speeds. (3) lanes x (25)",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/606036",
+      "eventItemId": 606036,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -276,6 +330,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-16",
+      "startTime": "12:00",
+      "endTime": "12:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon - Fri 12:00pm - 1:00pm            Session     Winter 2026                   Continuous length swim for all ages. Lanes are designated for specific speeds. (3) lanes x",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/606039",
+      "eventItemId": 606039,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -308,6 +380,24 @@
       "eventItemId": 538696,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-02-16",
+      "startTime": "13:00",
+      "endTime": "15:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Mon - Fri  1:00-4:00pm            Session    Fall 2025                 Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water by",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/606186",
+      "eventItemId": 606186,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -470,5 +560,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 29
+  "count": 34
 }
