@@ -148,6 +148,22 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Shipyards Skate Plaza",
+      "city": "North Vancouver",
+      "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
+      "lat": 49.30958,
+      "lng": -123.07878,
+      "date": "2026-03-19",
+      "startTime": "12:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Free Public Skating",
+      "description": "Free outdoor rink. Ice cleaning at 1:30pm, 3:30pm, 5:30pm (~30min)",
+      "activityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "facilityUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza",
+      "scheduleUrl": "https://www.cnv.org/parks-recreation/the-shipyards/skate-plaza"
+    },
+    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -260,5 +276,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     }
   ],
-  "count": 16
+  "count": 17
 }

@@ -292,6 +292,24 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-02-22",
+      "startTime": "17:30",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open Skate for all ages          Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this prog",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590773",
+      "eventItemId": 590773,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -384,5 +402,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 25
+  "count": 26
 }
