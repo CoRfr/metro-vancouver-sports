@@ -1,0 +1,24 @@
+{
+  "date": "2026-04-03",
+  "sessions": [
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-04-03",
+      "startTime": "13:00",
+      "endTime": "16:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Fri, Mon 1:00pm-5:00pm            Session      Apr 3, Apr 6,2026                 Recreational swim for all ages. Children under 8 years old must be accompanied into the w",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/538696",
+      "eventItemId": 538696,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    }
+  ],
+  "count": 1
+}
