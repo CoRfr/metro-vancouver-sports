@@ -2,21 +2,6 @@
   "date": "2026-04-05",
   "sessions": [
     {
-      "facility": "West Vancouver Ice Arena",
-      "city": "West Vancouver",
-      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
-      "lat": 49.3321417,
-      "lng": -123.1703066,
-      "date": "2026-04-05",
-      "startTime": "12:45",
-      "endTime": "14:15",
-      "type": "Public Skating",
-      "activityName": "Public Skate (Easter Sunday)",
-      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
-      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
-    },
-    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -27,7 +12,7 @@
       "endTime": "15:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions    April 5 - June 28, 2026                    For detailed admission fees, rental fees and discount information, please visit:   http://vancouv",
+      "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions    April 5 - June 28, 2026 * No Session May 10                    For detailed admission fees, rental fees and discount information, please vis",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/600427",
       "eventItemId": 600427,
@@ -63,7 +48,7 @@
       "endTime": "16:15",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions    April 5 - June 28, 2026                    For detailed admission fees, rental fees and discount information, please visit:   http://vancouv",
+      "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions    April 5 - June 28, 2026 * No Session May 10                    For detailed admission fees, rental fees and discount information, please vis",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/600428",
       "eventItemId": 600428,
@@ -81,7 +66,7 @@
       "endTime": "17:30",
       "type": "Family Hockey",
       "activityName": "Family Fun Hockey",
-      "description": "Date & Time   Sundays, 4:30pm - 5:30pm     Sessions    April 5 - June 28, 2026                Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has a l",
+      "description": "Date & Time   Sundays, 4:30pm - 5:30pm     Sessions    April 5 - June 28, 2026 * No Session May 10                Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this sessi",
       "ageRange": "",
       "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/600429",
       "eventItemId": 600429,
@@ -89,5 +74,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 5
+  "count": 4
 }
