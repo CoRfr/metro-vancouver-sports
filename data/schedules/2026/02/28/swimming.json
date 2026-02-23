@@ -18,6 +18,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-02-28",
+      "startTime": "08:00",
+      "endTime": "08:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Leisure Pool  8:00am-8:59am",
+      "description": "Date & Time        Sat 8:00-9:00 am             Session        Jan 10-Mar 14, 2026            Limitation        Leisure pool is closed from 9:00 am-12:00 pm due to swim lessons.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-8-00am-8-59am/504939",
+      "eventItemId": 504939,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Vancouver Aquatic Centre",
       "city": "Vancouver",
       "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
@@ -116,6 +134,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-02-28",
+      "startTime": "12:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Leisure Pool  12:00-8:59pm",
+      "description": "Date & Time        Sat 12:00pm-8:59pm             Session        Jan 10-Mar 14, 2026            Limitation        Limited pool space from 12:00-12:30 pm due to swim lessons.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool-12-00-8-59pm/600413",
+      "eventItemId": 600413,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -278,5 +314,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 17
+  "count": 19
 }

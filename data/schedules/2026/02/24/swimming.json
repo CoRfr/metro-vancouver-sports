@@ -80,6 +80,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-02-24",
+      "startTime": "06:30",
+      "endTime": "15:29",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Tue. & Thu. 6:30am-3:30pm             Session    Jan 6 - Apr 30, 2026               3 X 50m single lanes for continuous lengths swim for all ages.  Lanes are designated f",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/519080",
+      "eventItemId": 519080,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -287,6 +305,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
     },
     {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-02-24",
+      "startTime": "11:30",
+      "endTime": "12:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths with Tot Pool",
+      "description": "Date and Time     Mon 11:30am- 1:00pm             Session     Jan 5- Mar 15, 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds a minimum of",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-with-tot-pool/526358",
+      "eventItemId": 526358,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -367,6 +403,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-02-24",
+      "startTime": "14:00",
+      "endTime": "15:59",
+      "type": "Public Swim",
+      "activityName": "Free Swim",
+      "description": "Date and Time   Tue 2:00pm- 4:00pm Fri 6:00pm - 8:00pm             Session    Dec 16, 2025- Apr 3, 2026 Fri Free Swim: Jan 9, Jan 23, Feb 6, Feb 20, Mar 6, Mar 20, Apr 3                  F",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/free-swim/526347",
+      "eventItemId": 526347,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -429,6 +483,24 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-02-24",
+      "startTime": "16:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Widths (20.7m/25m)",
+      "description": "Date and Time   Tue/Thu 4-9pm Sat 10:30am-12:30pm Sun 8am-12:30pm            Session      January 6 - March 15, 2026               3 single lanes for continuous lengths swim for all ages.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/widths-20-7m-25m/519088",
+      "eventItemId": 519088,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -590,5 +662,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 37
+  "count": 41
 }
