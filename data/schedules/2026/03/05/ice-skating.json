@@ -321,21 +321,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
-      "facility": "Queen's Park Arena",
-      "city": "New Westminster",
-      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
-      "lat": 49.21487,
-      "lng": -122.90604,
-      "date": "2026-03-05",
-      "startTime": "12:00",
-      "endTime": "13:30",
-      "type": "Figure Skating",
-      "activityName": "Figure Skating",
-      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
-      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
-      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
-    },
-    {
       "facility": "Shipyards Skate Plaza",
       "city": "North Vancouver",
       "address": "125 Victory Ship Way, North Vancouver, BC V7L 0B2",
@@ -509,5 +494,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     }
   ],
-  "count": 32
+  "count": 31
 }
