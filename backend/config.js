@@ -249,8 +249,8 @@ const CONFIG = {
       scheduleUrl: 'https://www.portcoquitlam.ca/recreation-parks/skating/public-skates',
     },
     schedulesUrl: 'https://www.portcoquitlam.ca/recreation-parks/skating/public-skates',
-    // Schedule valid: Jan 5 - Feb 24, 2026
-    scheduleEnd: '2026-02-24',
+    // Schedule valid: Feb 25 - Apr 30, 2026 (multiple periods within)
+    scheduleEnd: '2026-04-30',
   },
 
   // Coquitlam config - hardcoded from coquitlam.ca PDF
@@ -263,8 +263,8 @@ const CONFIG = {
       scheduleUrl: 'https://www.coquitlam.ca/979/Drop-In-Activities',
     },
     schedulesUrl: 'https://www.coquitlam.ca/979/Drop-In-Activities',
-    // Schedule valid: Jan 3 - Mar 12, 2026
-    scheduleEnd: '2026-03-12',
+    // Schedule valid: Jan 3 - Mar 29, 2026 (winter + spring break)
+    scheduleEnd: '2026-03-29',
   },
 
   // Township of Langley config - uses PerfectMind booking system

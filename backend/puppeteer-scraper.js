@@ -77,7 +77,7 @@ async function scrapeAll(options = {}) {
   // Validate hardcoded schedule dates before scraping
   const expiredSchedules = validateScheduleDates();
   if (expiredSchedules.length > 0) {
-    console.error('\n*** SCHEDULE VALIDATION FAILED ***');
+    console.error('\n*** SCHEDULE VALIDATION WARNING ***');
     console.error('The following hardcoded schedules have expired and need to be updated:\n');
     for (const schedule of expiredSchedules) {
       console.error(`  ${schedule.city}:`);
@@ -85,7 +85,7 @@ async function scrapeAll(options = {}) {
       console.error(`    - Update function: ${schedule.function}`);
       console.error(`    - See CLAUDE.md for update instructions\n`);
     }
-    throw new Error(`Expired schedules: ${expiredSchedules.map(s => s.city).join(', ')}`);
+    console.error('Continuing with remaining cities...\n');
   }
 
   let browser;
@@ -241,6 +241,7 @@ async function scrapeAll(options = {}) {
     lastUpdated: new Date().toISOString(),
     sessions: allSessions,
     count: allSessions.length,
+    expiredSchedules,
   };
 }
 
@@ -434,11 +435,17 @@ async function main() {
   console.error(`Output: ${daily ? 'Daily files' : 'Single file'}`);
   console.error('');
 
+  let hasExpiredSchedules = false;
+
   try {
     // Scrape skating
     if (sport === 'skating' || sport === 'all') {
       console.error('--- Scraping Ice Skating ---');
       const skatingResult = await scrapeAll({ debug, cities });
+
+      if (skatingResult.expiredSchedules && skatingResult.expiredSchedules.length > 0) {
+        hasExpiredSchedules = true;
+      }
 
       if (daily && outputPath) {
         fs.mkdirSync(outputPath, { recursive: true });
@@ -481,6 +488,14 @@ async function main() {
   } catch (e) {
     console.error('Scraping failed:', e.message);
     console.error(e.stack);
+    process.exit(1);
+  }
+
+  // Exit with error if there are expired schedules (triggers GitHub notification)
+  // This runs AFTER data has been written, so other cities still get updated
+  if (hasExpiredSchedules) {
+    console.error('\n*** SCRAPING COMPLETED WITH WARNINGS ***');
+    console.error('Some hardcoded schedules have expired. See warnings above.');
     process.exit(1);
   }
 }

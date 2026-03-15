@@ -47,8 +47,10 @@ jobs:
         env:
           CHROMIUM_PATH: /usr/bin/chromium-browser
         run: |
-          set -o pipefail
           node puppeteer-scraper.js --sport all --daily --output ../data/schedules 2>&1 | tee scrape.log
+          SCRAPE_EXIT=${PIPESTATUS[0]}
+          echo "scrape_exit=$SCRAPE_EXIT" >> $GITHUB_OUTPUT
+          # Don't fail the step here - let data get committed first
 
       - name: Generate GitHub Summary
         if: always()
@@ -58,14 +60,14 @@ jobs:
           echo "**Updated:** $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
 
-          # Check for schedule validation failure
-          if [ -f backend/scrape.log ] && grep -q "SCHEDULE VALIDATION FAILED" backend/scrape.log; then
-            echo "## ⚠️ Schedule Validation Failed" >> $GITHUB_STEP_SUMMARY
+          # Check for schedule validation warning
+          if [ -f backend/scrape.log ] && grep -q "SCHEDULE VALIDATION WARNING" backend/scrape.log; then
+            echo "## ⚠️ Expired Schedules" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "The following hardcoded schedules have expired and need to be updated:" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
-            grep -A 20 "SCHEDULE VALIDATION FAILED" backend/scrape.log >> $GITHUB_STEP_SUMMARY
+            grep -A 20 "SCHEDULE VALIDATION WARNING" backend/scrape.log >> $GITHUB_STEP_SUMMARY
             echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "See **CLAUDE.md** for instructions on updating schedules." >> $GITHUB_STEP_SUMMARY
@@ -151,7 +153,33 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data/
-          git commit -m "Update sports schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          # Build commit message with scraping summary
+          COMMIT_MSG="Update sports schedules - $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          if [ -f backend/scrape.log ]; then
+            SUMMARY=""
+            # Extract per-source session counts
+            while IFS= read -r line; do
+              CITY=$(echo "$line" | sed 's/:.*//' | xargs)
+              COUNT=$(echo "$line" | grep -oE '[0-9]+ sessions' | grep -oE '[0-9]+')
+              if [ -n "$COUNT" ]; then
+                SUMMARY="${SUMMARY}\n  ${CITY}: ${COUNT} sessions"
+              fi
+            done < <(grep -E '^\s+(Vancouver|Burnaby|Richmond|Coquitlam|Port Coquitlam|North Vancouver|West Vancouver|New Westminster|Langley|Outdoor).*sessions' backend/scrape.log | head -20)
+
+            if [ -n "$SUMMARY" ]; then
+              COMMIT_MSG="${COMMIT_MSG}$(echo -e "\n\nScraping summary:${SUMMARY}")"
+            fi
+
+            # Note any warnings
+            if grep -q "SCHEDULE VALIDATION WARNING" backend/scrape.log; then
+              EXPIRED=$(grep -A1 "Schedule ended:" backend/scrape.log | grep "Schedule ended:" | sed 's/.*- //' | tr '\n' ', ' | sed 's/, $//')
+              COMMIT_MSG="${COMMIT_MSG}$(echo -e "\n\nWarning: some schedules expired (${EXPIRED})")"
+            fi
+          fi
+
+          git commit -m "$COMMIT_MSG"
           # Handle potential conflicts from concurrent pushes
           git pull --rebase origin main || true
           git push
@@ -163,3 +191,9 @@ jobs:
           name: scrape-log
           path: backend/scrape.log
           retention-days: 7
+
+      - name: Fail if scraper had warnings
+        if: always() && steps.scrape.outputs.scrape_exit != '0'
+        run: |
+          echo "Scraper completed with warnings or errors (exit code ${{ steps.scrape.outputs.scrape_exit }}). Check the scrape log for details."
+          exit 1
