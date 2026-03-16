@@ -105,7 +105,7 @@
       "lng": -123.1394,
       "date": "2026-03-17",
       "startTime": "06:30",
-      "endTime": "15:29",
+      "endTime": "20:59",
       "type": "Public Swim",
       "activityName": "Length Swim (50m)",
       "description": "Date and Time     Tue. & Thu. 6:30am-3:30pm             Session    Jan 6 - June 25, 2026               3 X 50m single lanes for continuous lengths swim for all ages.  Lanes are designated",
@@ -289,24 +289,6 @@
       "eventItemId": 614750,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
-    },
-    {
-      "facility": "Templeton Park Pool",
-      "city": "Vancouver",
-      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
-      "lat": 49.2818,
-      "lng": -123.0514,
-      "date": "2026-03-17",
-      "startTime": "10:30",
-      "endTime": "11:59",
-      "type": "Public Swim",
-      "activityName": "Public Swim",
-      "description": "Date and Time     Tue and Thr 10am - 12 pm            Session    Winter 2026                 Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/606190",
-      "eventItemId": 606190,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -710,5 +692,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 44
+  "count": 43
 }
