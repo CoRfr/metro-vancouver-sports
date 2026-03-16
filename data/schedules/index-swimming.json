@@ -1,7 +1,7 @@
 {
   "success": true,
-  "lastUpdated": "2026-03-16T07:13:33.521Z",
-  "totalSessions": 813,
+  "lastUpdated": "2026-03-16T16:53:25.553Z",
+  "totalSessions": 759,
   "dateRange": {
     "start": "2026-03-16",
     "end": "2026-05-09"
@@ -58,5 +58,22 @@
     "2026-05-07",
     "2026-05-08",
     "2026-05-09"
+  ],
+  "sources": [
+    {
+      "city": "Vancouver",
+      "sessions": 151,
+      "status": "ok"
+    },
+    {
+      "city": "Burnaby",
+      "sessions": 562,
+      "status": "ok"
+    },
+    {
+      "city": "Langley",
+      "sessions": 46,
+      "status": "ok"
+    }
   ]
 }
