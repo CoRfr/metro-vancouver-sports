@@ -29,6 +29,13 @@ export interface Facility {
   distance?: number;
 }
 
+export interface SourceStatus {
+  city: string;
+  sessions: number;
+  status: 'ok' | 'expired' | 'no-data';
+  scheduleEnd?: string;
+}
+
 export interface ScheduleIndex {
   sport: string;
   lastUpdated: string;
@@ -38,6 +45,7 @@ export interface ScheduleIndex {
     end: string;
   };
   dates: string[];
+  sources?: SourceStatus[];
 }
 
 export interface UserLocation {

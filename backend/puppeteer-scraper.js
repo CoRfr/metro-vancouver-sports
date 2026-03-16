@@ -312,6 +312,7 @@ async function scrapeSwimming(options = {}) {
     lastUpdated: new Date().toISOString(),
     sessions: allSessions,
     count: allSessions.length,
+    expiredSchedules: [],
   };
 }
 
@@ -364,6 +365,40 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
   const writtenDates = dates.filter(d => d >= today);
   const writtenSessionCount = writtenDates.reduce((sum, d) => sum + sessionsByDate[d].length, 0);
 
+  // Compute per-source stats from written sessions
+  const writtenSessions = writtenDates.flatMap(d => sessionsByDate[d]);
+  const sourceCounts = {};
+  for (const session of writtenSessions) {
+    const isOutdoor = session.facility.includes('Robson Square') || session.facility.includes('Shipyards');
+    const city = isOutdoor ? 'Outdoor' : session.city;
+    sourceCounts[city] = (sourceCounts[city] || 0) + 1;
+  }
+
+  // Build sources array with status
+  const expiredMap = {};
+  if (result.expiredSchedules) {
+    for (const e of result.expiredSchedules) {
+      expiredMap[e.city] = e.scheduleEnd;
+    }
+  }
+
+  const allCities = sport === 'ice-skating'
+    ? ['Vancouver', 'Burnaby', 'Richmond', 'Port Coquitlam', 'Coquitlam', 'North Vancouver', 'West Vancouver', 'New Westminster', 'Langley', 'Outdoor']
+    : ['Vancouver', 'Burnaby', 'Langley'];
+
+  const sources = allCities.map(city => {
+    const sessions = sourceCounts[city] || 0;
+    let status = sessions > 0 ? 'ok' : 'no-data';
+    if (expiredMap[city]) {
+      status = 'expired';
+    }
+    const source = { city, sessions, status };
+    if (expiredMap[city]) {
+      source.scheduleEnd = expiredMap[city];
+    }
+    return source;
+  });
+
   // Write sport-specific index file with metadata
   const indexData = {
     success: true,
@@ -374,6 +409,7 @@ function writeDailyFiles(result, outputDir, sport = 'ice-skating') {
       end: writtenDates[writtenDates.length - 1],
     },
     dates: writtenDates,
+    sources,
   };
   const indexFilename = `index-${sport}.json`;
   fs.writeFileSync(path.join(outputDir, indexFilename), JSON.stringify(indexData, null, 2));

@@ -6,10 +6,12 @@ import {
   Box,
   Link,
   Alert,
+  Chip,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useDataContext, useThemeContext } from '../../contexts';
 import { getRelativeTimeString } from '../../utils/dateUtils';
+import { SourceStatus } from '../../types';
 
 interface DataSourceItem {
   city: string;
@@ -75,11 +77,43 @@ const dataSources: DataSourceItem[] = [
   },
 ];
 
+function SourceStatusChip({ source }: { source: SourceStatus }) {
+  if (source.status === 'expired') {
+    return (
+      <Chip
+        label={`expired ${source.scheduleEnd}`}
+        size="small"
+        sx={{
+          height: 20,
+          fontSize: '0.7rem',
+          bgcolor: 'error.main',
+          color: 'error.contrastText',
+        }}
+      />
+    );
+  }
+  if (source.status === 'no-data') {
+    return (
+      <Chip
+        label="no data"
+        size="small"
+        sx={{
+          height: 20,
+          fontSize: '0.7rem',
+          bgcolor: 'text.disabled',
+          color: 'background.paper',
+        }}
+      />
+    );
+  }
+  return null;
+}
+
 export function InfoBox() {
   const { scheduleIndex, allSessions } = useDataContext();
   const { sport } = useThemeContext();
 
-  // Count sessions by city
+  // Count sessions by city from loaded sessions
   const cityCounts = allSessions.reduce((acc, session) => {
     const isOutdoor =
       session.facility.includes('Robson Square') ||
@@ -88,6 +122,14 @@ export function InfoBox() {
     acc[city] = (acc[city] || 0) + 1;
     return acc;
   }, {} as Record<string, number>);
+
+  // Build source status map from index
+  const sourceMap = new Map<string, SourceStatus>();
+  if (scheduleIndex?.sources) {
+    for (const source of scheduleIndex.sources) {
+      sourceMap.set(source.city, source);
+    }
+  }
 
   const lastUpdated = scheduleIndex?.lastUpdated
     ? getRelativeTimeString(new Date(scheduleIndex.lastUpdated))
@@ -150,50 +192,54 @@ export function InfoBox() {
           <Typography variant="subtitle2" color="text.secondary" sx={{ mb: 1 }}>
             Data Sources
           </Typography>
-          {dataSources.map((source) => (
-            <Box
-              key={source.city}
-              sx={{
-                display: 'flex',
-                alignItems: 'flex-start',
-                gap: 1,
-                mb: 1,
-                fontSize: '0.875rem',
-              }}
-            >
-              <Typography
-                component="span"
+          {dataSources.map((source) => {
+            const sourceStatus = sourceMap.get(source.city);
+            return (
+              <Box
+                key={source.city}
                 sx={{
-                  fontWeight: 600,
-                  minWidth: 120,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 1,
+                  mb: 0.75,
+                  fontSize: '0.875rem',
                 }}
               >
-                {source.label}
-              </Typography>
-              <Typography
-                component="span"
-                sx={{
-                  color: 'primary.main',
-                  fontWeight: 600,
-                  minWidth: 50,
-                }}
-              >
-                {cityCounts[source.city] ? `(${cityCounts[source.city]})` : ''}
-              </Typography>
-              <Typography component="span" color="text.secondary">
-                <Link href={source.url} target="_blank" rel="noopener">
-                  {source.info}
-                </Link>
-              </Typography>
-            </Box>
-          ))}
+                <Typography
+                  component="span"
+                  sx={{
+                    fontWeight: 600,
+                    minWidth: 120,
+                  }}
+                >
+                  {source.label}
+                </Typography>
+                <Typography
+                  component="span"
+                  sx={{
+                    color: 'primary.main',
+                    fontWeight: 600,
+                    minWidth: 40,
+                  }}
+                >
+                  {cityCounts[source.city] ? `(${cityCounts[source.city]})` : ''}
+                </Typography>
+                {sourceStatus && <SourceStatusChip source={sourceStatus} />}
+                <Typography component="span" color="text.secondary">
+                  <Link href={source.url} target="_blank" rel="noopener">
+                    {source.info}
+                  </Link>
+                </Typography>
+              </Box>
+            );
+          })}
           {sport === 'skating' && (
             <Box
               sx={{
                 display: 'flex',
-                alignItems: 'flex-start',
+                alignItems: 'center',
                 gap: 1,
-                mb: 1,
+                mb: 0.75,
                 fontSize: '0.875rem',
               }}
             >
@@ -205,11 +251,12 @@ export function InfoBox() {
                 sx={{
                   color: 'primary.main',
                   fontWeight: 600,
-                  minWidth: 50,
+                  minWidth: 40,
                 }}
               >
                 {cityCounts['Outdoor'] ? `(${cityCounts['Outdoor']})` : ''}
               </Typography>
+              {sourceMap.get('Outdoor') && <SourceStatusChip source={sourceMap.get('Outdoor')!} />}
               <Typography component="span" color="text.secondary">
                 <Link href="https://www.robsonsquare.com/" target="_blank" rel="noopener">
                   Robson Square
