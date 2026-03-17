@@ -56,6 +56,24 @@
       "lat": 49.2777,
       "lng": -123.1394,
       "date": "2026-03-23",
+      "startTime": "06:30",
+      "endTime": "08:59",
+      "type": "Public Swim",
+      "activityName": "Dive Tank",
+      "description": "Date and Time      Mon /Wed: 6:30-9am; 11am-4pm; 7:30-9pm  Fri 6:30am-4pm & 7:30-9pm  Tue 6:30-9am & 12:15-4pm  Thu 6:30-11:15am & 12:15-4pm  Sat 1-7:30pm  Sun 6:30am-12pm             Sess",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/dive-tank/616904",
+      "eventItemId": 616904,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-03-23",
       "startTime": "07:30",
       "endTime": "15:59",
       "type": "Public Swim",
@@ -378,5 +396,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 23
+  "count": 24
 }

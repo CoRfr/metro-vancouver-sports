@@ -17,6 +17,24 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-04-30",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Hillcrest Arena - Stick, Puck & Ring - Thursday 12:00pm",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-12-00pm/599611",
+      "eventItemId": 599611,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "Port Coquitlam Community Centre",
       "city": "Port Coquitlam",
       "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
@@ -56,14 +74,14 @@
       "startTime": "13:45",
       "endTime": "15:15",
       "type": "Hockey",
-      "activityName": "Hillcrest Arena - 45+ Hockey - Thursday 1:45pm",
-      "description": "Recreational hockey game for those 45 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
+      "activityName": "Hillcrest Arena - 40+ Hockey GOALIES - Thursday 1:45pm",
+      "description": "GOALIE REGISTRATION ONLY! Players register in the 40+ Hockey session.  Only 2 goalies permitted per session. Free admission.  Recreational hockey game for those 45 years and older. Full hockey gear i",
       "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---45-hockey---thursday-1-45pm/599682",
-      "eventItemId": 599682,
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---40-hockey-goalies---thursday-1-45pm/599695",
+      "eventItemId": 599695,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     }
   ],
-  "count": 4
+  "count": 5
 }
