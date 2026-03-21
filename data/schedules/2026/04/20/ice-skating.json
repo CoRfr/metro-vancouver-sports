@@ -17,6 +17,22 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Kensington Complex",
+      "city": "Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
+      "lat": 49.27777,
+      "lng": -122.97553,
+      "date": "2026-04-20",
+      "startTime": "09:30",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "Lap Skate",
+      "ageRange": "8 yrs+",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=3046",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/kensington-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=3046"
+    },
+    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -35,6 +51,22 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-20",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Hockey",
+      "activityName": "Recreational Hockey",
+      "ageRange": "50 yrs+, Rink B",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
       "facility": "Port Coquitlam Community Centre",
       "city": "Port Coquitlam",
       "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
@@ -49,6 +81,22 @@
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-20",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Skating",
+      "activityName": "Shoot & Score",
+      "ageRange": "18 yrs+, Rink B",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Trout Lake Rink",
@@ -67,6 +115,22 @@
       "eventItemId": 601543,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Kensington Complex",
+      "city": "Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
+      "lat": 49.27777,
+      "lng": -122.97553,
+      "date": "2026-04-20",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Public Skating",
+      "activityName": "Toonie Skate",
+      "ageRange": "All ages",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=3046",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/kensington-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=3046"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -97,7 +161,70 @@
       "activityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "facilityUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates",
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-20",
+      "startTime": "13:15",
+      "endTime": "15:15",
+      "type": "Family Skate",
+      "activityName": "Parent & Tot Skate",
+      "ageRange": "2-5 yrs with adult, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916"
+    },
+    {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-04-20",
+      "startTime": "13:45",
+      "endTime": "14:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick and Puck",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
+    },
+    {
+      "facility": "Kensington Complex",
+      "city": "Burnaby",
+      "address": "6159 Curtis St, Burnaby, BC V5B 4X7",
+      "lat": 49.27777,
+      "lng": -122.97553,
+      "date": "2026-04-20",
+      "startTime": "18:00",
+      "endTime": "20:15",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "ageRange": "Children with adult 16 yrs+",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=3046",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/kensington-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=3046"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-20",
+      "startTime": "19:30",
+      "endTime": "20:45",
+      "type": "Skating",
+      "activityName": "Lap Skate",
+      "ageRange": "8 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     }
   ],
-  "count": 6
+  "count": 14
 }
