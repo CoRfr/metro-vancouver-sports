@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-03-21T06:39:34.769Z",
-  "totalSessions": 764,
+  "lastUpdated": "2026-03-22T06:47:06.068Z",
+  "totalSessions": 734,
   "dateRange": {
-    "start": "2026-03-21",
+    "start": "2026-03-22",
     "end": "2026-06-14"
   },
   "dates": [
-    "2026-03-21",
     "2026-03-22",
     "2026-03-23",
     "2026-03-24",
@@ -90,12 +89,12 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 123,
+      "sessions": 111,
       "status": "ok"
     },
     {
       "city": "Burnaby",
-      "sessions": 134,
+      "sessions": 137,
       "status": "expired",
       "scheduleEnd": "2026-03-13"
     },
@@ -107,12 +106,12 @@
     },
     {
       "city": "Port Coquitlam",
-      "sessions": 84,
+      "sessions": 81,
       "status": "ok"
     },
     {
       "city": "Coquitlam",
-      "sessions": 34,
+      "sessions": 29,
       "status": "ok"
     },
     {
@@ -122,22 +121,22 @@
     },
     {
       "city": "West Vancouver",
-      "sessions": 303,
+      "sessions": 294,
       "status": "ok"
     },
     {
       "city": "New Westminster",
-      "sessions": 23,
+      "sessions": 21,
       "status": "ok"
     },
     {
       "city": "Langley",
-      "sessions": 51,
+      "sessions": 50,
       "status": "ok"
     },
     {
       "city": "Outdoor",
-      "sessions": 8,
+      "sessions": 7,
       "status": "ok"
     }
   ]
