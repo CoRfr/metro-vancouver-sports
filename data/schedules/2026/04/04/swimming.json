@@ -50,42 +50,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Lord Byng Pool",
-      "city": "Vancouver",
-      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
-      "lat": 49.2595,
-      "lng": -123.1928,
-      "date": "2026-04-04",
-      "startTime": "10:00",
-      "endTime": "12:00",
-      "type": "Lap Swim",
-      "activityName": "Long Weekend  Lengths",
-      "description": "Date and Time     10:00AM-12:00PM             Session    Spring 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds. (3) lanes x (25) m avail",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/long-weekend-lengths/616465",
-      "eventItemId": 616465,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
-    },
-    {
-      "facility": "Britannia Pool",
-      "city": "Vancouver",
-      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
-      "lat": 49.2754,
-      "lng": -123.0719,
-      "date": "2026-04-04",
-      "startTime": "11:00",
-      "endTime": "13:29",
-      "type": "Lap Swim",
-      "activityName": "Lengths with Tot Pool",
-      "description": "Date and Time     Sat, Sun 11:00am-1:30pm            Session   Apr 4- Apr 5, 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds a minimum of",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-with-tot-pool/560473",
-      "eventItemId": 560473,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
-    },
-    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -100,24 +64,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
-    },
-    {
-      "facility": "Lord Byng Pool",
-      "city": "Vancouver",
-      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
-      "lat": 49.2595,
-      "lng": -123.1928,
-      "date": "2026-04-04",
-      "startTime": "12:00",
-      "endTime": "17:00",
-      "type": "Lap Swim",
-      "activityName": "Long Weekend  Public Swim  1L Lengths",
-      "description": "Date and Time   12:00PM-5:00PM             Session    Spring 2026                   For  detailed admission fee and discount information please visit:   http://vancouver.ca/parks-recreatio",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/long-weekend-public-swim-1l-lengths/616466",
-      "eventItemId": 616466,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -280,5 +226,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 17
+  "count": 14
 }

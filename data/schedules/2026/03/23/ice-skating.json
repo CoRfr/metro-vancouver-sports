@@ -78,6 +78,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=3046"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-03-23",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Open skate for people 50 years and older.       *Monthly Flexipass and 10-Visit passes are accepted for this program .       For detailed admission fees, rental fee and discount  information  please",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/590742",
+      "eventItemId": 590742,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver, BC V5X 0A1",
@@ -414,6 +432,24 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-03-23",
+      "startTime": "14:15",
+      "endTime": "15:30",
+      "type": "Public Skating",
+      "activityName": "50 and Better Discount Skate",
+      "description": "Open skate for people 50 years and older.         *Monthly Flexipass and 10-Visit passes are accepted for this program.        For detailed admission fees, rental fee and discount  information  plea",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-discount-skate/591943",
+      "eventItemId": 591943,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
+    },
+    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -429,6 +465,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-03-23",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Plastic sticks and pucks only for this session (provided). Helmets and gloves required.        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Mont",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/590746",
+      "eventItemId": 590746,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -442,6 +496,24 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-03-23",
+      "startTime": "15:45",
+      "endTime": "17:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over        *Monthly Flexipass and 10-Visit passes are accepted for this program .       For detailed admission",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590744",
+      "eventItemId": 590744,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
     },
     {
       "facility": "West End Community Centre",
@@ -538,6 +610,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=3046"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-03-23",
+      "startTime": "18:15",
+      "endTime": "19:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Mondays, 6:15pm - 7:30pm     Sessions    Jan 5- Mar 23, 2026                    For detailed admission fees, rental fees and discount information, please visit:   http://vancouver.c",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593895",
+      "eventItemId": 593895,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -598,7 +688,25 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-03-23",
+      "startTime": "21:15",
+      "endTime": "22:00",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "description": "Open skate for people age 19 and older        *Monthly Flexipass and 10-Visit passes are accepted for this program .      For detailed admission fees, rental fees and discount information, please vis",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/adult-skate/591944",
+      "eventItemId": 591944,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 38
+  "count": 44
 }

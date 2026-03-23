@@ -203,24 +203,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Lord Byng Pool",
-      "city": "Vancouver",
-      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
-      "lat": 49.2595,
-      "lng": -123.1928,
-      "date": "2026-03-26",
-      "startTime": "09:35",
-      "endTime": "10:25",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Shallow aquafit   This 50-minute Aquafit class is imbedded in a 90-minute Swim Session. Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise com",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/615593",
-      "eventItemId": 615593,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
-    },
-    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -284,24 +266,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
-      "facility": "Vancouver Aquatic Centre",
-      "city": "Vancouver",
-      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
-      "lat": 49.2777,
-      "lng": -123.1394,
-      "date": "2026-03-26",
-      "startTime": "11:20",
-      "endTime": "12:15",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Deep Water",
-      "description": "This 55-minute Deep Water Aquafit class runs in the dive tank.     Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm u",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/616196",
-      "eventItemId": 616196,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -331,24 +295,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
-    },
-    {
-      "facility": "Kensington Pool",
-      "city": "Vancouver",
-      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
-      "lat": 49.239,
-      "lng": -123.0758,
-      "date": "2026-03-26",
-      "startTime": "12:30",
-      "endTime": "13:30",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "This Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down components,",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/616355",
-      "eventItemId": 616355,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -427,24 +373,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
-    },
-    {
-      "facility": "Britannia Pool",
-      "city": "Vancouver",
-      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
-      "lat": 49.2754,
-      "lng": -123.0719,
-      "date": "2026-03-26",
-      "startTime": "16:00",
-      "endTime": "20:59",
-      "type": "Public Swim",
-      "activityName": "Pool Closure- Staff Training",
-      "description": "Date and Time    Thu 4:00-9:00p            Session     Mar 26, 2026                 Pool is closed for staff training.",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/pool-closure--staff-training/463270",
-      "eventItemId": 463270,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -606,5 +534,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 38
+  "count": 34
 }

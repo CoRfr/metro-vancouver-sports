@@ -35,6 +35,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-03-27",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Open skate for people 50 years and older.         *Monthly Flexipass and 10-Visit passes are accepted for this program.        For detailed admission fees, rental fee and discount  information  pleas",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/590858",
+      "eventItemId": 590858,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -212,6 +230,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-03-27",
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "type": "Public Skating",
+      "activityName": "Discount Skate + Lessons",
+      "description": "Date & Time   Fridays, 1:30pm - 3:00pm     Sessions    Jan 9- Mar 27, 2026                 Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Children u",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate-lessons/593899",
+      "eventItemId": 593899,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -255,6 +291,42 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-03-27",
+      "startTime": "15:15",
+      "endTime": "17:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Fridays, 3:15pm - 5:00pm     Sessions    Jan 9 - Mar 27, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual 1",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/593902",
+      "eventItemId": 593902,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-27",
+      "startTime": "15:30",
+      "endTime": "17:00",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "***Jan 30 session is cancelled for ice maintenance     Open skate for all ages      Children under 8 years MUST be supervised on the ice by an individual 16 years old or over     For detailed admissi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/594553",
+      "eventItemId": 594553,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -336,6 +408,24 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-03-27",
+      "startTime": "18:30",
+      "endTime": "20:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this program",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/590861",
+      "eventItemId": 590861,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -349,6 +439,24 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-03-27",
+      "startTime": "18:45",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "***Jan 30 session is cancelled for ice maintenance     Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed ad",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/594554",
+      "eventItemId": 594554,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
       "facility": "Kensington Complex",
@@ -383,7 +491,25 @@
       "eventItemId": 595228,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-03-27",
+      "startTime": "20:45",
+      "endTime": "22:00",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "description": "Open skate for people age 19 and older        *Monthly Flexipass and 10-Visit passes are accepted for this program .      For detailed admission fees, rental fees and discount information, please vis",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/adult-skate/590860",
+      "eventItemId": 590860,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     }
   ],
-  "count": 24
+  "count": 31
 }
