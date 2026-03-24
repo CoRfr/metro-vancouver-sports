@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-04-06",
+      "startTime": "08:00",
+      "endTime": "10:00",
+      "type": "Lap Swim",
+      "activityName": "Statutory Holiday  Lengths",
+      "description": "Date and Time     8:00AM-10:00AM 12:00PM-2:00PM             Session    Spring 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds. (3) lanes",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/statutory-holiday-lengths/616460",
+      "eventItemId": 616460,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -96,6 +114,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-04-06",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "type": "Lap Swim",
+      "activityName": "Statutory Holiday  Public Swim  1L Lengths",
+      "description": "Date and Time   10:00AM-12:00PM 2:00PM-4:00PM             Session    Spring 2026                   For  detailed admission fee and discount information please visit:   http://vancouver.ca/",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/statutory-holiday-public-swim-1l-lengths/616464",
+      "eventItemId": 616464,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -210,6 +246,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-04-06",
+      "startTime": "16:00",
+      "endTime": "19:00",
+      "type": "Lessons",
+      "activityName": "Statutory Holiday  Lessons/Swim Club  1L Lengths",
+      "description": "Date and Time     4:00PM-6:00PM          Spring 2026                 Continuous length swim for all ages. Lanes are designated for specific speeds. (1) lanes x (25) m available for length",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/statutory-holiday-lessons-swim-club-1l-lengths/616462",
+      "eventItemId": 616462,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -306,5 +360,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 19
+  "count": 22
 }

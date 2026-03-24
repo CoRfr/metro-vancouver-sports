@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-04-17",
+      "startTime": "09:20",
+      "endTime": "10:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Water Moderate",
+      "description": "This 55-minute Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down com",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/616398",
+      "eventItemId": 616398,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -105,7 +123,7 @@
       "lng": -122.99389,
       "date": "2026-04-17",
       "startTime": "11:00",
-      "endTime": "16:30",
+      "endTime": "15:00",
       "type": "Family Swim",
       "activityName": "Family Swim",
       "ageRange": null,
@@ -162,6 +180,22 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-04-17",
+      "startTime": "15:00",
+      "endTime": "20:00",
+      "type": "Family Swim",
+      "activityName": "Family Swim",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -194,6 +228,22 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-04-17",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "type": "Public Swim",
+      "activityName": "Whirlpool & Sauna",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -208,22 +258,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
-    },
-    {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-04-17",
-      "startTime": "21:00",
-      "endTime": "22:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -242,5 +276,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 15
+  "count": 17
 }

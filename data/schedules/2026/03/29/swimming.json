@@ -18,6 +18,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-03-29",
+      "startTime": "06:30",
+      "endTime": "11:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m) 6:30am-12pm",
+      "description": "Date and Time      Sun. 6:30am-12pm                Session        Mar 29, 2026              3+ lanes for continuous length swim   Lanes set up for different speeds.            For  detaile",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m-6-30am-12pm/439045",
+      "eventItemId": 439045,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -80,6 +98,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-03-29",
+      "startTime": "12:00",
+      "endTime": "19:29",
+      "type": "Public Swim",
+      "activityName": "Facility Closure for Citywide Training 12-7:30pm",
+      "description": "Date and Time     Sun 12-7:30pm            Session   March 29, 2026                                Vancouver Aquatic Centre is closed at 12pm for citywide staff training with no access to",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/facility-closure-for-citywide-training-12-7-30pm/426413",
+      "eventItemId": 426413,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -242,5 +278,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 15
+  "count": 17
 }
