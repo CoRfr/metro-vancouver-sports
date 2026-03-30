@@ -170,6 +170,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-03-30",
+      "startTime": "06:30",
+      "endTime": "08:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon - Fri (6:30am - 9:00am) - 3 lanes Mon - Fri (12pm-1pm) - 4 lanes Sat - Sun (4:30pm-5:30pm) - 4 lanes            Session     Spring 2026 (Mar 30 - June 21)",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/618161",
+      "eventItemId": 618161,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Vancouver Aquatic Centre",
       "city": "Vancouver",
       "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
@@ -268,6 +286,24 @@
       "eventItemId": 616453,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-03-30",
+      "startTime": "09:00",
+      "endTime": "12:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim -- Main Tank",
+      "description": "Date and Time     Mon 9am-12pm, 1pm-3:30pm, 8pm-9:30pm Tue 10:30am-12pm, 1pm-3:30pm, 8pm-9:30pm Wed 9am-12pm, 1pm-3:30pm, 8pm-9:30pm Thu 10:30am-12pm, 1pm-3:30pm, 8pm-9:30pm Fri 9am-12pm,",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim----main-tank/618160",
+      "eventItemId": 618160,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -434,6 +470,24 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-03-30",
+      "startTime": "11:30",
+      "endTime": "14:30",
+      "type": "Public Swim",
+      "activityName": "Public Swim - Teach Pool",
+      "description": "Days and Time       Mon  11:30am - 2:30pm  Tue - Thu  11:30am-3:30pm  Fri  11:30am-3:30pm and 6:00pm-8:00pm  Sat  1:00pm-7:30pm  Sunday  2:00pm-7:30pm              Session    Spring 2026 (",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim---teach-pool/618158",
+      "eventItemId": 618158,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -654,6 +708,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-03-30",
+      "startTime": "15:30",
+      "endTime": "19:29",
+      "type": "Lessons",
+      "activityName": "Lessons (1 Lane only)",
+      "description": "Date and Time     Mon - Thu 3:30pm-8:00pm Fri 3:30pm-6:30pm Sat 9:00am-1pm            Session     Spring 2026 (Mar 30 - June 21)                 1 Lane only for continuous length swim for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-1-lane-only/618163",
+      "eventItemId": 618163,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Walnut Grove Community Centre",
       "city": "Langley",
       "address": "8889 Walnut Grove Drive, Langley, BC",
@@ -846,5 +918,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 51
+  "count": 55
 }
