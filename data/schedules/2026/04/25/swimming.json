@@ -34,6 +34,22 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-04-25",
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "type": "Public Swim",
+      "activityName": "Whirlpool & Sauna",
+      "ageRange": "19+",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -42,9 +58,9 @@
       "date": "2026-04-25",
       "startTime": "09:00",
       "endTime": "13:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": "3 lanes",
+      "type": "Lessons",
+      "activityName": "Swim Lessons Only",
+      "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
@@ -109,7 +125,7 @@
       "lng": -122.95865,
       "date": "2026-04-25",
       "startTime": "12:00",
-      "endTime": "21:00",
+      "endTime": "16:00",
       "type": "Public Swim",
       "activityName": "Public Swim",
       "ageRange": null,
@@ -126,12 +142,28 @@
       "date": "2026-04-25",
       "startTime": "12:30",
       "endTime": "15:30",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": "1 lane",
+      "type": "Public Swim",
+      "activityName": "Slide",
+      "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-04-25",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "type": "Family Swim",
+      "activityName": "Family Swim",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -150,22 +182,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-04-25",
-      "startTime": "14:00",
-      "endTime": "17:00",
-      "type": "Family Swim",
-      "activityName": "Family Swim",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -176,7 +192,7 @@
       "endTime": "20:00",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
-      "ageRange": "2 lanes",
+      "ageRange": "1 lane",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
@@ -206,9 +222,9 @@
       "date": "2026-04-25",
       "startTime": "19:00",
       "endTime": "21:00",
-      "type": "Family Swim",
-      "activityName": "Parent & Child Leisure Swim",
-      "ageRange": "7 years and under with parent (tot pool only)",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
@@ -262,5 +278,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 16
+  "count": 17
 }
