@@ -74,7 +74,10 @@ function determineActivityType(name) {
   if (n.includes('family') && n.includes('hockey')) return 'Family Hockey';
   if (n.includes('shinny') || (n.includes('drop') && n.includes('hockey'))) return 'Drop-in Hockey';
   if (n.includes('stick') && n.includes('puck')) return 'Drop-in Hockey';
+  if (n.includes('shoot') && n.includes('score')) return 'Drop-in Hockey';
+  if (n.includes('ringette')) return 'Drop-in Hockey';
   if (n.includes('para') && n.includes('hockey')) return 'Para Hockey';
+  if (n.includes('recreational') && n.includes('hockey')) return 'Drop-in Hockey';
   if (n.includes('hockey')) return 'Hockey';
   if (n.includes('parent') && (n.includes('tot') || n.includes('preschool'))) return 'Family Skate';
   if ((n.includes('family') || n.includes('tot')) && n.includes('skat')) return 'Family Skate';

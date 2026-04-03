@@ -159,6 +159,58 @@ function getCoquitlamSchedules() {
         { date: '2026-03-20', name: 'Stick, Ring & Puck', start: '19:30', end: '20:30', type: 'Drop-in Hockey' },
       ],
     },
+
+    // Spring 2026: Apr 12 - Jun 28
+    {
+      start: '2026-04-12',
+      end: '2026-06-28',
+      cancelledDays: new Set([
+        '2026-05-18', // Victoria Day - regular Monday programs cancelled
+      ]),
+      cancelledSlots: new Set([
+        '2026-05-24|13:30', // Family Skate replaced by Sensory Friendly Skate
+      ]),
+      schedule: {
+        0: [ // Sunday
+          { name: 'Family Skate', start: '13:30', end: '14:45', type: 'Family Skate' },
+        ],
+        1: [ // Monday
+          { name: 'Adult & Child Toonie Skate', start: '09:45', end: '11:00', type: 'Family Skate', age: '0-6 yrs with adult' },
+          { name: '50+ Toonie Skate', start: '11:15', end: '12:30', type: 'Public Skating', age: '50 yrs+' },
+          { name: 'Adult Hockey', start: '22:00', end: '23:15', type: 'Drop-in Hockey', age: '19 yrs+' },
+        ],
+        2: [ // Tuesday
+          { name: 'Toonie Stick, Ring & Puck', start: '10:30', end: '11:30', type: 'Drop-in Hockey' },
+          { name: 'Toonie Skate', start: '11:45', end: '12:45', type: 'Discount Skate' },
+        ],
+        3: [ // Wednesday
+          { name: 'Toonie Skate', start: '20:45', end: '21:45', type: 'Discount Skate' },
+          { name: 'Adult Stick, Ring & Puck', start: '22:00', end: '23:00', type: 'Drop-in Hockey', age: '19 yrs+' },
+        ],
+        4: [ // Thursday
+          { name: 'Toonie Adult Hockey', start: '10:30', end: '11:30', type: 'Drop-in Hockey', age: '19 yrs+' },
+          { name: 'Toonie Skate', start: '11:45', end: '12:45', type: 'Discount Skate' },
+        ],
+        5: [ // Friday
+          { name: 'Adult & Child Toonie Skate', start: '09:45', end: '11:00', type: 'Family Skate', age: '0-6 yrs with adult' },
+          { name: 'Toonie Skate', start: '11:15', end: '12:30', type: 'Discount Skate' },
+          { name: 'Youth Toonie Skate', start: '20:45', end: '21:45', type: 'Discount Skate', age: '11-18 yrs' },
+          { name: 'Adult Hockey', start: '22:00', end: '23:15', type: 'Drop-in Hockey', age: '19 yrs+' },
+        ],
+        6: [ // Saturday
+          { name: 'Public Skate', start: '16:30', end: '18:00', type: 'Public Skating' },
+          { name: 'Family Stick, Ring & Puck', start: '18:15', end: '19:15', type: 'Family Hockey' },
+          { name: 'Adult Stick, Ring & Puck', start: '19:30', end: '20:30', type: 'Drop-in Hockey', age: '19 yrs+' },
+        ],
+      },
+      specialEvents: [
+        // Victoria Day Monday May 18 - special family skates
+        { date: '2026-05-18', name: 'Family Skate', start: '13:00', end: '14:15', type: 'Family Skate' },
+        { date: '2026-05-18', name: 'Family Skate', start: '14:30', end: '15:45', type: 'Family Skate' },
+        // Sensory Friendly Skate replaces Family Skate on May 24
+        { date: '2026-05-24', name: 'Sensory Friendly Skate', start: '13:30', end: '14:45', type: 'Public Skating' },
+      ],
+    },
   ];
 
   // Generate sessions from periods

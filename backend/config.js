@@ -73,8 +73,8 @@ const CONFIG = {
   burnaby: {
     // Daily activities pages by facility
     dailyActivitiesUrl: 'https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities',
-    // Schedule valid: Jan 5 - Mar 12/13, 2026
-    scheduleEnd: '2026-03-13',
+    // Schedule valid: Mar 30 - Jun 18, 2026 (spring — only Rosemary Brown has ice)
+    scheduleEnd: '2026-06-18',
     facilities: {
       'kensington': {
         name: 'Kensington Complex',
@@ -234,9 +234,9 @@ const CONFIG = {
         scheduleUrl: 'https://www.richmond.ca/parks-recreation/about/schedules.htm',
       },
     },
-    // Schedule valid: Jan 5 - Mar 13, 2026
-    scheduleStart: '2026-01-05',
-    scheduleEnd: '2026-03-13',
+    // Schedule valid: Mar 30 - May 21, 2026 (spring — RIC only, no Minoru)
+    scheduleStart: '2026-03-30',
+    scheduleEnd: '2026-05-21',
   },
 
   // Port Coquitlam config - hardcoded from portcoquitlam.ca PDF
@@ -263,8 +263,8 @@ const CONFIG = {
       scheduleUrl: 'https://www.coquitlam.ca/979/Drop-In-Activities',
     },
     schedulesUrl: 'https://www.coquitlam.ca/979/Drop-In-Activities',
-    // Schedule valid: Jan 3 - Mar 29, 2026 (winter + spring break)
-    scheduleEnd: '2026-03-29',
+    // Schedule valid: Apr 12 - Jun 28, 2026 (spring)
+    scheduleEnd: '2026-06-28',
   },
 
   // Township of Langley config - uses PerfectMind booking system
