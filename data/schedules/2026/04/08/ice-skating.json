@@ -2,6 +2,36 @@
   "date": "2026-04-08",
   "sessions": [
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "08:15",
+      "endTime": "09:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Early Morning Adult Hockey",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "09:00",
+      "endTime": "11:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -43,12 +73,12 @@
       "date": "2026-04-08",
       "startTime": "10:00",
       "endTime": "11:15",
-      "type": "Hockey",
-      "activityName": "Recreational Hockey",
-      "ageRange": "50 yrs+, Rink B",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "type": "Skating",
+      "activityName": "Lap Skate",
+      "ageRange": "8 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     },
     {
       "facility": "Port Coquitlam Community Centre",
@@ -66,6 +96,21 @@
       "scheduleUrl": "https://www.portcoquitlam.ca/recreation-parks/skating/public-skates"
     },
     {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "11:15",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -74,12 +119,28 @@
       "date": "2026-04-08",
       "startTime": "11:30",
       "endTime": "12:45",
-      "type": "Skating",
+      "type": "Drop-in Hockey",
       "activityName": "Shoot & Score",
-      "ageRange": "18 yrs+, Rink B",
+      "ageRange": "18 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "11:30",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Masters 65+ Hockey",
+      "ageRange": "65+",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Hillcrest Centre",
@@ -154,14 +215,29 @@
       "lat": 49.2088,
       "lng": -122.9525,
       "date": "2026-04-08",
-      "startTime": "12:15",
-      "endTime": "13:30",
+      "startTime": "13:00",
+      "endTime": "14:15",
       "type": "Figure Skating",
       "activityName": "Figure Skating",
       "ageRange": "16 yrs+, Rink A",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Adult Stick and Puck",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -207,7 +283,22 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-08",
+      "startTime": "18:30",
+      "endTime": "19:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     }
   ],
-  "count": 13
+  "count": 19
 }

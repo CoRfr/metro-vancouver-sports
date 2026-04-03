@@ -2,6 +2,22 @@
   "date": "2026-04-05",
   "sessions": [
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-05",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Recreational Hockey",
+      "ageRange": "50 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -30,6 +46,22 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-05",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Shoot & Score",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -62,20 +94,19 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "7789 18th St, Burnaby, BC V3N 5E5",
-      "lat": 49.2088,
-      "lng": -122.9525,
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
       "date": "2026-04-05",
-      "startTime": "13:45",
-      "endTime": "17:00",
+      "startTime": "13:00",
+      "endTime": "16:00",
       "type": "Public Skating",
       "activityName": "Public Skate",
-      "ageRange": "All ages, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "Trout Lake Rink",
@@ -148,7 +179,39 @@
       "eventItemId": 600429,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-05",
+      "startTime": "17:00",
+      "endTime": "18:15",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "ageRange": "Children with adults 16 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=657&location_ref=6916"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-05",
+      "startTime": "18:30",
+      "endTime": "19:45",
+      "type": "Skating",
+      "activityName": "Lap Skate",
+      "ageRange": "8 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
     }
   ],
-  "count": 9
+  "count": 13
 }

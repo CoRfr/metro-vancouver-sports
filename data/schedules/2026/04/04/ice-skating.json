@@ -32,6 +32,22 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-04",
+      "startTime": "11:00",
+      "endTime": "13:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "ageRange": "All ages, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=656&location_ref=6916"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -45,6 +61,21 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Richmond Ice Centre",
+      "city": "Richmond",
+      "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
+      "lat": 49.13639,
+      "lng": -123.06669,
+      "date": "2026-04-04",
+      "startTime": "13:00",
+      "endTime": "16:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
+      "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -78,6 +109,22 @@
       "eventItemId": 600137,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-04-04",
+      "startTime": "13:15",
+      "endTime": "15:15",
+      "type": "Family Skate",
+      "activityName": "Parent & Tot Skate",
+      "ageRange": "2-5 yrs with adult 16 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=661&location_ref=6916"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -119,8 +166,8 @@
       "lat": 49.2088,
       "lng": -122.9525,
       "date": "2026-04-04",
-      "startTime": "17:00",
-      "endTime": "19:15",
+      "startTime": "15:30",
+      "endTime": "17:45",
       "type": "Public Skating",
       "activityName": "Public Skate",
       "ageRange": "All ages, Rink A",
@@ -145,23 +192,7 @@
       "eventItemId": 599537,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
-    },
-    {
-      "facility": "Rosemary Brown Recreation Centre",
-      "city": "Burnaby",
-      "address": "7789 18th St, Burnaby, BC V3N 5E5",
-      "lat": 49.2088,
-      "lng": -122.9525,
-      "date": "2026-04-04",
-      "startTime": "19:30",
-      "endTime": "21:00",
-      "type": "Public Skating",
-      "activityName": "Toonie Skate & Activities",
-      "ageRange": "13-17 yrs, Rink A",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916"
     }
   ],
-  "count": 10
+  "count": 12
 }
