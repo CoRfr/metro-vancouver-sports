@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-04-06",
+      "startTime": "08:00",
+      "endTime": "15:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim Main Pool  6:15am-8:59pm",
+      "description": "Date & Time        Mon-Fri             Session      Jan 5-May 29, 2026            Limitation        Limited pool space due to swim lessons (Mon-Fri 3:30-5:00 pm) and Swim Club Mon-Th",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-main-pool-6-15am-8-59pm/575885",
+      "eventItemId": 575885,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Lord Byng Pool",
       "city": "Vancouver",
       "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
@@ -227,6 +245,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-04-06",
+      "startTime": "12:00",
+      "endTime": "19:29",
+      "type": "Public Swim",
+      "activityName": "Facility Closure for Citywide Training 12-7:30pm",
+      "description": "Date and Time     Mon 12-7:30pm            Session   April 6, 2026                                Vancouver Aquatic Centre is closed at 12pm for citywide staff training with no access to t",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/facility-closure-for-citywide-training-12-7-30pm/426413",
+      "eventItemId": 426413,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -241,6 +277,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-04-06",
+      "startTime": "13:00",
+      "endTime": "16:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Fri, Mon 1:00pm-5:00pm            Session      Apr 3, Apr 6,2026                 Recreational swim for all ages. Children under 8 years old must be accompanied into the w",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/538696",
+      "eventItemId": 538696,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
       "facility": "Edmonds Community Centre",
@@ -289,6 +343,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-04-06",
+      "startTime": "15:30",
+      "endTime": "19:29",
+      "type": "Lessons",
+      "activityName": "Lessons (1 Lane only)",
+      "description": "Date and Time     Mon - Thu 3:30pm-8:00pm Fri 3:30pm-6:30pm Sat 9:00am-1pm            Session     Spring 2026 (Mar 30 - June 21)                 1 Lane only for continuous length swim for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-1-lane-only/618163",
+      "eventItemId": 618163,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Lord Byng Pool",
@@ -421,5 +493,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 26
+  "count": 30
 }
