@@ -345,24 +345,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
-      "facility": "Templeton Park Pool",
-      "city": "Vancouver",
-      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
-      "lat": 49.2818,
-      "lng": -123.0514,
-      "date": "2026-04-06",
-      "startTime": "15:30",
-      "endTime": "19:29",
-      "type": "Lessons",
-      "activityName": "Lessons (1 Lane only)",
-      "description": "Date and Time     Mon - Thu 3:30pm-8:00pm Fri 3:30pm-6:30pm Sat 9:00am-1pm            Session     Spring 2026 (Mar 30 - June 21)                 1 Lane only for continuous length swim for",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-1-lane-only/618163",
-      "eventItemId": 618163,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
-    },
-    {
       "facility": "Lord Byng Pool",
       "city": "Vancouver",
       "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
@@ -493,5 +475,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 30
+  "count": 29
 }
