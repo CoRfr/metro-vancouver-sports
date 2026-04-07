@@ -94,42 +94,6 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
-      "facility": "Hillcrest Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-09",
-      "startTime": "12:00",
-      "endTime": "13:30",
-      "type": "Drop-in Hockey",
-      "activityName": "Hillcrest Arena - Stick, Puck & Ring - Thursday 12:00pm",
-      "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-12-00pm/599609",
-      "eventItemId": 599609,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
-    },
-    {
-      "facility": "Trout Lake Rink",
-      "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
-      "lat": 49.25486,
-      "lng": -123.06521,
-      "date": "2026-04-09",
-      "startTime": "12:00",
-      "endTime": "13:30",
-      "type": "Skating",
-      "activityName": "50 and Better Skate",
-      "description": "Date & Time   Thursdays, 12:00pm - 1:30pm     Sessions    April 2 to June 25          Open skate for people 50 years and older.             *Monthly Flexipass and 10-Visit passes are accepted for",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/600132",
-      "eventItemId": 600132,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
-    },
-    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -205,42 +169,6 @@
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
-      "facility": "Hillcrest Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-09",
-      "startTime": "13:45",
-      "endTime": "15:15",
-      "type": "Hockey",
-      "activityName": "Hillcrest Arena - 40+ Hockey - Thursday 1:45pm",
-      "description": "Recreational hockey game for those 40 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---40-hockey---thursday-1-45pm/599679",
-      "eventItemId": 599679,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
-    },
-    {
-      "facility": "Trout Lake Rink",
-      "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
-      "lat": 49.25486,
-      "lng": -123.06521,
-      "date": "2026-04-09",
-      "startTime": "13:45",
-      "endTime": "14:45",
-      "type": "Public Skating",
-      "activityName": "Discount Skate",
-      "description": "Date & Time   Mondays, 1:45pm - 4:15pm     Sessions    April 2 - June 25, 2026                 Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Childr",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/600135",
-      "eventItemId": 600135,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
-    },
-    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -254,24 +182,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
-    },
-    {
-      "facility": "Trout Lake Rink",
-      "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
-      "lat": 49.25486,
-      "lng": -123.06521,
-      "date": "2026-04-09",
-      "startTime": "15:00",
-      "endTime": "16:15",
-      "type": "Public Skating",
-      "activityName": "Discount Skate",
-      "description": "Date & Time   Mondays, 1:45pm - 4:15pm     Sessions    April 2 - June 25, 2026                 Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Childr",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/600136",
-      "eventItemId": 600136,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -320,5 +230,5 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 20
+  "count": 15
 }

@@ -66,24 +66,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Renfrew Park Pool",
-      "city": "Vancouver",
-      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
-      "lat": 49.2512,
-      "lng": -123.0429,
-      "date": "2026-04-23",
-      "startTime": "08:45",
-      "endTime": "09:45",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down components, designed fo",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/616592",
-      "eventItemId": 616592,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -164,24 +146,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Vancouver Aquatic Centre",
-      "city": "Vancouver",
-      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
-      "lat": 49.2777,
-      "lng": -123.1394,
-      "date": "2026-04-23",
-      "startTime": "11:20",
-      "endTime": "12:15",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Deep Water",
-      "description": "This 55-minute Deep Water Aquafit class runs in the dive tank.     Aquafit is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm u",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep-water/616391",
-      "eventItemId": 616391,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -244,24 +208,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Kensington Pool",
-      "city": "Vancouver",
-      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
-      "lat": 49.239,
-      "lng": -123.0758,
-      "date": "2026-04-23",
-      "startTime": "14:30",
-      "endTime": "15:30",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Range of Motion",
-      "description": "A gentle, no impact water workout to enhance joint mobility. Participants will receive instruction to move the joint through flexion, extension, and rotation in a controlled manner. Designed for par",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---range-of-motion/616703",
-      "eventItemId": 616703,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -408,5 +354,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 25
+  "count": 22
 }

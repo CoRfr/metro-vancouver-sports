@@ -63,24 +63,6 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
-      "facility": "Trout Lake Rink",
-      "city": "Vancouver",
-      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
-      "lat": 49.25486,
-      "lng": -123.06521,
-      "date": "2026-05-04",
-      "startTime": "10:00",
-      "endTime": "11:30",
-      "type": "Hockey",
-      "activityName": "Trout Lake Arena - 40+ Hockey GOALIES - Monday 10:00am",
-      "description": "GOALIE REGISTRATION ONLY!! Players should register in the 40+ Hockey session.  Only 2 goalies permitted per session. Free admission.  Recreational hockey game for those 40 years and older. Full gear",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---40-hockey-goalies---monday-10-00am/602721",
-      "eventItemId": 602721,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
-    },
-    {
       "facility": "Rosemary Brown Recreation Centre",
       "city": "Burnaby",
       "address": "7789 18th St, Burnaby, BC V3N 5E5",
@@ -221,5 +203,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 14
+  "count": 13
 }

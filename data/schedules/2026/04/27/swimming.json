@@ -2,24 +2,6 @@
   "date": "2026-04-27",
   "sessions": [
     {
-      "facility": "Hillcrest Aquatic Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-27",
-      "startTime": "06:00",
-      "endTime": "08:59",
-      "type": "Public Swim",
-      "activityName": "Length Swim (3 lanes x 50m)",
-      "description": "Date and Time       Mon., Wed., Fri 6:00am - 9:00am  Sat 6:00am - 8:30am             Session   April 27, 2026 to June 21, 2026                       For  detailed admission fee and discoun",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-3-lanes-x-50m/612137",
-      "eventItemId": 612137,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -84,24 +66,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Hillcrest Aquatic Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-27",
-      "startTime": "09:00",
-      "endTime": "09:29",
-      "type": "Public Swim",
-      "activityName": "Bulkhead Move - No lanes available",
-      "description": "Date and Time      Mon, Tue, Wed, Thu, Fri 9:00am to 9:30am Sat and Sun 8:30am to 9:00am            Session   April 27, 2026 to June 21, 2026                No lanes available due to bulkh",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/bulkhead-move---no-lanes-available/612142",
-      "eventItemId": 612142,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -116,42 +80,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Vancouver Aquatic Centre",
-      "city": "Vancouver",
-      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
-      "lat": 49.2777,
-      "lng": -123.1394,
-      "date": "2026-04-27",
-      "startTime": "09:20",
-      "endTime": "10:15",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Water Moderate",
-      "description": "This 55-minute Aquafit class is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down com",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-water-moderate/616202",
-      "eventItemId": 616202,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
-    },
-    {
-      "facility": "Hillcrest Aquatic Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-27",
-      "startTime": "09:30",
-      "endTime": "20:59",
-      "type": "Public Swim",
-      "activityName": "Public Swim, 3 lanes x 25m",
-      "description": "Date and Time      Mon, Tue, Wed, Thu, and Fri 9:30AM to 9:00PM Sat and Sun 9:00AM to 9:00PM             Session   April 27, 2026 to June 21, 2026               Recreational  swim for all",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-3-lanes-x-25m/612144",
-      "eventItemId": 612144,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -216,24 +144,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Hillcrest Aquatic Centre",
-      "city": "Vancouver",
-      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
-      "lat": 49.24407,
-      "lng": -123.10781,
-      "date": "2026-04-27",
-      "startTime": "12:05",
-      "endTime": "12:59",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Date and Time   Mon. 12:05pm - 1:00pm            Session   Apr 27, 2026 to June 15, 2026                 An  aqua fitness class taught in shallow water that includes warm up, cardio,  stre",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/616105",
-      "eventItemId": 616105,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -380,24 +290,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
-      "facility": "Britannia Pool",
-      "city": "Vancouver",
-      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
-      "lat": 49.2754,
-      "lng": -123.0719,
-      "date": "2026-04-27",
-      "startTime": "20:00",
-      "endTime": "21:00",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Deep",
-      "description": "This 60-minute  Deep Water Aquafit class runs in the 25m deep pool.    Aquafit  is a moderately paced and energizing class that utilizes water resistance for a  variety of exercise combinations with w",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep/617033",
-      "eventItemId": 617033,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
-    },
-    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -430,5 +322,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 26
+  "count": 20
 }

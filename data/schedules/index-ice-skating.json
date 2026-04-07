@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-04-06T07:26:05.507Z",
-  "totalSessions": 804,
+  "lastUpdated": "2026-04-07T07:12:05.575Z",
+  "totalSessions": 717,
   "dateRange": {
-    "start": "2026-04-06",
+    "start": "2026-04-07",
     "end": "2026-06-28"
   },
   "dates": [
-    "2026-04-06",
     "2026-04-07",
     "2026-04-08",
     "2026-04-09",
@@ -95,17 +94,17 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 73,
-      "status": "ok"
+      "sessions": 0,
+      "status": "no-data"
     },
     {
       "city": "Burnaby",
-      "sessions": 76,
+      "sessions": 75,
       "status": "ok"
     },
     {
       "city": "Richmond",
-      "sessions": 168,
+      "sessions": 163,
       "status": "ok"
     },
     {
@@ -125,7 +124,7 @@
     },
     {
       "city": "West Vancouver",
-      "sessions": 208,
+      "sessions": 200,
       "status": "ok"
     },
     {
