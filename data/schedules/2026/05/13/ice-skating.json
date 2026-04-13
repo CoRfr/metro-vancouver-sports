@@ -47,6 +47,40 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-05-13",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Hockey",
+      "activityName": "Trout Lake Arena - Public Hockey - Wednesday 10:00am",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---wednesday-10-00am/600090",
+      "eventItemId": 600090,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-05-13",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Skating",
+      "activityName": "Lap Skate",
+      "ageRange": "8 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=660&location_ref=6916"
+    },
+    {
       "facility": "Richmond Ice Centre",
       "city": "Richmond",
       "address": "14140 Triangle Rd, Richmond, BC V6W 1K4",
@@ -60,6 +94,22 @@
       "activityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "facilityUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm",
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-05-13",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Shoot & Score",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -78,6 +128,24 @@
       "scheduleUrl": "https://www.richmond.ca/parks-recreation/about/schedules.htm"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-05-13",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Trout Lake Arena - Stick, Puck & Ring - Wednesday 11:45am",
+      "description": "For those 19 years and older. CSA Helmets and hockey gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participant",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---stick-puck-ring---wednesday-11-45am/600107",
+      "eventItemId": 600107,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -91,6 +159,22 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-05-13",
+      "startTime": "13:00",
+      "endTime": "14:15",
+      "type": "Figure Skating",
+      "activityName": "Figure Skating",
+      "ageRange": "16 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "Richmond Ice Centre",
@@ -199,5 +283,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 13
+  "count": 18
 }
