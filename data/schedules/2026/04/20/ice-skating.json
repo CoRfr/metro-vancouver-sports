@@ -169,6 +169,21 @@
       "lat": 49.0788784,
       "lng": -122.6518472,
       "date": "2026-04-20",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
+    },
+    {
+      "facility": "George Preston Recreation Centre",
+      "city": "Langley",
+      "address": "20699 - 42 Avenue, Langley, BC",
+      "lat": 49.0788784,
+      "lng": -122.6518472,
+      "date": "2026-04-20",
       "startTime": "13:45",
       "endTime": "14:45",
       "type": "Drop-in Hockey",
@@ -194,5 +209,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 12
+  "count": 13
 }
