@@ -127,6 +127,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-23",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Thursdays, 12:00pm - 1:30pm     Sessions    April 2 to June 25          Open skate for people 50 years and older.             *Monthly Flexipass and 10-Visit passes are accepted for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/600132",
+      "eventItemId": 600132,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Port Coquitlam Community Centre",
       "city": "Port Coquitlam",
       "address": "2150 Wilson Ave, Port Coquitlam, BC V3C 6J5",
@@ -205,6 +223,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-23",
+      "startTime": "13:45",
+      "endTime": "14:45",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "Date & Time   Mondays, 1:45pm - 4:15pm     Sessions    April 2 - June 25, 2026                 Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Childr",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/600135",
+      "eventItemId": 600135,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -218,6 +254,24 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-23",
+      "startTime": "15:00",
+      "endTime": "16:15",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "Date & Time   Mondays, 1:45pm - 4:15pm     Sessions    April 2 - June 25, 2026                 Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Childr",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/600136",
+      "eventItemId": 600136,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
       "facility": "Rosemary Brown Recreation Centre",
@@ -266,5 +320,5 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 17
+  "count": 20
 }
