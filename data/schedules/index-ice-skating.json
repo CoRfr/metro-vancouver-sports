@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-04-24T07:58:13.769Z",
-  "totalSessions": 611,
+  "lastUpdated": "2026-04-25T07:10:13.589Z",
+  "totalSessions": 587,
   "dateRange": {
-    "start": "2026-04-24",
+    "start": "2026-04-25",
     "end": "2026-06-28"
   },
   "dates": [
-    "2026-04-24",
     "2026-04-25",
     "2026-04-26",
     "2026-04-27",
@@ -77,7 +76,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 77,
+      "sessions": 73,
       "status": "ok"
     },
     {
@@ -87,27 +86,27 @@
     },
     {
       "city": "Richmond",
-      "sessions": 103,
+      "sessions": 97,
       "status": "ok"
     },
     {
       "city": "Port Coquitlam",
-      "sessions": 14,
+      "sessions": 10,
       "status": "ok"
     },
     {
       "city": "Coquitlam",
-      "sessions": 160,
+      "sessions": 156,
       "status": "ok"
     },
     {
       "city": "North Vancouver",
-      "sessions": 2,
+      "sessions": 4,
       "status": "ok"
     },
     {
       "city": "West Vancouver",
-      "sessions": 152,
+      "sessions": 144,
       "status": "ok"
     },
     {
