@@ -96,6 +96,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-28",
+      "startTime": "10:30",
+      "endTime": "12:00",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Tuesdays, 10:30am - 12:00pm     Sessions    March 31 to June 23 * No session April 14          Open skate for people 50 years and older.             *Monthly Flexipass and 10-Visit",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/599704",
+      "eventItemId": 599704,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -236,6 +254,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-28",
+      "startTime": "12:15",
+      "endTime": "14:00",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "Date & Time   Tuesdays, 12:15pm - 2:00pm     Sessions    March 31 - June 23, 2026 * No session April 14                 Open skate for all ages.         Children under 8 years MUST be supervised",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/599705",
+      "eventItemId": 599705,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -303,6 +339,60 @@
       "lat": 49.25486,
       "lng": -123.06521,
       "date": "2026-04-28",
+      "startTime": "18:30",
+      "endTime": "19:00",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Date & Time   Tuesdays, 6:30pm - 7:00pm     Sessions    March 31 - June 23, 2026                Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has a",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/599706",
+      "eventItemId": 599706,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-28",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Tuesdays, 7:00pm - 8:00pm     Sessions    March 31 - June 23, 2026                 Open skate for all ages.         Children under 8 years MUST be supervised on the ice by an indivi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/599707",
+      "eventItemId": 599707,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-28",
+      "startTime": "20:15",
+      "endTime": "21:15",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "description": "Date & Time   Tuesdays, 8:15pm - 9:15pm     Sessions    March 31 - June 23, 2026                 Open skate for adults (19 years and older).         *Monthly Flexipass and 10-Visit passes are acc",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/adult-skate/599709",
+      "eventItemId": 599709,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-04-28",
       "startTime": "21:30",
       "endTime": "22:30",
       "type": "Hockey",
@@ -315,5 +405,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 20
+  "count": 25
 }
