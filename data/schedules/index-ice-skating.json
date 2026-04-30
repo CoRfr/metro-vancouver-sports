@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-04-29T08:11:48.223Z",
-  "totalSessions": 557,
+  "lastUpdated": "2026-04-30T08:14:39.666Z",
+  "totalSessions": 538,
   "dateRange": {
-    "start": "2026-04-29",
+    "start": "2026-04-30",
     "end": "2026-06-28"
   },
   "dates": [
-    "2026-04-29",
     "2026-04-30",
     "2026-05-01",
     "2026-05-02",
@@ -72,27 +71,27 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 80,
-      "status": "ok"
-    },
-    {
-      "city": "Burnaby",
       "sessions": 75,
       "status": "ok"
     },
     {
+      "city": "Burnaby",
+      "sessions": 76,
+      "status": "ok"
+    },
+    {
       "city": "Richmond",
-      "sessions": 85,
+      "sessions": 79,
       "status": "ok"
     },
     {
       "city": "Port Coquitlam",
-      "sessions": 5,
+      "sessions": 3,
       "status": "ok"
     },
     {
       "city": "Coquitlam",
-      "sessions": 147,
+      "sessions": 145,
       "status": "ok"
     },
     {
@@ -102,7 +101,7 @@
     },
     {
       "city": "West Vancouver",
-      "sessions": 138,
+      "sessions": 135,
       "status": "ok"
     },
     {
@@ -112,7 +111,7 @@
     },
     {
       "city": "Langley",
-      "sessions": 23,
+      "sessions": 21,
       "status": "ok"
     },
     {
