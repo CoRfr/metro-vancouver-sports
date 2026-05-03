@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-22",
+  "sessions": [
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-06-22",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Deep",
+      "description": "This 60-minute  Deep Water Aquafit class runs in the 25m deep pool.    Aquafit  is a moderately paced and energizing class that utilizes water resistance for a  variety of exercise combinations with w",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep/620660",
+      "eventItemId": 620660,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    }
+  ],
+  "count": 1
+}

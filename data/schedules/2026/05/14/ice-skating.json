@@ -205,7 +205,37 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916"
+    },
+    {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-05-14",
+      "startTime": "16:00",
+      "endTime": "17:35",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-canlan-sports-thursday-400pm-535pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-05-14",
+      "startTime": "18:45",
+      "endTime": "19:35",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-645-735pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 13
+  "count": 15
 }
