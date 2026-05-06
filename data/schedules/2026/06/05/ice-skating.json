@@ -33,6 +33,22 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-06-05",
+      "startTime": "10:00",
+      "endTime": "11:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Recreational Ringette",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -61,6 +77,22 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Rosemary Brown Recreation Centre",
+      "city": "Burnaby",
+      "address": "7789 18th St, Burnaby, BC V3N 5E5",
+      "lat": 49.2088,
+      "lng": -122.9525,
+      "date": "2026-06-05",
+      "startTime": "11:30",
+      "endTime": "12:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Shoot & Score",
+      "ageRange": "18 yrs+, Rink A",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/rosemary-brown-recreation-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?location_ref=6916"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -185,5 +217,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 12
+  "count": 14
 }
