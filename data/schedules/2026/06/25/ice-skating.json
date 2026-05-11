@@ -31,7 +31,25 @@
       "activityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "facilityUrl": "https://www.coquitlam.ca/979/Drop-In-Activities",
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-06-25",
+      "startTime": "13:45",
+      "endTime": "15:15",
+      "type": "Hockey",
+      "activityName": "Hillcrest Arena - 40+ Hockey - Thursday 1:45pm",
+      "description": "Recreational hockey game for those 40 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---40-hockey---thursday-1-45pm/599690",
+      "eventItemId": 599690,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     }
   ],
-  "count": 2
+  "count": 3
 }

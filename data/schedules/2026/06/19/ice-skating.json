@@ -33,6 +33,24 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-06-19",
+      "startTime": "20:00",
+      "endTime": "21:15",
+      "type": "Para Hockey",
+      "activityName": "Hillcrest Arena - Para Hockey Int Scrim - Friday 8:00pm",
+      "description": "Para Ice hockey for Intermediate/Advanced who want to play in a casual game.  Everyone is welcome to participate - people with a physical disability and able-bodied people, but all participants must",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---para-hockey-int-scrim---friday-8-00pm/608442",
+      "eventItemId": 608442,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "Poirier Sport and Leisure Complex",
       "city": "Coquitlam",
       "address": "633 Poirier St, Coquitlam, BC V3J 6B1",
@@ -65,5 +83,5 @@
       "scheduleUrl": "https://www.coquitlam.ca/979/Drop-In-Activities"
     }
   ],
-  "count": 4
+  "count": 5
 }
