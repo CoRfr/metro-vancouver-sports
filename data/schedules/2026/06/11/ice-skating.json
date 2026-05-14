@@ -64,6 +64,24 @@
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-06-11",
+      "startTime": "12:00",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "Hillcrest Arena - Stick, Puck & Ring - Thursday 12:00pm",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-12-00pm/599617",
+      "eventItemId": 599617,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -113,5 +131,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=658&location_ref=6916"
     }
   ],
-  "count": 7
+  "count": 8
 }
