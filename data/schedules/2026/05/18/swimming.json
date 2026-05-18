@@ -168,6 +168,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
+      "facility": "Vancouver Aquatic Centre",
+      "city": "Vancouver",
+      "address": "1050 Beach Ave, Vancouver, BC V6E 1T7",
+      "lat": 49.2777,
+      "lng": -123.1394,
+      "date": "2026-05-18",
+      "startTime": "09:00",
+      "endTime": "10:29",
+      "type": "Family Swim",
+      "activityName": "Tot Pool",
+      "description": "Date and Time   Mon. 2-4pm Tue. 1-3pm Wed. 2-3:30pm Thu. 1:30-3pm Fri. 2-3:30pm & 5:30-7pm  Sat. 1-4pm Sun. 1-4pm             Session          Mar 30-June 28, 2026 Except Apr 3, Apr 6, and",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/tot-pool/571456",
+      "eventItemId": 571456,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/vancouver-aquatic-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=2"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -426,6 +444,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-05-18",
+      "startTime": "15:30",
+      "endTime": "19:59",
+      "type": "Lessons",
+      "activityName": "Lessons (1 Lane only)",
+      "description": "Date and Time     Mon - Thu 3:30pm-8:00pm Fri 3:30pm-6:30pm Sat 9:00am-1pm            Session     Spring 2026 (Mar 30 - June 21)                 1 Lane only for continuous length swim for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-1-lane-only/618163",
+      "eventItemId": 618163,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Lord Byng Pool",
       "city": "Vancouver",
       "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
@@ -586,5 +622,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 36
+  "count": 38
 }
