@@ -2,6 +2,24 @@
   "date": "2026-06-01",
   "sessions": [
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-06-01",
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "type": "Public Swim",
+      "activityName": "Pool Closure - June 1-July 12",
+      "description": "Date and Time   Mon - Fri 6:15am-9:00pm Sat and Sun 8:00am-9:00pm     Session   June 1-July 12, 2026 (re-opens July 13, 2026)           Pool is closed for Annual Maintenance.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/pool-closure---june-1-july-12/541530",
+      "eventItemId": 541530,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -376,5 +394,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 23
+  "count": 24
 }
