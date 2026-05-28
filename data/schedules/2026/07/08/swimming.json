@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-08",
+  "sessions": [
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-07-08",
+      "startTime": "10:15",
+      "endTime": "11:15",
+      "type": "Public Swim",
+      "activityName": "FitNation",
+      "description": "This eight week aquatic fitness program is designed for beginners and will help to improve mobility, agility, balance and general fitness level.   In the water:  please bring bathing suit (or clean s",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/fitnation/620138",
+      "eventItemId": 620138,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-07-08",
+      "startTime": "20:00",
+      "endTime": "21:00",
+      "type": "Public Swim",
+      "activityName": "FitNation",
+      "description": "This eight week aquatic fitness program is designed for beginners and will help to improve mobility, agility, balance and general fitness level.   In the water:  please bring bathing suit (or clean s",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/fitnation/620137",
+      "eventItemId": 620137,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    }
+  ],
+  "count": 2
+}
