@@ -315,6 +315,22 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
+      "facility": "Eileen Dailly Leisure Pool",
+      "city": "Burnaby",
+      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
+      "lat": 49.28379,
+      "lng": -122.97858,
+      "date": "2026-06-05",
+      "startTime": "12:30",
+      "endTime": "16:00",
+      "type": "Public Swim",
+      "activityName": "Slide",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -489,6 +505,22 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Eileen Dailly Leisure Pool",
+      "city": "Burnaby",
+      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
+      "lat": 49.28379,
+      "lng": -122.97858,
+      "date": "2026-06-05",
+      "startTime": "16:30",
+      "endTime": "20:30",
+      "type": "Public Swim",
+      "activityName": "Slide",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -646,5 +678,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 41
+  "count": 43
 }
