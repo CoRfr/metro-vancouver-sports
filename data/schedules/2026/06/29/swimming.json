@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-06-29",
+      "startTime": "06:30",
+      "endTime": "09:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths Swim",
+      "description": "Date and Time     Mon. 6:30 AM - 10:00 AM Tue 6:30 AM - 10:00 AM Wed 6:30 AM - 10:00 AM  Thu 6:30 AM - 8:30 AM Fri 6:30 AM - 10:00 AM Sun 9:00AM - 10:15AM            Session     June 29, 20",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-swim/625653",
+      "eventItemId": 625653,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -96,6 +114,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-06-29",
+      "startTime": "10:00",
+      "endTime": "15:30",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date & Time   M/T/W/Th: 10:00am - 3:30pm, 8:00pm - 9:30pm  Fri: 10:00am - 3:30pm, 8:00pm - 9:00pm  Sat/Sun 2:30pm - 4:30pm  July 1:  1:00pm - 5:30pm  Aug 3: 9:30am - 4:30pm              S",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/625664",
+      "eventItemId": 625664,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -224,6 +260,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-06-29",
+      "startTime": "16:00",
+      "endTime": "20:00",
+      "type": "Lessons",
+      "activityName": "Lengths  Group Lessons",
+      "description": "Date & Time     M-F: 4:00 PM - 8:00 PM   Sat & Sun: 10:30 AM - 2:30 PM            Sessions   Jun 29, 2026 - Aug 23, 2026  No Lengths/Group Lessons on Jul 1 and Aug 3                    Co",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-group-lessons/625676",
+      "eventItemId": 625676,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -372,5 +426,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 23
+  "count": 26
 }
