@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-06-22",
+      "startTime": "06:30",
+      "endTime": "09:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon- 6:30am-10:00am; 11:30am-1:00pm Tue- Thu 6:30am-10:00am; 11:30am-1:00pm; 8:00pm-9:00pm Fri 6:30am-10:00am; 11:30am-1:00pm; 4:00pm-6:00pm; 8:00pm-9:00pm Sat, Sun 5:30p",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/389427",
+      "eventItemId": 389427,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -96,6 +114,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-06-22",
+      "startTime": "10:00",
+      "endTime": "11:29",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time     Mon, Wed, Thu 10:00am-11:30am; 1:00pm-4:00pm; 6:30pm-8:00pm Tue 1:00pm-2:00pm; 6:30pm-8:00pm Fri 10:00am-11:30am; 1:00pm-4:00pm Sat, Sun 1:30pm-5:30pm             Session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/533300",
+      "eventItemId": 533300,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -224,6 +260,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-06-22",
+      "startTime": "16:00",
+      "endTime": "18:29",
+      "type": "Lap Swim",
+      "activityName": "Lengths with Tot Pool",
+      "description": "Date and Time     Mon- Thu 4:00pm-6:30pm Sat- Sun 11:00am-1:30pm            Session   Jun 22- Jun 28, 2026                 Continuous length swim for all ages. Lanes are designated for spe",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-with-tot-pool/454242",
+      "eventItemId": 454242,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -372,5 +426,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 23
+  "count": 26
 }
