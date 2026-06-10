@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-06-29",
+      "startTime": "06:30",
+      "endTime": "11:29",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon 6:30am-11:30am Tue 6:30am-10:00am; 8:00pm-9:00pm Wed 6:30am-10:00am Thu, Fri 6:30am-11:30am; 8:00pm-9:00pm Sat, Sun 5:30pm-7:00pm            Session   Jun 29- Aug 24,",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/524491",
+      "eventItemId": 524491,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
       "facility": "Renfrew Park Pool",
       "city": "Vancouver",
       "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
@@ -426,5 +444,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 26
+  "count": 27
 }
