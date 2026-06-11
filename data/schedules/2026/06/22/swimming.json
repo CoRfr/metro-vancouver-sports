@@ -68,6 +68,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-06-22",
+      "startTime": "06:30",
+      "endTime": "09:44",
+      "type": "Lap Swim",
+      "activityName": "Lengths Swim",
+      "description": "Date and Time     Mon, Tue, Wed, Thu, Fri: 630am to 9:45am Sat, Sun: 9am to 10:15am             Session    Summer Interim 2026 - Jun 22 to Jun 28                  Continuous length swim for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-swim/626615",
+      "eventItemId": 626615,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -132,6 +150,24 @@
       "eventItemId": 533300,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-06-22",
+      "startTime": "10:00",
+      "endTime": "21:29",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date & Time   Mon, Tue, Wed, Thu, Fri: 10am to 9:30pm  Sat, Sun: 10:30am to 5pm            Session    June 22, 2026 - Jun 28, 2026                    Recreational  swim for all ages. Chil",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/626616",
+      "eventItemId": 626616,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -426,5 +462,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 26
+  "count": 28
 }
