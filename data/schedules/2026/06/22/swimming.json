@@ -86,6 +86,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-06-22",
+      "startTime": "06:30",
+      "endTime": "08:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths",
+      "description": "Date and Time     Mon - Fri (6:30am - 9:00am) - 3 lanes Mon - Fri (12pm-1pm) - 4 lanes Sat - Sun (4:30pm-5:30pm) - 4 lanes            Session     Interim (June 22 - June 28)",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/627974",
+      "eventItemId": 627974,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -100,6 +118,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-06-22",
+      "startTime": "09:00",
+      "endTime": "12:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim -- Main Tank",
+      "description": "Date and Time     Mon 9am-12pm, 1pm-9:30pm Tue 10:30am-12pm, 1pm-9:30pm Wed 9am-12pm, 1pm-9:30pm Thu 10:30am-12pm, 1pm-9:30pm Fri 9am-11am Sat 9am-4:30pm, 5:30pm-7:30pm Sun 2pm-4:30pm, 5:3",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim----main-tank/627982",
+      "eventItemId": 627982,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -218,6 +254,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-06-22",
+      "startTime": "11:30",
+      "endTime": "20:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim - Teach Pool",
+      "description": "Days and Time       Mon - Thur  (11:30am-8:00pm)  Sat  10:00am-7:30pm  Sunday  2:00pm-7:30pm              Session    Interim (June 22 - June 28)                Recreational  swim for all ag",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim---teach-pool/627990",
+      "eventItemId": 627990,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -480,5 +534,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 29
+  "count": 32
 }
