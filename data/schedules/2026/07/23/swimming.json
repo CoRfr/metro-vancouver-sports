@@ -18,7 +18,25 @@
       "eventItemId": 626621,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
+      "facility": "Kensington Pool",
+      "city": "Vancouver",
+      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
+      "lat": 49.239,
+      "lng": -123.0758,
+      "date": "2026-07-23",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Range of Motion",
+      "description": "A gentle, no impact water workout to enhance joint mobility. Participants will receive instruction to move the joint through flexion, extension, and rotation in a controlled manner. Designed for par",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---range-of-motion/629865",
+      "eventItemId": 629865,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     }
   ],
-  "count": 1
+  "count": 2
 }

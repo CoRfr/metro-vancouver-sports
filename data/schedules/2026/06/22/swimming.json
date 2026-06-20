@@ -50,6 +50,36 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "06:00",
+      "endTime": "07:30",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim - Long Course (50m)",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "06:00",
+      "endTime": "09:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
+    },
+    {
       "facility": "Britannia Pool",
       "city": "Vancouver",
       "address": "1661 Napier St, Vancouver, BC V5L 4X4",
@@ -104,6 +134,36 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "06:30",
+      "endTime": "08:30",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "07:30",
+      "endTime": "08:00",
+      "type": "Public Swim",
+      "activityName": "Pool Closed - Bulkhead Move",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -118,6 +178,36 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "08:00",
+      "endTime": "11:00",
+      "type": "Family Swim",
+      "activityName": "Adult and Tot Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "08:30",
+      "endTime": "10:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
       "facility": "Templeton Park Pool",
@@ -152,6 +242,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "09:00",
+      "endTime": "12:00",
+      "type": "Lessons",
+      "activityName": "Lessons and Limited Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
       "facility": "Vancouver Aquatic Centre",
@@ -206,6 +311,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
     },
     {
+      "facility": "Kensington Pool",
+      "city": "Vancouver",
+      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
+      "lat": 49.239,
+      "lng": -123.0758,
+      "date": "2026-06-22",
+      "startTime": "10:00",
+      "endTime": "17:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "description": "Date and Time   Mon: 10:00am-6:00pm  Tue: 9:00am-8:00pm Wed: 10:00am-6:00pm Thu: 9:00am-8:00pm Fri: 10:00am-6:00pm Sat: 9:00am-4:00pm Sun: 9:00am-4:00pm       Session   June 22 to Jun. 28,",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/629870",
+      "eventItemId": 629870,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
+    },
+    {
       "facility": "Renfrew Park Pool",
       "city": "Vancouver",
       "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
@@ -224,6 +347,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "type": "Public Swim",
+      "activityName": "Pool Closed",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -240,6 +378,21 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "10:30",
+      "endTime": "13:00",
+      "type": "Public Swim",
+      "activityName": "School Waterpark Session",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -254,6 +407,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "11:00",
+      "endTime": "15:30",
+      "type": "Public Swim",
+      "activityName": "Limited Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
       "facility": "Templeton Park Pool",
@@ -290,6 +458,21 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "12:00",
+      "endTime": "14:00",
+      "type": "Public Swim",
+      "activityName": "Sensory Friendly Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -322,6 +505,21 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "13:00",
+      "endTime": "13:30",
+      "type": "Public Swim",
+      "activityName": "Pool Closed",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -336,6 +534,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "13:30",
+      "endTime": "15:30",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -368,6 +581,66 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "15:30",
+      "endTime": "18:30",
+      "type": "Lessons",
+      "activityName": "Lessons and Hot Tub",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-06-22",
+      "startTime": "15:30",
+      "endTime": "18:30",
+      "type": "Lessons",
+      "activityName": "Lessons and Limited Lap Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "15:30",
+      "endTime": "19:00",
+      "type": "Lessons",
+      "activityName": "Lessons and Limited Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
       "facility": "Britannia Pool",
@@ -452,6 +725,21 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-06-22",
+      "startTime": "18:30",
+      "endTime": "21:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -466,6 +754,21 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "W.C. Blair Recreation Centre",
+      "city": "Langley",
+      "address": "22200 Fraser Highway, Langley, BC",
+      "lat": 49.0913815,
+      "lng": -122.6096282,
+      "date": "2026-06-22",
+      "startTime": "19:00",
+      "endTime": "21:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -534,5 +837,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 32
+  "count": 52
 }
