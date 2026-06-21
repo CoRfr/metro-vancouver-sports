@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-11",
+  "sessions": [
+    {
+      "facility": "Britannia Pool",
+      "city": "Vancouver",
+      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
+      "lat": 49.2754,
+      "lng": -123.0719,
+      "date": "2026-08-11",
+      "startTime": "10:15",
+      "endTime": "11:15",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Mild",
+      "description": "Mild Aquafit offers a gentle introduction to water-based fitness, ideal  for beginners and individuals seeking moderate exercise. This class  utilizes the resistance of water to provide a full-body",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---mild/626062",
+      "eventItemId": 626062,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    }
+  ],
+  "count": 1
+}
