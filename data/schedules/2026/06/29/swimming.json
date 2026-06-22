@@ -50,42 +50,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Britannia Pool",
-      "city": "Vancouver",
-      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
-      "lat": 49.2754,
-      "lng": -123.0719,
-      "date": "2026-06-29",
-      "startTime": "06:30",
-      "endTime": "11:29",
-      "type": "Lap Swim",
-      "activityName": "Lengths",
-      "description": "Date and Time     Mon 6:30am-11:30am Tue 6:30am-10:00am; 8:00pm-9:00pm Wed 6:30am-10:00am Thu, Fri 6:30am-11:30am; 8:00pm-9:00pm Sat, Sun 5:30pm-7:00pm            Session   Jun 29- Aug 24,",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths/524491",
-      "eventItemId": 524491,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
-    },
-    {
-      "facility": "Renfrew Park Pool",
-      "city": "Vancouver",
-      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
-      "lat": 49.2512,
-      "lng": -123.0429,
-      "date": "2026-06-29",
-      "startTime": "06:30",
-      "endTime": "09:59",
-      "type": "Lap Swim",
-      "activityName": "Lengths Swim",
-      "description": "Date and Time     Mon. 6:30 AM - 10:00 AM Tue 6:30 AM - 10:00 AM Wed 6:30 AM - 10:00 AM  Thu 6:30 AM - 8:30 AM Fri 6:30 AM - 10:00 AM Sun 9:00AM - 10:15AM            Session     June 29, 20",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-swim/625653",
-      "eventItemId": 625653,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
-    },
-    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -134,42 +98,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Kensington Pool",
-      "city": "Vancouver",
-      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
-      "lat": 49.239,
-      "lng": -123.0758,
-      "date": "2026-06-29",
-      "startTime": "10:00",
-      "endTime": "12:14",
-      "type": "Lessons",
-      "activityName": "Public Swim/ Lessons]",
-      "description": "Date and Time     Mon: 10am to 12:30pm ,3:30pm to 6pm Tue: 11am to 1pm, 4:30pm to 7pm Wed: 10am to 12:30pm, 3:30pm to 6pm Thu: 11 am to 1pm, 4:30pm to 7pm Sat: 10:15am to 1:30pm",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-lessons/630015",
-      "eventItemId": 630015,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
-    },
-    {
-      "facility": "Renfrew Park Pool",
-      "city": "Vancouver",
-      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
-      "lat": 49.2512,
-      "lng": -123.0429,
-      "date": "2026-06-29",
-      "startTime": "10:00",
-      "endTime": "15:30",
-      "type": "Public Swim",
-      "activityName": "Public Swim",
-      "description": "Date & Time   M/T/W/Th: 10:00am - 3:30pm, 8:00pm - 9:30pm  Fri: 10:00am - 3:30pm, 8:00pm - 9:00pm  Sat/Sun 2:30pm - 4:30pm  July 1:  1:00pm - 5:30pm  Aug 3: 9:30am - 4:30pm              S",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/625664",
-      "eventItemId": 625664,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -216,24 +144,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Kensington Pool",
-      "city": "Vancouver",
-      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
-      "lat": 49.239,
-      "lng": -123.0758,
-      "date": "2026-06-29",
-      "startTime": "12:30",
-      "endTime": "15:29",
-      "type": "Public Swim",
-      "activityName": "Public Swim",
-      "description": "Date and Time   Mon: 12:30pm to 3:30pm Tue: 9am to 11:00am, 3:30pm to 4:30pm, 7pm to 8pm Wed: 12:30pm to 3:30pm Thu: 9am to 11:00am, 1pm to 2:30pm, 3:30pm to 4:30pm, 7pm to 8pm Fri: 10:00a",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim/629968",
-      "eventItemId": 629968,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -314,24 +224,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
-    },
-    {
-      "facility": "Renfrew Park Pool",
-      "city": "Vancouver",
-      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
-      "lat": 49.2512,
-      "lng": -123.0429,
-      "date": "2026-06-29",
-      "startTime": "16:00",
-      "endTime": "20:00",
-      "type": "Lessons",
-      "activityName": "Lengths  Group Lessons",
-      "description": "Date & Time     M-F: 4:00 PM - 8:00 PM   Sat & Sun: 10:30 AM - 2:30 PM            Sessions   Jun 29, 2026 - Aug 23, 2026  No Lengths/Group Lessons on Jul 1 and Aug 3                    Co",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-group-lessons/625676",
-      "eventItemId": 625676,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -430,24 +322,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
-      "facility": "Britannia Pool",
-      "city": "Vancouver",
-      "address": "1661 Napier St, Vancouver, BC V5L 4X4",
-      "lat": 49.2754,
-      "lng": -123.0719,
-      "date": "2026-06-29",
-      "startTime": "20:00",
-      "endTime": "21:00",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Deep",
-      "description": "This 60-minute  Deep Water Aquafit class runs in the 25m deep pool.    Aquafit  is a moderately paced and energizing class that utilizes water resistance for a  variety of exercise combinations with w",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---deep/620661",
-      "eventItemId": 620661,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
-    },
-    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -480,5 +354,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 29
+  "count": 22
 }

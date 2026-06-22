@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-29",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-07-29",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Figure Skating",
+      "activityName": "Hillcrest Arena - Public Figure Skating - Wednesday 11:45am",
+      "description": "This session is for those looking to practice their jumps, spins and field moves.  No partners or pairs skating allowed. No skate rentals, and no lessons are provided.   *Monthly Flexipass and 10-Vis",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-figure-skating---wednesday-11-45am/621928",
+      "eventItemId": 621928,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    }
+  ],
+  "count": 1
+}

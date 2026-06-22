@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-07",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-08-07",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Hockey",
+      "activityName": "Hillcrest Arena - Public Hockey - Friday 11:45am",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---public-hockey---friday-11-45am/621941",
+      "eventItemId": 621941,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    }
+  ],
+  "count": 1
+}

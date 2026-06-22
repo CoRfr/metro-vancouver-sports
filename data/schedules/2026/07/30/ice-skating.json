@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-30",
+  "sessions": [
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-07-30",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Hillcrest Arena - Stick, Puck & Ring - Thursday 11:45am",
+      "description": "For those 19 years and older. Hockey helmet and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants mus",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/hillcrest-arena---stick-puck-ring---thursday-11-45am/621934",
+      "eventItemId": 621934,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    }
+  ],
+  "count": 1
+}
