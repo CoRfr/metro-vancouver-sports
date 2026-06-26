@@ -125,6 +125,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Lord Byng Pool",
+      "city": "Vancouver",
+      "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
+      "lat": 49.2595,
+      "lng": -123.1928,
+      "date": "2026-06-26",
+      "startTime": "09:00",
+      "endTime": "13:00",
+      "type": "Public Swim",
+      "activityName": "Facility Closure",
+      "description": "June 26, scheduled maintenance closure from 9 am - 1 pm",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/facility-closure/631429",
+      "eventItemId": 631429,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
+    },
+    {
       "facility": "W.C. Blair Recreation Centre",
       "city": "Langley",
       "address": "22200 Fraser Highway, Langley, BC",
@@ -642,5 +660,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 41
+  "count": 42
 }
