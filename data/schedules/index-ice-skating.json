@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-06-26T08:59:03.446Z",
-  "totalSessions": 54,
+  "lastUpdated": "2026-06-27T08:32:42.619Z",
+  "totalSessions": 47,
   "dateRange": {
-    "start": "2026-06-26",
+    "start": "2026-06-27",
     "end": "2026-08-13"
   },
   "dates": [
-    "2026-06-26",
     "2026-06-27",
     "2026-06-28",
     "2026-06-29",
@@ -20,6 +19,7 @@
     "2026-07-08",
     "2026-07-09",
     "2026-07-10",
+    "2026-07-11",
     "2026-07-13",
     "2026-07-15",
     "2026-07-16",
@@ -42,7 +42,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 44,
+      "sessions": 40,
       "status": "ok"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "city": "Coquitlam",
-      "sessions": 8,
+      "sessions": 4,
       "status": "ok"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 2,
+      "sessions": 3,
       "status": "ok"
     },
     {
