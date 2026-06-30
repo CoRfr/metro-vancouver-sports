@@ -41,7 +41,7 @@
       "lng": -122.99389,
       "date": "2026-07-19",
       "startTime": "08:00",
-      "endTime": "10:00",
+      "endTime": "09:55",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": null,
@@ -138,8 +138,8 @@
       "date": "2026-07-19",
       "startTime": "13:00",
       "endTime": "17:00",
-      "type": "Family Swim",
-      "activityName": "Family Swim",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
       "ageRange": "No lap lanes",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
@@ -201,38 +201,6 @@
       "lng": -122.99389,
       "date": "2026-07-19",
       "startTime": "17:00",
-      "endTime": "19:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-07-19",
-      "startTime": "19:00",
-      "endTime": "20:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": "No shallow end",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-07-19",
-      "startTime": "20:00",
       "endTime": "21:00",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
@@ -274,5 +242,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 17
+  "count": 15
 }
