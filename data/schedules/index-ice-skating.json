@@ -1,7 +1,7 @@
 {
   "success": true,
-  "lastUpdated": "2026-06-30T09:28:44.363Z",
-  "totalSessions": 40,
+  "lastUpdated": "2026-07-01T09:40:15.331Z",
+  "totalSessions": 41,
   "dateRange": {
     "start": "2026-07-01",
     "end": "2026-08-13"
@@ -79,7 +79,7 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 6,
+      "sessions": 7,
       "status": "ok"
     },
     {
