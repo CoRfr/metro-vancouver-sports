@@ -18,7 +18,43 @@
       "eventItemId": 621395,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-07-06",
+      "startTime": "15:45",
+      "endTime": "17:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/620573",
+      "eventItemId": 620573,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-07-06",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/620574",
+      "eventItemId": 620574,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     }
   ],
-  "count": 1
+  "count": 3
 }
