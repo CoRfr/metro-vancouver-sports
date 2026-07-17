@@ -69,7 +69,25 @@
       "eventItemId": 617479,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Killarney Rink",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-07-17",
+      "startTime": "14:15",
+      "endTime": "15:45",
+      "type": "Skating",
+      "activityName": "TEST",
+      "description": "Date & Time   Wednesday, 8:15-9:45 pm     Sessions    July 1 - August 26, 2026                 Open skate for adults 19+ years.         *Monthly Flexipass and 10-Visit passes are accepted for thi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/test/634451",
+      "eventItemId": 634451,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=25"
     }
   ],
-  "count": 4
+  "count": 5
 }
