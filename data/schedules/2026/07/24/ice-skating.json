@@ -20,6 +20,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-07-24",
+      "startTime": "12:15",
+      "endTime": "13:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Friday, 12:15pm - 1:45pm     Sessions    July 3 - August 7, 2026                  Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Child",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/617478",
+      "eventItemId": 617478,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -33,7 +51,25 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
       "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-07-24",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Friday, 2:00 pm - 3:30pm     Sessions    July 3 - August 7, 2026                  Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Child",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/617479",
+      "eventItemId": 617479,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 2
+  "count": 4
 }

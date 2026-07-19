@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-12",
+  "sessions": [
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-12",
+      "startTime": "12:45",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Saturday, 12:45pm - 2:15pm     Sessions   Sept 12- Sept 19, 2026                  Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Child",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/622998",
+      "eventItemId": 622998,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-12",
+      "startTime": "14:30",
+      "endTime": "16:00",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Date & Time   Saturdays, 2:30pm - 4:00pm      Sessions   Sept 12 -Sept 19, 2026               Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has a l",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/623000",
+      "eventItemId": 623000,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    }
+  ],
+  "count": 2
+}

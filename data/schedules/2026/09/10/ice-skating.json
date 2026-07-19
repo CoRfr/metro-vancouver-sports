@@ -2,6 +2,24 @@
   "date": "2026-09-10",
   "sessions": [
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-10",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Thursdays, 11:45am - 1:15pm     Sessions    Sept 10-Sept 24          Open skate for people 50 years and older.             *Monthly Flexipass and 10-Visit passes are accepted for th",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/622995",
+      "eventItemId": 622995,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -15,7 +33,25 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-10",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Thursday, 6:30pm - 9:45pm     Sessions    Sept 3- Sept 24, 2026                  Open skate for all ages.         Skating Lessons taking place at far end of the ice.          Childr",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/622996",
+      "eventItemId": 622996,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 1
+  "count": 3
 }
