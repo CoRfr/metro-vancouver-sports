@@ -18,7 +18,22 @@
       "eventItemId": 621929,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
+      "lat": 49.21554,
+      "lng": -122.92878,
+      "date": "2026-08-05",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 1
+  "count": 2
 }
