@@ -210,6 +210,21 @@
       "lng": -122.6415541,
       "date": "2026-08-02",
       "startTime": "11:00",
+      "endTime": "11:30",
+      "type": "Public Swim",
+      "activityName": "Main Pool Closed - Bulkhead Move",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
+    },
+    {
+      "facility": "Walnut Grove Community Centre",
+      "city": "Langley",
+      "address": "8889 Walnut Grove Drive, Langley, BC",
+      "lat": 49.1635264,
+      "lng": -122.6415541,
+      "date": "2026-08-02",
+      "startTime": "11:30",
       "endTime": "17:00",
       "type": "Public Swim",
       "activityName": "Public Swim",
@@ -512,5 +527,5 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     }
   ],
-  "count": 33
+  "count": 34
 }
