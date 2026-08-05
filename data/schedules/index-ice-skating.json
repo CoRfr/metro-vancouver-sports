@@ -1,7 +1,7 @@
 {
   "success": true,
-  "lastUpdated": "2026-08-04T08:31:03.348Z",
-  "totalSessions": 386,
+  "lastUpdated": "2026-08-05T08:29:48.101Z",
+  "totalSessions": 383,
   "dateRange": {
     "start": "2026-08-05",
     "end": "2026-12-20"
@@ -20,6 +20,7 @@
     "2026-08-15",
     "2026-08-16",
     "2026-08-17",
+    "2026-08-19",
     "2026-08-22",
     "2026-08-23",
     "2026-08-28",
@@ -159,12 +160,12 @@
     },
     {
       "city": "West Vancouver",
-      "sessions": 314,
+      "sessions": 310,
       "status": "ok"
     },
     {
       "city": "New Westminster",
-      "sessions": 11,
+      "sessions": 12,
       "status": "ok"
     },
     {
