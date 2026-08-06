@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-18",
+  "sessions": [
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-08-18",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "type": "Family Skate",
+      "activityName": "Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-new-harry-jerome-tuesday-1100am-1230pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-08-18",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-new-harry-jerome-tuesday-100-230pm-0",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    }
+  ],
+  "count": 2
+}
