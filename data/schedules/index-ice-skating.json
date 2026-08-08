@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-08-07T07:09:23.960Z",
-  "totalSessions": 70,
+  "lastUpdated": "2026-08-08T06:44:34.425Z",
+  "totalSessions": 68,
   "dateRange": {
-    "start": "2026-08-07",
+    "start": "2026-08-08",
     "end": "2026-09-26"
   },
   "dates": [
-    "2026-08-07",
     "2026-08-08",
     "2026-08-09",
     "2026-08-10",
@@ -20,6 +19,7 @@
     "2026-08-17",
     "2026-08-18",
     "2026-08-19",
+    "2026-08-20",
     "2026-08-21",
     "2026-09-07",
     "2026-09-08",
@@ -42,7 +42,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 56,
+      "sessions": 53,
       "status": "ok"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "city": "North Vancouver",
-      "sessions": 2,
+      "sessions": 4,
       "status": "ok"
     },
     {
@@ -81,7 +81,7 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 12,
+      "sessions": 11,
       "status": "ok"
     },
     {
