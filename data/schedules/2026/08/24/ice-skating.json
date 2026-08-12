@@ -15,7 +15,37 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
       "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-08-24",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "type": "Family Skate",
+      "activityName": "Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-new-harry-jerome-monday-430-600pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-08-24",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-new-harry-jerome-monday-630-800pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 1
+  "count": 3
 }
