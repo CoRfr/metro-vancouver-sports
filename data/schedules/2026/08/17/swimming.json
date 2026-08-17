@@ -2,6 +2,24 @@
   "date": "2026-08-17",
   "sessions": [
     {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-08-17",
+      "startTime": "06:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Mon. Wed. Fri. Sat 6am-9pm             Session    June 29-December 31, 2026                      Time        Lanes           6-8:30am        3 single lanes           8:30",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/631410",
+      "eventItemId": 631410,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -252,6 +270,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Kensington Pool",
+      "city": "Vancouver",
+      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
+      "lat": 49.239,
+      "lng": -123.0758,
+      "date": "2026-08-17",
+      "startTime": "10:00",
+      "endTime": "12:14",
+      "type": "Lessons",
+      "activityName": "Public Swim/ Lessons]",
+      "description": "Date and Time     Mon: 10am to 12:30pm ,3:30pm to 6pm Tue: 11am to 1pm, 4:30pm to 7pm Wed: 10am to 12:30pm, 3:30pm to 6pm Thu: 11 am to 1pm, 4:30pm to 7pm Sat: 10:15am to 1:30pm",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-lessons/630015",
+      "eventItemId": 630015,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -471,6 +507,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-08-17",
+      "startTime": "15:30",
+      "endTime": "19:59",
+      "type": "Lessons",
+      "activityName": "Lessons (1 Lane only)",
+      "description": "Date and Time     Mon - Thu 3:00pm-8:00pm Fri 3:00pm-6:30pm Sat 9:00am-1pm            Session     Summer 2026 (June 29th - Aug 23)                 1 Lane only for continuous length swim fo",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lessons-1-lane-only/632167",
+      "eventItemId": 632167,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
+    },
+    {
       "facility": "Walnut Grove Community Centre",
       "city": "Langley",
       "address": "8889 Walnut Grove Drive, Langley, BC",
@@ -659,5 +713,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 42
+  "count": 45
 }
