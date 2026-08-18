@@ -2,6 +2,21 @@
   "date": "2026-09-07",
   "sessions": [
     {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-09-07",
+      "startTime": "09:00",
+      "endTime": "10:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate (Labour Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -20,6 +35,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-09-07",
+      "startTime": "11:00",
+      "endTime": "11:45",
+      "type": "Drop-in Hockey",
+      "activityName": "5-8y (Labour Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -36,7 +66,88 @@
       "eventItemId": 634851,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-07",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Hockey",
+      "activityName": "Trout Lake Arena - Public Hockey - Monday 11:45am",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---monday-11-45am/637593",
+      "eventItemId": 637593,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-09-07",
+      "startTime": "12:00",
+      "endTime": "12:45",
+      "type": "Drop-in Hockey",
+      "activityName": "9-11y (Labour Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-09-07",
+      "startTime": "12:45",
+      "endTime": "13:30",
+      "type": "Drop-in Hockey",
+      "activityName": "12y+ (Labour Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-07",
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "type": "Drop-in Hockey",
+      "activityName": "Trout Lake Arena - Stick, Puck & Ring - Monday 1:30pm",
+      "description": "For those 19 years and older. CSA Helmets and hockey gloves are required.  This is a session for individual practice only with NO scrimmage and no sharing of equipment. Skate rentals are not availabl",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---stick-puck-ring---monday-1-30pm/637596",
+      "eventItemId": 637596,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "West Vancouver Ice Arena",
+      "city": "West Vancouver",
+      "address": "786 22nd St, West Vancouver, BC V7V 4T3",
+      "lat": 49.3321417,
+      "lng": -123.1703066,
+      "date": "2026-09-07",
+      "startTime": "13:45",
+      "endTime": "15:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate (Labour Day)",
+      "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
+      "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
     }
   ],
-  "count": 2
+  "count": 9
 }
