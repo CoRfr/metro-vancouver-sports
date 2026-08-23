@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-08-22T06:33:00.984Z",
-  "totalSessions": 495,
+  "lastUpdated": "2026-08-23T06:34:30.380Z",
+  "totalSessions": 487,
   "dateRange": {
-    "start": "2026-08-22",
+    "start": "2026-08-23",
     "end": "2026-12-20"
   },
   "dates": [
-    "2026-08-22",
     "2026-08-23",
     "2026-08-24",
     "2026-08-26",
@@ -147,12 +146,12 @@
     },
     {
       "city": "North Vancouver",
-      "sessions": 13,
+      "sessions": 11,
       "status": "ok"
     },
     {
       "city": "West Vancouver",
-      "sessions": 343,
+      "sessions": 337,
       "status": "ok"
     },
     {
