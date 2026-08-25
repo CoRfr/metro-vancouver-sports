@@ -80,6 +80,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-08-25",
+      "startTime": "06:30",
+      "endTime": "09:59",
+      "type": "Lap Swim",
+      "activityName": "Lengths Swim",
+      "description": "Date and Time     Mon. 6:30 AM - 10:00 AM Tue 6:30 AM - 10:00 AM Wed 6:30 AM - 10:00 AM  Thu 6:30 AM - 10:00 AM Fri 6:30 AM - 10:00 AM Sat 9:00AM - 10:15AM Sun 9:00AM - 10:15AM            S",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/lengths-swim/638305",
+      "eventItemId": 638305,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -185,24 +203,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
-    },
-    {
-      "facility": "Templeton Park Pool",
-      "city": "Vancouver",
-      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
-      "lat": 49.2818,
-      "lng": -123.0514,
-      "date": "2026-08-25",
-      "startTime": "09:30",
-      "endTime": "10:29",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Aquafit 9: 30  - 10: 30  am is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down co",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/638275",
-      "eventItemId": 638275,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",

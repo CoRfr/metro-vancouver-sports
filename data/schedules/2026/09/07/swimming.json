@@ -50,6 +50,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-09-07",
+      "startTime": "08:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Public Swim-Leisure Pool",
+      "description": "Date & Time         Mon 8:00am-9:00pm             Session      Sep 7, 2026            Limitation         Limited pool space available during swimming lesson times",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-leisure-pool/638314",
+      "eventItemId": 638314,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -194,6 +212,24 @@
       "eventItemId": 538696,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/britannia-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=37"
+    },
+    {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-09-07",
+      "startTime": "13:00",
+      "endTime": "16:55",
+      "type": "Public Swim",
+      "activityName": "Public Swim LABOUR DAY",
+      "description": "Date & Time   1:00pm to 5:00pm              Session   Sept 7, 2026                   Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water by a g",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-labour-day/638307",
+      "eventItemId": 638307,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -404,5 +440,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 25
+  "count": 27
 }

@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-08-24T06:48:54.656Z",
-  "totalSessions": 487,
+  "lastUpdated": "2026-08-25T06:39:46.111Z",
+  "totalSessions": 488,
   "dateRange": {
-    "start": "2026-08-24",
+    "start": "2026-08-25",
     "end": "2026-12-20"
   },
   "dates": [
-    "2026-08-24",
     "2026-08-25",
     "2026-08-26",
     "2026-08-27",
@@ -118,7 +117,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 84,
+      "sessions": 85,
       "status": "ok"
     },
     {
