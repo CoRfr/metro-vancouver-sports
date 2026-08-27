@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-08-26T06:58:09.529Z",
-  "totalSessions": 503,
+  "lastUpdated": "2026-08-27T17:17:07.211Z",
+  "totalSessions": 505,
   "dateRange": {
-    "start": "2026-08-26",
+    "start": "2026-08-27",
     "end": "2026-12-20"
   },
   "dates": [
-    "2026-08-26",
     "2026-08-27",
     "2026-08-28",
     "2026-08-29",
@@ -116,7 +115,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 90,
+      "sessions": 89,
       "status": "ok"
     },
     {
@@ -155,7 +154,7 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 11,
+      "sessions": 14,
       "status": "ok"
     },
     {
