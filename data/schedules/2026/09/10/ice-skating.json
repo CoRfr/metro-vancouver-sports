@@ -164,6 +164,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-10",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "type": "Family Skate",
+      "activityName": "Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-new-harry-jerome-thursday-500-630pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Trout Lake Rink",
       "city": "Vancouver",
       "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
@@ -182,6 +197,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-10",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-new-harry-jerome-thursday-700-830pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -197,5 +227,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 12
+  "count": 14
 }
