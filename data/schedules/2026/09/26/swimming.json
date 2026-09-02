@@ -18,22 +18,6 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-09-26",
-      "startTime": "07:00",
-      "endTime": "09:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -74,9 +58,9 @@
       "date": "2026-09-26",
       "startTime": "09:00",
       "endTime": "13:00",
-      "type": "Lessons",
-      "activityName": "Swim Lessons Only",
-      "ageRange": null,
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "ageRange": "2 lanes",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
@@ -200,7 +184,7 @@
       "lat": 49.22887,
       "lng": -122.99389,
       "date": "2026-09-26",
-      "startTime": "17:00",
+      "startTime": "19:00",
       "endTime": "21:00",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
@@ -258,5 +242,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 16
+  "count": 15
 }

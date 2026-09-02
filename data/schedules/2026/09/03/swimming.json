@@ -9,10 +9,10 @@
       "lng": -122.99389,
       "date": "2026-09-03",
       "startTime": "06:00",
-      "endTime": "08:55",
+      "endTime": "09:30",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
-      "ageRange": null,
+      "ageRange": "2 lanes",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
@@ -156,22 +156,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-09-03",
-      "startTime": "09:00",
-      "endTime": "10:00",
-      "type": "Aquafit",
-      "activityName": "Aquafit",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
       "facility": "W.C. Blair Recreation Centre",
       "city": "Langley",
       "address": "22200 Fraser Highway, Langley, BC",
@@ -201,6 +185,22 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-09-03",
+      "startTime": "09:30",
+      "endTime": "11:25",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -234,22 +234,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-09-03",
-      "startTime": "10:00",
-      "endTime": "13:00",
-      "type": "Public Swim",
-      "activityName": "Whirlpool & Sauna",
-      "ageRange": "19+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -279,22 +263,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
-    },
-    {
-      "facility": "Bonsor Recreation Complex",
-      "city": "Burnaby",
-      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
-      "lat": 49.22887,
-      "lng": -122.99389,
-      "date": "2026-09-03",
-      "startTime": "10:05",
-      "endTime": "13:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": "1 lane, 19+",
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -328,6 +296,22 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-09-03",
+      "startTime": "11:30",
+      "endTime": "12:30",
+      "type": "Aquafit",
+      "activityName": "Aquafit",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
       "facility": "W.C. Blair Recreation Centre",
       "city": "Langley",
       "address": "22200 Fraser Highway, Langley, BC",
@@ -350,7 +334,7 @@
       "lng": -122.97858,
       "date": "2026-09-03",
       "startTime": "12:30",
-      "endTime": "16:00",
+      "endTime": "21:30",
       "type": "Public Swim",
       "activityName": "Slide",
       "ageRange": null,
@@ -380,10 +364,10 @@
       "lat": 49.22887,
       "lng": -122.99389,
       "date": "2026-09-03",
-      "startTime": "13:00",
-      "endTime": "16:00",
-      "type": "Public Swim",
-      "activityName": "Whirlpool & Sauna",
+      "startTime": "12:35",
+      "endTime": "14:00",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
       "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
@@ -421,6 +405,38 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-09-03",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "ageRange": "2 lanes",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "Eileen Dailly Leisure Pool",
+      "city": "Burnaby",
+      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
+      "lat": 49.28379,
+      "lng": -122.97858,
+      "date": "2026-09-03",
+      "startTime": "14:00",
+      "endTime": "21:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
       "facility": "Walnut Grove Community Centre",
       "city": "Langley",
       "address": "8889 Walnut Grove Drive, Langley, BC",
@@ -443,10 +459,10 @@
       "lng": -122.99389,
       "date": "2026-09-03",
       "startTime": "16:00",
-      "endTime": "19:00",
-      "type": "Lessons",
-      "activityName": "Swim Lessons",
-      "ageRange": null,
+      "endTime": "20:00",
+      "type": "Public Swim",
+      "activityName": "Whirlpool & Sauna",
+      "ageRange": "19+",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
@@ -481,22 +497,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
-    },
-    {
-      "facility": "Eileen Dailly Leisure Pool",
-      "city": "Burnaby",
-      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
-      "lat": 49.28379,
-      "lng": -122.97858,
-      "date": "2026-09-03",
-      "startTime": "16:30",
-      "endTime": "21:30",
-      "type": "Public Swim",
-      "activityName": "Slide",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
       "facility": "Aldergrove Community Centre",
@@ -598,6 +598,22 @@
       "lat": 49.22887,
       "lng": -122.99389,
       "date": "2026-09-03",
+      "startTime": "20:00",
+      "endTime": "22:00",
+      "type": "Public Swim",
+      "activityName": "Whirlpool & Sauna",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "Bonsor Recreation Complex",
+      "city": "Burnaby",
+      "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
+      "lat": 49.22887,
+      "lng": -122.99389,
+      "date": "2026-09-03",
       "startTime": "20:05",
       "endTime": "22:00",
       "type": "Lap Swim",
@@ -640,5 +656,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 41
+  "count": 42
 }

@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-09-01T11:01:13.370Z",
-  "totalSessions": 493,
+  "lastUpdated": "2026-09-02T10:31:03.437Z",
+  "totalSessions": 491,
   "dateRange": {
-    "start": "2026-09-01",
+    "start": "2026-09-02",
     "end": "2026-12-20"
   },
   "dates": [
-    "2026-09-01",
     "2026-09-02",
     "2026-09-03",
     "2026-09-04",
@@ -139,17 +138,17 @@
     },
     {
       "city": "North Vancouver",
-      "sessions": 21,
+      "sessions": 19,
       "status": "ok"
     },
     {
       "city": "West Vancouver",
-      "sessions": 317,
+      "sessions": 316,
       "status": "ok"
     },
     {
       "city": "New Westminster",
-      "sessions": 16,
+      "sessions": 17,
       "status": "ok"
     },
     {
