@@ -298,6 +298,22 @@
       "lat": 49.21248,
       "lng": -122.95865,
       "date": "2026-09-09",
+      "startTime": "17:00",
+      "endTime": "18:00",
+      "type": "Public Swim",
+      "activityName": "Slide",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
+      "facility": "Edmonds Community Centre",
+      "city": "Burnaby",
+      "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
+      "lat": 49.21248,
+      "lng": -122.95865,
+      "date": "2026-09-09",
       "startTime": "19:00",
       "endTime": "21:00",
       "type": "Public Swim",
@@ -440,5 +456,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 27
+  "count": 28
 }

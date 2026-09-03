@@ -485,6 +485,22 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Edmonds Community Centre",
+      "city": "Burnaby",
+      "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
+      "lat": 49.21248,
+      "lng": -122.95865,
+      "date": "2026-09-04",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "type": "Public Swim",
+      "activityName": "Slide",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -625,5 +641,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 40
+  "count": 41
 }
