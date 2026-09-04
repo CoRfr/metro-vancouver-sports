@@ -2,6 +2,24 @@
   "date": "2026-10-10",
   "sessions": [
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-10-10",
+      "startTime": "08:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (1 lanes x 25m)",
+      "description": "Date & Time        Sat, Sun, Mon 8:00am-9:00pm      Session      Oct 10 - Oct 12, 2026     Limitation       Limited pool space available during swimming lesson times           Minimum 2 X 25m si",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-1-lanes-x-25m/639711",
+      "eventItemId": 639711,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Lord Byng Pool",
       "city": "Vancouver",
       "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
@@ -36,7 +54,25 @@
       "eventItemId": 638535,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/lord-byng-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
+    },
+    {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-10-10",
+      "startTime": "14:30",
+      "endTime": "16:29",
+      "type": "Public Swim",
+      "activityName": "Water Slide or Diving Platform",
+      "description": "Date & Time        Sat, Sun, Mon 2:30pm - 4:30pm and 7:00pm - 8:00pm      Session      Oct 10 - Oct 12 , 2026     Limitation       Must be at least 42 inches tall to use the slide.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/water-slide-or-diving-platform/639713",
+      "eventItemId": 639713,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
     }
   ],
-  "count": 2
+  "count": 4
 }
