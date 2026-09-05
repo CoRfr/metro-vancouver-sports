@@ -2,6 +2,21 @@
   "date": "2026-09-19",
   "sessions": [
     {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
+      "lat": 49.21554,
+      "lng": -122.92878,
+      "date": "2026-09-19",
+      "startTime": "13:30",
+      "endTime": "15:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -15,7 +30,37 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
+      "lat": 49.21554,
+      "lng": -122.92878,
+      "date": "2026-09-19",
+      "startTime": "18:30",
+      "endTime": "20:00",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
+      "facility": "Moody Park Arena",
+      "city": "New Westminster",
+      "address": "701 8th Ave, New Westminster, BC V3M 2R2",
+      "lat": 49.21554,
+      "lng": -122.92878,
+      "date": "2026-09-19",
+      "startTime": "20:15",
+      "endTime": "21:45",
+      "type": "Public Skating",
+      "activityName": "Youth Skate",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 1
+  "count": 4
 }

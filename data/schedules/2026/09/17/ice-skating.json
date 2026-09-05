@@ -146,6 +146,51 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-09-17",
+      "startTime": "16:00",
+      "endTime": "17:35",
+      "type": "Family Skate",
+      "activityName": "Family Lap Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-lap-skate-canlan-sports-thursday-400-535pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Canlan Ice Sports North Shore",
+      "city": "North Vancouver",
+      "address": "2411 Mt Seymour Pkwy, North Vancouver, BC V7H 2Y9",
+      "lat": 49.31372,
+      "lng": -123.00401,
+      "date": "2026-09-17",
+      "startTime": "18:45",
+      "endTime": "19:35",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-canlan-sports-thursday-645-735pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-17",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-new-harry-jerome-thursday-700-830pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -161,5 +206,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 10
+  "count": 13
 }

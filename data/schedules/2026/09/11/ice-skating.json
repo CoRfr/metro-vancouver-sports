@@ -50,6 +50,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-11",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Fridays, 10:00am - 11:30am     Sessions    Sep 4 - Sep 25               Open skate for people 50 years and older.         *Monthly Flexipass and 10-Visit passes are accepted for thi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/632685",
+      "eventItemId": 632685,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -96,6 +114,24 @@
       "eventItemId": 635453,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-11",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Hockey",
+      "activityName": "Kitsilano Arena - Public Hockey - Friday 11:45am",
+      "description": "Recreational hockey game for those 19 years and older. Full hockey gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---public-hockey---friday-11-45am/632737",
+      "eventItemId": 632737,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     },
     {
       "facility": "Trout Lake Rink",
@@ -386,5 +422,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     }
   ],
-  "count": 24
+  "count": 26
 }

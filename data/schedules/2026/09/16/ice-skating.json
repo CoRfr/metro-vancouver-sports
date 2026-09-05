@@ -86,6 +86,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-16",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Kitsilano Arena - Stick, Puck & Ring - Wednesday 11:45am",
+      "description": "For those 19 years and older. Helmets and gloves are required, no rentals available. This is a practice session only with NO SCRIMMAGE.  All Adult Hockey Programs are co-ed and participants must sign",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/kitsilano-arena---stick-puck-ring---wednesday-11-45am/632691",
+      "eventItemId": 632691,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver, BC V5X 0A1",
@@ -245,5 +263,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 15
+  "count": 16
 }

@@ -2,6 +2,42 @@
   "date": "2026-09-27",
   "sessions": [
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-27",
+      "startTime": "10:45",
+      "endTime": "11:45",
+      "type": "Family Skate",
+      "activityName": "Parent and Preschooler Skate",
+      "description": "The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older   *Monthly Flexipass and 10-Visit passes are accepted for this program .   For d",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler-skate/635075",
+      "eventItemId": 635075,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-27",
+      "startTime": "11:45",
+      "endTime": "12:45",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Plastic sticks and pucks only for this session (provided). Helmets and gloves required.        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Mont",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/635076",
+      "eventItemId": 635076,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -15,6 +51,42 @@
       "activityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "facilityUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35",
       "scheduleUrl": "https://westvancouver.ca/parks-recreation/recreation-programs-services/daily-activities-search-results?activity_type=dropins&ages=9/6/8/3/10/12&activities=122/121/119/123&locations=35"
+    },
+    {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-27",
+      "startTime": "13:00",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this program",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635077",
+      "eventItemId": 635077,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-09-27",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "type": "Family Skate",
+      "activityName": "Parent and Preschooler Skate",
+      "description": "The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older   *Monthly Flexipass and 10-Visit passes are accepted for this program .   For d",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler-skate/635988",
+      "eventItemId": 635988,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
       "facility": "Hillcrest Centre",
@@ -50,6 +122,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
+      "facility": "West End Community Centre",
+      "city": "Vancouver",
+      "address": "870 Denman St, Vancouver, BC V6G 2L8",
+      "lat": 49.29048,
+      "lng": -123.13653,
+      "date": "2026-09-27",
+      "startTime": "15:15",
+      "endTime": "16:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over    *Monthly Flexipass and 10-Visit passes are accepted for this program .",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635989",
+      "eventItemId": 635989,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
+    },
+    {
       "facility": "George Preston Recreation Centre",
       "city": "Langley",
       "address": "20699 - 42 Avenue, Langley, BC",
@@ -63,7 +153,25 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
+    },
+    {
+      "facility": "Kerrisdale Cyclone Taylor Arena",
+      "city": "Vancouver",
+      "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
+      "lat": 49.23529,
+      "lng": -123.15403,
+      "date": "2026-09-27",
+      "startTime": "17:30",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open Skate for all ages          Children under 8 years  MUST be supervised on the ice by an individual 16 years old or over         *Monthly Flexipass and 10-Visit passes are accepted for this prog",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635003",
+      "eventItemId": 635003,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
     }
   ],
-  "count": 4
+  "count": 10
 }
