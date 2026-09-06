@@ -2,6 +2,24 @@
   "date": "2026-09-07",
   "sessions": [
     {
+      "facility": "Hillcrest Aquatic Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-09-07",
+      "startTime": "06:00",
+      "endTime": "20:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (50m)",
+      "description": "Date and Time     Mon. Wed. Fri. Sat 6am-9pm             Session    June 29-December 31, 2026                         50m     Monday    Wednesday     Friday     Saturday            3+ lane",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-50m/631410",
+      "eventItemId": 631410,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=59"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -181,6 +199,24 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
+    },
+    {
+      "facility": "Templeton Park Pool",
+      "city": "Vancouver",
+      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
+      "lat": 49.2818,
+      "lng": -123.0514,
+      "date": "2026-09-07",
+      "startTime": "09:30",
+      "endTime": "14:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim - Teach Pool",
+      "description": "Days and Time       Mon - Thu  1-3pm   Fri  1pm-3pm and 6:30pm-8pm  Sat  1pm-7:30pm  Sunday  2:00pm-7:30pm              Session    Fall (Sept 7 - Dec 13)                Recreational  swim f",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim---teach-pool/639742",
+      "eventItemId": 639742,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Eileen Dailly Leisure Pool",
@@ -603,5 +639,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 37
+  "count": 39
 }
