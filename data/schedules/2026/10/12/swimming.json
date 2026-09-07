@@ -2,6 +2,24 @@
   "date": "2026-10-12",
   "sessions": [
     {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-10-12",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "type": "Public Swim",
+      "activityName": "Public Swim THANKSGIVING",
+      "description": "Date & Time   1:00pm to 5:00pm              Session   Oct 12, 2026                   Recreational  swim for all ages. Children under 8 years old must be accompanied into the  water by a g",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-thanksgiving/639956",
+      "eventItemId": 639956,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
       "facility": "Lord Byng Pool",
       "city": "Vancouver",
       "address": "3990 14th Ave W, Vancouver, BC V6R 2X3",
@@ -20,5 +38,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     }
   ],
-  "count": 1
+  "count": 2
 }
