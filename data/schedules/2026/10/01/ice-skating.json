@@ -140,6 +140,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-10-01",
+      "startTime": "17:45",
+      "endTime": "19:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Thursdays, 5:45pm - 7:00pm     Sessions       Oct 2-Dec 17, 2026                  Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individu",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635945",
+      "eventItemId": 635945,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
       "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
@@ -158,5 +176,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
     }
   ],
-  "count": 9
+  "count": 10
 }

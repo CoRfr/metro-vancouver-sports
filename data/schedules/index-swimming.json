@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-09-08T10:31:28.184Z",
-  "totalSessions": 732,
+  "lastUpdated": "2026-09-09T10:42:20.233Z",
+  "totalSessions": 694,
   "dateRange": {
-    "start": "2026-09-08",
+    "start": "2026-09-09",
     "end": "2026-10-24"
   },
   "dates": [
-    "2026-09-08",
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
@@ -38,6 +37,7 @@
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
+    "2026-10-09",
     "2026-10-10",
     "2026-10-12",
     "2026-10-15",
@@ -48,17 +48,17 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 60,
+      "sessions": 41,
       "status": "ok"
     },
     {
       "city": "Burnaby",
-      "sessions": 611,
+      "sessions": 602,
       "status": "ok"
     },
     {
       "city": "Langley",
-      "sessions": 61,
+      "sessions": 51,
       "status": "ok"
     }
   ]

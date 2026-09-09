@@ -25,7 +25,7 @@
       "lng": -122.95865,
       "date": "2026-09-10",
       "startTime": "06:00",
-      "endTime": "09:00",
+      "endTime": "09:30",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
       "ageRange": "3 lanes",
@@ -159,22 +159,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
-      "facility": "Edmonds Community Centre",
-      "city": "Burnaby",
-      "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
-      "lat": 49.21248,
-      "lng": -122.95865,
-      "date": "2026-09-10",
-      "startTime": "09:05",
-      "endTime": "09:55",
-      "type": "Aquafit",
-      "activityName": "Aquafit",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -225,6 +209,22 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=10"
     },
     {
+      "facility": "Edmonds Community Centre",
+      "city": "Burnaby",
+      "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
+      "lat": 49.21248,
+      "lng": -122.95865,
+      "date": "2026-09-10",
+      "startTime": "09:35",
+      "endTime": "10:25",
+      "type": "Aquafit",
+      "activityName": "Aquafit",
+      "ageRange": null,
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+    },
+    {
       "facility": "Britannia Pool",
       "city": "Vancouver",
       "address": "1661 Napier St, Vancouver, BC V5L 4X4",
@@ -249,7 +249,7 @@
       "lat": 49.21248,
       "lng": -122.95865,
       "date": "2026-09-10",
-      "startTime": "10:00",
+      "startTime": "10:30",
       "endTime": "16:00",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
@@ -306,22 +306,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
     },
     {
-      "facility": "Eileen Dailly Leisure Pool",
-      "city": "Burnaby",
-      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
-      "lat": 49.28379,
-      "lng": -122.97858,
-      "date": "2026-09-10",
-      "startTime": "12:30",
-      "endTime": "21:30",
-      "type": "Public Swim",
-      "activityName": "Slide",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
-    },
-    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -348,7 +332,7 @@
       "endTime": "15:30",
       "type": "Public Swim",
       "activityName": "Slide",
-      "ageRange": null,
+      "ageRange": "*by request",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
@@ -368,22 +352,6 @@
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/bonsor-recreation-complex",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
-    },
-    {
-      "facility": "Eileen Dailly Leisure Pool",
-      "city": "Burnaby",
-      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
-      "lat": 49.28379,
-      "lng": -122.97858,
-      "date": "2026-09-10",
-      "startTime": "14:00",
-      "endTime": "21:00",
-      "type": "Public Swim",
-      "activityName": "Public Swim",
-      "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
       "facility": "W.C. Blair Recreation Centre",
@@ -463,20 +431,20 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     },
     {
-      "facility": "Edmonds Community Centre",
+      "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
-      "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
-      "lat": 49.21248,
-      "lng": -122.95865,
+      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
+      "lat": 49.28379,
+      "lng": -122.97858,
       "date": "2026-09-10",
-      "startTime": "16:30",
-      "endTime": "18:30",
+      "startTime": "16:00",
+      "endTime": "21:00",
       "type": "Public Swim",
       "activityName": "Slide",
       "ageRange": null,
-      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
-      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
-      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -606,5 +574,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 38
+  "count": 36
 }

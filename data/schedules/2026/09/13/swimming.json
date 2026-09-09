@@ -51,6 +51,22 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
+      "facility": "Eileen Dailly Leisure Pool",
+      "city": "Burnaby",
+      "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
+      "lat": 49.28379,
+      "lng": -122.97858,
+      "date": "2026-09-13",
+      "startTime": "07:00",
+      "endTime": "09:00",
+      "type": "Lap Swim",
+      "activityName": "Lap Swim",
+      "ageRange": "2 lanes",
+      "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
+      "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
+      "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
+    },
+    {
       "facility": "Edmonds Community Centre",
       "city": "Burnaby",
       "address": "7433 Edmonds St, Burnaby, BC V3N 1B1",
@@ -61,7 +77,7 @@
       "endTime": "12:00",
       "type": "Lap Swim",
       "activityName": "Lap Swim",
-      "ageRange": "3 lanes",
+      "ageRange": "1 lane",
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
@@ -90,9 +106,9 @@
       "date": "2026-09-13",
       "startTime": "09:00",
       "endTime": "13:00",
-      "type": "Lap Swim",
-      "activityName": "Lap Swim",
-      "ageRange": "2 lanes",
+      "type": "Lessons",
+      "activityName": "Swim Lessons Only",
+      "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/eileen-dailly-leisure-pool-and-fitness-centre",
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
@@ -230,9 +246,9 @@
       "lng": -122.95865,
       "date": "2026-09-13",
       "startTime": "12:30",
-      "endTime": "15:30",
+      "endTime": "14:30",
       "type": "Public Swim",
-      "activityName": "Wibit",
+      "activityName": "Slide",
       "ageRange": null,
       "activityUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336",
       "facilityUrl": "https://www.burnaby.ca/recreation-and-arts/recreation-facilities/edmonds-community-centre",
@@ -307,8 +323,8 @@
       "lat": 49.21248,
       "lng": -122.95865,
       "date": "2026-09-13",
-      "startTime": "16:00",
-      "endTime": "18:00",
+      "startTime": "15:30",
+      "endTime": "17:30",
       "type": "Public Swim",
       "activityName": "Slide",
       "ageRange": null,
@@ -442,5 +458,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 28
+  "count": 29
 }

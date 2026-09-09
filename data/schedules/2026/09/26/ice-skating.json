@@ -2,6 +2,24 @@
   "date": "2026-09-26",
   "sessions": [
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-09-26",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Saturdays, 11:00am - 12:30pm     Sessions       September 26-December 12, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice b",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635351",
+      "eventItemId": 635351,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
       "facility": "Kitsilano Rink",
       "city": "Vancouver",
       "address": "2690 Larch St, Vancouver, BC V6K 4K9",
@@ -20,6 +38,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-26",
+      "startTime": "12:45",
+      "endTime": "14:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Saturdays, 12:45pm - 2:15pm     Sessions    Sept 26-Dec 12, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individua",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635210",
+      "eventItemId": 635210,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -36,6 +72,24 @@
       "eventItemId": 634789,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-26",
+      "startTime": "14:30",
+      "endTime": "15:30",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Date & Time   Saturdays, 2:30pm - 3:30pm     Sessions   September 26-Dec 12, 2026               Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has a",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/635211",
+      "eventItemId": 635211,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
       "facility": "Hillcrest Centre",
@@ -107,6 +161,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     },
     {
+      "facility": "Killarney Rink",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-09-26",
+      "startTime": "17:45",
+      "endTime": "19:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Saturday, 5:45pm - 7:15pm     Sessions   September 26 - Dec 12                   Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individua",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635164",
+      "eventItemId": 635164,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=25"
+    },
+    {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
       "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
@@ -123,6 +195,24 @@
       "eventItemId": 635000,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-cyclone-taylor-arena.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
+    },
+    {
+      "facility": "Killarney Rink",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-09-26",
+      "startTime": "19:30",
+      "endTime": "21:00",
+      "type": "Public Skating",
+      "activityName": "Adult Skate",
+      "description": "Date & Time   Saturdays, 7:30pm - 9:00pm     Sessions   September 26 - December 12                 Open skate for people age 19 and older        Please Note: A section of the ice will be dedicate",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/adult-skate/635165",
+      "eventItemId": 635165,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=25"
     },
     {
       "facility": "West End Community Centre",
@@ -179,5 +269,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 10
+  "count": 15
 }

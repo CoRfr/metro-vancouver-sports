@@ -71,6 +71,42 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     },
     {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-09-27",
+      "startTime": "13:45",
+      "endTime": "15:30",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Sundays, 1:45pm-3:30pm     Sessions    September 27-December 13, 2026 *Dec 13th Trout Lake Community Center Sponsored Event                 Open skate for all ages         Children",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635212",
+      "eventItemId": 635212,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-09-27",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Sundays, 2:00pm - 4:15pm     Sessions       September 27-December 13, 2026                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635355",
+      "eventItemId": 635355,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
       "facility": "West End Community Centre",
       "city": "Vancouver",
       "address": "870 Denman St, Vancouver, BC V6G 2L8",
@@ -105,6 +141,24 @@
       "eventItemId": 635479,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
+      "facility": "Killarney Rink",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-09-27",
+      "startTime": "14:15",
+      "endTime": "16:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Date & Time   Sunday, 2:30-4:00pm     Sessions   September 27 - December 13                 Open skate for all ages         Children under 8 years MUST be supervised on the ice by an individual 1",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/635166",
+      "eventItemId": 635166,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=25"
     },
     {
       "facility": "George Preston Recreation Centre",
@@ -155,6 +209,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/george-preston-recreation-centre/"
     },
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-09-27",
+      "startTime": "16:30",
+      "endTime": "17:30",
+      "type": "Family Hockey",
+      "activityName": "Family Fun Hockey",
+      "description": "Date & Time   Sundays, 4:30pm -5:30pm     Sessions   September 27-December 13, 2026               Only fully plastic sticks (BOTH blade and shaft) and plastic pucks for this session. The rink has",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/family-fun-hockey/635353",
+      "eventItemId": 635353,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
       "facility": "Kerrisdale Cyclone Taylor Arena",
       "city": "Vancouver",
       "address": "5670 East Blvd, Vancouver, BC V6M 3Y2",
@@ -173,5 +245,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=23"
     }
   ],
-  "count": 10
+  "count": 14
 }

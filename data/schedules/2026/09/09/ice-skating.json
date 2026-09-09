@@ -86,6 +86,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     },
     {
+      "facility": "Queen's Park Arena",
+      "city": "New Westminster",
+      "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
+      "lat": 49.21487,
+      "lng": -122.90604,
+      "date": "2026-09-09",
+      "startTime": "11:15",
+      "endTime": "12:45",
+      "type": "Drop-in Hockey",
+      "activityName": "Stick & Puck - Adult",
+      "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
+      "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena",
+      "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/queens-park-arena"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -317,5 +332,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 19
+  "count": 20
 }
