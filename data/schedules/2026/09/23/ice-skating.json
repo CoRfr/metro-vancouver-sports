@@ -2,6 +2,21 @@
   "date": "2026-09-23",
   "sessions": [
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-23",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "type": "Public Skating",
+      "activityName": "$2 Parent Participation Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-parent-participation-skate-new-harry-jerome-wednesday-900",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "West Vancouver Ice Arena",
       "city": "West Vancouver",
       "address": "786 22nd St, West Vancouver, BC V7V 4T3",
@@ -68,6 +83,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-23",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-new-harry-jerome-wednesday-1100am-1230pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
       "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
@@ -75,7 +105,7 @@
       "lng": -122.90604,
       "date": "2026-09-23",
       "startTime": "11:15",
-      "endTime": "12:45",
+      "endTime": "12:15",
       "type": "Drop-in Hockey",
       "activityName": "Stick & Puck - Adult",
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=8008f9e0-3515-4bfd-8e14-b56cc27c5341&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
@@ -233,6 +263,21 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-09-23",
+      "startTime": "15:45",
+      "endTime": "17:15",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-karen-magnussen-wednesday-345-515pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -246,6 +291,21 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-09-23",
+      "startTime": "17:30",
+      "endTime": "18:45",
+      "type": "Family Skate",
+      "activityName": "Family Skate",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-karen-magnussen-wednesday-530-645pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "West Vancouver Ice Arena",
@@ -276,7 +336,22 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
       "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
+      "facility": "Karen Magnussen Community Centre",
+      "city": "North Vancouver",
+      "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
+      "lat": 49.33232,
+      "lng": -123.04566,
+      "date": "2026-09-23",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "type": "Public Skating",
+      "activityName": "Adult Skate 19yrs+",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-19yrs-karen-magnussen-wednesday-700-800pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 17
+  "count": 22
 }
