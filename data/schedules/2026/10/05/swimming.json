@@ -132,6 +132,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2996"
     },
     {
+      "facility": "Kensington Pool",
+      "city": "Vancouver",
+      "address": "5175 Dumfries St, Vancouver, BC V5P 3A3",
+      "lat": 49.239,
+      "lng": -123.0758,
+      "date": "2026-10-05",
+      "startTime": "10:30",
+      "endTime": "12:29",
+      "type": "Lessons",
+      "activityName": "Public Swim/ Lessons]",
+      "description": "Date and Time     Mon: 10:30am to 12:30pm ,3:30pm to 6pm Tue: 11am to 1pm, 4:30pm to 7pm Wed: 10:30am to 12:30pm, 3:30pm to 6pm Thu: 11 am to 1pm, 4:30pm to 7pm Sat: 10:15am to 1:30pm Sun:",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-swim-lessons/640720",
+      "eventItemId": 640720,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kensington-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=56"
+    },
+    {
       "facility": "Eileen Dailly Leisure Pool",
       "city": "Burnaby",
       "address": "240 Willingdon Ave, Burnaby, BC V5C 5E9",
@@ -358,5 +376,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=2336"
     }
   ],
-  "count": 22
+  "count": 23
 }
