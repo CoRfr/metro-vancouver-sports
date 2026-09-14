@@ -56,6 +56,21 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-26",
+      "startTime": "13:00",
+      "endTime": "14:30",
+      "type": "Family Skate",
+      "activityName": "Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-new-harry-jerome-saturday-100-230pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -105,6 +120,21 @@
       "eventItemId": 635211,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-09-26",
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "type": "Family Skate",
+      "activityName": "Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/family-skate-new-harry-jerome-saturday-300-430pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Hillcrest Centre",
@@ -299,5 +329,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 17
+  "count": 19
 }

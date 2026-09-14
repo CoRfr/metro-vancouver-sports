@@ -32,6 +32,21 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
+      "facility": "Aldergrove Community Centre",
+      "city": "Langley",
+      "address": "27032 Fraser Highway, Langley, BC",
+      "lat": 49.1125355,
+      "lng": -122.6766332,
+      "date": "2026-09-24",
+      "startTime": "09:45",
+      "endTime": "11:15",
+      "type": "Family Skate",
+      "activityName": "Public Skate - Adult and Tot",
+      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
+      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
+      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -296,5 +311,5 @@
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
     }
   ],
-  "count": 19
+  "count": 20
 }
