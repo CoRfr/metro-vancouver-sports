@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-09-14T11:38:19.648Z",
-  "totalSessions": 714,
+  "lastUpdated": "2026-09-15T10:57:27.819Z",
+  "totalSessions": 719,
   "dateRange": {
-    "start": "2026-09-14",
+    "start": "2026-09-15",
     "end": "2026-11-07"
   },
   "dates": [
-    "2026-09-14",
     "2026-09-15",
     "2026-09-16",
     "2026-09-17",
@@ -53,12 +52,12 @@
     },
     {
       "city": "Burnaby",
-      "sessions": 604,
+      "sessions": 607,
       "status": "ok"
     },
     {
       "city": "Langley",
-      "sessions": 54,
+      "sessions": 56,
       "status": "ok"
     }
   ]
