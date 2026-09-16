@@ -2,6 +2,24 @@
   "date": "2026-11-05",
   "sessions": [
     {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-11-05",
+      "startTime": "06:15",
+      "endTime": "09:59",
+      "type": "Public Swim",
+      "activityName": "Pool Closure - Staff Training",
+      "description": "Time   6:15am - 10:00am and 4:00pm - 9:00pm            Dates    Nov 5, 2026                    Pool is closed due to a staff training.                 For  detailed admission fee and discou",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/pool-closure---staff-training/640951",
+      "eventItemId": 640951,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
+    },
+    {
       "facility": "Renfrew Park Pool",
       "city": "Vancouver",
       "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
@@ -18,7 +36,25 @@
       "eventItemId": 639539,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
+      "facility": "Killarney Pool",
+      "city": "Vancouver",
+      "address": "6260 Killarney St, Vancouver, BC V5S 2X7",
+      "lat": 49.22673,
+      "lng": -123.04345,
+      "date": "2026-11-05",
+      "startTime": "10:00",
+      "endTime": "15:59",
+      "type": "Public Swim",
+      "activityName": "Length Swim (2 lanes x 25m)",
+      "description": "Date & Time       Thu 10:00am-4:00pm      Session      Nov 5, 2026     Limitation       Limited pool space available during swimming lesson times           Minimum 2 X 25m single lanes for conti",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/length-swim-2-lanes-x-25m/640949",
+      "eventItemId": 640949,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/killarney-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=36"
     }
   ],
-  "count": 1
+  "count": 3
 }
