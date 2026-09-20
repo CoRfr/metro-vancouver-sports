@@ -17,6 +17,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-09-21",
+      "startTime": "09:30",
+      "endTime": "11:00",
+      "type": "Family Skate",
+      "activityName": "Parent and Preschooler",
+      "description": "Minimum Family rate applies (2 admissions)      The skate is for children 5 years and younger. Children MUST be supervised on the ice by an individual age 16 or older.      *Monthly Flexipass and 10-",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/parent-and-preschooler/634850",
+      "eventItemId": 634850,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "Moody Park Arena",
       "city": "New Westminster",
       "address": "701 8th Ave, New Westminster, BC V3M 2R2",
@@ -30,6 +48,24 @@
       "activityUrl": "https://cityofnewwestminster.perfectmind.com/23693/Clients/BookMe4BookingPages/Classes?calendarId=db250b43-ef6b-43c5-979e-3f3d1dab2d67&widgetId=2edd14d7-7dee-4a06-85e1-e211553c48d5&embed=False",
       "facilityUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena",
       "scheduleUrl": "https://www.newwestcity.ca/parks-and-recreation/facilities/arenas/moody-park-arena"
+    },
+    {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-09-21",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Mondays, 10:00am - 11:30am     Sessions    Sept 14-Sept 21          Open skate for people 50 years and older.             *Monthly Flexipass and 10-Visit passes are accepted for thi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/634844",
+      "eventItemId": 634844,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
     },
     {
       "facility": "Queen's Park Arena",
@@ -60,6 +96,24 @@
       "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/adult-skate-19yrs-karen-magnussen-monday-1100am-1215pm",
       "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-09-21",
+      "startTime": "11:15",
+      "endTime": "12:45",
+      "type": "Public Skating",
+      "activityName": "Discount Skate",
+      "description": "Open skate for all ages      Children under 8 years MUST be supervised on the ice by an individual 16 years old or over     For detailed admission fees, rental fees and discount information, please v",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/discount-skate/634851",
+      "eventItemId": 634851,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
       "facility": "Sunset Rink",
@@ -146,5 +200,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
     }
   ],
-  "count": 9
+  "count": 12
 }

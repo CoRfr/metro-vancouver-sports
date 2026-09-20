@@ -50,6 +50,24 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
+      "facility": "Kitsilano Rink",
+      "city": "Vancouver",
+      "address": "2690 Larch St, Vancouver, BC V6K 4K9",
+      "lat": 49.26237,
+      "lng": -123.16199,
+      "date": "2026-09-23",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "type": "Skating",
+      "activityName": "50 and Better Skate",
+      "description": "Date & Time   Wednesdays, 10:00am - 11:30am     Sessions    Sep 9 - Sep 23               Open skate for people 50 years and older.         *Monthly Flexipass and 10-Visit passes are accepted for",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/50-and-better-skate/632684",
+      "eventItemId": 632684,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kitsilano-war-memorial-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
+    },
+    {
       "facility": "Sunset Rink",
       "city": "Vancouver",
       "address": "6810 Main St, Vancouver, BC V5X 0A1",
@@ -233,6 +251,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-09-23",
+      "startTime": "15:30",
+      "endTime": "17:15",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/634853",
+      "eventItemId": 634853,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
+    },
+    {
       "facility": "Karen Magnussen Community Centre",
       "city": "North Vancouver",
       "address": "2300 Kirkstone Rd, North Vancouver, BC V7J 1Z6",
@@ -261,6 +297,24 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
+    },
+    {
+      "facility": "Hillcrest Centre",
+      "city": "Vancouver",
+      "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
+      "lat": 49.24407,
+      "lng": -123.10781,
+      "date": "2026-09-23",
+      "startTime": "17:30",
+      "endTime": "19:00",
+      "type": "Public Skating",
+      "activityName": "Public Skate",
+      "description": "Open skate for all ages        Children under 8 years MUST be supervised on the ice by an individual 16 years old or over        For detailed admission fees, rental fees and discount information, ple",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/public-skate/634855",
+      "eventItemId": 634855,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/hillcrest-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=22"
     },
     {
       "facility": "Karen Magnussen Community Centre",
@@ -308,5 +362,5 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     }
   ],
-  "count": 19
+  "count": 22
 }

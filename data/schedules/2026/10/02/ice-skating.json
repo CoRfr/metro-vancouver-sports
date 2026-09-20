@@ -200,6 +200,21 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-10-02",
+      "startTime": "15:45",
+      "endTime": "17:45",
+      "type": "Family Skate",
+      "activityName": "$2 Family Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/2-family-skate-new-harry-jerome-friday-345-545pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
+    },
+    {
       "facility": "Hillcrest Centre",
       "city": "Vancouver",
       "address": "4575 Clancy Loranger Way, Vancouver, BC V5Y 2M4",
@@ -234,6 +249,21 @@
       "eventItemId": 637948,
       "facilityUrl": "https://vancouver.ca/parks-recreation-culture/west-end-community-centre.aspx",
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
+    },
+    {
+      "facility": "Harry Jerome Community Recreation Centre",
+      "city": "North Vancouver",
+      "address": "123 East 23rd St, North Vancouver, BC V7L 3E2",
+      "lat": 49.3299,
+      "lng": -123.07048,
+      "date": "2026-10-02",
+      "startTime": "18:15",
+      "endTime": "19:45",
+      "type": "Public Skating",
+      "activityName": "Public Skate New",
+      "activityUrl": "https://www.nvrc.ca/programs-memberships/find-program/public-skate-new-harry-jerome-friday-615-745pm",
+      "facilityUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All",
+      "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
       "facility": "Kitsilano Rink",
@@ -308,5 +338,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     }
   ],
-  "count": 18
+  "count": 20
 }
