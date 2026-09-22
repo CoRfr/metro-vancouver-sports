@@ -95,6 +95,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
     },
     {
+      "facility": "Kerrisdale Pool",
+      "city": "Vancouver",
+      "address": "5851 West Blvd, Vancouver, BC V6M 3W8",
+      "lat": 49.2332,
+      "lng": -123.1566,
+      "date": "2026-09-22",
+      "startTime": "08:30",
+      "endTime": "09:14",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Range of Motion",
+      "description": "Date and Time      Tue. & Thu.: 8:30 AM - 9:15 AM               Session    Fall 2026: September 8 - December 13                   A  gentle, no impact water workout to enhance joint mobilit",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---range-of-motion/641053",
+      "eventItemId": 641053,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=34"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -556,5 +574,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 35
+  "count": 36
 }
