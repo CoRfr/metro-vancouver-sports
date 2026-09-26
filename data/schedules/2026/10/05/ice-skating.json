@@ -98,6 +98,42 @@
       "scheduleUrl": "https://www.nvrc.ca/drop-in-schedules?activity=551&location=All&service=All"
     },
     {
+      "facility": "Sunset Rink",
+      "city": "Vancouver",
+      "address": "6810 Main St, Vancouver, BC V5X 0A1",
+      "lat": 49.22323,
+      "lng": -123.09821,
+      "date": "2026-10-05",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Drop-in Hockey",
+      "activityName": "Sunset Arena - Stick, Puck & Ring - Monday 11:45am",
+      "description": "For those 19 years and older. Hockey helmets and gloves are required.  This is a session for individual practice only with NO scrimmage and no sharing of equipment. Skate rentals are not available.",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/sunset-arena---stick-puck-ring---monday-11-45am/635381",
+      "eventItemId": 635381,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/sunset-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=27"
+    },
+    {
+      "facility": "Trout Lake Rink",
+      "city": "Vancouver",
+      "address": "3360 Victoria Dr, Vancouver, BC V5N 4M4",
+      "lat": 49.25486,
+      "lng": -123.06521,
+      "date": "2026-10-05",
+      "startTime": "11:45",
+      "endTime": "13:15",
+      "type": "Hockey",
+      "activityName": "Trout Lake Arena - Public Hockey - Monday 11:45am",
+      "description": "Recreational hockey game for those 19 years and older. Full gear is required. No rental equipment provided.  GOALIES must register in a separate goalie specific activity with the same session time. I",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/trout-lake-arena---public-hockey---monday-11-45am/635216",
+      "eventItemId": 635216,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=28"
+    },
+    {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
       "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
@@ -146,5 +182,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=9"
     }
   ],
-  "count": 9
+  "count": 11
 }
