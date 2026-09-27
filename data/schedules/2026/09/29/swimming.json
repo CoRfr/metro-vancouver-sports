@@ -125,6 +125,24 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
+      "facility": "Kerrisdale Pool",
+      "city": "Vancouver",
+      "address": "5851 West Blvd, Vancouver, BC V6M 3W8",
+      "lat": 49.2332,
+      "lng": -123.1566,
+      "date": "2026-09-29",
+      "startTime": "08:30",
+      "endTime": "09:29",
+      "type": "Aquafit",
+      "activityName": "Aquafit - Shallow Moderate",
+      "description": "Date and TimeTue.: 8:30 AM - 9:30 AMSessionFall 2026: September 8 - December 13A gentle, no impact water workout to enhance joint mobility. Participants will receive instruction to move the joint thro",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/642439",
+      "eventItemId": 642439,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=34"
+    },
+    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -534,6 +552,24 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     },
     {
+      "facility": "Renfrew Park Pool",
+      "city": "Vancouver",
+      "address": "2929 E 22nd Ave, Vancouver, BC V5M 2Y3",
+      "lat": 49.2512,
+      "lng": -123.0429,
+      "date": "2026-09-29",
+      "startTime": "20:00",
+      "endTime": "21:29",
+      "type": "Public Swim",
+      "activityName": "Evening Public Swim",
+      "description": "Date & Time   Tues & Thurs: 8:00pm - 9:30pm   Stat Holiday Sept 30, Oct 12, Nov11: 1:00pm - 5:00pm              Session    Sept 8, 2026 - Dec 13, 2026                    Recreational  swi",
+      "ageRange": "",
+      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/evening-public-swim/639954",
+      "eventItemId": 639954,
+      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/renfrew-pool.aspx",
+      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=47"
+    },
+    {
       "facility": "Bonsor Recreation Complex",
       "city": "Burnaby",
       "address": "6550 Bonsor Ave, Burnaby, BC V5H 3G4",
@@ -598,5 +634,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 38
+  "count": 40
 }
