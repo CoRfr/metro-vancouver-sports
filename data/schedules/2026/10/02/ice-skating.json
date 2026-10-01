@@ -53,21 +53,6 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     },
     {
-      "facility": "Aldergrove Community Centre",
-      "city": "Langley",
-      "address": "27032 Fraser Highway, Langley, BC",
-      "lat": 49.1125355,
-      "lng": -122.6766332,
-      "date": "2026-10-02",
-      "startTime": "10:45",
-      "endTime": "11:45",
-      "type": "Skating",
-      "activityName": "Sensory Skate",
-      "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=58e9cb1a-7309-42f0-bdc4-012ba01751c4",
-      "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/",
-      "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/aldergrove-credit-union-community-centre/"
-    },
-    {
       "facility": "Queen's Park Arena",
       "city": "New Westminster",
       "address": "51 3rd Ave, New Westminster, BC V3L 1L7",
@@ -446,5 +431,5 @@
       "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=3&locationId=26"
     }
   ],
-  "count": 26
+  "count": 25
 }
