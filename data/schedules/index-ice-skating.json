@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-10-02T11:49:10.799Z",
-  "totalSessions": 331,
+  "lastUpdated": "2026-10-03T11:01:57.703Z",
+  "totalSessions": 316,
   "dateRange": {
-    "start": "2026-10-02",
+    "start": "2026-10-03",
     "end": "2026-11-21"
   },
   "dates": [
-    "2026-10-02",
     "2026-10-03",
     "2026-10-04",
     "2026-10-05",
@@ -58,7 +57,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 200,
+      "sessions": 182,
       "status": "ok"
     },
     {
@@ -87,7 +86,7 @@
     },
     {
       "city": "North Vancouver",
-      "sessions": 39,
+      "sessions": 44,
       "status": "ok"
     },
     {
@@ -97,12 +96,12 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 41,
+      "sessions": 42,
       "status": "ok"
     },
     {
       "city": "Langley",
-      "sessions": 51,
+      "sessions": 48,
       "status": "ok"
     },
     {
