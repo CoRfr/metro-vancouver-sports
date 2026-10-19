@@ -125,24 +125,6 @@
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/walnut-grove-community-centre/"
     },
     {
-      "facility": "Kerrisdale Pool",
-      "city": "Vancouver",
-      "address": "5851 West Blvd, Vancouver, BC V6M 3W8",
-      "lat": 49.2332,
-      "lng": -123.1566,
-      "date": "2026-10-20",
-      "startTime": "08:30",
-      "endTime": "09:29",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Date and TimeTue.: 8:30 AM - 9:30 AMSessionFall 2026: September 8 - December 13A gentle, no impact water workout to enhance joint mobility. Participants will receive instruction to move the joint thro",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/642439",
-      "eventItemId": 642439,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/kerrisdale-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=34"
-    },
-    {
       "facility": "Aldergrove Community Centre",
       "city": "Langley",
       "address": "27032 Fraser Highway, Langley, BC",
@@ -171,24 +153,6 @@
       "activityUrl": "https://tol.perfectmind.com/23784/Clients/BookMe4?widgetId=67fd560e-f1ae-449f-a666-3edbcfd93783",
       "facilityUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/",
       "scheduleUrl": "https://www.tol.ca/recreation-culture/recreation-facilities/wc-blair-recreation-centre/"
-    },
-    {
-      "facility": "Templeton Park Pool",
-      "city": "Vancouver",
-      "address": "700 Templeton Dr, Vancouver, BC V5L 4N8",
-      "lat": 49.2818,
-      "lng": -123.0514,
-      "date": "2026-10-20",
-      "startTime": "09:30",
-      "endTime": "10:29",
-      "type": "Aquafit",
-      "activityName": "Aquafit - Shallow Moderate",
-      "description": "Aquafit 9: 30  - 10: 30  am is a moderately paced and energizing class that utilizes water resistance for a variety of exercise combinations with warm up, cardio, strength, stretch and cool down co",
-      "ageRange": "",
-      "activityUrl": "https://ca.apm.activecommunities.com/vancouver/Activity_Search/aquafit---shallow-moderate/646859",
-      "eventItemId": 646859,
-      "facilityUrl": "https://vancouver.ca/parks-recreation-culture/templeton-pool.aspx",
-      "scheduleUrl": "https://anc.ca.apm.activecommunities.com/vancouver/calendars?onlineSiteId=0&no_scroll_top=true&defaultCalendarId=55&locationId=45"
     },
     {
       "facility": "Bonsor Recreation Complex",
@@ -706,5 +670,5 @@
       "scheduleUrl": "https://www.burnaby.ca/recreation-and-arts/activities-and-registration/daily-activities?activity_tid=651&location_ref=3041"
     }
   ],
-  "count": 44
+  "count": 42
 }
