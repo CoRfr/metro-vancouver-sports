@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-10-23T10:57:06.156Z",
-  "totalSessions": 302,
+  "lastUpdated": "2026-10-24T10:11:49.680Z",
+  "totalSessions": 288,
   "dateRange": {
-    "start": "2026-10-23",
+    "start": "2026-10-24",
     "end": "2026-12-12"
   },
   "dates": [
-    "2026-10-23",
     "2026-10-24",
     "2026-10-25",
     "2026-10-26",
@@ -37,6 +36,7 @@
     "2026-11-19",
     "2026-11-20",
     "2026-11-21",
+    "2026-11-22",
     "2026-11-23",
     "2026-11-24",
     "2026-11-25",
@@ -59,7 +59,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 174,
+      "sessions": 156,
       "status": "ok"
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "city": "North Vancouver",
-      "sessions": 35,
+      "sessions": 40,
       "status": "ok"
     },
     {
@@ -98,17 +98,17 @@
     },
     {
       "city": "New Westminster",
-      "sessions": 40,
+      "sessions": 39,
       "status": "ok"
     },
     {
       "city": "Langley",
-      "sessions": 46,
+      "sessions": 45,
       "status": "ok"
     },
     {
       "city": "Outdoor",
-      "sessions": 7,
+      "sessions": 8,
       "status": "ok"
     }
   ]
