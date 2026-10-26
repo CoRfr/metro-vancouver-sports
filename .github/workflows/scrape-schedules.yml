@@ -1,17 +1,8 @@
 name: Scrape Sports Schedules
 
 on:
-  # Run daily at 6 AM UTC (10 PM Pacific)
-  schedule:
-    - cron: '0 6 * * *'
-  # Allow manual trigger
+  # Retired: scraping is disabled, the site now redirects to dropinnow.ca
   workflow_dispatch:
-  # Also run on push to main for testing
-  push:
-    branches: [main]
-    paths:
-      - 'backend/**'
-      - '.github/workflows/scrape-schedules.yml'
 
 # Grant write permissions for pushing commits
 permissions:

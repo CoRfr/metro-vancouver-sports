@@ -1,18 +1,11 @@
-name: Build and Deploy Frontend
+name: Deploy Redirect to dropinnow.ca
 
 on:
-  # Run on push to main (for frontend changes)
   push:
     branches: [main]
     paths:
-      - 'frontend/**'
+      - 'redirect/**'
       - '.github/workflows/deploy-frontend.yml'
-  # Run after scraper completes (for data updates)
-  workflow_run:
-    workflows: ["Scrape Sports Schedules"]
-    types: [completed]
-    branches: [main]
-  # Allow manual trigger
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -29,38 +22,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Skip if triggered by failed scraper run
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          # Use the commit from the triggering workflow run, or default for other triggers
-          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: frontend/package-lock.json
-
-      - name: Install dependencies
-        working-directory: frontend
-        run: npm ci
-
-      - name: Build
-        working-directory: frontend
-        run: npm run build
-
-      - name: Copy data folder to dist
-        run: cp -r data frontend/dist/
-
-      - name: Copy favicon
-        run: |
-          if [ -f favicon.ico ]; then
-            cp favicon.ico frontend/dist/
-          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -68,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: redirect
 
   deploy:
     environment:
