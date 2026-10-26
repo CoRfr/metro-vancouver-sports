@@ -1,13 +1,12 @@
 {
   "success": true,
-  "lastUpdated": "2026-10-25T10:37:05.133Z",
-  "totalSessions": 372,
+  "lastUpdated": "2026-10-26T12:10:34.796Z",
+  "totalSessions": 362,
   "dateRange": {
-    "start": "2026-10-25",
+    "start": "2026-10-26",
     "end": "2026-12-19"
   },
   "dates": [
-    "2026-10-25",
     "2026-10-26",
     "2026-10-27",
     "2026-10-28",
@@ -64,7 +63,7 @@
   "sources": [
     {
       "city": "Vancouver",
-      "sessions": 236,
+      "sessions": 225,
       "status": "ok"
     },
     {
@@ -113,7 +112,7 @@
     },
     {
       "city": "Outdoor",
-      "sessions": 9,
+      "sessions": 10,
       "status": "ok"
     }
   ]
